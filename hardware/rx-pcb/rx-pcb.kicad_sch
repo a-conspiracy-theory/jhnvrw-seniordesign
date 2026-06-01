@@ -3547,7 +3547,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Connector_PinSocket_2.54mm:PinSocket_1x04_P2.54mm_Vertical"
+		(property "Footprint" "Connector_PinHeader_2.54mm:PinHeader_1x04_P2.54mm_Vertical"
 			(at 124.46 57.15 0)
 			(effects
 				(font
@@ -5754,48 +5754,6 @@
 		)
 	)
 	(sheet
-		(at 151.892 102.362)
-		(size 102.108 50.038)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(stroke
-			(width 0.1524)
-			(type solid)
-		)
-		(fill
-			(color 0 0 0 0.0000)
-		)
-		(uuid "84ed0e1d-ea4c-4524-b4ef-48cf817ee110")
-		(property "Sheetname" "PWR"
-			(at 151.892 101.6504 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left bottom)
-			)
-		)
-		(property "Sheetfile" "untitled.kicad_sch"
-			(at 151.892 152.9846 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left top)
-			)
-		)
-		(instances
-			(project "rx-pcb"
-				(path "/9df8ddb8-545e-44cf-b4e7-941b19ec42ab"
-					(page "3")
-				)
-			)
-		)
-	)
-	(sheet
 		(at 152.146 25.654)
 		(size 102.108 50.546)
 		(exclude_from_sim no)
@@ -5820,7 +5778,7 @@
 				(justify left bottom)
 			)
 		)
-		(property "Sheetfile" "untitled.kicad_sch"
+		(property "Sheetfile" "rf.kicad_sch"
 			(at 152.146 76.7846 0)
 			(effects
 				(font
