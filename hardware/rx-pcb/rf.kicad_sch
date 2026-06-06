@@ -5,6 +5,145 @@
 	(uuid "6d4e6c99-6205-4ae5-acc7-f4c7d5255802")
 	(paper "A4")
 	(lib_symbols
+		(symbol "Device:C"
+			(pin_numbers
+				(hide yes)
+			)
+			(pin_names
+				(offset 0.254)
+			)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(property "Reference" "C"
+				(at 0.635 2.54 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left)
+				)
+			)
+			(property "Value" "C"
+				(at 0.635 -2.54 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left)
+				)
+			)
+			(property "Footprint" ""
+				(at 0.9652 -3.81 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Datasheet" "~"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Description" "Unpolarized capacitor"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_keywords" "cap capacitor"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_fp_filters" "C_*"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(symbol "C_0_1"
+				(polyline
+					(pts
+						(xy -2.032 0.762) (xy 2.032 0.762)
+					)
+					(stroke
+						(width 0.508)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy -2.032 -0.762) (xy 2.032 -0.762)
+					)
+					(stroke
+						(width 0.508)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+			)
+			(symbol "C_1_1"
+				(pin passive line
+					(at 0 3.81 270)
+					(length 2.794)
+					(name "~"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 0 -3.81 90)
+					(length 2.794)
+					(name "~"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+			(embedded_fonts no)
+		)
 		(symbol "rx-parts:Conn_Coaxial_Small"
 			(pin_numbers
 				(hide yes)
@@ -478,7 +617,7 @@
 	)
 	(text "40 OHM"
 		(exclude_from_sim no)
-		(at 25.908 32.004 0)
+		(at 48.768 32.004 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -488,7 +627,7 @@
 	)
 	(text "50 OHM"
 		(exclude_from_sim no)
-		(at 52.07 32.004 0)
+		(at 74.93 32.004 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -497,14 +636,14 @@
 		(uuid "fddca7fc-7e1f-4baa-91c0-78d6c3d66e11")
 	)
 	(junction
-		(at 38.1 55.88)
+		(at 60.96 55.88)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "c10d2340-5f05-4467-a95c-f756f09f4689")
 	)
 	(wire
 		(pts
-			(xy 35.56 55.88) (xy 38.1 55.88)
+			(xy 58.42 55.88) (xy 60.96 55.88)
 		)
 		(stroke
 			(width 0)
@@ -514,7 +653,7 @@
 	)
 	(wire
 		(pts
-			(xy 19.05 33.02) (xy 35.56 33.02)
+			(xy 21.59 33.02) (xy 30.48 33.02)
 		)
 		(stroke
 			(width 0)
@@ -524,7 +663,7 @@
 	)
 	(wire
 		(pts
-			(xy 40.64 33.02) (xy 66.04 33.02)
+			(xy 63.5 33.02) (xy 88.9 33.02)
 		)
 		(stroke
 			(width 0)
@@ -534,7 +673,7 @@
 	)
 	(wire
 		(pts
-			(xy 38.1 55.88) (xy 40.64 55.88)
+			(xy 60.96 55.88) (xy 63.5 55.88)
 		)
 		(stroke
 			(width 0)
@@ -542,8 +681,18 @@
 		)
 		(uuid "c5d0681e-ad61-48c6-b759-ca867ac56591")
 	)
+	(wire
+		(pts
+			(xy 38.1 33.02) (xy 58.42 33.02)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "d620baaf-b407-4cda-a7c1-12469e1dae64")
+	)
 	(label "ANT"
-		(at 66.04 33.02 0)
+		(at 88.9 33.02 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -554,7 +703,7 @@
 	)
 	(global_label "RF1"
 		(shape input)
-		(at 19.05 33.02 180)
+		(at 21.59 33.02 180)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -564,7 +713,7 @@
 		)
 		(uuid "26c39963-7154-4e5a-8734-b6a76599af86")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 12.4967 33.02 0)
+			(at 15.0367 33.02 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -576,7 +725,7 @@
 	)
 	(symbol
 		(lib_id "rx-parts:GND")
-		(at 38.1 55.88 0)
+		(at 60.96 55.88 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -584,8 +733,8 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "19b3042a-8bcf-46f5-ad74-6985e077ce2b")
-		(property "Reference" "#PWR016"
-			(at 38.1 62.23 0)
+		(property "Reference" "#PWR018"
+			(at 60.96 62.23 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -594,7 +743,7 @@
 			)
 		)
 		(property "Value" "GND"
-			(at 38.1 60.96 0)
+			(at 60.96 60.96 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -602,7 +751,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 38.1 55.88 0)
+			(at 60.96 55.88 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -611,7 +760,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 38.1 55.88 0)
+			(at 60.96 55.88 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -620,7 +769,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 38.1 55.88 0)
+			(at 60.96 55.88 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -634,7 +783,7 @@
 		(instances
 			(project "rx-pcb"
 				(path "/9df8ddb8-545e-44cf-b4e7-941b19ec42ab/f451fa07-6b2e-4005-ab57-ecfade312cca"
-					(reference "#PWR016")
+					(reference "#PWR018")
 					(unit 1)
 				)
 			)
@@ -642,7 +791,7 @@
 	)
 	(symbol
 		(lib_id "rx-parts:MLPF-WB-01D3")
-		(at 38.1 44.45 270)
+		(at 60.96 44.45 270)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -651,7 +800,7 @@
 		(fields_autoplaced yes)
 		(uuid "325c4867-9720-41a9-b51d-cef2cc40fc25")
 		(property "Reference" "FL1"
-			(at 44.45 43.1799 90)
+			(at 67.31 43.1799 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -660,7 +809,7 @@
 			)
 		)
 		(property "Value" "MLPF-WB-01D3"
-			(at 44.45 45.7199 90)
+			(at 67.31 45.7199 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -669,7 +818,7 @@
 			)
 		)
 		(property "Footprint" "rx-parts:BGA-6_L1.6-W1.0-R3-C2-P0.50-TL"
-			(at 27.94 44.45 0)
+			(at 50.8 44.45 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -678,7 +827,7 @@
 			)
 		)
 		(property "Datasheet" "https://www.lcsc.com/datasheet/C5440144.pdf"
-			(at 25.4 44.45 0)
+			(at 48.26 44.45 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -687,7 +836,7 @@
 			)
 		)
 		(property "Description" ""
-			(at 38.1 44.45 0)
+			(at 60.96 44.45 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -696,7 +845,7 @@
 			)
 		)
 		(property "Manufacturer" "ST(意法半导体)"
-			(at 22.86 44.45 0)
+			(at 45.72 44.45 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -705,7 +854,7 @@
 			)
 		)
 		(property "MPN" "MLPF-WB-01D3"
-			(at 20.32 44.45 0)
+			(at 43.18 44.45 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -714,7 +863,7 @@
 			)
 		)
 		(property "LCSC Part" "C5440144"
-			(at 17.78 44.45 0)
+			(at 40.64 44.45 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -740,37 +889,43 @@
 		(pin "B3"
 			(uuid "30a27f5e-48be-458c-bb4a-a330e257644d")
 		)
+		(instances
+			(project "rx-pcb"
+				(path "/9df8ddb8-545e-44cf-b4e7-941b19ec42ab/f451fa07-6b2e-4005-ab57-ecfade312cca"
+					(reference "FL1")
+					(unit 1)
+				)
+			)
+		)
 	)
 	(symbol
-		(lib_id "rx-parts:Conn_Coaxial_Small")
-		(at 66.04 35.56 270)
+		(lib_id "Device:C")
+		(at 34.29 33.02 90)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
 		(fields_autoplaced yes)
-		(uuid "d9b36398-e4c2-440b-88fe-45be96b37747")
-		(property "Reference" "J3"
-			(at 68.58 33.7703 90)
+		(uuid "98cbcb6f-f41d-4865-93d9-030959e008b4")
+		(property "Reference" "C14"
+			(at 34.29 25.4 90)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(justify left)
 			)
 		)
-		(property "Value" "Conn_Coaxial_Small"
-			(at 68.58 36.3103 90)
+		(property "Value" "20p"
+			(at 34.29 27.94 90)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(justify left)
 			)
 		)
-		(property "Footprint" "rx-parts:SMA_Amphenol_901-143_Horizontal"
-			(at 66.04 35.56 0)
+		(property "Footprint" "Capacitor_SMD:C_0201_0603Metric_Pad0.64x0.40mm_HandSolder"
+			(at 38.1 32.0548 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -779,7 +934,77 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 66.04 35.56 0)
+			(at 34.29 33.02 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Unpolarized capacitor"
+			(at 34.29 33.02 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "3e1efa22-8ded-4919-b94d-155d5b7baf24")
+		)
+		(pin "1"
+			(uuid "8dab2225-1432-461b-bb58-0d3a31d47619")
+		)
+		(instances
+			(project ""
+				(path "/9df8ddb8-545e-44cf-b4e7-941b19ec42ab/f451fa07-6b2e-4005-ab57-ecfade312cca"
+					(reference "C14")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "rx-parts:Conn_Coaxial_Small")
+		(at 88.9 35.56 270)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "d9b36398-e4c2-440b-88fe-45be96b37747")
+		(property "Reference" "J3"
+			(at 91.44 33.7703 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "Conn_Coaxial_Small"
+			(at 91.44 36.3103 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "rx-parts:SMA_Amphenol_901-143_Horizontal"
+			(at 88.9 35.56 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 88.9 35.56 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -788,7 +1013,7 @@
 			)
 		)
 		(property "Description" "small coaxial connector (BNC, SMA, SMB, SMC, Cinch/RCA, LEMO, ...)"
-			(at 66.04 35.56 0)
+			(at 88.9 35.56 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -802,10 +1027,18 @@
 		(pin "1"
 			(uuid "2b9b059f-53dc-4a2e-a4df-3652a9d8ac09")
 		)
+		(instances
+			(project "rx-pcb"
+				(path "/9df8ddb8-545e-44cf-b4e7-941b19ec42ab/f451fa07-6b2e-4005-ab57-ecfade312cca"
+					(reference "J3")
+					(unit 1)
+				)
+			)
+		)
 	)
 	(symbol
 		(lib_id "rx-parts:GND")
-		(at 66.04 38.1 0)
+		(at 88.9 38.1 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -813,8 +1046,8 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "da24053e-a7fc-4588-9a85-97941af6092d")
-		(property "Reference" "#PWR015"
-			(at 66.04 44.45 0)
+		(property "Reference" "#PWR017"
+			(at 88.9 44.45 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -823,7 +1056,7 @@
 			)
 		)
 		(property "Value" "GND"
-			(at 66.04 43.18 0)
+			(at 88.9 43.18 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -831,7 +1064,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 66.04 38.1 0)
+			(at 88.9 38.1 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -840,7 +1073,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 66.04 38.1 0)
+			(at 88.9 38.1 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -849,7 +1082,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 66.04 38.1 0)
+			(at 88.9 38.1 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -863,7 +1096,7 @@
 		(instances
 			(project "rx-pcb"
 				(path "/9df8ddb8-545e-44cf-b4e7-941b19ec42ab/f451fa07-6b2e-4005-ab57-ecfade312cca"
-					(reference "#PWR015")
+					(reference "#PWR017")
 					(unit 1)
 				)
 			)
@@ -871,7 +1104,7 @@
 	)
 	(symbol
 		(lib_id "rx-parts:GND")
-		(at 38.1 33.02 180)
+		(at 60.96 33.02 180)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -879,8 +1112,8 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "e363a504-de5a-4cd1-8557-02ecbaef9d91")
-		(property "Reference" "#PWR06"
-			(at 38.1 26.67 0)
+		(property "Reference" "#PWR016"
+			(at 60.96 26.67 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -889,7 +1122,7 @@
 			)
 		)
 		(property "Value" "GND"
-			(at 38.1 27.94 0)
+			(at 60.96 27.94 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -897,7 +1130,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 38.1 33.02 0)
+			(at 60.96 33.02 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -906,7 +1139,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 38.1 33.02 0)
+			(at 60.96 33.02 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -915,7 +1148,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 38.1 33.02 0)
+			(at 60.96 33.02 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -929,7 +1162,7 @@
 		(instances
 			(project "rx-pcb"
 				(path "/9df8ddb8-545e-44cf-b4e7-941b19ec42ab/f451fa07-6b2e-4005-ab57-ecfade312cca"
-					(reference "#PWR06")
+					(reference "#PWR016")
 					(unit 1)
 				)
 			)
