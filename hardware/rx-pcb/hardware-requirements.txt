@@ -1,9 +1,0 @@
-MCU
-	Bluetooth
-		SMPS
-		HSE
-		LSE
-		Antenna
-	
-	Harvesting Antenna
-		
