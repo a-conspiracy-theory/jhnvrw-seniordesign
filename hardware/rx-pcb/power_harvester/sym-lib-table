@@ -1,0 +1,4 @@
+(sym_lib_table
+  (version 7)
+  (lib (name "power_harvester")(type "KiCad")(uri "${KIPRJMOD}/power_harvester.kicad_sym")(options "")(descr ""))
+)
