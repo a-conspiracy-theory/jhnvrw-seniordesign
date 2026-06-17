@@ -1,0 +1,192 @@
+(footprint "L_0805_2012Metric_Pad1.05x1.20mm_HandSolder"
+	(version 20241229)
+	(generator "pcbnew")
+	(generator_version "9.0")
+	(layer "F.Cu")
+	(descr "Inductor SMD 0805 (2012 Metric), square (rectangular) end terminal, IPC-7351 nominal with elongated pad for handsoldering. (Body size source: IPC-SM-782 page 80, https://www.pcb-3d.com/wordpress/wp-content/uploads/ipc-sm-782a_amendment_1_and_2.pdf), generated with kicad-footprint-generator")
+	(tags "inductor handsolder")
+	(property "Reference" "REF**"
+		(at -2.6 0 180)
+		(layer "F.SilkS")
+		(uuid "f3a4cf54-0853-4353-8e2b-c6196bc8c8df")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Value" "10uH"
+		(at 0 1.550001 180)
+		(layer "F.Fab")
+		(uuid "db0d05db-2b33-4d4c-8986-069539f3b369")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Datasheet" ""
+		(at 0 0 180)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "06908c61-800c-4cbd-b4b9-0a20fd36b2c2")
+		(effects
+			(font
+				(size 1.27 1.27)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Description" "Inductor"
+		(at 0 0 180)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "146396b1-36f6-4af6-aed0-f6c336936169")
+		(effects
+			(font
+				(size 1.27 1.27)
+				(thickness 0.15)
+			)
+		)
+	)
+	(attr smd)
+	(fp_line
+		(start -0.410242 -0.56)
+		(end 0.410242 -0.56)
+		(stroke
+			(width 0.12)
+			(type solid)
+		)
+		(layer "F.SilkS")
+		(uuid "42d93906-e330-40a8-ba59-1f06f30dcab7")
+	)
+	(fp_line
+		(start -0.410242 0.56)
+		(end 0.410242 0.56)
+		(stroke
+			(width 0.12)
+			(type solid)
+		)
+		(layer "F.SilkS")
+		(uuid "2d737388-4521-4166-8a1b-567310b0ae11")
+	)
+	(fp_line
+		(start -1.93 -0.85)
+		(end 1.93 -0.85)
+		(stroke
+			(width 0.05)
+			(type solid)
+		)
+		(layer "F.CrtYd")
+		(uuid "87ea4ecc-f58a-42a5-89ba-5875fa86e010")
+	)
+	(fp_line
+		(start -1.93 0.85)
+		(end -1.93 -0.85)
+		(stroke
+			(width 0.05)
+			(type solid)
+		)
+		(layer "F.CrtYd")
+		(uuid "d7ba34e9-8ccb-4fe5-938c-fa7689876769")
+	)
+	(fp_line
+		(start 1.93 -0.85)
+		(end 1.93 0.85)
+		(stroke
+			(width 0.05)
+			(type solid)
+		)
+		(layer "F.CrtYd")
+		(uuid "c1d4cf0c-3502-47ae-992c-fb561688a14f")
+	)
+	(fp_line
+		(start 1.93 0.85)
+		(end -1.93 0.85)
+		(stroke
+			(width 0.05)
+			(type solid)
+		)
+		(layer "F.CrtYd")
+		(uuid "3a2216af-8334-4d0a-a82a-5a16036af8c3")
+	)
+	(fp_line
+		(start -1 -0.45)
+		(end 1 -0.45)
+		(stroke
+			(width 0.1)
+			(type solid)
+		)
+		(layer "F.Fab")
+		(uuid "f848d638-3351-4bf8-bbdf-3a197b34e2cf")
+	)
+	(fp_line
+		(start -1 0.45)
+		(end -1 -0.45)
+		(stroke
+			(width 0.1)
+			(type solid)
+		)
+		(layer "F.Fab")
+		(uuid "abe36965-fa9e-4d31-b836-ba6d75fb3f2a")
+	)
+	(fp_line
+		(start 1 -0.45)
+		(end 1 0.45)
+		(stroke
+			(width 0.1)
+			(type solid)
+		)
+		(layer "F.Fab")
+		(uuid "b29c3bbf-6dc4-41b5-9cd8-2cb8545c5080")
+	)
+	(fp_line
+		(start 1 0.45)
+		(end -1 0.45)
+		(stroke
+			(width 0.1)
+			(type solid)
+		)
+		(layer "F.Fab")
+		(uuid "bf91bc6f-52be-409d-acaf-2ee06bc47b2b")
+	)
+	(fp_text user "${REFERENCE}"
+		(at 0 0 180)
+		(layer "F.Fab")
+		(uuid "6fdfe892-7c3f-4a5b-9c54-e1b3953d53e1")
+		(effects
+			(font
+				(size 0.5 0.5)
+				(thickness 0.08)
+			)
+		)
+	)
+	(pad "1" smd roundrect
+		(at -1.15 0)
+		(size 1.05 1.2)
+		(layers "F.Cu" "F.Mask" "F.Paste")
+		(roundrect_rratio 0.238095)
+		(uuid "b398b6d3-18b8-43ef-8459-922f4d658533")
+	)
+	(pad "2" smd roundrect
+		(at 1.15 0)
+		(size 1.05 1.2)
+		(layers "F.Cu" "F.Mask" "F.Paste")
+		(roundrect_rratio 0.238095)
+		(uuid "cc630a71-da36-4719-af51-d8ee195c9a3e")
+	)
+	(embedded_fonts no)
+	(model "${KICAD9_3DMODEL_DIR}/Inductor_SMD.3dshapes/L_0805_2012Metric.step"
+		(offset
+			(xyz 0 0 0)
+		)
+		(scale
+			(xyz 1 1 1)
+		)
+		(rotate
+			(xyz 0 0 0)
+		)
+	)
+)

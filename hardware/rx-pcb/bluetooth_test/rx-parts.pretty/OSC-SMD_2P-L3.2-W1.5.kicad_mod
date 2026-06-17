@@ -1,0 +1,228 @@
+(footprint "OSC-SMD_2P-L3.2-W1.5"
+	(version 20241229)
+	(generator "pcbnew")
+	(generator_version "9.0")
+	(layer "F.Cu")
+	(property "Reference" "REF**"
+		(at -2.762498 0.272502 270)
+		(layer "F.SilkS")
+		(uuid "f966b542-9cbc-400a-a138-0c368d907b22")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Value" "ABS07-32.768KHZ-1-T"
+		(at 0 3.999998 180)
+		(layer "F.Fab")
+		(uuid "e442412a-b498-431f-901a-fc1c3d8e6088")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Datasheet" "https://lcsc.com/product-detail/SMD-Crystals_ABRACON_ABS07-32-768KHz-1-T_ABS07-32-768KHz-1-T_C145140.html"
+		(at 0 0 180)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "5f1eb6fa-4256-4322-9a62-a10a1191aafc")
+		(effects
+			(font
+				(size 1.27 1.27)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Description" ""
+		(at 0 0 180)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "c4258b6c-d007-40ad-8ab9-c6ac7708560e")
+		(effects
+			(font
+				(size 1.27 1.27)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "LCSC Part" "C145140"
+		(at 0 0 180)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "34b9f8f6-cc5b-4df7-8f04-e1975780a125")
+		(effects
+			(font
+				(size 1.27 1.27)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Manufacturer" "ABRACON"
+		(at 0 0 0)
+		(unlocked yes)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "88f847a3-0e06-4096-be27-f85b612f09b2")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "MPN" "ABS07-32.768KHz-1-T"
+		(at 0 0 0)
+		(unlocked yes)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "89830d91-11be-4375-b9dd-05b1e5a5c117")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(attr smd)
+	(fp_line
+		(start -2.13 -1.08)
+		(end 2.13 -1.08)
+		(stroke
+			(width 0.15)
+			(type solid)
+		)
+		(layer "F.SilkS")
+		(uuid "24e783de-4450-48fa-aafc-8eab30858389")
+	)
+	(fp_line
+		(start -2.13 1.08)
+		(end -2.13 -1.08)
+		(stroke
+			(width 0.15)
+			(type solid)
+		)
+		(layer "F.SilkS")
+		(uuid "a2cf122f-bb8e-4660-a089-86f74364c5e0")
+	)
+	(fp_line
+		(start 2.13 -1.08)
+		(end 2.13 1.08)
+		(stroke
+			(width 0.15)
+			(type solid)
+		)
+		(layer "F.SilkS")
+		(uuid "d156abd5-b93d-4c2a-91a6-d235c3a2c56e")
+	)
+	(fp_line
+		(start 2.13 1.08)
+		(end -2.13 1.08)
+		(stroke
+			(width 0.15)
+			(type solid)
+		)
+		(layer "F.SilkS")
+		(uuid "c9e56592-6c7b-41ac-b4f1-ee0fba59a703")
+	)
+	(fp_circle
+		(center -2.29 -1.27)
+		(end -2.19 -1.27)
+		(stroke
+			(width 0.08)
+			(type solid)
+		)
+		(fill no)
+		(layer "F.SilkS")
+		(uuid "e14ddeeb-65c8-4438-a915-06a2bf3a6910")
+	)
+	(fp_circle
+		(center -1.27 1.02)
+		(end -1.14 1.02)
+		(stroke
+			(width 0.25)
+			(type solid)
+		)
+		(fill no)
+		(layer "Cmts.User")
+		(uuid "b3984fc3-a0da-4065-b01a-70c6e1c641fa")
+	)
+	(fp_line
+		(start -1.6 -0.75)
+		(end 1.6 -0.75)
+		(stroke
+			(width 0.05)
+			(type solid)
+		)
+		(layer "F.CrtYd")
+		(uuid "4b15b282-fff7-4c3e-b973-1ea053b370da")
+	)
+	(fp_line
+		(start -1.6 0.75)
+		(end -1.6 -0.75)
+		(stroke
+			(width 0.05)
+			(type solid)
+		)
+		(layer "F.CrtYd")
+		(uuid "252660e6-2efc-4650-84fa-7a53d7d602a0")
+	)
+	(fp_line
+		(start 1.6 -0.75)
+		(end 1.6 0.75)
+		(stroke
+			(width 0.05)
+			(type solid)
+		)
+		(layer "F.CrtYd")
+		(uuid "f35c3a27-a7ab-4e3b-99e6-3df8b2bd0847")
+	)
+	(fp_line
+		(start 1.6 0.75)
+		(end -1.6 0.75)
+		(stroke
+			(width 0.05)
+			(type solid)
+		)
+		(layer "F.CrtYd")
+		(uuid "1d09b862-26b5-4d58-8e3a-4b8edf7638ce")
+	)
+	(fp_text user "${REFERENCE}"
+		(at 0 0 180)
+		(layer "F.Fab")
+		(uuid "8c688500-1f1e-44e6-a2bd-84da5150c4ce")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(pad "1" smd rect
+		(at -1.33 0)
+		(size 1.15 1.7)
+		(layers "F.Cu" "F.Mask" "F.Paste")
+		(uuid "da3957ec-d371-4c98-b80c-9ded08fc1e77")
+	)
+	(pad "2" smd rect
+		(at 1.33 0)
+		(size 1.15 1.7)
+		(layers "F.Cu" "F.Mask" "F.Paste")
+		(uuid "4253cf96-dc87-4da6-a7cf-8f8980d9ccf5")
+	)
+	(embedded_fonts no)
+	(model "${EASYEDA2KICAD}/easyeda2kicad.3dshapes/OSC-SMD_2P-L3.2-W1.5-H0.9.wrl"
+		(offset
+			(xyz 0 0 0)
+		)
+		(scale
+			(xyz 1 1 1)
+		)
+		(rotate
+			(xyz 0 0 0)
+		)
+	)
+)
