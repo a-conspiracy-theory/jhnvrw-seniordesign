@@ -3011,7 +3011,7 @@
 		(uuid "723a9ae5-530a-48ab-9381-cdd7952e6d81")
 	)
 	(junction
-		(at 142.24 180.34)
+		(at 142.24 168.91)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "7452c098-e410-46c3-b960-79823c344e60")
@@ -3138,6 +3138,16 @@
 	)
 	(wire
 		(pts
+			(xy 132.08 182.88) (xy 135.89 182.88)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "0e994ca4-a614-4e8c-94f2-f5ef3ca268a2")
+	)
+	(wire
+		(pts
 			(xy 40.64 15.24) (xy 40.64 17.78)
 		)
 		(stroke
@@ -3185,6 +3195,16 @@
 			(type default)
 		)
 		(uuid "23375ce4-8532-468a-933a-c52508e2e7db")
+	)
+	(wire
+		(pts
+			(xy 132.08 190.5) (xy 133.35 190.5)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "27db51b5-c937-47ba-bb79-d8e8e2553902")
 	)
 	(wire
 		(pts
@@ -3288,7 +3308,7 @@
 	)
 	(wire
 		(pts
-			(xy 142.24 173.99) (xy 142.24 180.34)
+			(xy 142.24 162.56) (xy 142.24 168.91)
 		)
 		(stroke
 			(width 0)
@@ -3408,7 +3428,7 @@
 	)
 	(wire
 		(pts
-			(xy 142.24 180.34) (xy 142.24 182.88)
+			(xy 142.24 168.91) (xy 142.24 171.45)
 		)
 		(stroke
 			(width 0)
@@ -3678,6 +3698,16 @@
 	)
 	(wire
 		(pts
+			(xy 140.97 190.5) (xy 143.51 190.5)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "dc8e4bdc-0384-49cd-b6c0-b215a713fb3e")
+	)
+	(wire
+		(pts
 			(xy 72.39 170.18) (xy 72.39 168.91)
 		)
 		(stroke
@@ -3837,7 +3867,7 @@
 		(uuid "365925f6-637a-4113-9a30-e238b7f5ee98")
 	)
 	(label "TMP_A"
-		(at 116.84 182.88 270)
+		(at 116.84 171.45 270)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -4212,7 +4242,7 @@
 	)
 	(global_label "VCC"
 		(shape input)
-		(at 142.24 173.99 0)
+		(at 142.24 162.56 0)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -4222,7 +4252,7 @@
 		)
 		(uuid "455c03f9-2a89-4113-aa63-5b05f1f7c2d8")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 148.8538 173.99 0)
+			(at 148.8538 162.56 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4300,6 +4330,28 @@
 	)
 	(global_label "VCC"
 		(shape input)
+		(at 143.51 190.5 0)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "83505272-00c6-42b9-a041-5180c13d941a")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 150.1238 190.5 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+	)
+	(global_label "VCC"
+		(shape input)
 		(at 80.01 185.42 180)
 		(fields_autoplaced yes)
 		(effects
@@ -4338,6 +4390,28 @@
 					(size 1.27 1.27)
 				)
 				(justify right)
+				(hide yes)
+			)
+		)
+	)
+	(global_label "VCC"
+		(shape input)
+		(at 135.89 182.88 0)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "d678e678-a41d-47e0-b7d7-1166e17f2c25")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 142.5038 182.88 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
 				(hide yes)
 			)
 		)
@@ -4436,7 +4510,7 @@
 	)
 	(symbol
 		(lib_id "easyeda2kicad:LMT70AYFQR")
-		(at 129.54 181.61 0)
+		(at 129.54 170.18 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -4445,7 +4519,7 @@
 		(fields_autoplaced yes)
 		(uuid "204419fc-ea82-4278-b830-1038e5e53899")
 		(property "Reference" "U3"
-			(at 129.54 172.72 0)
+			(at 129.54 161.29 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4453,7 +4527,7 @@
 			)
 		)
 		(property "Value" "LMT70AYFQR"
-			(at 129.54 175.26 0)
+			(at 129.54 163.83 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4461,7 +4535,7 @@
 			)
 		)
 		(property "Footprint" "easyeda2kicad:DSBGA-4_L0.8-W0.8-R2-C2-P0.40-BL"
-			(at 129.54 190.5 0)
+			(at 129.54 179.07 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4470,15 +4544,6 @@
 			)
 		)
 		(property "Datasheet" "https://lcsc.com/product-detail/Others_Texas-Instruments_LMT70AYFQR_Texas-Instruments-TI-LMT70AYFQR_C294608.html"
-			(at 129.54 193.04 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" ""
 			(at 129.54 181.61 0)
 			(effects
 				(font
@@ -4487,8 +4552,17 @@
 				(hide yes)
 			)
 		)
+		(property "Description" ""
+			(at 129.54 170.18 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(property "Manufacturer" "TI(德州仪器)"
-			(at 129.54 195.58 0)
+			(at 129.54 184.15 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4497,7 +4571,7 @@
 			)
 		)
 		(property "MPN" "LMT70AYFQR"
-			(at 129.54 198.12 0)
+			(at 129.54 186.69 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4506,7 +4580,7 @@
 			)
 		)
 		(property "LCSC Part" "C294608"
-			(at 129.54 200.66 0)
+			(at 129.54 189.23 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5235,7 +5309,7 @@
 	)
 	(symbol
 		(lib_id "rx-parts:GND")
-		(at 116.84 180.34 270)
+		(at 116.84 168.91 270)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -5243,7 +5317,7 @@
 		(dnp no)
 		(uuid "4bb2d4a4-1b7e-46af-9161-f03242184b6a")
 		(property "Reference" "#PWR020"
-			(at 110.49 180.34 0)
+			(at 110.49 168.91 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5252,7 +5326,7 @@
 			)
 		)
 		(property "Value" "GND"
-			(at 111.76 180.34 90)
+			(at 111.76 168.91 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5260,7 +5334,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 116.84 180.34 0)
+			(at 116.84 168.91 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5269,7 +5343,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 116.84 180.34 0)
+			(at 116.84 168.91 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5278,7 +5352,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 116.84 180.34 0)
+			(at 116.84 168.91 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5428,6 +5502,73 @@
 			(project "rx-pcb"
 				(path "/9df8ddb8-545e-44cf-b4e7-941b19ec42ab"
 					(reference "#PWR014")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "rx-parts:R")
+		(at 137.16 190.5 90)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "53fbe2a2-e5fe-40fb-859f-53360db54733")
+		(property "Reference" "R5"
+			(at 137.16 187.96 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "10k"
+			(at 137.16 190.5 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "rx-parts:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder"
+			(at 137.16 192.278 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 137.16 190.5 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Resistor"
+			(at 137.16 190.5 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "1099ea94-d48d-4224-b7e5-4a62ea9fe0ce")
+		)
+		(pin "1"
+			(uuid "00b11be3-17cf-4907-bd95-f3395b6d0bda")
+		)
+		(instances
+			(project "rx-pcb"
+				(path "/9df8ddb8-545e-44cf-b4e7-941b19ec42ab"
+					(reference "R5")
 					(unit 1)
 				)
 			)
@@ -5837,6 +5978,71 @@
 			(project "rx-pcb"
 				(path "/9df8ddb8-545e-44cf-b4e7-941b19ec42ab"
 					(reference "C10")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "rx-parts:GND")
+		(at 124.46 190.5 270)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "78766f6d-5954-4a96-a9b3-1f4abd744365")
+		(property "Reference" "#PWR023"
+			(at 118.11 190.5 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "GND"
+			(at 119.38 190.5 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 124.46 190.5 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 124.46 190.5 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 124.46 190.5 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "c1ec9fa9-87eb-4420-9f38-5d307a09c0f2")
+		)
+		(instances
+			(project "rx-pcb"
+				(path "/9df8ddb8-545e-44cf-b4e7-941b19ec42ab"
+					(reference "#PWR023")
 					(unit 1)
 				)
 			)
@@ -6577,6 +6783,82 @@
 		)
 	)
 	(symbol
+		(lib_id "rx-parts:LED")
+		(at 128.27 182.88 180)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "bbc1ac79-ab7e-40e3-8df3-abe3a8e8670f")
+		(property "Reference" "D2"
+			(at 128.27 180.086 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "LED"
+			(at 128.27 185.674 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "rx-parts:LED_0805_2012Metric_Pad1.15x1.40mm_HandSolder"
+			(at 128.27 182.88 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 128.27 182.88 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Light emitting diode"
+			(at 128.27 182.88 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Pins" "1=K 2=A"
+			(at 128.27 182.88 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "22ca86af-a6d8-4d9f-b8c1-6205a4f35b91")
+		)
+		(pin "1"
+			(uuid "ff332263-7023-437a-ac82-0ec20980e8dc")
+		)
+		(instances
+			(project ""
+				(path "/9df8ddb8-545e-44cf-b4e7-941b19ec42ab"
+					(reference "D2")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "rx-parts:GND")
 		(at 40.64 121.92 0)
 		(unit 1)
@@ -7032,6 +7314,147 @@
 			(project ""
 				(path "/9df8ddb8-545e-44cf-b4e7-941b19ec42ab"
 					(reference "R1")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "rx-parts:GND")
+		(at 124.46 182.88 270)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "c75964c5-b895-42a1-8b68-30c03dfffd12")
+		(property "Reference" "#PWR022"
+			(at 118.11 182.88 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "GND"
+			(at 119.38 182.88 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 124.46 182.88 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 124.46 182.88 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 124.46 182.88 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "1b0e13ad-2236-4b26-b519-7f9e9263222c")
+		)
+		(instances
+			(project "rx-pcb"
+				(path "/9df8ddb8-545e-44cf-b4e7-941b19ec42ab"
+					(reference "#PWR022")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "rx-parts:LED")
+		(at 128.27 190.5 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "cc731b96-47f3-4a33-aad1-679eb195498b")
+		(property "Reference" "D3"
+			(at 128.27 193.294 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "LED"
+			(at 128.27 187.706 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "rx-parts:LED_0805_2012Metric_Pad1.15x1.40mm_HandSolder"
+			(at 128.27 190.5 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 128.27 190.5 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Light emitting diode"
+			(at 128.27 190.5 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Pins" "1=K 2=A"
+			(at 128.27 190.5 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "45ddf0fb-4f77-4eab-8386-56e246d25081")
+		)
+		(pin "1"
+			(uuid "b7879505-c324-4d74-9033-bfaa37a73299")
+		)
+		(instances
+			(project "rx-pcb"
+				(path "/9df8ddb8-545e-44cf-b4e7-941b19ec42ab"
+					(reference "D3")
 					(unit 1)
 				)
 			)
