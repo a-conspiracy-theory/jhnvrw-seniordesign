@@ -240,7 +240,7 @@
       "internal_id": "",
       "mfg": "",
       "mpn": "",
-      "sch_revision": "1.0.0"
+      "sch_revision": ""
     },
     "layer_pairs": [],
     "layer_presets": [],
@@ -488,7 +488,7 @@
     "pinned_symbol_libs": []
   },
   "meta": {
-    "filename": "tx-pcb.kicad_pro",
+    "filename": "rf-pwr-tx.kicad_pro",
     "version": 3
   },
   "net_settings": {
@@ -522,14 +522,10 @@
   },
   "pcbnew": {
     "last_paths": {
-      "gencad": "",
       "idf": "",
       "netlist": "",
       "plot": "",
-      "pos_files": "",
       "specctra_dsn": "",
-      "step": "",
-      "svg": "",
       "vrml": ""
     },
     "page_layout_descr_file": ""
@@ -640,14 +636,6 @@
     "meta": {
       "version": 1
     },
-    "ngspice": {
-      "fix_include_paths": true,
-      "meta": {
-        "version": 0
-      },
-      "model_mode": 4,
-      "workbook_filename": ""
-    },
     "page_layout_descr_file": "",
     "plot_directory": "",
     "reuse_designators": true,
@@ -655,22 +643,18 @@
     "subpart_id_separator": 0,
     "top_level_sheets": [
       {
-        "filename": "tx-pcb.kicad_sch",
-        "name": "tx-pcb",
-        "uuid": "aa7f20e8-e05d-4c2a-a791-3275e92b22ea"
+        "filename": "rf-pwr-tx.kicad_sch",
+        "name": "Root",
+        "uuid": "ee3ddc67-1f9c-4ffe-bb34-2aaf3b339f01"
       }
     ],
-    "used_designators": "",
+    "used_designators": "#PWR37,#PWR45,C1",
     "variants": []
   },
   "sheets": [
     [
-      "aa7f20e8-e05d-4c2a-a791-3275e92b22ea",
-      "tx-pcb"
-    ],
-    [
-      "72ba04b0-fe7f-41e8-b610-c4a7635c7fd9",
-      "Power"
+      "ee3ddc67-1f9c-4ffe-bb34-2aaf3b339f01",
+      "Root"
     ]
   ],
   "text_variables": {},

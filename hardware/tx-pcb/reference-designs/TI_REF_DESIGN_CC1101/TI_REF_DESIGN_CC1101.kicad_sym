@@ -1,0 +1,8089 @@
+(kicad_symbol_lib
+	(version 20251024)
+	(generator "kicad_symbol_editor")
+	(generator_version "10.0")
+	(symbol "CC1101"
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(duplicate_pin_numbers_are_jumpers no)
+		(property "Reference" "U"
+			(at 0 0 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.6087 2.032)
+				)
+			)
+		)
+		(property "Value" ""
+			(at 0 0 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "CC1101EM_868_915MHz_3_0_0:QLP20 (Reflow)"
+			(at 0 0 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 0 0 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Single chip tranceiver"
+			(at 0 0 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Part Name" "CC1101"
+			(at -13.97 68.961 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.6087 2.032)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Component Reference" ""
+			(at -13.843 71.628 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(hide yes)
+			(effects
+				(font
+					(size 1.6087 2.032)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "pick_and_place" "P"
+			(at 0 0 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(hide yes)
+			(effects
+				(font
+					(size 1.6087 2.032)
+				)
+				(justify right bottom)
+			)
+		)
+		(property "ki_fp_filters" "QLP20 QLP20{space}(Reflow)"
+			(at 0 0 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(symbol "CC1101_1_0"
+			(polyline
+				(pts
+					(xy -18.034 45.72) (xy -13.97 45.72)
+				)
+				(stroke
+					(width 0.254)
+					(type solid)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(polyline
+				(pts
+					(xy -17.78 66.04) (xy -13.97 66.04)
+				)
+				(stroke
+					(width 0.254)
+					(type solid)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(polyline
+				(pts
+					(xy -17.78 60.833) (xy -13.97 60.833)
+				)
+				(stroke
+					(width 0.254)
+					(type solid)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(polyline
+				(pts
+					(xy -17.78 55.88) (xy -13.97 55.88)
+				)
+				(stroke
+					(width 0.254)
+					(type solid)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(polyline
+				(pts
+					(xy -17.78 50.8) (xy -13.97 50.8)
+				)
+				(stroke
+					(width 0.254)
+					(type solid)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(polyline
+				(pts
+					(xy -17.78 40.64) (xy -13.97 40.64)
+				)
+				(stroke
+					(width 0.254)
+					(type solid)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(polyline
+				(pts
+					(xy -17.78 33.02) (xy -13.97 33.02)
+				)
+				(stroke
+					(width 0.254)
+					(type solid)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(polyline
+				(pts
+					(xy -17.78 27.94) (xy -13.97 27.94)
+				)
+				(stroke
+					(width 0.254)
+					(type solid)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(polyline
+				(pts
+					(xy -17.78 20.32) (xy -13.97 20.32)
+				)
+				(stroke
+					(width 0.254)
+					(type solid)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(polyline
+				(pts
+					(xy -17.78 15.24) (xy -13.97 15.24)
+				)
+				(stroke
+					(width 0.254)
+					(type solid)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(polyline
+				(pts
+					(xy -17.653 10.16) (xy -13.97 10.16)
+				)
+				(stroke
+					(width 0.254)
+					(type solid)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(polyline
+				(pts
+					(xy -14.097 5.08) (xy -17.78 5.08)
+				)
+				(stroke
+					(width 0.254)
+					(type solid)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(polyline
+				(pts
+					(xy -13.97 68.58) (xy 24.257 68.58) (xy 24.257 -1.397) (xy -13.97 -1.397) (xy -13.97 68.58)
+				)
+				(stroke
+					(width 0.254)
+					(type solid)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(polyline
+				(pts
+					(xy 24.13 66.04) (xy 27.94 66.04)
+				)
+				(stroke
+					(width 0.254)
+					(type solid)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(polyline
+				(pts
+					(xy 27.94 60.96) (xy 24.257 60.96)
+				)
+				(stroke
+					(width 0.254)
+					(type solid)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(polyline
+				(pts
+					(xy 27.94 53.34) (xy 24.257 53.34)
+				)
+				(stroke
+					(width 0.254)
+					(type solid)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(polyline
+				(pts
+					(xy 27.94 45.72) (xy 24.257 45.72)
+				)
+				(stroke
+					(width 0.254)
+					(type solid)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(polyline
+				(pts
+					(xy 27.94 40.64) (xy 24.257 40.64)
+				)
+				(stroke
+					(width 0.254)
+					(type solid)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(polyline
+				(pts
+					(xy 27.94 35.56) (xy 24.257 35.56)
+				)
+				(stroke
+					(width 0.254)
+					(type solid)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(polyline
+				(pts
+					(xy 27.94 22.86) (xy 24.384 22.86)
+				)
+				(stroke
+					(width 0.254)
+					(type solid)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(polyline
+				(pts
+					(xy 27.94 17.78) (xy 24.257 17.78)
+				)
+				(stroke
+					(width 0.254)
+					(type solid)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(polyline
+				(pts
+					(xy 28.067 30.48) (xy 24.257 30.48)
+				)
+				(stroke
+					(width 0.254)
+					(type solid)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(text "XOSC_Q1"
+				(at -12.827 31.2327 0)
+				(effects
+					(font
+						(size 1.6087 2.032)
+					)
+					(justify left bottom)
+				)
+			)
+			(text "XOSC_Q2"
+				(at -12.827 26.1527 0)
+				(effects
+					(font
+						(size 1.6087 2.032)
+					)
+					(justify left bottom)
+				)
+			)
+			(text "DVDD"
+				(at -12.573 18.5327 0)
+				(effects
+					(font
+						(size 1.6087 2.032)
+					)
+					(justify left bottom)
+				)
+			)
+			(text "DGUARD"
+				(at -12.573 8.2457 0)
+				(effects
+					(font
+						(size 1.6087 2.032)
+					)
+					(justify left bottom)
+				)
+			)
+			(text "GDO0(ATEST)"
+				(at -12.446 64.1257 0)
+				(effects
+					(font
+						(size 1.6087 2.032)
+					)
+					(justify left bottom)
+				)
+			)
+			(text "GDO2"
+				(at -12.446 59.0457 0)
+				(effects
+					(font
+						(size 1.6087 2.032)
+					)
+					(justify left bottom)
+				)
+			)
+			(text "CSn"
+				(at -12.446 53.9657 0)
+				(effects
+					(font
+						(size 1.6087 2.032)
+					)
+					(justify left bottom)
+				)
+			)
+			(text "SCLK"
+				(at -12.446 48.8857 0)
+				(effects
+					(font
+						(size 1.6087 2.032)
+					)
+					(justify left bottom)
+				)
+			)
+			(text "SI"
+				(at -12.446 44.0597 0)
+				(effects
+					(font
+						(size 1.6087 2.032)
+					)
+					(justify left bottom)
+				)
+			)
+			(text "SO(GDO1)"
+				(at -12.446 38.7257 0)
+				(effects
+					(font
+						(size 1.6087 2.032)
+					)
+					(justify left bottom)
+				)
+			)
+			(text "DCOUPL"
+				(at -12.319 13.5797 0)
+				(effects
+					(font
+						(size 1.6087 2.032)
+					)
+					(justify left bottom)
+				)
+			)
+			(text "GND"
+				(at -12.065 3.2927 0)
+				(effects
+					(font
+						(size 1.6087 2.032)
+					)
+					(justify left bottom)
+				)
+			)
+			(text "RBIAS"
+				(at 14.605 51.5527 0)
+				(effects
+					(font
+						(size 1.6087 2.032)
+					)
+					(justify left bottom)
+				)
+			)
+			(text "RF_P"
+				(at 15.367 63.9987 0)
+				(effects
+					(font
+						(size 1.6087 2.032)
+					)
+					(justify left bottom)
+				)
+			)
+			(text "RF_N"
+				(at 15.621 59.0457 0)
+				(effects
+					(font
+						(size 1.6087 2.032)
+					)
+					(justify left bottom)
+				)
+			)
+			(text "AVDD"
+				(at 15.748 43.9327 0)
+				(effects
+					(font
+						(size 1.6087 2.032)
+					)
+					(justify left bottom)
+				)
+			)
+			(text "AVDD"
+				(at 15.748 38.7257 0)
+				(effects
+					(font
+						(size 1.6087 2.032)
+					)
+					(justify left bottom)
+				)
+			)
+			(text "AVDD"
+				(at 15.748 33.6457 0)
+				(effects
+					(font
+						(size 1.6087 2.032)
+					)
+					(justify left bottom)
+				)
+			)
+			(text "AVDD"
+				(at 15.748 28.6927 0)
+				(effects
+					(font
+						(size 1.6087 2.032)
+					)
+					(justify left bottom)
+				)
+			)
+			(text "GND"
+				(at 17.78 15.9927 0)
+				(effects
+					(font
+						(size 1.6087 2.032)
+					)
+					(justify left bottom)
+				)
+			)
+			(text "GND"
+				(at 17.907 20.9457 0)
+				(effects
+					(font
+						(size 1.6087 2.032)
+					)
+					(justify left bottom)
+				)
+			)
+			(pin passive line
+				(at -17.78 50.8 0)
+				(length 3.81)
+				(name ""
+					(effects
+						(font
+							(size 1.4076 1.4076)
+						)
+					)
+				)
+				(number "1"
+					(effects
+						(font
+							(size 1.4076 1.4076)
+						)
+					)
+				)
+			)
+			(pin passive line
+				(at -17.78 40.64 0)
+				(length 3.81)
+				(name ""
+					(effects
+						(font
+							(size 1.4076 1.4076)
+						)
+					)
+				)
+				(number "2"
+					(effects
+						(font
+							(size 1.4076 1.4076)
+						)
+					)
+				)
+			)
+			(pin passive line
+				(at -17.78 60.96 0)
+				(length 0)
+				(name ""
+					(effects
+						(font
+							(size 1.4076 1.4076)
+						)
+					)
+				)
+				(number "3"
+					(effects
+						(font
+							(size 1.4076 1.4076)
+						)
+					)
+				)
+			)
+			(pin passive line
+				(at -17.78 20.32 0)
+				(length 3.81)
+				(name ""
+					(effects
+						(font
+							(size 1.4076 1.4076)
+						)
+					)
+				)
+				(number "4"
+					(effects
+						(font
+							(size 1.4076 1.4076)
+						)
+					)
+				)
+			)
+			(pin passive line
+				(at -17.78 15.24 0)
+				(length 3.81)
+				(name ""
+					(effects
+						(font
+							(size 1.4076 1.4076)
+						)
+					)
+				)
+				(number "5"
+					(effects
+						(font
+							(size 1.4076 1.4076)
+						)
+					)
+				)
+			)
+			(pin passive line
+				(at -17.78 66.04 0)
+				(length 3.81)
+				(name ""
+					(effects
+						(font
+							(size 1.4076 1.4076)
+						)
+					)
+				)
+				(number "6"
+					(effects
+						(font
+							(size 1.4076 1.4076)
+						)
+					)
+				)
+			)
+			(pin passive line
+				(at -17.78 55.88 0)
+				(length 3.81)
+				(name ""
+					(effects
+						(font
+							(size 1.4076 1.4076)
+						)
+					)
+				)
+				(number "7"
+					(effects
+						(font
+							(size 1.4076 1.4076)
+						)
+					)
+				)
+			)
+			(pin passive line
+				(at -17.78 33.02 0)
+				(length 3.81)
+				(name ""
+					(effects
+						(font
+							(size 1.4076 1.4076)
+						)
+					)
+				)
+				(number "8"
+					(effects
+						(font
+							(size 1.4076 1.4076)
+						)
+					)
+				)
+			)
+			(pin passive line
+				(at 27.94 45.72 180)
+				(length 3.683)
+				(name ""
+					(effects
+						(font
+							(size 1.4076 1.4076)
+						)
+					)
+				)
+				(number "9"
+					(effects
+						(font
+							(size 1.4076 1.4076)
+						)
+					)
+				)
+			)
+			(pin passive line
+				(at -17.78 27.94 0)
+				(length 3.81)
+				(name ""
+					(effects
+						(font
+							(size 1.4076 1.4076)
+						)
+					)
+				)
+				(number "10"
+					(effects
+						(font
+							(size 1.4076 1.4076)
+						)
+					)
+				)
+			)
+			(pin passive line
+				(at 27.94 40.64 180)
+				(length 3.683)
+				(name ""
+					(effects
+						(font
+							(size 1.4076 1.4076)
+						)
+					)
+				)
+				(number "11"
+					(effects
+						(font
+							(size 1.4076 1.4076)
+						)
+					)
+				)
+			)
+			(pin passive line
+				(at 27.94 66.04 180)
+				(length 3.81)
+				(name ""
+					(effects
+						(font
+							(size 1.4076 1.4076)
+						)
+					)
+				)
+				(number "12"
+					(effects
+						(font
+							(size 1.4076 1.4076)
+						)
+					)
+				)
+			)
+			(pin passive line
+				(at 27.94 60.96 180)
+				(length 3.683)
+				(name ""
+					(effects
+						(font
+							(size 1.4076 1.4076)
+						)
+					)
+				)
+				(number "13"
+					(effects
+						(font
+							(size 1.4076 1.4076)
+						)
+					)
+				)
+			)
+			(pin passive line
+				(at 27.94 35.56 180)
+				(length 3.683)
+				(name ""
+					(effects
+						(font
+							(size 1.4076 1.4076)
+						)
+					)
+				)
+				(number "14"
+					(effects
+						(font
+							(size 1.4076 1.4076)
+						)
+					)
+				)
+			)
+			(pin passive line
+				(at 27.94 30.48 0)
+				(length 0)
+				(name ""
+					(effects
+						(font
+							(size 1.4076 1.4076)
+						)
+					)
+				)
+				(number "15"
+					(effects
+						(font
+							(size 1.4076 1.4076)
+						)
+					)
+				)
+			)
+			(pin passive line
+				(at 27.94 22.86 180)
+				(length 3.556)
+				(name ""
+					(effects
+						(font
+							(size 1.4076 1.4076)
+						)
+					)
+				)
+				(number "16"
+					(effects
+						(font
+							(size 1.4076 1.4076)
+						)
+					)
+				)
+			)
+			(pin passive line
+				(at 27.94 53.34 180)
+				(length 3.683)
+				(name ""
+					(effects
+						(font
+							(size 1.4076 1.4076)
+						)
+					)
+				)
+				(number "17"
+					(effects
+						(font
+							(size 1.4076 1.4076)
+						)
+					)
+				)
+			)
+			(pin passive line
+				(at -17.78 10.16 0)
+				(length 0)
+				(name ""
+					(effects
+						(font
+							(size 1.4076 1.4076)
+						)
+					)
+				)
+				(number "18"
+					(effects
+						(font
+							(size 1.4076 1.4076)
+						)
+					)
+				)
+			)
+			(pin passive line
+				(at -17.78 5.08 0)
+				(length 3.683)
+				(name ""
+					(effects
+						(font
+							(size 1.4076 1.4076)
+						)
+					)
+				)
+				(number "19"
+					(effects
+						(font
+							(size 1.4076 1.4076)
+						)
+					)
+				)
+			)
+			(pin passive line
+				(at -17.78 45.72 0)
+				(length 0)
+				(name ""
+					(effects
+						(font
+							(size 1.4076 1.4076)
+						)
+					)
+				)
+				(number "20"
+					(effects
+						(font
+							(size 1.4076 1.4076)
+						)
+					)
+				)
+			)
+			(pin passive line
+				(at 27.94 17.78 180)
+				(length 3.683)
+				(name ""
+					(effects
+						(font
+							(size 1.4076 1.4076)
+						)
+					)
+				)
+				(number "21"
+					(effects
+						(font
+							(size 1.4076 1.4076)
+						)
+					)
+				)
+			)
+		)
+		(embedded_fonts no)
+	)
+	(symbol "C_100N_0402_X5R_K_10"
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(duplicate_pin_numbers_are_jumpers no)
+		(property "Reference" "C"
+			(at 3.81 -1.3 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.6087 1.4478)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Value" ""
+			(at 0 0 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "CC1101EM_868_915MHz_3_0_0:0402 (REFLOW)"
+			(at 0 0 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 0 0 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Capacitor 0402"
+			(at 0 0 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Part Name" "C_100N_0402_X5R_K_10"
+			(at 3.81 -3.81 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.6087 1.4478)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "pcb_zone" ""
+			(at 3.81 -11.585 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(hide yes)
+			(effects
+				(font
+					(size 1.6087 1.4478)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "tolerance" ""
+			(at 3.81 -6.35 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(hide yes)
+			(effects
+				(font
+					(size 1.6087 1.4478)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "voltage" ""
+			(at 3.81 -8.89 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(hide yes)
+			(effects
+				(font
+					(size 1.6087 1.4478)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "pick_and_place" "P"
+			(at 0 0 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(hide yes)
+			(effects
+				(font
+					(size 1.6087 2.032)
+				)
+				(justify right bottom)
+			)
+		)
+		(property "(PartDefinitionNoSwaps)" "NGS"
+			(at 0 0 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(hide yes)
+			(effects
+				(font
+					(size 1.6087 2.032)
+				)
+				(justify right bottom)
+			)
+		)
+		(property "ki_fp_filters" "0402 0402{space}(REFLOW)"
+			(at 0 0 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(symbol "C_100N_0402_X5R_K_10_1_0"
+			(polyline
+				(pts
+					(xy -2.54 -2.54) (xy 2.54 -2.54)
+				)
+				(stroke
+					(width 0.381)
+					(type solid)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(polyline
+				(pts
+					(xy 0 0) (xy 0 -2.54)
+				)
+				(stroke
+					(width 0.254)
+					(type solid)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(polyline
+				(pts
+					(xy 0 -3.81) (xy 0 -6.35)
+				)
+				(stroke
+					(width 0.254)
+					(type solid)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(polyline
+				(pts
+					(xy 2.54 -3.81) (xy -2.54 -3.81)
+				)
+				(stroke
+					(width 0.381)
+					(type solid)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(pin passive line
+				(at 0 0 90)
+				(length 2.54)
+				(name ""
+					(effects
+						(font
+							(size 1.4076 1.4076)
+						)
+					)
+				)
+				(number "1"
+					(effects
+						(font
+							(size 1.4076 1.4076)
+						)
+					)
+				)
+			)
+			(pin passive line
+				(at 0 -6.35 270)
+				(length 2.54)
+				(name ""
+					(effects
+						(font
+							(size 1.4076 1.4076)
+						)
+					)
+				)
+				(number "2"
+					(effects
+						(font
+							(size 1.4076 1.4076)
+						)
+					)
+				)
+			)
+		)
+		(embedded_fonts no)
+	)
+	(symbol "C_100P_0402_NP0_J_50"
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(duplicate_pin_numbers_are_jumpers no)
+		(property "Reference" "C"
+			(at 3.81 -1.3 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.6087 1.4478)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Value" ""
+			(at 0 0 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "CC1101EM_868_915MHz_3_0_0:0402 (REFLOW)"
+			(at 0 0 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 0 0 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Capacitor 0402"
+			(at 0 0 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Part Name" "C_100P_0402_NP0_J_50"
+			(at 3.81 -3.81 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.6087 1.4478)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "pcb_zone" ""
+			(at 3.81 -11.585 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(hide yes)
+			(effects
+				(font
+					(size 1.6087 1.4478)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "tolerance" ""
+			(at 3.81 -6.35 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(hide yes)
+			(effects
+				(font
+					(size 1.6087 1.4478)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "voltage" ""
+			(at 3.81 -8.89 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(hide yes)
+			(effects
+				(font
+					(size 1.6087 1.4478)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "pick_and_place" "P"
+			(at 0 0 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(hide yes)
+			(effects
+				(font
+					(size 1.6087 2.032)
+				)
+				(justify right bottom)
+			)
+		)
+		(property "(PartDefinitionNoSwaps)" "NGS"
+			(at 0 0 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(hide yes)
+			(effects
+				(font
+					(size 1.6087 2.032)
+				)
+				(justify right bottom)
+			)
+		)
+		(property "ki_fp_filters" "0402 0402{space}(REFLOW)"
+			(at 0 0 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(symbol "C_100P_0402_NP0_J_50_1_0"
+			(polyline
+				(pts
+					(xy -2.54 -2.54) (xy 2.54 -2.54)
+				)
+				(stroke
+					(width 0.381)
+					(type solid)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(polyline
+				(pts
+					(xy 0 0) (xy 0 -2.54)
+				)
+				(stroke
+					(width 0.254)
+					(type solid)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(polyline
+				(pts
+					(xy 0 -3.81) (xy 0 -6.35)
+				)
+				(stroke
+					(width 0.254)
+					(type solid)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(polyline
+				(pts
+					(xy 2.54 -3.81) (xy -2.54 -3.81)
+				)
+				(stroke
+					(width 0.381)
+					(type solid)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(pin passive line
+				(at 0 0 90)
+				(length 2.54)
+				(name ""
+					(effects
+						(font
+							(size 1.4076 1.4076)
+						)
+					)
+				)
+				(number "1"
+					(effects
+						(font
+							(size 1.4076 1.4076)
+						)
+					)
+				)
+			)
+			(pin passive line
+				(at 0 -6.35 270)
+				(length 2.54)
+				(name ""
+					(effects
+						(font
+							(size 1.4076 1.4076)
+						)
+					)
+				)
+				(number "2"
+					(effects
+						(font
+							(size 1.4076 1.4076)
+						)
+					)
+				)
+			)
+		)
+		(embedded_fonts no)
+	)
+	(symbol "C_12P_0402_NP0_J_50"
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(duplicate_pin_numbers_are_jumpers no)
+		(property "Reference" "C"
+			(at 3.81 -1.3 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.6087 1.4478)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Value" ""
+			(at 0 0 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "CC1101EM_868_915MHz_3_0_0:0402 (REFLOW)"
+			(at 0 0 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 0 0 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Capacitor 0402"
+			(at 0 0 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Part Name" "C_12P_0402_NP0_J_50"
+			(at 3.81 -3.81 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.6087 1.4478)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "pcb_zone" ""
+			(at 3.81 -11.585 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(hide yes)
+			(effects
+				(font
+					(size 1.6087 1.4478)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "tolerance" ""
+			(at 3.81 -6.35 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(hide yes)
+			(effects
+				(font
+					(size 1.6087 1.4478)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "voltage" ""
+			(at 3.81 -8.89 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(hide yes)
+			(effects
+				(font
+					(size 1.6087 1.4478)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "pick_and_place" "P"
+			(at 0 0 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(hide yes)
+			(effects
+				(font
+					(size 1.6087 2.032)
+				)
+				(justify right bottom)
+			)
+		)
+		(property "(PartDefinitionNoSwaps)" "NGS"
+			(at 0 0 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(hide yes)
+			(effects
+				(font
+					(size 1.6087 2.032)
+				)
+				(justify right bottom)
+			)
+		)
+		(property "ki_fp_filters" "0402 0402{space}(REFLOW)"
+			(at 0 0 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(symbol "C_12P_0402_NP0_J_50_1_0"
+			(polyline
+				(pts
+					(xy -2.54 -2.54) (xy 2.54 -2.54)
+				)
+				(stroke
+					(width 0.381)
+					(type solid)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(polyline
+				(pts
+					(xy 0 0) (xy 0 -2.54)
+				)
+				(stroke
+					(width 0.254)
+					(type solid)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(polyline
+				(pts
+					(xy 0 -3.81) (xy 0 -6.35)
+				)
+				(stroke
+					(width 0.254)
+					(type solid)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(polyline
+				(pts
+					(xy 2.54 -3.81) (xy -2.54 -3.81)
+				)
+				(stroke
+					(width 0.381)
+					(type solid)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(pin passive line
+				(at 0 0 90)
+				(length 2.54)
+				(name ""
+					(effects
+						(font
+							(size 1.4076 1.4076)
+						)
+					)
+				)
+				(number "1"
+					(effects
+						(font
+							(size 1.4076 1.4076)
+						)
+					)
+				)
+			)
+			(pin passive line
+				(at 0 -6.35 270)
+				(length 2.54)
+				(name ""
+					(effects
+						(font
+							(size 1.4076 1.4076)
+						)
+					)
+				)
+				(number "2"
+					(effects
+						(font
+							(size 1.4076 1.4076)
+						)
+					)
+				)
+			)
+		)
+		(embedded_fonts no)
+	)
+	(symbol "C_15P_0402_NP0_J_50"
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(duplicate_pin_numbers_are_jumpers no)
+		(property "Reference" "C"
+			(at 3.81 -1.3 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.6087 1.4478)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Value" ""
+			(at 0 0 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "CC1101EM_868_915MHz_3_0_0:0402 (REFLOW LF)"
+			(at 0 0 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 0 0 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Capacitor, 0402"
+			(at 0 0 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Part Name" "C_15P_0402_NP0_J_50"
+			(at 3.81 -3.81 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.6087 1.4478)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "pcb_zone" ""
+			(at 3.81 -11.585 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(hide yes)
+			(effects
+				(font
+					(size 1.6087 1.4478)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "tolerance" ""
+			(at 3.81 -6.35 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(hide yes)
+			(effects
+				(font
+					(size 1.6087 1.4478)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "voltage" ""
+			(at 3.81 -8.89 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(hide yes)
+			(effects
+				(font
+					(size 1.6087 1.4478)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "pick_and_place" "P"
+			(at 0 0 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(hide yes)
+			(effects
+				(font
+					(size 1.6087 2.032)
+				)
+				(justify right bottom)
+			)
+		)
+		(property "(PartDefinitionNoSwaps)" "NGS"
+			(at 0 0 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(hide yes)
+			(effects
+				(font
+					(size 1.6087 2.032)
+				)
+				(justify right bottom)
+			)
+		)
+		(property "ki_fp_filters" "0402 0402{space}(REFLOW{space}LF)"
+			(at 0 0 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(symbol "C_15P_0402_NP0_J_50_1_0"
+			(polyline
+				(pts
+					(xy -2.54 -2.54) (xy 2.54 -2.54)
+				)
+				(stroke
+					(width 0.381)
+					(type solid)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(polyline
+				(pts
+					(xy 0 0) (xy 0 -2.54)
+				)
+				(stroke
+					(width 0.254)
+					(type solid)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(polyline
+				(pts
+					(xy 0 -3.81) (xy 0 -6.35)
+				)
+				(stroke
+					(width 0.254)
+					(type solid)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(polyline
+				(pts
+					(xy 2.54 -3.81) (xy -2.54 -3.81)
+				)
+				(stroke
+					(width 0.381)
+					(type solid)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(pin passive line
+				(at 0 0 90)
+				(length 2.54)
+				(name ""
+					(effects
+						(font
+							(size 1.4076 1.4076)
+						)
+					)
+				)
+				(number "1"
+					(effects
+						(font
+							(size 1.4076 1.4076)
+						)
+					)
+				)
+			)
+			(pin passive line
+				(at 0 -6.35 270)
+				(length 2.54)
+				(name ""
+					(effects
+						(font
+							(size 1.4076 1.4076)
+						)
+					)
+				)
+				(number "2"
+					(effects
+						(font
+							(size 1.4076 1.4076)
+						)
+					)
+				)
+			)
+		)
+		(embedded_fonts no)
+	)
+	(symbol "C_1P0_0402_NP0_C_50"
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(duplicate_pin_numbers_are_jumpers no)
+		(property "Reference" "C"
+			(at 3.81 -1.3 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.6087 1.4478)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Value" ""
+			(at 0 0 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "CC1101EM_868_915MHz_3_0_0:0402 (REFLOW)"
+			(at 0 0 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 0 0 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Capacitor 0402"
+			(at 0 0 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Part Name" "C_1P0_0402_NP0_C_50"
+			(at 3.81 -3.81 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.6087 1.4478)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "pcb_zone" ""
+			(at 3.81 -11.585 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(hide yes)
+			(effects
+				(font
+					(size 1.6087 1.4478)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "tolerance" ""
+			(at 3.81 -6.35 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(hide yes)
+			(effects
+				(font
+					(size 1.6087 1.4478)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "voltage" ""
+			(at 3.81 -8.89 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(hide yes)
+			(effects
+				(font
+					(size 1.6087 1.4478)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "pick_and_place" "P"
+			(at 0 0 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(hide yes)
+			(effects
+				(font
+					(size 1.6087 2.032)
+				)
+				(justify right bottom)
+			)
+		)
+		(property "(PartDefinitionNoSwaps)" "NGS"
+			(at 0 0 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(hide yes)
+			(effects
+				(font
+					(size 1.6087 2.032)
+				)
+				(justify right bottom)
+			)
+		)
+		(property "ki_fp_filters" "0402 0402{space}(REFLOW)"
+			(at 0 0 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(symbol "C_1P0_0402_NP0_C_50_1_0"
+			(polyline
+				(pts
+					(xy -2.54 -2.54) (xy 2.54 -2.54)
+				)
+				(stroke
+					(width 0.381)
+					(type solid)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(polyline
+				(pts
+					(xy 0 0) (xy 0 -2.54)
+				)
+				(stroke
+					(width 0.254)
+					(type solid)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(polyline
+				(pts
+					(xy 0 -3.81) (xy 0 -6.35)
+				)
+				(stroke
+					(width 0.254)
+					(type solid)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(polyline
+				(pts
+					(xy 2.54 -3.81) (xy -2.54 -3.81)
+				)
+				(stroke
+					(width 0.381)
+					(type solid)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(pin passive line
+				(at 0 0 90)
+				(length 2.54)
+				(name ""
+					(effects
+						(font
+							(size 1.4076 1.4076)
+						)
+					)
+				)
+				(number "1"
+					(effects
+						(font
+							(size 1.4076 1.4076)
+						)
+					)
+				)
+			)
+			(pin passive line
+				(at 0 -6.35 270)
+				(length 2.54)
+				(name ""
+					(effects
+						(font
+							(size 1.4076 1.4076)
+						)
+					)
+				)
+				(number "2"
+					(effects
+						(font
+							(size 1.4076 1.4076)
+						)
+					)
+				)
+			)
+		)
+		(embedded_fonts no)
+	)
+	(symbol "C_1P5_0402_NP0_C_50"
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(duplicate_pin_numbers_are_jumpers no)
+		(property "Reference" "C"
+			(at 3.81 -1.3 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.6087 1.4478)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Value" ""
+			(at 0 0 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "CC1101EM_868_915MHz_3_0_0:0402 (REFLOW)"
+			(at 0 0 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 0 0 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Capacitor 0402"
+			(at 0 0 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Part Name" "C_1P5_0402_NP0_C_50"
+			(at 3.81 -3.81 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.6087 1.4478)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "pcb_zone" ""
+			(at 3.81 -11.585 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(hide yes)
+			(effects
+				(font
+					(size 1.6087 1.4478)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "tolerance" ""
+			(at 3.81 -6.35 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(hide yes)
+			(effects
+				(font
+					(size 1.6087 1.4478)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "voltage" ""
+			(at 3.81 -8.89 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(hide yes)
+			(effects
+				(font
+					(size 1.6087 1.4478)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "pick_and_place" "P"
+			(at 0 0 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(hide yes)
+			(effects
+				(font
+					(size 1.6087 2.032)
+				)
+				(justify right bottom)
+			)
+		)
+		(property "(PartDefinitionNoSwaps)" "NGS"
+			(at 0 0 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(hide yes)
+			(effects
+				(font
+					(size 1.6087 2.032)
+				)
+				(justify right bottom)
+			)
+		)
+		(property "ki_fp_filters" "0402 0402{space}(REFLOW)"
+			(at 0 0 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(symbol "C_1P5_0402_NP0_C_50_1_0"
+			(polyline
+				(pts
+					(xy -2.54 -2.54) (xy 2.54 -2.54)
+				)
+				(stroke
+					(width 0.381)
+					(type solid)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(polyline
+				(pts
+					(xy 0 0) (xy 0 -2.54)
+				)
+				(stroke
+					(width 0.254)
+					(type solid)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(polyline
+				(pts
+					(xy 0 -3.81) (xy 0 -6.35)
+				)
+				(stroke
+					(width 0.254)
+					(type solid)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(polyline
+				(pts
+					(xy 2.54 -3.81) (xy -2.54 -3.81)
+				)
+				(stroke
+					(width 0.381)
+					(type solid)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(pin passive line
+				(at 0 0 90)
+				(length 2.54)
+				(name ""
+					(effects
+						(font
+							(size 1.4076 1.4076)
+						)
+					)
+				)
+				(number "1"
+					(effects
+						(font
+							(size 1.4076 1.4076)
+						)
+					)
+				)
+			)
+			(pin passive line
+				(at 0 -6.35 270)
+				(length 2.54)
+				(name ""
+					(effects
+						(font
+							(size 1.4076 1.4076)
+						)
+					)
+				)
+				(number "2"
+					(effects
+						(font
+							(size 1.4076 1.4076)
+						)
+					)
+				)
+			)
+		)
+		(embedded_fonts no)
+	)
+	(symbol "C_1U_0805_X7R_K_16"
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(duplicate_pin_numbers_are_jumpers no)
+		(property "Reference" "C"
+			(at 3.81 -1.3 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.6087 1.4478)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Value" ""
+			(at 0 0 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "CC1101EM_868_915MHz_3_0_0:0805 (reflow)"
+			(at 0 0 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 0 0 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Capacitor 0805"
+			(at 0 0 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Part Name" "C_1U_0805_X7R_K_16"
+			(at 3.81 -3.81 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.6087 1.4478)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "pcb_zone" ""
+			(at 3.81 -11.585 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(hide yes)
+			(effects
+				(font
+					(size 1.6087 1.4478)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "tolerance" ""
+			(at 3.81 -6.35 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(hide yes)
+			(effects
+				(font
+					(size 1.6087 1.4478)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "voltage" ""
+			(at 3.81 -8.89 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(hide yes)
+			(effects
+				(font
+					(size 1.6087 1.4478)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "pick_and_place" "P"
+			(at 0 0 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(hide yes)
+			(effects
+				(font
+					(size 1.6087 2.032)
+				)
+				(justify right bottom)
+			)
+		)
+		(property "(PartDefinitionNoSwaps)" "NGS"
+			(at 0 0 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(hide yes)
+			(effects
+				(font
+					(size 1.6087 2.032)
+				)
+				(justify right bottom)
+			)
+		)
+		(property "ki_fp_filters" "0805 0805{space}(reflow)"
+			(at 0 0 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(symbol "C_1U_0805_X7R_K_16_1_0"
+			(polyline
+				(pts
+					(xy -2.54 -2.54) (xy 2.54 -2.54)
+				)
+				(stroke
+					(width 0.381)
+					(type solid)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(polyline
+				(pts
+					(xy 0 0) (xy 0 -2.54)
+				)
+				(stroke
+					(width 0.254)
+					(type solid)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(polyline
+				(pts
+					(xy 0 -3.81) (xy 0 -6.35)
+				)
+				(stroke
+					(width 0.254)
+					(type solid)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(polyline
+				(pts
+					(xy 2.54 -3.81) (xy -2.54 -3.81)
+				)
+				(stroke
+					(width 0.381)
+					(type solid)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(pin passive line
+				(at 0 0 90)
+				(length 2.54)
+				(name ""
+					(effects
+						(font
+							(size 1.4076 1.4076)
+						)
+					)
+				)
+				(number "1"
+					(effects
+						(font
+							(size 1.4076 1.4076)
+						)
+					)
+				)
+			)
+			(pin passive line
+				(at 0 -6.35 270)
+				(length 2.54)
+				(name ""
+					(effects
+						(font
+							(size 1.4076 1.4076)
+						)
+					)
+				)
+				(number "2"
+					(effects
+						(font
+							(size 1.4076 1.4076)
+						)
+					)
+				)
+			)
+		)
+		(embedded_fonts no)
+	)
+	(symbol "C_3P3_0402_NP0_C_50"
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(duplicate_pin_numbers_are_jumpers no)
+		(property "Reference" "C"
+			(at 3.81 -1.3 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.6087 1.4478)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Value" ""
+			(at 0 0 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "CC1101EM_868_915MHz_3_0_0:0402 (REFLOW)"
+			(at 0 0 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 0 0 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Capacitor 0402"
+			(at 0 0 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Part Name" "C_3P3_0402_NP0_C_50"
+			(at 3.81 -3.81 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.6087 1.4478)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "pcb_zone" ""
+			(at 3.81 -11.585 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(hide yes)
+			(effects
+				(font
+					(size 1.6087 1.4478)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "tolerance" ""
+			(at 3.81 -6.35 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(hide yes)
+			(effects
+				(font
+					(size 1.6087 1.4478)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "voltage" ""
+			(at 3.81 -8.89 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(hide yes)
+			(effects
+				(font
+					(size 1.6087 1.4478)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "pick_and_place" "P"
+			(at 0 0 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(hide yes)
+			(effects
+				(font
+					(size 1.6087 2.032)
+				)
+				(justify right bottom)
+			)
+		)
+		(property "(PartDefinitionNoSwaps)" "NGS"
+			(at 0 0 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(hide yes)
+			(effects
+				(font
+					(size 1.6087 2.032)
+				)
+				(justify right bottom)
+			)
+		)
+		(property "ki_fp_filters" "0402 0402{space}(REFLOW)"
+			(at 0 0 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(symbol "C_3P3_0402_NP0_C_50_1_0"
+			(polyline
+				(pts
+					(xy -2.54 -2.54) (xy 2.54 -2.54)
+				)
+				(stroke
+					(width 0.381)
+					(type solid)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(polyline
+				(pts
+					(xy 0 0) (xy 0 -2.54)
+				)
+				(stroke
+					(width 0.254)
+					(type solid)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(polyline
+				(pts
+					(xy 0 -3.81) (xy 0 -6.35)
+				)
+				(stroke
+					(width 0.254)
+					(type solid)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(polyline
+				(pts
+					(xy 2.54 -3.81) (xy -2.54 -3.81)
+				)
+				(stroke
+					(width 0.381)
+					(type solid)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(pin passive line
+				(at 0 0 90)
+				(length 2.54)
+				(name ""
+					(effects
+						(font
+							(size 1.4076 1.4076)
+						)
+					)
+				)
+				(number "1"
+					(effects
+						(font
+							(size 1.4076 1.4076)
+						)
+					)
+				)
+			)
+			(pin passive line
+				(at 0 -6.35 270)
+				(length 2.54)
+				(name ""
+					(effects
+						(font
+							(size 1.4076 1.4076)
+						)
+					)
+				)
+				(number "2"
+					(effects
+						(font
+							(size 1.4076 1.4076)
+						)
+					)
+				)
+			)
+		)
+		(embedded_fonts no)
+	)
+	(symbol "C_47P_0402_NP0_J_50"
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(duplicate_pin_numbers_are_jumpers no)
+		(property "Reference" "C"
+			(at 3.81 -1.3 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.6087 1.4478)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Value" ""
+			(at 0 0 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "CC1101EM_868_915MHz_3_0_0:0402 (REFLOW)"
+			(at 0 0 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 0 0 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Capacitor, 0402"
+			(at 0 0 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Part Name" "C_47P_0402_NP0_J_50"
+			(at 3.81 -3.81 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.6087 1.4478)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "pcb_zone" ""
+			(at 3.81 -11.585 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(hide yes)
+			(effects
+				(font
+					(size 1.6087 1.4478)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "tolerance" ""
+			(at 3.81 -6.35 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(hide yes)
+			(effects
+				(font
+					(size 1.6087 1.4478)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "voltage" ""
+			(at 3.81 -8.89 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(hide yes)
+			(effects
+				(font
+					(size 1.6087 1.4478)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "pick_and_place" "P"
+			(at 0 0 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(hide yes)
+			(effects
+				(font
+					(size 1.6087 2.032)
+				)
+				(justify right bottom)
+			)
+		)
+		(property "(PartDefinitionNoSwaps)" "NGS"
+			(at 0 0 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(hide yes)
+			(effects
+				(font
+					(size 1.6087 2.032)
+				)
+				(justify right bottom)
+			)
+		)
+		(property "ki_fp_filters" "0402 0402{space}(REFLOW)"
+			(at 0 0 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(symbol "C_47P_0402_NP0_J_50_1_0"
+			(polyline
+				(pts
+					(xy -2.54 -2.54) (xy 2.54 -2.54)
+				)
+				(stroke
+					(width 0.381)
+					(type solid)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(polyline
+				(pts
+					(xy 0 0) (xy 0 -2.54)
+				)
+				(stroke
+					(width 0.254)
+					(type solid)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(polyline
+				(pts
+					(xy 0 -3.81) (xy 0 -6.35)
+				)
+				(stroke
+					(width 0.254)
+					(type solid)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(polyline
+				(pts
+					(xy 2.54 -3.81) (xy -2.54 -3.81)
+				)
+				(stroke
+					(width 0.381)
+					(type solid)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(pin passive line
+				(at 0 0 90)
+				(length 2.54)
+				(name ""
+					(effects
+						(font
+							(size 1.4076 1.4076)
+						)
+					)
+				)
+				(number "1"
+					(effects
+						(font
+							(size 1.4076 1.4076)
+						)
+					)
+				)
+			)
+			(pin passive line
+				(at 0 -6.35 270)
+				(length 2.54)
+				(name ""
+					(effects
+						(font
+							(size 1.4076 1.4076)
+						)
+					)
+				)
+				(number "2"
+					(effects
+						(font
+							(size 1.4076 1.4076)
+						)
+					)
+				)
+			)
+		)
+		(embedded_fonts no)
+	)
+	(symbol "FIDUCIAL_MARK"
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(duplicate_pin_numbers_are_jumpers no)
+		(property "Reference" "FM"
+			(at 0 2.54 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.6087 1.4478)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Value" ""
+			(at 0 0 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "CC1101EM_868_915MHz_3_0_0:FIDUCAL_MARK"
+			(at 0 0 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 0 0 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Fiducial mark"
+			(at 0 0 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Part Name" "FIDUCIAL_MARK"
+			(at 0 5.08 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.6087 1.4478)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "pick_and_place" "P"
+			(at 0 0 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(hide yes)
+			(effects
+				(font
+					(size 1.6087 2.032)
+				)
+				(justify right bottom)
+			)
+		)
+		(property "ki_fp_filters" "FIDUCAL_MARK"
+			(at 0 0 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(symbol "FIDUCIAL_MARK_1_0"
+			(arc
+				(start -1.016 -2.54)
+				(mid 0 -1.524)
+				(end 1.016 -2.54)
+				(stroke
+					(width 0.254)
+					(type solid)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(arc
+				(start 1.016 -2.54)
+				(mid 0 -3.556)
+				(end -1.016 -2.54)
+				(stroke
+					(width 0.254)
+					(type solid)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(polyline
+				(pts
+					(xy 0 -4.2672) (xy -0.1864 -4.2623) (xy -0.5509 -4.1848) (xy -0.8914 -4.0332) (xy -1.193 -3.8142)
+					(xy -1.4424 -3.5372) (xy -1.6288 -3.2144) (xy -1.7439 -2.8599) (xy -1.7829 -2.4892) (xy -1.7439 -2.1185)
+					(xy -1.6288 -1.764) (xy -1.4424 -1.4412) (xy -1.193 -1.1642) (xy -0.8915 -0.9452) (xy -0.5509 -0.7936)
+					(xy -0.1864 -0.7161) (xy 0 -0.7112) (xy 0.1864 -0.7161) (xy 0.5509 -0.7936) (xy 0.8915 -0.9452)
+					(xy 1.193 -1.1642) (xy 1.4424 -1.4412) (xy 1.6288 -1.764) (xy 1.7439 -2.1185) (xy 1.7829 -2.4892)
+					(xy 1.7439 -2.8599) (xy 1.6288 -3.2144) (xy 1.4424 -3.5372) (xy 1.193 -3.8142) (xy 0.8914 -4.0332)
+					(xy 0.5509 -4.1848) (xy 0.1864 -4.2623) (xy 0 -4.2672)
+				)
+				(stroke
+					(width 0.254)
+					(type dash)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(pin passive line
+				(at 0 -2.54 0)
+				(length 0)
+				(name ""
+					(effects
+						(font
+							(size 1.4076 1.4076)
+						)
+					)
+				)
+				(number "1"
+					(effects
+						(font
+							(size 1.4076 1.4076)
+						)
+					)
+				)
+			)
+		)
+		(embedded_fonts no)
+	)
+	(symbol "GND"
+		(power global)
+		(pin_numbers
+			(hide yes)
+		)
+		(pin_names
+			(hide yes)
+		)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(duplicate_pin_numbers_are_jumpers no)
+		(property "Reference" "#PWR"
+			(at 0 0 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(hide yes)
+			(effects
+				(font
+					(size 1.6087 2.032)
+				)
+			)
+		)
+		(property "Value" "GND"
+			(at 0 0 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 0 0 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 0 0 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" ""
+			(at 0 0 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Part Name" ""
+			(at 0 0 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.6087 2.032)
+				)
+			)
+		)
+		(symbol "GND_1_0"
+			(polyline
+				(pts
+					(xy 0.635 -2.54) (xy -0.635 -2.54)
+				)
+				(stroke
+					(width 0.254)
+					(type solid)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(polyline
+				(pts
+					(xy 1.905 -1.27) (xy -1.905 -1.27)
+				)
+				(stroke
+					(width 0.254)
+					(type solid)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(polyline
+				(pts
+					(xy 2.54 0) (xy -2.54 0)
+				)
+				(stroke
+					(width 0.254)
+					(type solid)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(pin power_in line
+				(at 0 0 0)
+				(length 0)
+				(name "GND"
+					(effects
+						(font
+							(size 1.4076 1.4076)
+						)
+					)
+				)
+				(number "1"
+					(effects
+						(font
+							(size 1.4076 1.4076)
+						)
+					)
+				)
+			)
+		)
+		(embedded_fonts no)
+	)
+	(symbol "L_12N_0402_J_LQW"
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(duplicate_pin_numbers_are_jumpers no)
+		(property "Reference" "L"
+			(at 0.635 6.35 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.6087 2.032)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Value" ""
+			(at 0 0 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "CC1101EM_868_915MHz_3_0_0:0402 (REFLOW)"
+			(at 0 0 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 0 0 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Inductor, 12nH, 0402, Wire-wound type, +/-5 %"
+			(at 0 0 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Part Name" "L_12N_0402_J_LQW"
+			(at 0.635 3.81 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.6087 1.4478)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "pick_and_place" "P"
+			(at 0 0 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(hide yes)
+			(effects
+				(font
+					(size 1.6087 2.032)
+				)
+				(justify right bottom)
+			)
+		)
+		(property "ki_fp_filters" "0402 0402{space}(REFLOW)"
+			(at 0 0 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(symbol "L_12N_0402_J_LQW_1_0"
+			(polyline
+				(pts
+					(xy 0 0) (xy 2.54 0)
+				)
+				(stroke
+					(width 0.254)
+					(type solid)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(polyline
+				(pts
+					(xy 2.5908 0.0508) (xy 2.5908 -0.1524)
+				)
+				(stroke
+					(width 0.1016)
+					(type solid)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(polyline
+				(pts
+					(xy 2.5908 -0.1524) (xy 2.6416 -0.3556)
+				)
+				(stroke
+					(width 0.1016)
+					(type solid)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(polyline
+				(pts
+					(xy 2.6416 -0.3556) (xy 2.794 -0.6096)
+				)
+				(stroke
+					(width 0.1016)
+					(type solid)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(polyline
+				(pts
+					(xy 2.794 -0.6096) (xy 2.9972 -0.7112)
+				)
+				(stroke
+					(width 0.1016)
+					(type solid)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(polyline
+				(pts
+					(xy 2.9972 -0.7112) (xy 3.2512 -0.7112)
+				)
+				(stroke
+					(width 0.1016)
+					(type solid)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(polyline
+				(pts
+					(xy 3.2512 -0.7112) (xy 3.5052 -0.6096)
+				)
+				(stroke
+					(width 0.1016)
+					(type solid)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(polyline
+				(pts
+					(xy 3.5052 -0.6096) (xy 3.7592 -0.2032)
+				)
+				(stroke
+					(width 0.1016)
+					(type solid)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(polyline
+				(pts
+					(xy 3.7592 -0.2032) (xy 3.7592 0.0508)
+				)
+				(stroke
+					(width 0.1016)
+					(type solid)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(polyline
+				(pts
+					(xy 3.8608 0) (xy 3.8608 -0.2032)
+				)
+				(stroke
+					(width 0.1016)
+					(type solid)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(polyline
+				(pts
+					(xy 3.8608 -0.2032) (xy 3.9624 -0.4572)
+				)
+				(stroke
+					(width 0.1016)
+					(type solid)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(polyline
+				(pts
+					(xy 3.9624 -0.4572) (xy 4.1148 -0.7112)
+				)
+				(stroke
+					(width 0.1016)
+					(type solid)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(polyline
+				(pts
+					(xy 4.1148 -0.7112) (xy 4.3688 -0.762)
+				)
+				(stroke
+					(width 0.1016)
+					(type solid)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(polyline
+				(pts
+					(xy 4.3688 -0.762) (xy 4.6228 -0.762)
+				)
+				(stroke
+					(width 0.1016)
+					(type solid)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(polyline
+				(pts
+					(xy 4.6228 -0.762) (xy 4.8768 -0.6604)
+				)
+				(stroke
+					(width 0.1016)
+					(type solid)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(polyline
+				(pts
+					(xy 4.8768 -0.6604) (xy 5.08 -0.254)
+				)
+				(stroke
+					(width 0.1016)
+					(type solid)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(polyline
+				(pts
+					(xy 5.08 -0.254) (xy 5.08 0)
+				)
+				(stroke
+					(width 0.1016)
+					(type solid)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(polyline
+				(pts
+					(xy 5.1308 0) (xy 5.1308 -0.2032)
+				)
+				(stroke
+					(width 0.1016)
+					(type solid)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(polyline
+				(pts
+					(xy 5.1308 -0.2032) (xy 5.1816 -0.4064)
+				)
+				(stroke
+					(width 0.1016)
+					(type solid)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(polyline
+				(pts
+					(xy 5.1816 -0.4064) (xy 5.334 -0.6604)
+				)
+				(stroke
+					(width 0.1016)
+					(type solid)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(polyline
+				(pts
+					(xy 5.334 -0.6604) (xy 5.5372 -0.762)
+				)
+				(stroke
+					(width 0.1016)
+					(type solid)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(polyline
+				(pts
+					(xy 5.5372 -0.762) (xy 5.7912 -0.762)
+				)
+				(stroke
+					(width 0.1016)
+					(type solid)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(polyline
+				(pts
+					(xy 5.7912 -0.762) (xy 6.0452 -0.6604)
+				)
+				(stroke
+					(width 0.1016)
+					(type solid)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(polyline
+				(pts
+					(xy 6.0452 -0.6604) (xy 6.2992 -0.254)
+				)
+				(stroke
+					(width 0.1016)
+					(type solid)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(polyline
+				(pts
+					(xy 6.2992 -0.254) (xy 6.2992 0)
+				)
+				(stroke
+					(width 0.1016)
+					(type solid)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(polyline
+				(pts
+					(xy 6.4008 -0.0508) (xy 6.4008 -0.254)
+				)
+				(stroke
+					(width 0.1016)
+					(type solid)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(polyline
+				(pts
+					(xy 6.4008 -0.254) (xy 6.5024 -0.508)
+				)
+				(stroke
+					(width 0.1016)
+					(type solid)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(polyline
+				(pts
+					(xy 6.5024 -0.508) (xy 6.6548 -0.762)
+				)
+				(stroke
+					(width 0.1016)
+					(type solid)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(polyline
+				(pts
+					(xy 6.6548 -0.762) (xy 6.9088 -0.8128)
+				)
+				(stroke
+					(width 0.1016)
+					(type solid)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(polyline
+				(pts
+					(xy 6.9088 -0.8128) (xy 7.1628 -0.8128)
+				)
+				(stroke
+					(width 0.1016)
+					(type solid)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(polyline
+				(pts
+					(xy 7.1628 -0.8128) (xy 7.4168 -0.7112)
+				)
+				(stroke
+					(width 0.1016)
+					(type solid)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(polyline
+				(pts
+					(xy 7.4168 -0.7112) (xy 7.62 -0.3048)
+				)
+				(stroke
+					(width 0.1016)
+					(type solid)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(polyline
+				(pts
+					(xy 7.62 0) (xy 7.62 -0.2032)
+				)
+				(stroke
+					(width 0.1016)
+					(type solid)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(polyline
+				(pts
+					(xy 7.62 -0.2032) (xy 7.6708 -0.4064)
+				)
+				(stroke
+					(width 0.1016)
+					(type solid)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(polyline
+				(pts
+					(xy 7.62 -0.3048) (xy 7.62 -0.0508)
+				)
+				(stroke
+					(width 0.1016)
+					(type solid)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(polyline
+				(pts
+					(xy 7.6708 -0.4064) (xy 7.8232 -0.6604)
+				)
+				(stroke
+					(width 0.1016)
+					(type solid)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(polyline
+				(pts
+					(xy 7.8232 -0.6604) (xy 8.0264 -0.762)
+				)
+				(stroke
+					(width 0.1016)
+					(type solid)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(polyline
+				(pts
+					(xy 8.0264 -0.762) (xy 8.2804 -0.762)
+				)
+				(stroke
+					(width 0.1016)
+					(type solid)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(polyline
+				(pts
+					(xy 8.2804 -0.762) (xy 8.5344 -0.6604)
+				)
+				(stroke
+					(width 0.1016)
+					(type solid)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(polyline
+				(pts
+					(xy 8.5344 -0.6604) (xy 8.7884 -0.254)
+				)
+				(stroke
+					(width 0.1016)
+					(type solid)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(polyline
+				(pts
+					(xy 8.7884 -0.254) (xy 8.7884 0)
+				)
+				(stroke
+					(width 0.1016)
+					(type solid)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(polyline
+				(pts
+					(xy 8.89 -0.0508) (xy 8.89 -0.254)
+				)
+				(stroke
+					(width 0.1016)
+					(type solid)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(polyline
+				(pts
+					(xy 8.89 -0.254) (xy 8.9916 -0.508)
+				)
+				(stroke
+					(width 0.1016)
+					(type solid)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(polyline
+				(pts
+					(xy 8.9916 -0.508) (xy 9.144 -0.762)
+				)
+				(stroke
+					(width 0.1016)
+					(type solid)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(polyline
+				(pts
+					(xy 9.144 -0.762) (xy 9.398 -0.8128)
+				)
+				(stroke
+					(width 0.1016)
+					(type solid)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(polyline
+				(pts
+					(xy 9.398 -0.8128) (xy 9.652 -0.8128)
+				)
+				(stroke
+					(width 0.1016)
+					(type solid)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(polyline
+				(pts
+					(xy 9.652 -0.8128) (xy 9.906 -0.7112)
+				)
+				(stroke
+					(width 0.1016)
+					(type solid)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(polyline
+				(pts
+					(xy 9.906 -0.7112) (xy 10.1092 -0.3048)
+				)
+				(stroke
+					(width 0.1016)
+					(type solid)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(polyline
+				(pts
+					(xy 10.1092 -0.3048) (xy 10.1092 -0.0508)
+				)
+				(stroke
+					(width 0.1016)
+					(type solid)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(polyline
+				(pts
+					(xy 12.7 0) (xy 10.16 0)
+				)
+				(stroke
+					(width 0.254)
+					(type solid)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(pin passive line
+				(at 0 0 0)
+				(length 2.54)
+				(name ""
+					(effects
+						(font
+							(size 1.4076 1.4076)
+						)
+					)
+				)
+				(number "1"
+					(effects
+						(font
+							(size 1.4076 1.4076)
+						)
+					)
+				)
+			)
+			(pin passive line
+				(at 12.7 0 180)
+				(length 2.54)
+				(name ""
+					(effects
+						(font
+							(size 1.4076 1.4076)
+						)
+					)
+				)
+				(number "2"
+					(effects
+						(font
+							(size 1.4076 1.4076)
+						)
+					)
+				)
+			)
+		)
+		(embedded_fonts no)
+	)
+	(symbol "L_18N_0402_J_LQW"
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(duplicate_pin_numbers_are_jumpers no)
+		(property "Reference" "L"
+			(at 0.635 6.35 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.6087 2.032)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Value" ""
+			(at 0 0 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "CC1101EM_868_915MHz_3_0_0:0402 (REFLOW)"
+			(at 0 0 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 0 0 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Inductor, 18nH, 0402, Wire-wound type, +/- 5%"
+			(at 0 0 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Part Name" "L_18N_0402_J_LQW"
+			(at 0.635 3.81 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.6087 1.4478)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "pick_and_place" "P"
+			(at 0 0 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(hide yes)
+			(effects
+				(font
+					(size 1.6087 2.032)
+				)
+				(justify right bottom)
+			)
+		)
+		(property "ki_fp_filters" "0402 0402{space}(REFLOW)"
+			(at 0 0 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(symbol "L_18N_0402_J_LQW_1_0"
+			(polyline
+				(pts
+					(xy 0 0) (xy 2.54 0)
+				)
+				(stroke
+					(width 0.254)
+					(type solid)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(polyline
+				(pts
+					(xy 2.5908 0.0508) (xy 2.5908 -0.1524)
+				)
+				(stroke
+					(width 0.1016)
+					(type solid)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(polyline
+				(pts
+					(xy 2.5908 -0.1524) (xy 2.6416 -0.3556)
+				)
+				(stroke
+					(width 0.1016)
+					(type solid)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(polyline
+				(pts
+					(xy 2.6416 -0.3556) (xy 2.794 -0.6096)
+				)
+				(stroke
+					(width 0.1016)
+					(type solid)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(polyline
+				(pts
+					(xy 2.794 -0.6096) (xy 2.9972 -0.7112)
+				)
+				(stroke
+					(width 0.1016)
+					(type solid)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(polyline
+				(pts
+					(xy 2.9972 -0.7112) (xy 3.2512 -0.7112)
+				)
+				(stroke
+					(width 0.1016)
+					(type solid)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(polyline
+				(pts
+					(xy 3.2512 -0.7112) (xy 3.5052 -0.6096)
+				)
+				(stroke
+					(width 0.1016)
+					(type solid)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(polyline
+				(pts
+					(xy 3.5052 -0.6096) (xy 3.7592 -0.2032)
+				)
+				(stroke
+					(width 0.1016)
+					(type solid)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(polyline
+				(pts
+					(xy 3.7592 -0.2032) (xy 3.7592 0.0508)
+				)
+				(stroke
+					(width 0.1016)
+					(type solid)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(polyline
+				(pts
+					(xy 3.8608 0) (xy 3.8608 -0.2032)
+				)
+				(stroke
+					(width 0.1016)
+					(type solid)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(polyline
+				(pts
+					(xy 3.8608 -0.2032) (xy 3.9624 -0.4572)
+				)
+				(stroke
+					(width 0.1016)
+					(type solid)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(polyline
+				(pts
+					(xy 3.9624 -0.4572) (xy 4.1148 -0.7112)
+				)
+				(stroke
+					(width 0.1016)
+					(type solid)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(polyline
+				(pts
+					(xy 4.1148 -0.7112) (xy 4.3688 -0.762)
+				)
+				(stroke
+					(width 0.1016)
+					(type solid)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(polyline
+				(pts
+					(xy 4.3688 -0.762) (xy 4.6228 -0.762)
+				)
+				(stroke
+					(width 0.1016)
+					(type solid)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(polyline
+				(pts
+					(xy 4.6228 -0.762) (xy 4.8768 -0.6604)
+				)
+				(stroke
+					(width 0.1016)
+					(type solid)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(polyline
+				(pts
+					(xy 4.8768 -0.6604) (xy 5.08 -0.254)
+				)
+				(stroke
+					(width 0.1016)
+					(type solid)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(polyline
+				(pts
+					(xy 5.08 -0.254) (xy 5.08 0)
+				)
+				(stroke
+					(width 0.1016)
+					(type solid)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(polyline
+				(pts
+					(xy 5.1308 0) (xy 5.1308 -0.2032)
+				)
+				(stroke
+					(width 0.1016)
+					(type solid)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(polyline
+				(pts
+					(xy 5.1308 -0.2032) (xy 5.1816 -0.4064)
+				)
+				(stroke
+					(width 0.1016)
+					(type solid)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(polyline
+				(pts
+					(xy 5.1816 -0.4064) (xy 5.334 -0.6604)
+				)
+				(stroke
+					(width 0.1016)
+					(type solid)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(polyline
+				(pts
+					(xy 5.334 -0.6604) (xy 5.5372 -0.762)
+				)
+				(stroke
+					(width 0.1016)
+					(type solid)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(polyline
+				(pts
+					(xy 5.5372 -0.762) (xy 5.7912 -0.762)
+				)
+				(stroke
+					(width 0.1016)
+					(type solid)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(polyline
+				(pts
+					(xy 5.7912 -0.762) (xy 6.0452 -0.6604)
+				)
+				(stroke
+					(width 0.1016)
+					(type solid)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(polyline
+				(pts
+					(xy 6.0452 -0.6604) (xy 6.2992 -0.254)
+				)
+				(stroke
+					(width 0.1016)
+					(type solid)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(polyline
+				(pts
+					(xy 6.2992 -0.254) (xy 6.2992 0)
+				)
+				(stroke
+					(width 0.1016)
+					(type solid)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(polyline
+				(pts
+					(xy 6.4008 -0.0508) (xy 6.4008 -0.254)
+				)
+				(stroke
+					(width 0.1016)
+					(type solid)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(polyline
+				(pts
+					(xy 6.4008 -0.254) (xy 6.5024 -0.508)
+				)
+				(stroke
+					(width 0.1016)
+					(type solid)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(polyline
+				(pts
+					(xy 6.5024 -0.508) (xy 6.6548 -0.762)
+				)
+				(stroke
+					(width 0.1016)
+					(type solid)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(polyline
+				(pts
+					(xy 6.6548 -0.762) (xy 6.9088 -0.8128)
+				)
+				(stroke
+					(width 0.1016)
+					(type solid)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(polyline
+				(pts
+					(xy 6.9088 -0.8128) (xy 7.1628 -0.8128)
+				)
+				(stroke
+					(width 0.1016)
+					(type solid)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(polyline
+				(pts
+					(xy 7.1628 -0.8128) (xy 7.4168 -0.7112)
+				)
+				(stroke
+					(width 0.1016)
+					(type solid)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(polyline
+				(pts
+					(xy 7.4168 -0.7112) (xy 7.62 -0.3048)
+				)
+				(stroke
+					(width 0.1016)
+					(type solid)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(polyline
+				(pts
+					(xy 7.62 0) (xy 7.62 -0.2032)
+				)
+				(stroke
+					(width 0.1016)
+					(type solid)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(polyline
+				(pts
+					(xy 7.62 -0.2032) (xy 7.6708 -0.4064)
+				)
+				(stroke
+					(width 0.1016)
+					(type solid)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(polyline
+				(pts
+					(xy 7.62 -0.3048) (xy 7.62 -0.0508)
+				)
+				(stroke
+					(width 0.1016)
+					(type solid)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(polyline
+				(pts
+					(xy 7.6708 -0.4064) (xy 7.8232 -0.6604)
+				)
+				(stroke
+					(width 0.1016)
+					(type solid)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(polyline
+				(pts
+					(xy 7.8232 -0.6604) (xy 8.0264 -0.762)
+				)
+				(stroke
+					(width 0.1016)
+					(type solid)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(polyline
+				(pts
+					(xy 8.0264 -0.762) (xy 8.2804 -0.762)
+				)
+				(stroke
+					(width 0.1016)
+					(type solid)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(polyline
+				(pts
+					(xy 8.2804 -0.762) (xy 8.5344 -0.6604)
+				)
+				(stroke
+					(width 0.1016)
+					(type solid)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(polyline
+				(pts
+					(xy 8.5344 -0.6604) (xy 8.7884 -0.254)
+				)
+				(stroke
+					(width 0.1016)
+					(type solid)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(polyline
+				(pts
+					(xy 8.7884 -0.254) (xy 8.7884 0)
+				)
+				(stroke
+					(width 0.1016)
+					(type solid)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(polyline
+				(pts
+					(xy 8.89 -0.0508) (xy 8.89 -0.254)
+				)
+				(stroke
+					(width 0.1016)
+					(type solid)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(polyline
+				(pts
+					(xy 8.89 -0.254) (xy 8.9916 -0.508)
+				)
+				(stroke
+					(width 0.1016)
+					(type solid)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(polyline
+				(pts
+					(xy 8.9916 -0.508) (xy 9.144 -0.762)
+				)
+				(stroke
+					(width 0.1016)
+					(type solid)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(polyline
+				(pts
+					(xy 9.144 -0.762) (xy 9.398 -0.8128)
+				)
+				(stroke
+					(width 0.1016)
+					(type solid)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(polyline
+				(pts
+					(xy 9.398 -0.8128) (xy 9.652 -0.8128)
+				)
+				(stroke
+					(width 0.1016)
+					(type solid)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(polyline
+				(pts
+					(xy 9.652 -0.8128) (xy 9.906 -0.7112)
+				)
+				(stroke
+					(width 0.1016)
+					(type solid)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(polyline
+				(pts
+					(xy 9.906 -0.7112) (xy 10.1092 -0.3048)
+				)
+				(stroke
+					(width 0.1016)
+					(type solid)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(polyline
+				(pts
+					(xy 10.1092 -0.3048) (xy 10.1092 -0.0508)
+				)
+				(stroke
+					(width 0.1016)
+					(type solid)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(polyline
+				(pts
+					(xy 12.7 0) (xy 10.16 0)
+				)
+				(stroke
+					(width 0.254)
+					(type solid)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(pin passive line
+				(at 0 0 0)
+				(length 2.54)
+				(name ""
+					(effects
+						(font
+							(size 1.4076 1.4076)
+						)
+					)
+				)
+				(number "1"
+					(effects
+						(font
+							(size 1.4076 1.4076)
+						)
+					)
+				)
+			)
+			(pin passive line
+				(at 12.7 0 180)
+				(length 2.54)
+				(name ""
+					(effects
+						(font
+							(size 1.4076 1.4076)
+						)
+					)
+				)
+				(number "2"
+					(effects
+						(font
+							(size 1.4076 1.4076)
+						)
+					)
+				)
+			)
+		)
+		(embedded_fonts no)
+	)
+	(symbol "L_3N3_0402_J"
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(duplicate_pin_numbers_are_jumpers no)
+		(property "Reference" "L"
+			(at 0.635 6.35 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.6087 2.032)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Value" ""
+			(at 0 0 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "CC1101EM_868_915MHz_3_0_0:0402 (REFLOW)"
+			(at 0 0 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 0 0 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Inductor 0402"
+			(at 0 0 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Part Name" "L_3N3_0402_J"
+			(at 0.635 3.81 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.6087 1.4478)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "pick_and_place" "P"
+			(at 0 0 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(hide yes)
+			(effects
+				(font
+					(size 1.6087 2.032)
+				)
+				(justify right bottom)
+			)
+		)
+		(property "ki_fp_filters" "0402 0402{space}(REFLOW)"
+			(at 0 0 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(symbol "L_3N3_0402_J_1_0"
+			(polyline
+				(pts
+					(xy 0 0) (xy 2.54 0)
+				)
+				(stroke
+					(width 0.254)
+					(type solid)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(polyline
+				(pts
+					(xy 2.5908 0.0508) (xy 2.5908 -0.1524)
+				)
+				(stroke
+					(width 0.1016)
+					(type solid)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(polyline
+				(pts
+					(xy 2.5908 -0.1524) (xy 2.6416 -0.3556)
+				)
+				(stroke
+					(width 0.1016)
+					(type solid)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(polyline
+				(pts
+					(xy 2.6416 -0.3556) (xy 2.794 -0.6096)
+				)
+				(stroke
+					(width 0.1016)
+					(type solid)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(polyline
+				(pts
+					(xy 2.794 -0.6096) (xy 2.9972 -0.7112)
+				)
+				(stroke
+					(width 0.1016)
+					(type solid)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(polyline
+				(pts
+					(xy 2.9972 -0.7112) (xy 3.2512 -0.7112)
+				)
+				(stroke
+					(width 0.1016)
+					(type solid)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(polyline
+				(pts
+					(xy 3.2512 -0.7112) (xy 3.5052 -0.6096)
+				)
+				(stroke
+					(width 0.1016)
+					(type solid)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(polyline
+				(pts
+					(xy 3.5052 -0.6096) (xy 3.7592 -0.2032)
+				)
+				(stroke
+					(width 0.1016)
+					(type solid)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(polyline
+				(pts
+					(xy 3.7592 -0.2032) (xy 3.7592 0.0508)
+				)
+				(stroke
+					(width 0.1016)
+					(type solid)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(polyline
+				(pts
+					(xy 3.8608 0) (xy 3.8608 -0.2032)
+				)
+				(stroke
+					(width 0.1016)
+					(type solid)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(polyline
+				(pts
+					(xy 3.8608 -0.2032) (xy 3.9624 -0.4572)
+				)
+				(stroke
+					(width 0.1016)
+					(type solid)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(polyline
+				(pts
+					(xy 3.9624 -0.4572) (xy 4.1148 -0.7112)
+				)
+				(stroke
+					(width 0.1016)
+					(type solid)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(polyline
+				(pts
+					(xy 4.1148 -0.7112) (xy 4.3688 -0.762)
+				)
+				(stroke
+					(width 0.1016)
+					(type solid)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(polyline
+				(pts
+					(xy 4.3688 -0.762) (xy 4.6228 -0.762)
+				)
+				(stroke
+					(width 0.1016)
+					(type solid)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(polyline
+				(pts
+					(xy 4.6228 -0.762) (xy 4.8768 -0.6604)
+				)
+				(stroke
+					(width 0.1016)
+					(type solid)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(polyline
+				(pts
+					(xy 4.8768 -0.6604) (xy 5.08 -0.254)
+				)
+				(stroke
+					(width 0.1016)
+					(type solid)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(polyline
+				(pts
+					(xy 5.08 -0.254) (xy 5.08 0)
+				)
+				(stroke
+					(width 0.1016)
+					(type solid)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(polyline
+				(pts
+					(xy 5.1308 0) (xy 5.1308 -0.2032)
+				)
+				(stroke
+					(width 0.1016)
+					(type solid)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(polyline
+				(pts
+					(xy 5.1308 -0.2032) (xy 5.1816 -0.4064)
+				)
+				(stroke
+					(width 0.1016)
+					(type solid)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(polyline
+				(pts
+					(xy 5.1816 -0.4064) (xy 5.334 -0.6604)
+				)
+				(stroke
+					(width 0.1016)
+					(type solid)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(polyline
+				(pts
+					(xy 5.334 -0.6604) (xy 5.5372 -0.762)
+				)
+				(stroke
+					(width 0.1016)
+					(type solid)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(polyline
+				(pts
+					(xy 5.5372 -0.762) (xy 5.7912 -0.762)
+				)
+				(stroke
+					(width 0.1016)
+					(type solid)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(polyline
+				(pts
+					(xy 5.7912 -0.762) (xy 6.0452 -0.6604)
+				)
+				(stroke
+					(width 0.1016)
+					(type solid)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(polyline
+				(pts
+					(xy 6.0452 -0.6604) (xy 6.2992 -0.254)
+				)
+				(stroke
+					(width 0.1016)
+					(type solid)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(polyline
+				(pts
+					(xy 6.2992 -0.254) (xy 6.2992 0)
+				)
+				(stroke
+					(width 0.1016)
+					(type solid)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(polyline
+				(pts
+					(xy 6.4008 -0.0508) (xy 6.4008 -0.254)
+				)
+				(stroke
+					(width 0.1016)
+					(type solid)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(polyline
+				(pts
+					(xy 6.4008 -0.254) (xy 6.5024 -0.508)
+				)
+				(stroke
+					(width 0.1016)
+					(type solid)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(polyline
+				(pts
+					(xy 6.5024 -0.508) (xy 6.6548 -0.762)
+				)
+				(stroke
+					(width 0.1016)
+					(type solid)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(polyline
+				(pts
+					(xy 6.6548 -0.762) (xy 6.9088 -0.8128)
+				)
+				(stroke
+					(width 0.1016)
+					(type solid)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(polyline
+				(pts
+					(xy 6.9088 -0.8128) (xy 7.1628 -0.8128)
+				)
+				(stroke
+					(width 0.1016)
+					(type solid)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(polyline
+				(pts
+					(xy 7.1628 -0.8128) (xy 7.4168 -0.7112)
+				)
+				(stroke
+					(width 0.1016)
+					(type solid)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(polyline
+				(pts
+					(xy 7.4168 -0.7112) (xy 7.62 -0.3048)
+				)
+				(stroke
+					(width 0.1016)
+					(type solid)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(polyline
+				(pts
+					(xy 7.62 0) (xy 7.62 -0.2032)
+				)
+				(stroke
+					(width 0.1016)
+					(type solid)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(polyline
+				(pts
+					(xy 7.62 -0.2032) (xy 7.6708 -0.4064)
+				)
+				(stroke
+					(width 0.1016)
+					(type solid)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(polyline
+				(pts
+					(xy 7.62 -0.3048) (xy 7.62 -0.0508)
+				)
+				(stroke
+					(width 0.1016)
+					(type solid)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(polyline
+				(pts
+					(xy 7.6708 -0.4064) (xy 7.8232 -0.6604)
+				)
+				(stroke
+					(width 0.1016)
+					(type solid)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(polyline
+				(pts
+					(xy 7.8232 -0.6604) (xy 8.0264 -0.762)
+				)
+				(stroke
+					(width 0.1016)
+					(type solid)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(polyline
+				(pts
+					(xy 8.0264 -0.762) (xy 8.2804 -0.762)
+				)
+				(stroke
+					(width 0.1016)
+					(type solid)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(polyline
+				(pts
+					(xy 8.2804 -0.762) (xy 8.5344 -0.6604)
+				)
+				(stroke
+					(width 0.1016)
+					(type solid)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(polyline
+				(pts
+					(xy 8.5344 -0.6604) (xy 8.7884 -0.254)
+				)
+				(stroke
+					(width 0.1016)
+					(type solid)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(polyline
+				(pts
+					(xy 8.7884 -0.254) (xy 8.7884 0)
+				)
+				(stroke
+					(width 0.1016)
+					(type solid)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(polyline
+				(pts
+					(xy 8.89 -0.0508) (xy 8.89 -0.254)
+				)
+				(stroke
+					(width 0.1016)
+					(type solid)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(polyline
+				(pts
+					(xy 8.89 -0.254) (xy 8.9916 -0.508)
+				)
+				(stroke
+					(width 0.1016)
+					(type solid)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(polyline
+				(pts
+					(xy 8.9916 -0.508) (xy 9.144 -0.762)
+				)
+				(stroke
+					(width 0.1016)
+					(type solid)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(polyline
+				(pts
+					(xy 9.144 -0.762) (xy 9.398 -0.8128)
+				)
+				(stroke
+					(width 0.1016)
+					(type solid)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(polyline
+				(pts
+					(xy 9.398 -0.8128) (xy 9.652 -0.8128)
+				)
+				(stroke
+					(width 0.1016)
+					(type solid)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(polyline
+				(pts
+					(xy 9.652 -0.8128) (xy 9.906 -0.7112)
+				)
+				(stroke
+					(width 0.1016)
+					(type solid)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(polyline
+				(pts
+					(xy 9.906 -0.7112) (xy 10.1092 -0.3048)
+				)
+				(stroke
+					(width 0.1016)
+					(type solid)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(polyline
+				(pts
+					(xy 10.1092 -0.3048) (xy 10.1092 -0.0508)
+				)
+				(stroke
+					(width 0.1016)
+					(type solid)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(polyline
+				(pts
+					(xy 12.7 0) (xy 10.16 0)
+				)
+				(stroke
+					(width 0.254)
+					(type solid)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(pin passive line
+				(at 0 0 0)
+				(length 2.54)
+				(name ""
+					(effects
+						(font
+							(size 1.4076 1.4076)
+						)
+					)
+				)
+				(number "1"
+					(effects
+						(font
+							(size 1.4076 1.4076)
+						)
+					)
+				)
+			)
+			(pin passive line
+				(at 12.7 0 180)
+				(length 2.54)
+				(name ""
+					(effects
+						(font
+							(size 1.4076 1.4076)
+						)
+					)
+				)
+				(number "2"
+					(effects
+						(font
+							(size 1.4076 1.4076)
+						)
+					)
+				)
+			)
+		)
+		(embedded_fonts no)
+	)
+	(symbol "L_BEAD_102_0402"
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(duplicate_pin_numbers_are_jumpers no)
+		(property "Reference" "L"
+			(at 0.635 6.35 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.6087 2.032)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Value" ""
+			(at 0 0 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "CC1101EM_868_915MHz_3_0_0:0402 (REFLOW)"
+			(at 0 0 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 0 0 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "EMI filter bead"
+			(at 0 0 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Part Name" "L_BEAD_102_0402"
+			(at 0.635 3.81 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.6087 1.4478)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "pick_and_place" "P"
+			(at 0 0 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(hide yes)
+			(effects
+				(font
+					(size 1.6087 2.032)
+				)
+				(justify right bottom)
+			)
+		)
+		(property "(PartNumber)" "BLM15HG102SN1D"
+			(at 0 0 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(hide yes)
+			(effects
+				(font
+					(size 1.6087 2.032)
+				)
+				(justify right bottom)
+			)
+		)
+		(property "ki_fp_filters" "0402 0402{space}(REFLOW)"
+			(at 0 0 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(symbol "L_BEAD_102_0402_1_0"
+			(polyline
+				(pts
+					(xy 0 0) (xy 2.54 0)
+				)
+				(stroke
+					(width 0.254)
+					(type solid)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(polyline
+				(pts
+					(xy 2.5908 0.0508) (xy 2.5908 -0.1524)
+				)
+				(stroke
+					(width 0.1016)
+					(type solid)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(polyline
+				(pts
+					(xy 2.5908 -0.1524) (xy 2.6416 -0.3556)
+				)
+				(stroke
+					(width 0.1016)
+					(type solid)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(polyline
+				(pts
+					(xy 2.6416 -0.3556) (xy 2.794 -0.6096)
+				)
+				(stroke
+					(width 0.1016)
+					(type solid)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(polyline
+				(pts
+					(xy 2.794 -0.6096) (xy 2.9972 -0.7112)
+				)
+				(stroke
+					(width 0.1016)
+					(type solid)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(polyline
+				(pts
+					(xy 2.9972 -0.7112) (xy 3.2512 -0.7112)
+				)
+				(stroke
+					(width 0.1016)
+					(type solid)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(polyline
+				(pts
+					(xy 3.2512 -0.7112) (xy 3.5052 -0.6096)
+				)
+				(stroke
+					(width 0.1016)
+					(type solid)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(polyline
+				(pts
+					(xy 3.5052 -0.6096) (xy 3.7592 -0.2032)
+				)
+				(stroke
+					(width 0.1016)
+					(type solid)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(polyline
+				(pts
+					(xy 3.7592 -0.2032) (xy 3.7592 0.0508)
+				)
+				(stroke
+					(width 0.1016)
+					(type solid)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(polyline
+				(pts
+					(xy 3.8608 0) (xy 3.8608 -0.2032)
+				)
+				(stroke
+					(width 0.1016)
+					(type solid)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(polyline
+				(pts
+					(xy 3.8608 -0.2032) (xy 3.9624 -0.4572)
+				)
+				(stroke
+					(width 0.1016)
+					(type solid)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(polyline
+				(pts
+					(xy 3.9624 -0.4572) (xy 4.1148 -0.7112)
+				)
+				(stroke
+					(width 0.1016)
+					(type solid)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(polyline
+				(pts
+					(xy 4.1148 -0.7112) (xy 4.3688 -0.762)
+				)
+				(stroke
+					(width 0.1016)
+					(type solid)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(polyline
+				(pts
+					(xy 4.3688 -0.762) (xy 4.6228 -0.762)
+				)
+				(stroke
+					(width 0.1016)
+					(type solid)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(polyline
+				(pts
+					(xy 4.6228 -0.762) (xy 4.8768 -0.6604)
+				)
+				(stroke
+					(width 0.1016)
+					(type solid)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(polyline
+				(pts
+					(xy 4.8768 -0.6604) (xy 5.08 -0.254)
+				)
+				(stroke
+					(width 0.1016)
+					(type solid)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(polyline
+				(pts
+					(xy 5.08 -0.254) (xy 5.08 0)
+				)
+				(stroke
+					(width 0.1016)
+					(type solid)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(polyline
+				(pts
+					(xy 5.1308 0) (xy 5.1308 -0.2032)
+				)
+				(stroke
+					(width 0.1016)
+					(type solid)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(polyline
+				(pts
+					(xy 5.1308 -0.2032) (xy 5.1816 -0.4064)
+				)
+				(stroke
+					(width 0.1016)
+					(type solid)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(polyline
+				(pts
+					(xy 5.1816 -0.4064) (xy 5.334 -0.6604)
+				)
+				(stroke
+					(width 0.1016)
+					(type solid)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(polyline
+				(pts
+					(xy 5.334 -0.6604) (xy 5.5372 -0.762)
+				)
+				(stroke
+					(width 0.1016)
+					(type solid)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(polyline
+				(pts
+					(xy 5.5372 -0.762) (xy 5.7912 -0.762)
+				)
+				(stroke
+					(width 0.1016)
+					(type solid)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(polyline
+				(pts
+					(xy 5.7912 -0.762) (xy 6.0452 -0.6604)
+				)
+				(stroke
+					(width 0.1016)
+					(type solid)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(polyline
+				(pts
+					(xy 6.0452 -0.6604) (xy 6.2992 -0.254)
+				)
+				(stroke
+					(width 0.1016)
+					(type solid)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(polyline
+				(pts
+					(xy 6.2992 -0.254) (xy 6.2992 0)
+				)
+				(stroke
+					(width 0.1016)
+					(type solid)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(polyline
+				(pts
+					(xy 6.4008 -0.0508) (xy 6.4008 -0.254)
+				)
+				(stroke
+					(width 0.1016)
+					(type solid)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(polyline
+				(pts
+					(xy 6.4008 -0.254) (xy 6.5024 -0.508)
+				)
+				(stroke
+					(width 0.1016)
+					(type solid)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(polyline
+				(pts
+					(xy 6.5024 -0.508) (xy 6.6548 -0.762)
+				)
+				(stroke
+					(width 0.1016)
+					(type solid)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(polyline
+				(pts
+					(xy 6.6548 -0.762) (xy 6.9088 -0.8128)
+				)
+				(stroke
+					(width 0.1016)
+					(type solid)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(polyline
+				(pts
+					(xy 6.9088 -0.8128) (xy 7.1628 -0.8128)
+				)
+				(stroke
+					(width 0.1016)
+					(type solid)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(polyline
+				(pts
+					(xy 7.1628 -0.8128) (xy 7.4168 -0.7112)
+				)
+				(stroke
+					(width 0.1016)
+					(type solid)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(polyline
+				(pts
+					(xy 7.4168 -0.7112) (xy 7.62 -0.3048)
+				)
+				(stroke
+					(width 0.1016)
+					(type solid)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(polyline
+				(pts
+					(xy 7.62 0) (xy 7.62 -0.2032)
+				)
+				(stroke
+					(width 0.1016)
+					(type solid)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(polyline
+				(pts
+					(xy 7.62 -0.2032) (xy 7.6708 -0.4064)
+				)
+				(stroke
+					(width 0.1016)
+					(type solid)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(polyline
+				(pts
+					(xy 7.62 -0.3048) (xy 7.62 -0.0508)
+				)
+				(stroke
+					(width 0.1016)
+					(type solid)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(polyline
+				(pts
+					(xy 7.6708 -0.4064) (xy 7.8232 -0.6604)
+				)
+				(stroke
+					(width 0.1016)
+					(type solid)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(polyline
+				(pts
+					(xy 7.8232 -0.6604) (xy 8.0264 -0.762)
+				)
+				(stroke
+					(width 0.1016)
+					(type solid)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(polyline
+				(pts
+					(xy 8.0264 -0.762) (xy 8.2804 -0.762)
+				)
+				(stroke
+					(width 0.1016)
+					(type solid)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(polyline
+				(pts
+					(xy 8.2804 -0.762) (xy 8.5344 -0.6604)
+				)
+				(stroke
+					(width 0.1016)
+					(type solid)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(polyline
+				(pts
+					(xy 8.5344 -0.6604) (xy 8.7884 -0.254)
+				)
+				(stroke
+					(width 0.1016)
+					(type solid)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(polyline
+				(pts
+					(xy 8.7884 -0.254) (xy 8.7884 0)
+				)
+				(stroke
+					(width 0.1016)
+					(type solid)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(polyline
+				(pts
+					(xy 8.89 -0.0508) (xy 8.89 -0.254)
+				)
+				(stroke
+					(width 0.1016)
+					(type solid)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(polyline
+				(pts
+					(xy 8.89 -0.254) (xy 8.9916 -0.508)
+				)
+				(stroke
+					(width 0.1016)
+					(type solid)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(polyline
+				(pts
+					(xy 8.9916 -0.508) (xy 9.144 -0.762)
+				)
+				(stroke
+					(width 0.1016)
+					(type solid)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(polyline
+				(pts
+					(xy 9.144 -0.762) (xy 9.398 -0.8128)
+				)
+				(stroke
+					(width 0.1016)
+					(type solid)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(polyline
+				(pts
+					(xy 9.398 -0.8128) (xy 9.652 -0.8128)
+				)
+				(stroke
+					(width 0.1016)
+					(type solid)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(polyline
+				(pts
+					(xy 9.652 -0.8128) (xy 9.906 -0.7112)
+				)
+				(stroke
+					(width 0.1016)
+					(type solid)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(polyline
+				(pts
+					(xy 9.906 -0.7112) (xy 10.1092 -0.3048)
+				)
+				(stroke
+					(width 0.1016)
+					(type solid)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(polyline
+				(pts
+					(xy 10.1092 -0.3048) (xy 10.1092 -0.0508)
+				)
+				(stroke
+					(width 0.1016)
+					(type solid)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(polyline
+				(pts
+					(xy 12.7 0) (xy 10.16 0)
+				)
+				(stroke
+					(width 0.254)
+					(type solid)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(pin passive line
+				(at 0 0 0)
+				(length 2.54)
+				(name ""
+					(effects
+						(font
+							(size 1.4076 1.4076)
+						)
+					)
+				)
+				(number "1"
+					(effects
+						(font
+							(size 1.4076 1.4076)
+						)
+					)
+				)
+			)
+			(pin passive line
+				(at 12.7 0 180)
+				(length 2.54)
+				(name ""
+					(effects
+						(font
+							(size 1.4076 1.4076)
+						)
+					)
+				)
+				(number "2"
+					(effects
+						(font
+							(size 1.4076 1.4076)
+						)
+					)
+				)
+			)
+		)
+		(embedded_fonts no)
+	)
+	(symbol "R_56K_0402_F"
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(duplicate_pin_numbers_are_jumpers no)
+		(property "Reference" "R"
+			(at 0.635 6.35 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.6087 2.032)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Value" ""
+			(at 0 0 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "CC1101EM_868_915MHz_3_0_0:0402 (REFLOW)"
+			(at 0 0 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 0 0 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Resistor 0402"
+			(at 0 0 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Part Name" "R_56K_0402_F"
+			(at 0.635 3.81 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.6087 1.4478)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "pick_and_place" "P"
+			(at 0 0 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(hide yes)
+			(effects
+				(font
+					(size 1.6087 2.032)
+				)
+				(justify right bottom)
+			)
+		)
+		(property "ki_fp_filters" "0402 0402{space}(REFLOW)"
+			(at 0 0 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(symbol "R_56K_0402_F_1_0"
+			(polyline
+				(pts
+					(xy 0 0) (xy 2.54 0)
+				)
+				(stroke
+					(width 0.254)
+					(type solid)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(polyline
+				(pts
+					(xy 10.16 1.27) (xy 2.54 1.27) (xy 2.54 -1.27) (xy 10.16 -1.27) (xy 10.16 1.27)
+				)
+				(stroke
+					(width 0.254)
+					(type solid)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(polyline
+				(pts
+					(xy 12.7 0) (xy 10.16 0)
+				)
+				(stroke
+					(width 0.254)
+					(type solid)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(pin passive line
+				(at 0 0 0)
+				(length 2.54)
+				(name ""
+					(effects
+						(font
+							(size 1.4076 1.4076)
+						)
+					)
+				)
+				(number "1"
+					(effects
+						(font
+							(size 1.4076 1.4076)
+						)
+					)
+				)
+			)
+			(pin passive line
+				(at 12.7 0 180)
+				(length 2.54)
+				(name ""
+					(effects
+						(font
+							(size 1.4076 1.4076)
+						)
+					)
+				)
+				(number "2"
+					(effects
+						(font
+							(size 1.4076 1.4076)
+						)
+					)
+				)
+			)
+		)
+		(embedded_fonts no)
+	)
+	(symbol "SMA_SMD"
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(duplicate_pin_numbers_are_jumpers no)
+		(property "Reference" "P"
+			(at -1.27 7.62 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 2.413 2.286)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Value" ""
+			(at 0 0 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "CC1101EM_868_915MHz_3_0_0:SMA_SMD (straight)"
+			(at 0 0 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 0 0 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Surface-mount SMA, straight"
+			(at 0 0 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Part Name" "SMA_SMD"
+			(at -1.27 3.81 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 2.413 2.286)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "pick_and_place" "P"
+			(at 0 0 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(hide yes)
+			(effects
+				(font
+					(size 1.6087 2.032)
+				)
+				(justify right bottom)
+			)
+		)
+		(property "ki_fp_filters" "SMA_SMD SMA_SMD{space}(straight)"
+			(at 0 0 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(symbol "SMA_SMD_1_0"
+			(polyline
+				(pts
+					(xy 0 0) (xy 5.715 0)
+				)
+				(stroke
+					(width 0.1016)
+					(type solid)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(polyline
+				(pts
+					(xy 5.715 -3.175) (xy 5.715 -6.35)
+				)
+				(stroke
+					(width 0.1016)
+					(type solid)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(polyline
+				(pts
+					(xy 5.715 -3.175) (xy 5.4655 -3.1701) (xy 4.9727 -3.092) (xy 4.4981 -2.9378) (xy 4.0535 -2.7113)
+					(xy 3.6498 -2.418) (xy 3.297 -2.0652) (xy 3.0037 -1.6615) (xy 2.7772 -1.2169) (xy 2.623 -0.7423)
+					(xy 2.5449 -0.2495) (xy 2.5449 0.2495) (xy 2.623 0.7423) (xy 2.7772 1.2169) (xy 3.0037 1.6615)
+					(xy 3.297 2.0652) (xy 3.6498 2.418) (xy 4.0535 2.7113) (xy 4.4981 2.9378) (xy 4.9727 3.092) (xy 5.4655 3.1701)
+					(xy 5.715 3.175) (xy 5.9645 3.1701) (xy 6.4573 3.092) (xy 6.9319 2.9378) (xy 7.3765 2.7113) (xy 7.7802 2.418)
+					(xy 8.133 2.0652) (xy 8.4263 1.6615) (xy 8.6528 1.2169) (xy 8.807 0.7423) (xy 8.8851 0.2495) (xy 8.8851 -0.2495)
+					(xy 8.807 -0.7423) (xy 8.6528 -1.2169) (xy 8.4263 -1.6615) (xy 8.133 -2.0652) (xy 7.7802 -2.418)
+					(xy 7.3765 -2.7113) (xy 6.9319 -2.9378) (xy 6.4573 -3.092) (xy 5.9645 -3.1701) (xy 5.715 -3.175)
+				)
+				(stroke
+					(width 0.1016)
+					(type solid)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(polyline
+				(pts
+					(xy 5.715 -6.35) (xy 1.27 -6.35)
+				)
+				(stroke
+					(width 0.1016)
+					(type solid)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(polyline
+				(pts
+					(xy 5.715 -6.35) (xy 5.715 -8.89)
+				)
+				(stroke
+					(width 0.1016)
+					(type solid)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(polyline
+				(pts
+					(xy 5.715 -8.89) (xy 1.27 -8.89)
+				)
+				(stroke
+					(width 0.1016)
+					(type solid)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(polyline
+				(pts
+					(xy 5.715 -8.89) (xy 5.715 -11.43)
+				)
+				(stroke
+					(width 0.1016)
+					(type solid)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(polyline
+				(pts
+					(xy 5.715 -11.43) (xy 1.27 -11.43)
+				)
+				(stroke
+					(width 0.1016)
+					(type solid)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(polyline
+				(pts
+					(xy 5.715 -11.43) (xy 5.715 -13.97)
+				)
+				(stroke
+					(width 0.1016)
+					(type solid)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(polyline
+				(pts
+					(xy 5.715 -13.97) (xy 1.27 -13.97)
+				)
+				(stroke
+					(width 0.1016)
+					(type solid)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(pin passive line
+				(at 0 0 0)
+				(length 5.715)
+				(name ""
+					(effects
+						(font
+							(size 1.4076 1.4076)
+						)
+					)
+				)
+				(number "1"
+					(effects
+						(font
+							(size 1.4076 1.4076)
+						)
+					)
+				)
+			)
+			(pin passive line
+				(at 1.27 -6.35 0)
+				(length 0)
+				(name ""
+					(effects
+						(font
+							(size 1.4076 1.4076)
+						)
+					)
+				)
+				(number "2"
+					(effects
+						(font
+							(size 1.4076 1.4076)
+						)
+					)
+				)
+			)
+			(pin passive line
+				(at 1.27 -8.89 0)
+				(length 4.445)
+				(name ""
+					(effects
+						(font
+							(size 1.4076 1.4076)
+						)
+					)
+				)
+				(number "3"
+					(effects
+						(font
+							(size 1.4076 1.4076)
+						)
+					)
+				)
+			)
+			(pin passive line
+				(at 1.27 -11.43 0)
+				(length 4.445)
+				(name ""
+					(effects
+						(font
+							(size 1.4076 1.4076)
+						)
+					)
+				)
+				(number "4"
+					(effects
+						(font
+							(size 1.4076 1.4076)
+						)
+					)
+				)
+			)
+			(pin passive line
+				(at 1.27 -13.97 0)
+				(length 4.445)
+				(name ""
+					(effects
+						(font
+							(size 1.4076 1.4076)
+						)
+					)
+				)
+				(number "5"
+					(effects
+						(font
+							(size 1.4076 1.4076)
+						)
+					)
+				)
+			)
+		)
+		(embedded_fonts no)
+	)
+	(symbol "SMD_SOCKET_2x10"
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(duplicate_pin_numbers_are_jumpers no)
+		(property "Reference" "P"
+			(at 0 27.94 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.6087 2.032)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Value" ""
+			(at 0 0 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "CC1101EM_868_915MHz_3_0_0:SFM SMD Socket 2x10"
+			(at 0 0 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 0 0 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "SMD pinrow socket, .050 spacing, SFM-110-02-SM-D-A-K-TR"
+			(at 0 0 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Part Name" "SMD_SOCKET_2x10"
+			(at 0 25.4 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.6087 2.032)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "pick_and_place" "P"
+			(at 0 0 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(hide yes)
+			(effects
+				(font
+					(size 1.6087 2.032)
+				)
+				(justify right bottom)
+			)
+		)
+		(property "link Datasheet" "G:\\06_TEKNISK\\064_Datasheets\\Samtec\\SFM_SM.pdf"
+			(at 0 0 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(hide yes)
+			(effects
+				(font
+					(size 1.6087 2.032)
+				)
+				(justify right bottom)
+			)
+		)
+		(property "(PartNumber)" "SMD_SOCKET_2x10"
+			(at 0 0 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(hide yes)
+			(effects
+				(font
+					(size 1.6087 2.032)
+				)
+				(justify right bottom)
+			)
+		)
+		(property "ki_fp_filters" "SFM{space}SMD{space}Socket{space}2x10"
+			(at 0 0 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(symbol "SMD_SOCKET_2x10_1_0"
+			(polyline
+				(pts
+					(xy 2.54 24.13) (xy 2.54 11.43)
+				)
+				(stroke
+					(width 0.1016)
+					(type solid)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(polyline
+				(pts
+					(xy 2.54 22.86) (xy 0 22.86)
+				)
+				(stroke
+					(width 0.1016)
+					(type solid)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(polyline
+				(pts
+					(xy 2.54 21.59) (xy 7.62 21.59)
+				)
+				(stroke
+					(width 0.1016)
+					(type solid)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(polyline
+				(pts
+					(xy 2.54 20.32) (xy 0 20.32)
+				)
+				(stroke
+					(width 0.1016)
+					(type solid)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(polyline
+				(pts
+					(xy 2.54 19.05) (xy 7.62 19.05)
+				)
+				(stroke
+					(width 0.1016)
+					(type solid)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(polyline
+				(pts
+					(xy 2.54 17.78) (xy 0 17.78)
+				)
+				(stroke
+					(width 0.1016)
+					(type solid)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(polyline
+				(pts
+					(xy 2.54 16.51) (xy 7.62 16.51)
+				)
+				(stroke
+					(width 0.1016)
+					(type solid)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(polyline
+				(pts
+					(xy 2.54 15.24) (xy 0 15.24)
+				)
+				(stroke
+					(width 0.1016)
+					(type solid)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(polyline
+				(pts
+					(xy 2.54 13.97) (xy 7.62 13.97)
+				)
+				(stroke
+					(width 0.1016)
+					(type solid)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(polyline
+				(pts
+					(xy 2.54 12.7) (xy 0 12.7)
+				)
+				(stroke
+					(width 0.1016)
+					(type solid)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(polyline
+				(pts
+					(xy 2.54 11.43) (xy 2.54 -1.27)
+				)
+				(stroke
+					(width 0.1016)
+					(type solid)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(polyline
+				(pts
+					(xy 2.54 11.43) (xy 5.08 11.43)
+				)
+				(stroke
+					(width 0.1016)
+					(type solid)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(polyline
+				(pts
+					(xy 2.54 10.16) (xy 0 10.16)
+				)
+				(stroke
+					(width 0.1016)
+					(type solid)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(polyline
+				(pts
+					(xy 2.54 8.89) (xy 7.62 8.89)
+				)
+				(stroke
+					(width 0.1016)
+					(type solid)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(polyline
+				(pts
+					(xy 2.54 7.62) (xy 0 7.62)
+				)
+				(stroke
+					(width 0.1016)
+					(type solid)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(polyline
+				(pts
+					(xy 2.54 6.35) (xy 7.62 6.35)
+				)
+				(stroke
+					(width 0.1016)
+					(type solid)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(polyline
+				(pts
+					(xy 2.54 5.08) (xy 0 5.08)
+				)
+				(stroke
+					(width 0.1016)
+					(type solid)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(polyline
+				(pts
+					(xy 2.54 3.81) (xy 7.62 3.81)
+				)
+				(stroke
+					(width 0.1016)
+					(type solid)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(polyline
+				(pts
+					(xy 2.54 2.54) (xy 0 2.54)
+				)
+				(stroke
+					(width 0.1016)
+					(type solid)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(polyline
+				(pts
+					(xy 2.54 1.27) (xy 7.62 1.27)
+				)
+				(stroke
+					(width 0.1016)
+					(type solid)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(polyline
+				(pts
+					(xy 2.54 0) (xy 0 0)
+				)
+				(stroke
+					(width 0.1016)
+					(type solid)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(polyline
+				(pts
+					(xy 2.54 -1.27) (xy 5.08 -1.27)
+				)
+				(stroke
+					(width 0.1016)
+					(type solid)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(polyline
+				(pts
+					(xy 5.08 24.13) (xy 2.54 24.13)
+				)
+				(stroke
+					(width 0.1016)
+					(type solid)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(polyline
+				(pts
+					(xy 5.08 24.13) (xy 7.62 24.13) (xy 7.62 11.43) (xy 5.08 11.43) (xy 5.08 24.13)
+				)
+				(stroke
+					(width 0.1016)
+					(type solid)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(polyline
+				(pts
+					(xy 5.08 11.43) (xy 2.54 11.43)
+				)
+				(stroke
+					(width 0.1016)
+					(type solid)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(polyline
+				(pts
+					(xy 5.08 11.43) (xy 5.08 24.13)
+				)
+				(stroke
+					(width 0.1016)
+					(type solid)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(polyline
+				(pts
+					(xy 5.08 11.43) (xy 7.62 11.43) (xy 7.62 -1.27) (xy 5.08 -1.27) (xy 5.08 11.43)
+				)
+				(stroke
+					(width 0.1016)
+					(type solid)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(polyline
+				(pts
+					(xy 5.08 -1.27) (xy 5.08 11.43)
+				)
+				(stroke
+					(width 0.1016)
+					(type solid)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(polyline
+				(pts
+					(xy 10.16 22.86) (xy 7.62 22.86)
+				)
+				(stroke
+					(width 0.1016)
+					(type solid)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(polyline
+				(pts
+					(xy 10.16 20.32) (xy 7.62 20.32)
+				)
+				(stroke
+					(width 0.1016)
+					(type solid)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(polyline
+				(pts
+					(xy 10.16 17.78) (xy 7.62 17.78)
+				)
+				(stroke
+					(width 0.1016)
+					(type solid)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(polyline
+				(pts
+					(xy 10.16 15.24) (xy 7.62 15.24)
+				)
+				(stroke
+					(width 0.1016)
+					(type solid)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(polyline
+				(pts
+					(xy 10.16 12.7) (xy 7.62 12.7)
+				)
+				(stroke
+					(width 0.1016)
+					(type solid)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(polyline
+				(pts
+					(xy 10.16 10.16) (xy 7.62 10.16)
+				)
+				(stroke
+					(width 0.1016)
+					(type solid)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(polyline
+				(pts
+					(xy 10.16 7.62) (xy 7.62 7.62)
+				)
+				(stroke
+					(width 0.1016)
+					(type solid)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(polyline
+				(pts
+					(xy 10.16 5.08) (xy 7.62 5.08)
+				)
+				(stroke
+					(width 0.1016)
+					(type solid)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(polyline
+				(pts
+					(xy 10.16 2.54) (xy 7.62 2.54)
+				)
+				(stroke
+					(width 0.1016)
+					(type solid)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(polyline
+				(pts
+					(xy 10.16 0) (xy 7.62 0)
+				)
+				(stroke
+					(width 0.1016)
+					(type solid)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(pin passive line
+				(at 0 22.86 0)
+				(length 2.54)
+				(name ""
+					(effects
+						(font
+							(size 1.4076 1.4076)
+						)
+					)
+				)
+				(number "1"
+					(effects
+						(font
+							(size 1.4076 1.4076)
+						)
+					)
+				)
+			)
+			(pin passive line
+				(at 10.16 22.86 180)
+				(length 2.54)
+				(name ""
+					(effects
+						(font
+							(size 1.4076 1.4076)
+						)
+					)
+				)
+				(number "2"
+					(effects
+						(font
+							(size 1.4076 1.4076)
+						)
+					)
+				)
+			)
+			(pin passive line
+				(at 0 20.32 0)
+				(length 2.54)
+				(name ""
+					(effects
+						(font
+							(size 1.4076 1.4076)
+						)
+					)
+				)
+				(number "3"
+					(effects
+						(font
+							(size 1.4076 1.4076)
+						)
+					)
+				)
+			)
+			(pin passive line
+				(at 10.16 20.32 180)
+				(length 2.54)
+				(name ""
+					(effects
+						(font
+							(size 1.4076 1.4076)
+						)
+					)
+				)
+				(number "4"
+					(effects
+						(font
+							(size 1.4076 1.4076)
+						)
+					)
+				)
+			)
+			(pin passive line
+				(at 0 17.78 0)
+				(length 2.54)
+				(name ""
+					(effects
+						(font
+							(size 1.4076 1.4076)
+						)
+					)
+				)
+				(number "5"
+					(effects
+						(font
+							(size 1.4076 1.4076)
+						)
+					)
+				)
+			)
+			(pin passive line
+				(at 10.16 17.78 180)
+				(length 2.54)
+				(name ""
+					(effects
+						(font
+							(size 1.4076 1.4076)
+						)
+					)
+				)
+				(number "6"
+					(effects
+						(font
+							(size 1.4076 1.4076)
+						)
+					)
+				)
+			)
+			(pin passive line
+				(at 0 15.24 0)
+				(length 2.54)
+				(name ""
+					(effects
+						(font
+							(size 1.4076 1.4076)
+						)
+					)
+				)
+				(number "7"
+					(effects
+						(font
+							(size 1.4076 1.4076)
+						)
+					)
+				)
+			)
+			(pin passive line
+				(at 10.16 15.24 180)
+				(length 2.54)
+				(name ""
+					(effects
+						(font
+							(size 1.4076 1.4076)
+						)
+					)
+				)
+				(number "8"
+					(effects
+						(font
+							(size 1.4076 1.4076)
+						)
+					)
+				)
+			)
+			(pin passive line
+				(at 0 12.7 0)
+				(length 2.54)
+				(name ""
+					(effects
+						(font
+							(size 1.4076 1.4076)
+						)
+					)
+				)
+				(number "9"
+					(effects
+						(font
+							(size 1.4076 1.4076)
+						)
+					)
+				)
+			)
+			(pin passive line
+				(at 10.16 12.7 180)
+				(length 2.54)
+				(name ""
+					(effects
+						(font
+							(size 1.4076 1.4076)
+						)
+					)
+				)
+				(number "10"
+					(effects
+						(font
+							(size 1.4076 1.4076)
+						)
+					)
+				)
+			)
+			(pin passive line
+				(at 0 10.16 0)
+				(length 2.54)
+				(name ""
+					(effects
+						(font
+							(size 1.4076 1.4076)
+						)
+					)
+				)
+				(number "11"
+					(effects
+						(font
+							(size 1.4076 1.4076)
+						)
+					)
+				)
+			)
+			(pin passive line
+				(at 10.16 10.16 180)
+				(length 2.54)
+				(name ""
+					(effects
+						(font
+							(size 1.4076 1.4076)
+						)
+					)
+				)
+				(number "12"
+					(effects
+						(font
+							(size 1.4076 1.4076)
+						)
+					)
+				)
+			)
+			(pin passive line
+				(at 0 7.62 0)
+				(length 2.54)
+				(name ""
+					(effects
+						(font
+							(size 1.4076 1.4076)
+						)
+					)
+				)
+				(number "13"
+					(effects
+						(font
+							(size 1.4076 1.4076)
+						)
+					)
+				)
+			)
+			(pin passive line
+				(at 10.16 7.62 180)
+				(length 2.54)
+				(name ""
+					(effects
+						(font
+							(size 1.4076 1.4076)
+						)
+					)
+				)
+				(number "14"
+					(effects
+						(font
+							(size 1.4076 1.4076)
+						)
+					)
+				)
+			)
+			(pin passive line
+				(at 0 5.08 0)
+				(length 2.54)
+				(name ""
+					(effects
+						(font
+							(size 1.4076 1.4076)
+						)
+					)
+				)
+				(number "15"
+					(effects
+						(font
+							(size 1.4076 1.4076)
+						)
+					)
+				)
+			)
+			(pin passive line
+				(at 10.16 5.08 180)
+				(length 2.54)
+				(name ""
+					(effects
+						(font
+							(size 1.4076 1.4076)
+						)
+					)
+				)
+				(number "16"
+					(effects
+						(font
+							(size 1.4076 1.4076)
+						)
+					)
+				)
+			)
+			(pin passive line
+				(at 0 2.54 0)
+				(length 2.54)
+				(name ""
+					(effects
+						(font
+							(size 1.4076 1.4076)
+						)
+					)
+				)
+				(number "17"
+					(effects
+						(font
+							(size 1.4076 1.4076)
+						)
+					)
+				)
+			)
+			(pin passive line
+				(at 10.16 2.54 180)
+				(length 2.54)
+				(name ""
+					(effects
+						(font
+							(size 1.4076 1.4076)
+						)
+					)
+				)
+				(number "18"
+					(effects
+						(font
+							(size 1.4076 1.4076)
+						)
+					)
+				)
+			)
+			(pin passive line
+				(at 0 0 0)
+				(length 2.54)
+				(name ""
+					(effects
+						(font
+							(size 1.4076 1.4076)
+						)
+					)
+				)
+				(number "19"
+					(effects
+						(font
+							(size 1.4076 1.4076)
+						)
+					)
+				)
+			)
+			(pin passive line
+				(at 10.16 0 180)
+				(length 2.54)
+				(name ""
+					(effects
+						(font
+							(size 1.4076 1.4076)
+						)
+					)
+				)
+				(number "20"
+					(effects
+						(font
+							(size 1.4076 1.4076)
+						)
+					)
+				)
+			)
+		)
+		(embedded_fonts no)
+	)
+	(symbol "VCC (VDD)"
+		(power global)
+		(pin_numbers
+			(hide yes)
+		)
+		(pin_names
+			(hide yes)
+		)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(duplicate_pin_numbers_are_jumpers no)
+		(property "Reference" "#PWR"
+			(at 0 0 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(hide yes)
+			(effects
+				(font
+					(size 1.6087 2.032)
+				)
+			)
+		)
+		(property "Value" "VDD"
+			(at 0 0 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 0 0 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 0 0 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" ""
+			(at 0 0 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Part Name" ""
+			(at 0 0 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.6087 2.032)
+				)
+			)
+		)
+		(symbol "VCC (VDD)_1_0"
+			(arc
+				(start -1.016 0)
+				(mid 0 1.016)
+				(end 1.016 0)
+				(stroke
+					(width 0.127)
+					(type solid)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(arc
+				(start 1.016 0)
+				(mid 0 -1.016)
+				(end -1.016 0)
+				(stroke
+					(width 0.127)
+					(type solid)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(polyline
+				(pts
+					(xy 2.54 0) (xy -2.54 0)
+				)
+				(stroke
+					(width 0.254)
+					(type solid)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(pin power_in line
+				(at 0 0 0)
+				(length 0)
+				(name "VDD"
+					(effects
+						(font
+							(size 1.4076 1.4076)
+						)
+					)
+				)
+				(number "1"
+					(effects
+						(font
+							(size 1.4076 1.4076)
+						)
+					)
+				)
+			)
+		)
+		(embedded_fonts no)
+	)
+	(symbol "X_26.000/50/10"
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(duplicate_pin_numbers_are_jumpers no)
+		(property "Reference" "X"
+			(at -5.715 6.955 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.6087 1.4478)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Value" ""
+			(at 0 0 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "CC1101EM_868_915MHz_3_0_0:XTAL_SMD_3_2x2_5 (3.2 x 2.5 mm)"
+			(at 0 0 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 0 0 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "NDK 26MHz crystal 3x2.5mm, 10pF, 50 Ohms max"
+			(at 0 0 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Part Name" "X_26.000/50/10"
+			(at -5.715 4.445 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.6087 1.4478)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "pick_and_place" "P"
+			(at 0 0 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(hide yes)
+			(effects
+				(font
+					(size 1.6087 2.032)
+				)
+				(justify right bottom)
+			)
+		)
+		(property "(PartNumber)" "NX3225GA"
+			(at 0 0 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(hide yes)
+			(effects
+				(font
+					(size 1.6087 2.032)
+				)
+				(justify right bottom)
+			)
+		)
+		(property "ki_fp_filters" "XTAL_SMD_3_2x2_5 XTAL_SMD_3_2x2_5{space}(3.2{space}x{space}2.5{space}mm)"
+			(at 0 0 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(symbol "X_26.000/50/10_1_0"
+			(polyline
+				(pts
+					(xy -2.54 2.54) (xy -2.54 -2.54)
+				)
+				(stroke
+					(width 0.381)
+					(type solid)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(polyline
+				(pts
+					(xy -2.54 0) (xy -5.08 0)
+				)
+				(stroke
+					(width 0.254)
+					(type solid)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(polyline
+				(pts
+					(xy -1.27 -3.81) (xy 0.635 -3.81) (xy 0.635 3.81) (xy -1.27 3.81) (xy -1.27 -3.81)
+				)
+				(stroke
+					(width 0.254)
+					(type solid)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(polyline
+				(pts
+					(xy 1.905 2.54) (xy 1.905 -2.54)
+				)
+				(stroke
+					(width 0.381)
+					(type solid)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(polyline
+				(pts
+					(xy 4.445 0) (xy 1.905 0)
+				)
+				(stroke
+					(width 0.254)
+					(type solid)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(polyline
+				(pts
+					(xy 5.08 -7.62) (xy -5.08 -7.62)
+				)
+				(stroke
+					(width 0.254)
+					(type solid)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(pin passive line
+				(at -5.08 0 0)
+				(length 2.54)
+				(name ""
+					(effects
+						(font
+							(size 1.4076 1.4076)
+						)
+					)
+				)
+				(number "1"
+					(effects
+						(font
+							(size 1.4076 1.4076)
+						)
+					)
+				)
+			)
+			(pin passive line
+				(at -5.08 -7.62 0)
+				(length 10.16)
+				(name ""
+					(effects
+						(font
+							(size 1.4076 1.4076)
+						)
+					)
+				)
+				(number "2"
+					(effects
+						(font
+							(size 1.4076 1.4076)
+						)
+					)
+				)
+			)
+			(pin passive line
+				(at 4.445 0 180)
+				(length 2.54)
+				(name ""
+					(effects
+						(font
+							(size 1.4076 1.4076)
+						)
+					)
+				)
+				(number "3"
+					(effects
+						(font
+							(size 1.4076 1.4076)
+						)
+					)
+				)
+			)
+			(pin passive line
+				(at 5.08 -7.62 180)
+				(length 10.16)
+				(name ""
+					(effects
+						(font
+							(size 1.4076 1.4076)
+						)
+					)
+				)
+				(number "4"
+					(effects
+						(font
+							(size 1.4076 1.4076)
+						)
+					)
+				)
+			)
+		)
+		(embedded_fonts no)
+	)
+)

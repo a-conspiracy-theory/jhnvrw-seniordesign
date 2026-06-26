@@ -1,0 +1,4 @@
+(sym_lib_table
+	(version 7)
+	(lib (name "TI_REF_CC1101_with_CC1190") (type "KiCad") (uri "${KIPRJMOD}/TI_REF_CC1101_with_CC1190.kicad_sym") (options "") (descr ""))
+)
