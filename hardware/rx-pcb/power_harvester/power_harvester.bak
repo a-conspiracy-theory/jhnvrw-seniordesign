@@ -674,7 +674,7 @@
 				)
 			)
 			(pin output line
-				(at 33.02 15.24 180)
+				(at 33.02 22.86 180)
 				(length 2.54)
 				(name "LOAD"
 					(effects
@@ -692,7 +692,7 @@
 				)
 			)
 			(pin output line
-				(at 33.02 7.62 180)
+				(at 33.02 10.16 180)
 				(length 2.54)
 				(name "VINT"
 					(effects
@@ -710,7 +710,7 @@
 				)
 			)
 			(pin output line
-				(at 33.02 0 180)
+				(at 33.02 -2.54 180)
 				(length 2.54)
 				(name "STO"
 					(effects
@@ -728,7 +728,7 @@
 				)
 			)
 			(pin input line
-				(at 33.02 -10.16 180)
+				(at 33.02 -15.24 180)
 				(length 2.54)
 				(name "ST_LOAD"
 					(effects
@@ -746,7 +746,7 @@
 				)
 			)
 			(pin input line
-				(at 33.02 -12.7 180)
+				(at 33.02 -17.78 180)
 				(length 2.54)
 				(name "ST_STO"
 					(effects
@@ -764,7 +764,7 @@
 				)
 			)
 			(pin input line
-				(at 33.02 -15.24 180)
+				(at 33.02 -20.32 180)
 				(length 2.54)
 				(name "ST_STO_RDY"
 					(effects
@@ -782,7 +782,7 @@
 				)
 			)
 			(pin input line
-				(at 33.02 -17.78 180)
+				(at 33.02 -22.86 180)
 				(length 2.54)
 				(name "ST_STO_OVDIS"
 					(effects
@@ -792,6 +792,188 @@
 					)
 				)
 				(number "38"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+		)
+		(embedded_fonts no)
+	)
+	(symbol "C4AQXEXXXXXXXAX"
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(property "Reference" "C"
+			(at 0 6.096 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" ""
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(symbol "C4AQXEXXXXXXXAX_1_1"
+			(rectangle
+				(start -7.62 5.08)
+				(end 7.62 -5.08)
+				(stroke
+					(width 0)
+					(type solid)
+				)
+				(fill
+					(type background)
+				)
+			)
+			(polyline
+				(pts
+					(xy -7.62 0) (xy -1.27 0) (xy -1.27 2.54)
+				)
+				(stroke
+					(width 0)
+					(type default)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(polyline
+				(pts
+					(xy -1.27 0) (xy -1.27 -2.54)
+				)
+				(stroke
+					(width 0)
+					(type default)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(polyline
+				(pts
+					(xy 1.27 2.54) (xy 1.27 -2.54)
+				)
+				(stroke
+					(width 0)
+					(type default)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(polyline
+				(pts
+					(xy 1.27 0) (xy 7.62 0)
+				)
+				(stroke
+					(width 0)
+					(type default)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(pin input line
+				(at -10.16 2.54 0)
+				(length 2.54)
+				(name "1"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "1"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin input line
+				(at -10.16 -2.54 0)
+				(length 2.54)
+				(name "1"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "1"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin input line
+				(at 10.16 2.54 180)
+				(length 2.54)
+				(name "2"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "2"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin input line
+				(at 10.16 -2.54 180)
+				(length 2.54)
+				(name "2"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "2"
 					(effects
 						(font
 							(size 1.27 1.27)

@@ -1,4 +1,4 @@
-27226138441993718
+27231490101239529
 Audio_Module
 Reverb_BTDR-1H
 Digital Reverberation Unit, http://www.belton.co.kr/inc/downfile.php?seq=17&file=pdf (footprint from http://www.uk-electronic.de/PDF/BTDR-1.pdf)
@@ -107932,3 +107932,24 @@ UFQFN-32_L5.0-W5.0-P0.50-TL-EP3.5
 0
 33
 33
+power_harvester
+C4AQXEXXXXXXXAX
+
+
+0
+4
+2
+power_harvester
+JDH2S02SL
+
+
+0
+2
+2
+power_harvester
+WE-MAPI
+
+
+0
+2
+2
