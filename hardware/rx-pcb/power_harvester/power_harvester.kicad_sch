@@ -5,6 +5,128 @@
 	(uuid "5e0abde9-f038-4a18-8052-8202be093003")
 	(paper "A4")
 	(lib_symbols
+		(symbol "Connector:Conn_01x01_Pin"
+			(pin_names
+				(offset 1.016)
+				(hide yes)
+			)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(property "Reference" "J"
+				(at 0 2.54 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Value" "Conn_01x01_Pin"
+				(at 0 -2.54 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Footprint" ""
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Datasheet" "~"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Description" "Generic connector, single row, 01x01, script generated"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_locked" ""
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "ki_keywords" "connector"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_fp_filters" "Connector*:*_1x??_*"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(symbol "Conn_01x01_Pin_1_1"
+				(rectangle
+					(start 0.8636 0.127)
+					(end 0 -0.127)
+					(stroke
+						(width 0.1524)
+						(type default)
+					)
+					(fill
+						(type outline)
+					)
+				)
+				(polyline
+					(pts
+						(xy 1.27 0) (xy 0.8636 0)
+					)
+					(stroke
+						(width 0.1524)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(pin passive line
+					(at 5.08 0 180)
+					(length 3.81)
+					(name "Pin_1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+			(embedded_fonts no)
+		)
 		(symbol "Connector:Conn_01x02_Pin"
 			(pin_names
 				(offset 1.016)
@@ -2197,7 +2319,7 @@
 	)
 	(rectangle
 		(start 109.22 38.1)
-		(end 142.24 66.04)
+		(end 160.02 66.04)
 		(stroke
 			(width 0)
 			(type dash)
@@ -2481,6 +2603,12 @@
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "f6e809c2-a2e0-409b-acd3-073e8b689b46")
+	)
+	(junction
+		(at 139.7 45.72)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "fee3cc7b-5f55-4ac5-b67b-1ce1c693afda")
 	)
 	(no_connect
 		(at 86.36 182.88)
@@ -2833,6 +2961,16 @@
 			(type default)
 		)
 		(uuid "4fc69f3f-b4db-4eff-95a7-6677082b6df8")
+	)
+	(wire
+		(pts
+			(xy 134.62 45.72) (xy 139.7 45.72)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "50d38d88-acc6-41a9-8511-d35a6de22025")
 	)
 	(wire
 		(pts
@@ -3476,13 +3614,23 @@
 	)
 	(wire
 		(pts
-			(xy 137.16 45.72) (xy 134.62 45.72)
+			(xy 146.05 45.72) (xy 139.7 45.72)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "e6dbd93a-7802-4a2c-9159-44dc1623732f")
+		(uuid "e5f7536a-76c8-4873-adf7-28b33caa0c6b")
+	)
+	(wire
+		(pts
+			(xy 153.67 45.72) (xy 154.94 45.72)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "e8040746-f1ce-451b-a829-2d43f15f7648")
 	)
 	(wire
 		(pts
@@ -3545,7 +3693,7 @@
 		(uuid "428d90e6-3b93-4b6a-a9b6-ad7ddb43961f")
 	)
 	(label "Pin"
-		(at 137.16 45.72 0)
+		(at 154.94 45.72 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -4073,6 +4221,74 @@
 		)
 	)
 	(symbol
+		(lib_id "Device:R")
+		(at 149.86 45.72 90)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "1306f0ae-b166-481a-8161-a32e18ffaaf3")
+		(property "Reference" "R17"
+			(at 149.86 39.37 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "0"
+			(at 149.86 41.91 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Resistor_SMD:R_0201_0603Metric_Pad0.64x0.40mm_HandSolder"
+			(at 149.86 47.498 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 149.86 45.72 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Resistor"
+			(at 149.86 45.72 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "e69bf4c0-0c56-4f52-935c-8b407cea77a0")
+		)
+		(pin "2"
+			(uuid "80fa7a90-7ab5-421f-b742-b803dad3693b")
+		)
+		(instances
+			(project ""
+				(path "/5e0abde9-f038-4a18-8052-8202be093003"
+					(reference "R17")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "Connector:Conn_01x02_Pin")
 		(at 127 125.73 270)
 		(unit 1)
@@ -4407,6 +4623,72 @@
 			(project "power_harvester"
 				(path "/5e0abde9-f038-4a18-8052-8202be093003"
 					(reference "R11")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Connector:Conn_01x01_Pin")
+		(at 139.7 50.8 90)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "2a22c720-5b4e-43ad-80ee-ca53a9e0d483")
+		(property "Reference" "TP1"
+			(at 140.97 48.8949 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Value" "Conn_01x01_Pin"
+			(at 136.906 46.228 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Footprint" "Connector_PinHeader_2.54mm:PinHeader_1x01_P2.54mm_Vertical"
+			(at 139.7 50.8 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 139.7 50.8 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Generic connector, single row, 01x01, script generated"
+			(at 139.7 50.8 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "5087477a-4454-4f3e-97f1-797709f5e78b")
+		)
+		(instances
+			(project ""
+				(path "/5e0abde9-f038-4a18-8052-8202be093003"
+					(reference "TP1")
 					(unit 1)
 				)
 			)

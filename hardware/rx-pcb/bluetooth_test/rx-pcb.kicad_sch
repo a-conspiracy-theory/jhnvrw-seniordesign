@@ -5,6 +5,174 @@
 	(uuid "9df8ddb8-545e-44cf-b4e7-941b19ec42ab")
 	(paper "A4")
 	(lib_symbols
+		(symbol "Device:D"
+			(pin_numbers
+				(hide yes)
+			)
+			(pin_names
+				(offset 1.016)
+				(hide yes)
+			)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(property "Reference" "D"
+				(at 0 2.54 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Value" "D"
+				(at 0 -2.54 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Footprint" ""
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Datasheet" "~"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Description" "Diode"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Sim.Device" "D"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Sim.Pins" "1=K 2=A"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_keywords" "diode"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_fp_filters" "TO-???* *_Diode_* *SingleDiode* D_*"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(symbol "D_0_1"
+				(polyline
+					(pts
+						(xy -1.27 1.27) (xy -1.27 -1.27)
+					)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 1.27 1.27) (xy 1.27 -1.27) (xy -1.27 0) (xy 1.27 1.27)
+					)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 1.27 0) (xy -1.27 0)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+			)
+			(symbol "D_1_1"
+				(pin passive line
+					(at -3.81 0 0)
+					(length 2.54)
+					(name "K"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 3.81 0 180)
+					(length 2.54)
+					(name "A"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+			(embedded_fonts no)
+		)
 		(symbol "easyeda2kicad:LMT70AYFQR"
 			(exclude_from_sim no)
 			(in_bom yes)
@@ -2935,7 +3103,7 @@
 	)
 	(rectangle
 		(start 111.76 17.78)
-		(end 142.24 45.72)
+		(end 144.78 45.72)
 		(stroke
 			(width 0)
 			(type dash)
@@ -3374,16 +3542,6 @@
 	)
 	(wire
 		(pts
-			(xy 100.33 24.13) (xy 99.06 24.13)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "08346f8b-6edf-4920-ab8a-90e30d74eebb")
-	)
-	(wire
-		(pts
 			(xy 34.29 114.3) (xy 46.99 114.3)
 		)
 		(stroke
@@ -3511,16 +3669,6 @@
 			(type default)
 		)
 		(uuid "2cf7e909-3666-4550-bf4d-8277b881f8f1")
-	)
-	(wire
-		(pts
-			(xy 91.44 24.13) (xy 91.44 29.21)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "2ff3dbf5-a031-46f0-b29e-d7d02b2044f6")
 	)
 	(wire
 		(pts
@@ -4556,28 +4704,6 @@
 					(size 1.27 1.27)
 				)
 				(justify right)
-				(hide yes)
-			)
-		)
-	)
-	(global_label "VCC"
-		(shape input)
-		(at 100.33 24.13 0)
-		(fields_autoplaced yes)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left)
-		)
-		(uuid "60e45625-99f4-4345-96bf-e98284682783")
-		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 106.9438 24.13 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
 				(hide yes)
 			)
 		)
@@ -6856,6 +6982,91 @@
 		)
 	)
 	(symbol
+		(lib_id "Device:D")
+		(at 121.92 55.88 180)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "9b7dd21c-8d2a-4b91-b5e5-34dda2771d61")
+		(property "Reference" "D2"
+			(at 122.174 53.34 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "D"
+			(at 121.92 58.166 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 121.92 55.88 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 121.92 55.88 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Diode"
+			(at 121.92 55.88 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Device" "D"
+			(at 121.92 55.88 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Pins" "1=K 2=A"
+			(at 121.92 55.88 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "62ab974c-5978-4bf1-b0a7-3d9de3887809")
+		)
+		(pin "1"
+			(uuid "a8f75824-e919-49c8-8966-199927eef70f")
+		)
+		(instances
+			(project ""
+				(path "/9df8ddb8-545e-44cf-b4e7-941b19ec42ab"
+					(reference "D2")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "rx-parts:C")
 		(at 73.66 64.77 0)
 		(unit 1)
@@ -7050,82 +7261,6 @@
 			(project "rx-pcb"
 				(path "/9df8ddb8-545e-44cf-b4e7-941b19ec42ab"
 					(reference "#PWR019")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "rx-parts:LED")
-		(at 121.92 55.88 180)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(uuid "bbc1ac79-ab7e-40e3-8df3-abe3a8e8670f")
-		(property "Reference" "D2"
-			(at 121.92 53.086 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "LED"
-			(at 121.92 58.674 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" "rx-parts:LED_0805_2012Metric_Pad1.15x1.40mm_HandSolder"
-			(at 121.92 55.88 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 121.92 55.88 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Light emitting diode"
-			(at 121.92 55.88 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Sim.Pins" "1=K 2=A"
-			(at 121.92 55.88 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "2"
-			(uuid "22ca86af-a6d8-4d9f-b8c1-6205a4f35b91")
-		)
-		(pin "1"
-			(uuid "ff332263-7023-437a-ac82-0ec20980e8dc")
-		)
-		(instances
-			(project ""
-				(path "/9df8ddb8-545e-44cf-b4e7-941b19ec42ab"
-					(reference "D2")
 					(unit 1)
 				)
 			)
@@ -7517,73 +7652,6 @@
 			(project ""
 				(path "/9df8ddb8-545e-44cf-b4e7-941b19ec42ab"
 					(reference "U1")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "rx-parts:R")
-		(at 95.25 24.13 270)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(uuid "c7387deb-fa59-4708-9875-40bae1215c28")
-		(property "Reference" "R1"
-			(at 95.25 21.59 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "100k"
-			(at 95.25 24.13 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" "rx-parts:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder"
-			(at 95.25 22.352 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 95.25 24.13 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Resistor"
-			(at 95.25 24.13 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "2"
-			(uuid "cf486584-4ed8-4837-a2db-8fac98a40c00")
-		)
-		(pin "1"
-			(uuid "7b03b999-805d-4e8d-8f55-ab6c1a162e1e")
-		)
-		(instances
-			(project ""
-				(path "/9df8ddb8-545e-44cf-b4e7-941b19ec42ab"
-					(reference "R1")
 					(unit 1)
 				)
 			)
