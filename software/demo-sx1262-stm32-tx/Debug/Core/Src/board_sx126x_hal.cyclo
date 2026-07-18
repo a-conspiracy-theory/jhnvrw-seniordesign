@@ -1,0 +1,5 @@
+../Core/Src/board_sx126x_hal.c:13:6:sx126x_wait_on_busy	3
+../Core/Src/board_sx126x_hal.c:31:21:sx126x_hal_write	4
+../Core/Src/board_sx126x_hal.c:63:21:sx126x_hal_read	2
+../Core/Src/board_sx126x_hal.c:98:21:sx126x_hal_reset	1
+../Core/Src/board_sx126x_hal.c:122:21:sx126x_hal_wakeup	1
