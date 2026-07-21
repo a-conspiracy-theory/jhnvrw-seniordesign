@@ -10164,7 +10164,7 @@
 				)
 			)
 		)
-		(property "Footprint" "EasyEDA:NX2016SA_NDK"
+		(property "Footprint" "rf-pwr-tx-library:NX2016SA_NDK"
 			(at 193.04 90.17 0)
 			(hide yes)
 			(show_name no)
@@ -11929,7 +11929,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "easyeda2kicad:FILTER-SMD_6P-L1.6-W1.0-P0.50-BL"
+		(property "Footprint" "rf-pwr-tx-library:FILTER-SMD_6P-L1.6-W1.0-P0.50-BL"
 			(at 227.33 106.68 0)
 			(hide yes)
 			(show_name no)
@@ -12876,7 +12876,7 @@
 				)
 			)
 		)
-		(property "Footprint" "EasyEDA:OSC-SMD_2P-L3.2-W1.5"
+		(property "Footprint" "rf-pwr-tx-library:OSC-SMD_2P-L3.2-W1.5"
 			(at 181.61 118.11 0)
 			(hide yes)
 			(show_name no)
