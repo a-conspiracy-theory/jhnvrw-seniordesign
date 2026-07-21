@@ -1,0 +1,2 @@
+../STM32_BLE/App/eddystone_tlm_service.c:82:19:EddystoneTLM_Init	80	static
+../STM32_BLE/App/eddystone_tlm_service.c:134:6:EddystoneTLM_Process	24	static

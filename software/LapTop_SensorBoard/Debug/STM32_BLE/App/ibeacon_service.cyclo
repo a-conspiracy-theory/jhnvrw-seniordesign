@@ -1,0 +1,2 @@
+../STM32_BLE/App/ibeacon_service.c:72:19:IBeacon_Init	4
+../STM32_BLE/App/ibeacon_service.c:146:6:IBeacon_Process	1
