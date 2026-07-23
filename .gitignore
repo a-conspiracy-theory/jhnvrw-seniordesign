@@ -15,3 +15,4 @@ simulations/voltage_double_rectifier.plt
 simulations/voltage_double_rectifier.raw
 /hardware/rx-pcb/power_harvester/power_harvester-backups
 /hardware/rx-pcb/power_harvester/power_harvester-backups
+simulations/voltage_double_rectifier.log
