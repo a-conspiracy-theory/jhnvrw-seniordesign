@@ -1,13 +1,13 @@
 (footprint "WE-MAPI"
-	(version 20241229)
+	(version 20260206)
 	(generator "pcbnew")
-	(generator_version "9.0")
+	(generator_version "10.0")
 	(layer "F.Cu")
 	(property "Reference" "REF**"
-		(at 0 -0.5 0)
+		(at 0 -3 0)
 		(unlocked yes)
 		(layer "F.SilkS")
-		(uuid "8101ba9a-9587-4de2-9cf3-b7e54aec9817")
+		(uuid "4f0c5248-d8a3-4f0f-9951-dd292fb2e0e7")
 		(effects
 			(font
 				(size 1 1)
@@ -19,7 +19,7 @@
 		(at 0 1 0)
 		(unlocked yes)
 		(layer "F.Fab")
-		(uuid "eec54701-970a-430b-8951-ea0e691c8af4")
+		(uuid "1d035b3d-7228-4666-b065-9a46df554f7b")
 		(effects
 			(font
 				(size 1 1)
@@ -32,7 +32,7 @@
 		(unlocked yes)
 		(layer "F.Fab")
 		(hide yes)
-		(uuid "b0c66f48-2776-48fd-a5f2-2f81dd6cbf33")
+		(uuid "c214161d-837c-4b0b-a467-ce12cd4a9dd3")
 		(effects
 			(font
 				(size 1 1)
@@ -45,7 +45,7 @@
 		(unlocked yes)
 		(layer "F.Fab")
 		(hide yes)
-		(uuid "eb9bbf2b-a0bd-446f-8e4c-ae97bd550f35")
+		(uuid "357f5bca-e40f-4db1-8743-3b9e23d527f3")
 		(effects
 			(font
 				(size 1 1)
@@ -54,22 +54,32 @@
 		)
 	)
 	(attr smd)
-	(fp_rect
-		(start -1.675 -1.85)
-		(end 1.675 1.85)
+	(duplicate_pad_numbers_are_jumpers no)
+	(fp_line
+		(start -1.675 -2)
+		(end 1.675 -2)
 		(stroke
 			(width 0.1)
-			(type solid)
+			(type default)
 		)
-		(fill no)
 		(layer "F.SilkS")
-		(uuid "bd050f56-7c6a-4978-8fce-b790a33583a4")
+		(uuid "363060d9-db65-4db8-bf2f-442cef52aae4")
+	)
+	(fp_line
+		(start 1.675 2)
+		(end -1.675 2)
+		(stroke
+			(width 0.1)
+			(type default)
+		)
+		(layer "F.SilkS")
+		(uuid "467dfb98-3a5f-4bf7-b074-7e7ee409cf73")
 	)
 	(fp_text user "${REFERENCE}"
 		(at 0 2.5 0)
 		(unlocked yes)
 		(layer "F.Fab")
-		(uuid "dceb352f-dbdd-4e14-bbd2-45c476f5f3d4")
+		(uuid "c82f9dfa-5c45-4945-b606-3f1fb9b61897")
 		(effects
 			(font
 				(size 1 1)
@@ -83,7 +93,7 @@
 		(layers "F.Cu" "F.Mask" "F.Paste")
 		(roundrect_rratio 0.15)
 		(thermal_bridge_angle 45)
-		(uuid "09fd2aa4-0237-4168-9465-cbcc2cfd5f94")
+		(uuid "7bd525ad-c6a7-4ff1-a052-69d0e34716c3")
 	)
 	(pad "2" smd roundrect
 		(at 1.455 0)
@@ -91,7 +101,7 @@
 		(layers "F.Cu" "F.Mask" "F.Paste")
 		(roundrect_rratio 0.15)
 		(thermal_bridge_angle 45)
-		(uuid "1c415b02-6daa-486d-b491-0af856fd1b0e")
+		(uuid "e7232de2-d9e4-47af-ad17-4117c38b83e7")
 	)
 	(embedded_fonts no)
 )
