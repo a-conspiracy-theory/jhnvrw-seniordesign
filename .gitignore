@@ -11,3 +11,7 @@ simulations/voltage_double_rectifier.raw
 
 /hardware/tx-pcb/tx-pcb-backups
 /hardware/rx-pcb/bluetooth_test/rx-pcb-backups
+hardware/rx-pcb/bluetooth_test/.history/
+hardware/rx-pcb/power_harvester/.history/
+hardware/tx-pcb/.history/
+hardware/tx-pcb/sx1262/.history
