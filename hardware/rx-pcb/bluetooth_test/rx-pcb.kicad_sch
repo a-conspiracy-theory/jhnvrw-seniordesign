@@ -4939,7 +4939,7 @@
 	)
 	(wire
 		(pts
-			(xy 59.69 35.56) (xy 59.69 30.48)
+			(xy 62.23 35.56) (xy 62.23 30.48)
 		)
 		(stroke
 			(width 0)
@@ -5738,7 +5738,7 @@
 		(uuid "96e7a618-b544-4a3d-81fe-fadafbb8cc93")
 	)
 	(label "swclk"
-		(at 62.23 30.48 270)
+		(at 59.69 30.48 270)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -6615,7 +6615,7 @@
 	)
 	(symbol
 		(lib_id "rx-parts:GND")
-		(at 59.69 35.56 0)
+		(at 62.23 35.56 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -6625,7 +6625,7 @@
 		(dnp no)
 		(uuid "2049af12-8bbb-49d6-9f25-866fb47887c4")
 		(property "Reference" "#PWR04"
-			(at 59.69 41.91 0)
+			(at 62.23 41.91 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -6636,7 +6636,7 @@
 			)
 		)
 		(property "Value" "GND"
-			(at 59.69 39.116 0)
+			(at 62.23 39.116 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -6646,7 +6646,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 59.69 35.56 0)
+			(at 62.23 35.56 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -6657,7 +6657,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 59.69 35.56 0)
+			(at 62.23 35.56 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -6668,7 +6668,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 59.69 35.56 0)
+			(at 62.23 35.56 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
