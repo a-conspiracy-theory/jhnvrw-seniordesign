@@ -2447,6 +2447,12 @@
 		(uuid "03b60845-a97e-45c9-bff4-4def2895d85c")
 	)
 	(junction
+		(at 78.74 185.42)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "06b795d5-47a9-4d7f-914f-b541d15f334c")
+	)
+	(junction
 		(at 81.28 113.03)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -2541,6 +2547,12 @@
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "4b155ce9-f3e3-4255-9ccb-ab72e0046be3")
+	)
+	(junction
+		(at 71.12 185.42)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "4c78e363-48b9-4021-8c5a-984917c8ea87")
 	)
 	(junction
 		(at 165.1 45.72)
@@ -2645,6 +2657,12 @@
 		(uuid "c2970f8f-423b-445c-b999-27e1ff62ffb4")
 	)
 	(junction
+		(at 86.36 185.42)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "c85d67ab-c6b4-48e5-8795-f345f567695d")
+	)
+	(junction
 		(at 52.07 182.88)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -2669,10 +2687,6 @@
 		(uuid "f6e809c2-a2e0-409b-acd3-073e8b689b46")
 	)
 	(no_connect
-		(at 86.36 182.88)
-		(uuid "08b810ba-6242-434d-bee5-1875d062b187")
-	)
-	(no_connect
 		(at 104.14 171.45)
 		(uuid "3a735c80-c9c8-47e0-8503-d429fa01b073")
 	)
@@ -2681,24 +2695,12 @@
 		(uuid "4e852a8a-542b-4cf7-a26f-e49a19fecee1")
 	)
 	(no_connect
-		(at 38.1 138.43)
-		(uuid "73c02980-9d93-4a41-8c8c-5c505297f606")
-	)
-	(no_connect
 		(at 104.14 168.91)
 		(uuid "a5635317-faa7-44bd-9bf5-54625d48c2ba")
 	)
 	(no_connect
-		(at 78.74 182.88)
-		(uuid "afbba65c-7421-432f-ab21-8289592b144a")
-	)
-	(no_connect
 		(at 104.14 173.99)
 		(uuid "c17381dc-acc9-4470-a841-af4bbd40a638")
-	)
-	(no_connect
-		(at 71.12 182.88)
-		(uuid "c37a9a00-afd6-4663-aaad-658180aa1ea4")
 	)
 	(wire
 		(pts
@@ -3102,6 +3104,16 @@
 	)
 	(wire
 		(pts
+			(xy 36.83 138.43) (xy 38.1 138.43)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "6ad613ad-7979-4060-abac-1771bb6dae1b")
+	)
+	(wire
+		(pts
 			(xy 34.29 45.72) (xy 48.26 45.72)
 		)
 		(stroke
@@ -3232,6 +3244,26 @@
 	)
 	(wire
 		(pts
+			(xy 71.12 182.88) (xy 71.12 185.42)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "851d6ec3-0deb-4366-b86d-03fac46699d7")
+	)
+	(wire
+		(pts
+			(xy 96.52 185.42) (xy 93.98 185.42)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "85b50652-3e94-4d6e-859c-002daaee7367")
+	)
+	(wire
+		(pts
 			(xy 123.19 35.56) (xy 123.19 38.1)
 		)
 		(stroke
@@ -3359,6 +3391,16 @@
 			(type default)
 		)
 		(uuid "9a71e13d-614b-4b8f-92b8-9f15f101aa52")
+	)
+	(wire
+		(pts
+			(xy 78.74 182.88) (xy 78.74 185.42)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "9a95eed5-3e85-49c1-a90d-3e461b4f4137")
 	)
 	(wire
 		(pts
@@ -3692,6 +3734,16 @@
 	)
 	(wire
 		(pts
+			(xy 86.36 182.88) (xy 86.36 185.42)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "dab93f30-db1d-40b0-bc9a-b97cb23964fb")
+	)
+	(wire
+		(pts
 			(xy 116.84 45.72) (xy 123.19 45.72)
 		)
 		(stroke
@@ -3909,6 +3961,16 @@
 			(justify left bottom)
 		)
 		(uuid "c2a504e7-cb3c-4d04-818b-d4761f7d4147")
+	)
+	(label "bank"
+		(at 63.5 185.42 270)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "c49647ba-c81a-4b8f-9d9a-a279f12827ad")
 	)
 	(label "Vint"
 		(at 118.11 143.51 0)
@@ -4490,6 +4552,83 @@
 			(project "power_harvester"
 				(path "/5e0abde9-f038-4a18-8052-8202be093003"
 					(reference "C3")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:GND")
+		(at 96.52 185.42 90)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "12cca048-a1ba-49e5-8eb8-0583a90f421a")
+		(property "Reference" "#PWR013"
+			(at 102.87 185.42 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "GND"
+			(at 96.774 185.42 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 96.52 185.42 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 96.52 185.42 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 96.52 185.42 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "b9314a8c-d8d1-45ba-a3fc-0ee50a2b3158")
+		)
+		(instances
+			(project "power_harvester"
+				(path "/5e0abde9-f038-4a18-8052-8202be093003"
+					(reference "#PWR013")
 					(unit 1)
 				)
 			)
@@ -5212,6 +5351,87 @@
 		)
 	)
 	(symbol
+		(lib_id "Device:R")
+		(at 36.83 142.24 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "33f3b20f-a055-413f-a502-d939a6a8e235")
+		(property "Reference" "R25"
+			(at 34.544 144.018 90)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "x"
+			(at 36.576 142.748 90)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Resistor_SMD:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder"
+			(at 35.052 142.24 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 36.83 142.24 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Resistor"
+			(at 36.83 142.24 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "2"
+			(uuid "ff21ff42-ec91-45db-91e4-8fc7c65df09b")
+		)
+		(pin "1"
+			(uuid "aa21bdc8-4acc-48fb-a8c3-abc9e9328d9c")
+		)
+		(instances
+			(project "power_harvester"
+				(path "/5e0abde9-f038-4a18-8052-8202be093003"
+					(reference "R25")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "Device:L")
 		(at 58.42 43.18 90)
 		(unit 1)
@@ -5452,6 +5672,87 @@
 		)
 	)
 	(symbol
+		(lib_id "Device:R")
+		(at 74.93 185.42 90)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "3b78c491-7bd2-4861-a1b7-23bb9ca904c0")
+		(property "Reference" "R22"
+			(at 76.962 183.388 90)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "x"
+			(at 75.438 185.166 90)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Resistor_SMD:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder"
+			(at 74.93 187.198 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 74.93 185.42 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Resistor"
+			(at 74.93 185.42 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "2"
+			(uuid "1d8e0b26-c8cc-4ece-86b5-7b848d0d77e6")
+		)
+		(pin "1"
+			(uuid "107499c0-c71d-4310-8b69-381b3e83d42e")
+		)
+		(instances
+			(project "power_harvester"
+				(path "/5e0abde9-f038-4a18-8052-8202be093003"
+					(reference "R22")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "Device:L")
 		(at 33.02 161.29 180)
 		(unit 1)
@@ -5528,6 +5829,87 @@
 			(project "power_harvester"
 				(path "/5e0abde9-f038-4a18-8052-8202be093003"
 					(reference "L2")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:R")
+		(at 90.17 185.42 90)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "3e39d71d-d776-4ea2-bd8d-9f1ba64e233b")
+		(property "Reference" "R24"
+			(at 92.202 183.388 90)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "x"
+			(at 90.678 185.166 90)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Resistor_SMD:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder"
+			(at 90.17 187.198 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 90.17 185.42 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Resistor"
+			(at 90.17 185.42 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "2"
+			(uuid "457acefe-4bb8-4179-ac94-a6c73d2db2a7")
+		)
+		(pin "1"
+			(uuid "99098c31-3b9a-4bd6-a8b5-1380f1fc6264")
+		)
+		(instances
+			(project "power_harvester"
+				(path "/5e0abde9-f038-4a18-8052-8202be093003"
+					(reference "R24")
 					(unit 1)
 				)
 			)
@@ -6091,6 +6473,87 @@
 			(project "power_harvester"
 				(path "/5e0abde9-f038-4a18-8052-8202be093003"
 					(reference "R6")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:R")
+		(at 82.55 185.42 90)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "6f43e230-76ec-4a09-9c64-f8e651ba359b")
+		(property "Reference" "R23"
+			(at 84.582 183.388 90)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "x"
+			(at 83.058 185.166 90)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Resistor_SMD:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder"
+			(at 82.55 187.198 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 82.55 185.42 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Resistor"
+			(at 82.55 185.42 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "2"
+			(uuid "a64f0431-b857-40d7-8e4d-fa6cd722e50a")
+		)
+		(pin "1"
+			(uuid "04242f76-aba2-4fdf-aed0-bddf1b8fe665")
+		)
+		(instances
+			(project "power_harvester"
+				(path "/5e0abde9-f038-4a18-8052-8202be093003"
+					(reference "R23")
 					(unit 1)
 				)
 			)
@@ -7440,6 +7903,87 @@
 			(project "power_harvester"
 				(path "/5e0abde9-f038-4a18-8052-8202be093003"
 					(reference "R16")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:R")
+		(at 67.31 185.42 90)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "b8a34d03-c0fc-449a-896a-840955e9bf0d")
+		(property "Reference" "R21"
+			(at 69.342 183.388 90)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "x"
+			(at 67.818 185.166 90)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Resistor_SMD:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder"
+			(at 67.31 187.198 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 67.31 185.42 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Resistor"
+			(at 67.31 185.42 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "2"
+			(uuid "d8560271-d0fd-4e5a-a4e8-4606606468b0")
+		)
+		(pin "1"
+			(uuid "ffe337df-1fee-416f-a6ec-6efffb671f6e")
+		)
+		(instances
+			(project "power_harvester"
+				(path "/5e0abde9-f038-4a18-8052-8202be093003"
+					(reference "R21")
 					(unit 1)
 				)
 			)
