@@ -5387,7 +5387,7 @@
 	)
 	(text "5v from USB\n6.4 - 2.4 from 4 cell alkaline [J7]"
 		(exclude_from_sim no)
-		(at 65.532 79.248 0)
+		(at 65.532 75.438 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -7633,6 +7633,16 @@
 	)
 	(wire
 		(pts
+			(xy 58.42 87.63) (xy 64.77 87.63)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "b5f708bc-6e3a-4dfb-843b-60be668fafd3")
+	)
+	(wire
+		(pts
 			(xy 214.63 140.97) (xy 218.44 140.97)
 		)
 		(stroke
@@ -8721,6 +8731,16 @@
 		)
 		(uuid "583e0a9d-a030-4dcc-b85f-93cafd6b175e")
 	)
+	(label "reg_in"
+		(at 64.77 87.63 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "5a943de4-be49-4de5-80b5-533226f2a8ae")
+	)
 	(label "USB_DM"
 		(at 116.84 100.33 180)
 		(effects
@@ -8960,16 +8980,6 @@
 			(justify right bottom)
 		)
 		(uuid "d0bc8ef7-a75a-4db1-b9a6-bc74c27216de")
-	)
-	(label "reg_in"
-		(at 48.26 85.09 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left bottom)
-		)
-		(uuid "d9dd84fe-9894-422f-b350-0127068fb3fe")
 	)
 	(label "SX1262_RFSW#"
 		(at 120.65 52.07 0)
@@ -15731,6 +15741,89 @@
 		)
 	)
 	(symbol
+		(lib_id "Switch:SW_SPDT")
+		(at 53.34 87.63 180)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "9467c9dd-81d9-427d-9f0a-41540d677bd9")
+		(property "Reference" "SW9"
+			(at 53.34 78.74 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "SW_SPDT"
+			(at 53.34 81.28 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "rf-pwr-tx-library:spdt_amazon"
+			(at 53.34 87.63 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 53.34 80.01 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Switch, single pole double throw"
+			(at 53.34 87.63 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "2"
+			(uuid "bc87c64b-5cc6-4a00-9d32-daf57704059e")
+		)
+		(pin "1"
+			(uuid "a0d26873-a618-4ad6-aeca-6a74188d6f74")
+		)
+		(pin "3"
+			(uuid "6698f0a7-5a5e-49ff-b871-e87d35b232e6")
+		)
+		(instances
+			(project "tx-pcb"
+				(path "/aa7f20e8-e05d-4c2a-a791-3275e92b22ea"
+					(reference "SW9")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "power:GND")
 		(at 187.96 132.08 0)
 		(unit 1)
@@ -17749,6 +17842,85 @@
 			(project "tx-pcb"
 				(path "/aa7f20e8-e05d-4c2a-a791-3275e92b22ea"
 					(reference "C15")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:GND")
+		(at 48.26 90.17 270)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "e02efa7a-88cb-4f33-bcd7-d4c5864017f7")
+		(property "Reference" "#PWR052"
+			(at 41.91 90.17 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "GND"
+			(at 43.18 90.17 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 48.26 90.17 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 48.26 90.17 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 48.26 90.17 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "d1a1b1ef-7d5a-4283-8239-e76412467816")
+		)
+		(instances
+			(project "tx-pcb"
+				(path "/aa7f20e8-e05d-4c2a-a791-3275e92b22ea"
+					(reference "#PWR052")
 					(unit 1)
 				)
 			)
