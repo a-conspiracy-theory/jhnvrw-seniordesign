@@ -89,7 +89,6 @@
 		)
 		(capping no)
 		(filling no)
-		(zone_defaults)
 		(pcbplotparams
 			(layerselection 0x00000000_00000000_55555555_5755f5ff)
 			(plot_on_all_layers_selection 0x00000000_00000000_00000000_00000000)
@@ -9676,7 +9675,7 @@
 		)
 		(polygon
 			(pts
-				(xy 91 94.25) (xy 137.25 94.25) (xy 137.25 50.5) (xy 161 50.5) (xy 161 135) (xy 91 135)
+				(xy 91 94.25) (xy 137.25 94.25) (xy 137.25 68.1) (xy 161 68.1) (xy 161 127.75) (xy 91 127.75)
 			)
 		)
 		(filled_polygon

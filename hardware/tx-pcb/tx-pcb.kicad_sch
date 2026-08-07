@@ -7203,6 +7203,16 @@
 	)
 	(wire
 		(pts
+			(xy 106.68 74.93) (xy 124.46 74.93)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "83f1780d-277f-4c58-ac43-88c4d74196b3")
+	)
+	(wire
+		(pts
 			(xy 101.6 25.4) (xy 101.6 26.67)
 		)
 		(stroke
@@ -8213,16 +8223,6 @@
 	)
 	(wire
 		(pts
-			(xy 106.68 74.93) (xy 124.46 74.93)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "efcf5d0e-7c5d-4cb1-8fea-da48effd82bc")
-	)
-	(wire
-		(pts
 			(xy 214.63 140.97) (xy 214.63 142.24)
 		)
 		(stroke
@@ -8511,16 +8511,6 @@
 		)
 		(uuid "010d5910-5471-43ff-817d-225e53cf17b8")
 	)
-	(label "SX1262_RFSW"
-		(at 106.68 82.55 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left bottom)
-		)
-		(uuid "01e070e1-8ea6-4870-9630-040c66476eb1")
-	)
 	(label "SWD_NSRT"
 		(at 38.1 143.51 0)
 		(effects
@@ -8560,16 +8550,6 @@
 			(justify left bottom)
 		)
 		(uuid "0b885007-2201-4a4e-a4fa-e329288c3ccd")
-	)
-	(label "SX1262_DIO2"
-		(at 106.68 77.47 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left bottom)
-		)
-		(uuid "0b930b8c-e146-4d27-98bc-e1e450061892")
 	)
 	(label "SMPSFB"
 		(at 170.18 90.17 0)
@@ -8640,6 +8620,16 @@
 			(justify left bottom)
 		)
 		(uuid "1f525a47-ffae-4296-9427-6c553b01c65c")
+	)
+	(label "SX1262_BUSY"
+		(at 106.68 77.47 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "1fbcff03-c87f-4892-b58d-b889cdce8864")
 	)
 	(label "SX1262_BUSY"
 		(at 96.52 64.77 0)
@@ -8751,6 +8741,26 @@
 		)
 		(uuid "5ec65c42-27c9-4b3e-aa9a-89c21ea3ac12")
 	)
+	(label "SX1262_RFSW"
+		(at 106.68 85.09 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "678c7bac-3057-4979-9663-c22ff7ab64dc")
+	)
+	(label "SPI_SCK"
+		(at 106.68 74.93 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "6e4a80f0-8301-4c89-98ff-f68205582d12")
+	)
 	(label "VBUS"
 		(at 22.86 82.55 0)
 		(effects
@@ -8861,6 +8871,16 @@
 		)
 		(uuid "9e825462-1651-4420-bf85-22c114814da5")
 	)
+	(label "SX1262_DIO2"
+		(at 106.68 80.01 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "a45a3562-c6bb-485a-bede-6eb2f8fcf093")
+	)
 	(label "I2C1_SDA"
 		(at 105.41 158.75 180)
 		(effects
@@ -8881,16 +8901,6 @@
 		)
 		(uuid "aa5a3a79-09f5-45ee-b42a-081975471723")
 	)
-	(label "SPI_SCK"
-		(at 106.68 85.09 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left bottom)
-		)
-		(uuid "af3f4ca1-4896-4a88-b1d7-2f7b0a6c4226")
-	)
 	(label "SPI_MOSI"
 		(at 96.52 57.15 0)
 		(effects
@@ -8910,16 +8920,6 @@
 			(justify right bottom)
 		)
 		(uuid "b5ecf6f0-cf0d-499b-9e34-ca0aa22cfc4f")
-	)
-	(label "SX1262_RST"
-		(at 106.68 80.01 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left bottom)
-		)
-		(uuid "bc5702e2-3bcd-4de6-808f-67b2dc2412fe")
 	)
 	(label "SWCLK"
 		(at 99.06 116.84 0)
@@ -9011,6 +9011,16 @@
 		)
 		(uuid "e902ab34-687c-473c-aa1e-5d9487a48e7c")
 	)
+	(label "SX1262_RST"
+		(at 106.68 82.55 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "ed08a2e2-57d9-41ec-afc4-c6b68ba78e0b")
+	)
 	(label "BTN4"
 		(at 125.73 180.34 0)
 		(effects
@@ -9020,16 +9030,6 @@
 			(justify left bottom)
 		)
 		(uuid "f22595a5-8556-4529-88fd-690c786fb900")
-	)
-	(label "SX1262_BUSY"
-		(at 106.68 74.93 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left bottom)
-		)
-		(uuid "fa3e0747-4f3e-47ee-bed8-886c2e102068")
 	)
 	(label "BTN4"
 		(at 120.65 133.35 180)
