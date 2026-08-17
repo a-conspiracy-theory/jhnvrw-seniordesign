@@ -447,7 +447,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "rf-pwr-tx-library:TPS63070_board"
 			(at 0 0 0)
 			(show_name no)
 			(do_not_autoplace no)
