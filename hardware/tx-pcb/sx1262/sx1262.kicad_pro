@@ -648,7 +648,7 @@
         "uuid": "3327dbb9-5afc-4061-bcb5-4c45127f48cc"
       }
     ],
-    "used_designators": "R10,J4,#PWR36-37",
+    "used_designators": "R10,J4,#PWR13-14,#PWR36-37,Y1,X2",
     "variants": []
   },
   "sheets": [
