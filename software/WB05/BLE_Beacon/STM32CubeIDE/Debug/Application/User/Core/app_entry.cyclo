@@ -1,0 +1,10 @@
+../../Drivers/CMSIS/Include/core_cm0plus.h:741:22:__NVIC_EnableIRQ	2
+../../Drivers/CMSIS/Include/core_cm0plus.h:850:22:__NVIC_SetPriority	2
+../../Drivers/STM32WB0x_HAL_Driver/Inc/stm32wb0x_ll_usart.h:3512:22:LL_USART_EnableIT_RXNE_RXFNE	1
+C:/Users/Nicho/STM32Cube/Example/WB05/BLE_Beacon/Core/Src/app_entry.c:98:10:MX_APPE_Init	2
+C:/Users/Nicho/STM32Cube/Example/WB05/BLE_Beacon/Core/Src/app_entry.c:174:13:RxUART_Init	1
+C:/Users/Nicho/STM32Cube/Example/WB05/BLE_Beacon/Core/Src/app_entry.c:187:6:UartRxCpltCallback	3
+C:/Users/Nicho/STM32Cube/Example/WB05/BLE_Beacon/Core/Src/app_entry.c:210:13:UartCmdExecute	1
+C:/Users/Nicho/STM32Cube/Example/WB05/BLE_Beacon/Core/Src/app_entry.c:222:6:MX_APPE_Process	1
+C:/Users/Nicho/STM32Cube/Example/WB05/BLE_Beacon/Core/Src/app_entry.c:232:6:UTIL_SEQ_PreIdle	1
+C:/Users/Nicho/STM32Cube/Example/WB05/BLE_Beacon/Core/Src/app_entry.c:242:6:UTIL_SEQ_Idle	1
