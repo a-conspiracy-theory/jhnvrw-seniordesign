@@ -1,0 +1,12 @@
+Middlewares/STM32_WPAN/hci_tl_if.o: \
+ C:/Users/Nicho/STM32Cube/Example/BLE_p2pClient/Middlewares/ST/STM32_WPAN/interface/patterns/ble_thread/tl/hci_tl_if.c \
+ C:/Users/Nicho/STM32Cube/Example/BLE_p2pClient/Middlewares/ST/STM32_WPAN/interface/patterns/ble_thread/tl/hci_tl.h \
+ ../../Middlewares/ST/STM32_WPAN/stm32_wpan_common.h \
+ ../../Drivers/CMSIS/Include/cmsis_compiler.h \
+ ../../Drivers/CMSIS/Include/cmsis_gcc.h \
+ C:/Users/Nicho/STM32Cube/Example/BLE_p2pClient/Middlewares/ST/STM32_WPAN/interface/patterns/ble_thread/tl/tl.h
+C:/Users/Nicho/STM32Cube/Example/BLE_p2pClient/Middlewares/ST/STM32_WPAN/interface/patterns/ble_thread/tl/hci_tl.h:
+../../Middlewares/ST/STM32_WPAN/stm32_wpan_common.h:
+../../Drivers/CMSIS/Include/cmsis_compiler.h:
+../../Drivers/CMSIS/Include/cmsis_gcc.h:
+C:/Users/Nicho/STM32Cube/Example/BLE_p2pClient/Middlewares/ST/STM32_WPAN/interface/patterns/ble_thread/tl/tl.h:
