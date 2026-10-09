@@ -60,10 +60,10 @@
           "hatch_smoothing_level": 0,
           "hatch_smoothing_value": 0.1,
           "hatch_thickness": 1.0,
-          "min_clearance": 0.5,
+          "min_clearance": 0.2,
           "min_island_area": 10.0,
           "min_thickness": 0.25,
-          "pad_connection": 1,
+          "pad_connection": 2,
           "remove_islands": 0,
           "thermal_relief_gap": 0.5,
           "thermal_relief_spoke_width": 0.5
@@ -212,6 +212,7 @@
       "track_widths": [
         0.0,
         0.0,
+        0.3,
         0.8
       ],
       "tuning_pattern_settings": {
@@ -664,7 +665,7 @@
         "uuid": "aa7f20e8-e05d-4c2a-a791-3275e92b22ea"
       }
     ],
-    "used_designators": "X1,X3",
+    "used_designators": "FL1,X1,X3,#PWR18-19,J1",
     "variants": []
   },
   "sheets": [
