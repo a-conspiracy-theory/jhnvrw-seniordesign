@@ -1,5 +1,5 @@
 Application/User/Core/stm32wbxx_it.o: \
- C:/Users/Nicho/STM32Cube/Example/BLE_p2pClient/Core/Src/stm32wbxx_it.c \
+ C:/Users/Nicho/STM32Cube/Example/WB55/BLE_p2pClient/Core/Src/stm32wbxx_it.c \
  ../../Core/Inc/main.h \
  ../../Drivers/STM32WBxx_HAL_Driver/Inc/stm32wbxx_hal.h \
  ../../Core/Inc/stm32wbxx_hal_conf.h \
@@ -27,6 +27,9 @@ Application/User/Core/stm32wbxx_it.o: \
  ../../Drivers/STM32WBxx_HAL_Driver/Inc/stm32wbxx_hal_i2c.h \
  ../../Drivers/STM32WBxx_HAL_Driver/Inc/stm32wbxx_hal_i2c_ex.h \
  ../../Drivers/STM32WBxx_HAL_Driver/Inc/stm32wbxx_hal_ipcc.h \
+ ../../Drivers/STM32WBxx_HAL_Driver/Inc/stm32wbxx_hal_pcd.h \
+ ../../Drivers/STM32WBxx_HAL_Driver/Inc/stm32wbxx_ll_usb.h \
+ ../../Drivers/STM32WBxx_HAL_Driver/Inc/stm32wbxx_hal_pcd_ex.h \
  ../../Drivers/STM32WBxx_HAL_Driver/Inc/stm32wbxx_hal_pwr.h \
  ../../Drivers/STM32WBxx_HAL_Driver/Inc/stm32wbxx_ll_pwr.h \
  ../../Drivers/STM32WBxx_HAL_Driver/Inc/stm32wbxx_ll_exti.h \
@@ -92,6 +95,9 @@ Application/User/Core/stm32wbxx_it.o: \
 ../../Drivers/STM32WBxx_HAL_Driver/Inc/stm32wbxx_hal_i2c.h:
 ../../Drivers/STM32WBxx_HAL_Driver/Inc/stm32wbxx_hal_i2c_ex.h:
 ../../Drivers/STM32WBxx_HAL_Driver/Inc/stm32wbxx_hal_ipcc.h:
+../../Drivers/STM32WBxx_HAL_Driver/Inc/stm32wbxx_hal_pcd.h:
+../../Drivers/STM32WBxx_HAL_Driver/Inc/stm32wbxx_ll_usb.h:
+../../Drivers/STM32WBxx_HAL_Driver/Inc/stm32wbxx_hal_pcd_ex.h:
 ../../Drivers/STM32WBxx_HAL_Driver/Inc/stm32wbxx_hal_pwr.h:
 ../../Drivers/STM32WBxx_HAL_Driver/Inc/stm32wbxx_ll_pwr.h:
 ../../Drivers/STM32WBxx_HAL_Driver/Inc/stm32wbxx_ll_exti.h:

@@ -1,5 +1,5 @@
 Middlewares/STM32_WPAN/ble_hci_le.o: \
- C:/Users/Nicho/STM32Cube/Example/BLE_p2pClient/Middlewares/ST/STM32_WPAN/ble/core/auto/ble_hci_le.c \
+ C:/Users/Nicho/STM32Cube/Example/WB55/BLE_p2pClient/Middlewares/ST/STM32_WPAN/ble/core/auto/ble_hci_le.c \
  ../../Middlewares/ST/STM32_WPAN/ble/core/auto/ble_hci_le.h \
  ../../Middlewares/ST/STM32_WPAN/ble/core/auto/ble_types.h \
  ../../Middlewares/ST/STM32_WPAN/ble/core/template/ble_const.h \

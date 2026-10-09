@@ -25,7 +25,7 @@
   flashed on the Wireless Coprocessor.
   If it is not the case, you need to use STM32CubeProgrammer to load the appropriate
   binary.
-
+s
   All available binaries are located under following directory:
   /Projects/STM32_Copro_Wireless_Binaries
 
@@ -46,6 +46,8 @@
 #include "bitmap.h"
 #include "fonts.h"
 #include "app_ble.h"
+#include "ble_gap_aci.h"
+#include "stm32_seq.h"
 #include <stdio.h>
 
 //#include "sx126x.h"
@@ -80,6 +82,8 @@ TIM_HandleTypeDef htim1;
 UART_HandleTypeDef huart1;
 DMA_HandleTypeDef hdma_usart1_tx;
 
+PCD_HandleTypeDef hpcd_USB_FS;
+
 /* USER CODE BEGIN PV */
 
 /* USER CODE END PV */
@@ -92,19 +96,26 @@ static void MX_DMA_Init(void);
 static void MX_RTC_Init(void);
 static void MX_IPCC_Init(void);
 static void MX_I2C1_Init(void);
-static void MX_TIM1_Init(void);
 static void MX_SPI1_Init(void);
+static void MX_USB_PCD_Init(void);
+static void MX_TIM1_Init(void);
 static void MX_RF_Init(void);
 /* USER CODE BEGIN PFP */
-
-void APP_BLE_Get_Eddystone_TLM(Eddystone_TLM_Data_t *data);
+void Button1_Poll(void);
 void Write_TO_OLED();
+void BLE_RECIEVE();
 /* USER CODE END PFP */
 
 /* Private user code ---------------------------------------------------------*/
 /* USER CODE BEGIN 0 */
-Eddystone_TLM_Data_t tlm_data;
+volatile uint8_t display_toggle = 1;
 char oled_buffer[24];
+int BLE_R = 0;
+int BLE_M = 0;
+int BLE_Dis = 1;
+uint32_t now;
+uint32_t last_update = 0;
+const uint32_t update_interval = 1000;
 /* USER CODE END 0 */
 
 /**
@@ -147,16 +158,17 @@ int main(void)
   MX_DMA_Init();
   MX_RTC_Init();
   MX_I2C1_Init();
-  MX_TIM1_Init();
   MX_SPI1_Init();
+  MX_USB_PCD_Init();
+  MX_TIM1_Init();
   MX_RF_Init();
   /* USER CODE BEGIN 2 */
 
   SSD1306_Init();
-  SSD1306_Clear();
-  SSD1306_GotoXY(0, 0);
-  SSD1306_Puts("Waiting for TLM...", &Font_7x10, 1);
-  SSD1306_UpdateScreen();
+	SSD1306_Clear();
+	SSD1306_GotoXY(0, 0);
+	SSD1306_Puts("Command Wait", &Font_7x10, 1);
+	SSD1306_UpdateScreen();
 
 //  setup_22dBm_Tx(NULL);		//as the name suggests
 //  rfswitch_Tx(NULL);		//configure the RF switch for TX
@@ -167,50 +179,20 @@ int main(void)
 
   /* Infinite loop */
   /* USER CODE BEGIN WHILE */
-  uint32_t myDelayTimestamp = 0;
-  const uint32_t DELAY_INTERVAL = 5000; // Delay duration in milliseconds (e.g., 1 second)
-  uint8_t delayStarted = 0;
+	while (1) {
 
-  while(1)
-  {
+		/* USER CODE END WHILE */
+		MX_APPE_Process();
 
-    /* USER CODE END WHILE */
-    MX_APPE_Process();
+		/* USER CODE BEGIN 3 */
+		Button1_Poll();
+		BLE_RECIEVE();
 
-    /* USER CODE BEGIN 3 */
-    //static uint32_t last_adv_count = 0xFFFFFFFFU;
-    APP_BLE_Get_Eddystone_TLM(&tlm_data);
-    if (!delayStarted)
-       {
-         myDelayTimestamp = HAL_GetTick(); // Start the "stopwatch"
-         delayStarted = 1;
-       }
-
-        /* Update the OLED only when a new TLM packet has been received. */
-        if (tlm_data.valid && (delayStarted && (HAL_GetTick() - myDelayTimestamp >= DELAY_INTERVAL)))
-        {
-          //last_adv_count = tlm_data.adv_count;
-        	Write_TO_OLED();
-
-        	delayStarted = 0;
-
-        }
-
-        else if(!tlm_data.valid && (delayStarted && (HAL_GetTick() - myDelayTimestamp >= DELAY_INTERVAL))){
-
-        	  SSD1306_Clear();
-        	  SSD1306_GotoXY(0, 0);
-
-        	  SSD1306_Puts("SCAN DISABLED", &Font_7x10, 1);
-        	  SSD1306_UpdateScreen();
-
-        	  delayStarted = 0;
-        }
-
-        // Time Delay means BLE Delay not good, minimize
-  }
-  /* USER CODE END 3 */
+	}
+	// Time Delay means BLE Delay not good, minimize
+	/* USER CODE END 3 */
 }
+
 
 /**
   * @brief System Clock Configuration
@@ -220,6 +202,14 @@ void SystemClock_Config(void)
 {
   RCC_OscInitTypeDef RCC_OscInitStruct = {0};
   RCC_ClkInitTypeDef RCC_ClkInitStruct = {0};
+
+  /** Macro to configure the PLL multiplication factor
+  */
+  __HAL_RCC_PLL_PLLM_CONFIG(RCC_PLLM_DIV1);
+
+  /** Macro to configure the PLL clock source
+  */
+  __HAL_RCC_PLL_PLLSOURCE_CONFIG(RCC_PLLSOURCE_MSI);
 
   /** Configure LSE Drive Capability
   */
@@ -234,11 +224,14 @@ void SystemClock_Config(void)
   * in the RCC_OscInitTypeDef structure.
   */
   RCC_OscInitStruct.OscillatorType = RCC_OSCILLATORTYPE_HSI|RCC_OSCILLATORTYPE_HSE
-                              |RCC_OSCILLATORTYPE_LSE;
+                              |RCC_OSCILLATORTYPE_LSE|RCC_OSCILLATORTYPE_MSI;
   RCC_OscInitStruct.HSEState = RCC_HSE_ON;
   RCC_OscInitStruct.LSEState = RCC_LSE_ON;
   RCC_OscInitStruct.HSIState = RCC_HSI_ON;
+  RCC_OscInitStruct.MSIState = RCC_MSI_ON;
   RCC_OscInitStruct.HSICalibrationValue = RCC_HSICALIBRATION_DEFAULT;
+  RCC_OscInitStruct.MSICalibrationValue = RCC_MSICALIBRATION_DEFAULT;
+  RCC_OscInitStruct.MSIClockRange = RCC_MSIRANGE_6;
   RCC_OscInitStruct.PLL.PLLState = RCC_PLL_NONE;
   if (HAL_RCC_OscConfig(&RCC_OscInitStruct) != HAL_OK)
   {
@@ -261,6 +254,10 @@ void SystemClock_Config(void)
   {
     Error_Handler();
   }
+
+  /** Enable MSI Auto calibration
+  */
+  HAL_RCCEx_EnableMSIPLLMode();
 }
 
 /**
@@ -447,7 +444,7 @@ static void MX_SPI1_Init(void)
   hspi1.Init.DataSize = SPI_DATASIZE_4BIT;
   hspi1.Init.CLKPolarity = SPI_POLARITY_LOW;
   hspi1.Init.CLKPhase = SPI_PHASE_1EDGE;
-  hspi1.Init.NSS = SPI_NSS_HARD_OUTPUT;
+  hspi1.Init.NSS = SPI_NSS_SOFT;
   hspi1.Init.BaudRatePrescaler = SPI_BAUDRATEPRESCALER_2;
   hspi1.Init.FirstBit = SPI_FIRSTBIT_MSB;
   hspi1.Init.TIMode = SPI_TIMODE_DISABLE;
@@ -495,10 +492,7 @@ static void MX_TIM1_Init(void)
     Error_Handler();
   }
   sSlaveConfig.SlaveMode = TIM_SLAVEMODE_EXTERNAL1;
-  sSlaveConfig.InputTrigger = TIM_TS_ETRF;
-  sSlaveConfig.TriggerPolarity = TIM_TRIGGERPOLARITY_NONINVERTED;
-  sSlaveConfig.TriggerPrescaler = TIM_TRIGGERPRESCALER_DIV1;
-  sSlaveConfig.TriggerFilter = 0;
+  sSlaveConfig.InputTrigger = TIM_TS_ITR0;
   if (HAL_TIM_SlaveConfigSynchro(&htim1, &sSlaveConfig) != HAL_OK)
   {
     Error_Handler();
@@ -565,6 +559,39 @@ void MX_USART1_UART_Init(void)
 }
 
 /**
+  * @brief USB Initialization Function
+  * @param None
+  * @retval None
+  */
+static void MX_USB_PCD_Init(void)
+{
+
+  /* USER CODE BEGIN USB_Init 0 */
+
+  /* USER CODE END USB_Init 0 */
+
+  /* USER CODE BEGIN USB_Init 1 */
+
+  /* USER CODE END USB_Init 1 */
+  hpcd_USB_FS.Instance = USB;
+  hpcd_USB_FS.Init.dev_endpoints = 8;
+  hpcd_USB_FS.Init.speed = PCD_SPEED_FULL;
+  hpcd_USB_FS.Init.phy_itface = PCD_PHY_EMBEDDED;
+  hpcd_USB_FS.Init.Sof_enable = DISABLE;
+  hpcd_USB_FS.Init.low_power_enable = DISABLE;
+  hpcd_USB_FS.Init.lpm_enable = DISABLE;
+  hpcd_USB_FS.Init.battery_charging_enable = DISABLE;
+  if (HAL_PCD_Init(&hpcd_USB_FS) != HAL_OK)
+  {
+    Error_Handler();
+  }
+  /* USER CODE BEGIN USB_Init 2 */
+
+  /* USER CODE END USB_Init 2 */
+
+}
+
+/**
   * Enable DMA controller clock
   */
 static void MX_DMA_Init(void)
@@ -594,42 +621,55 @@ static void MX_GPIO_Init(void)
 
   /* GPIO Ports Clock Enable */
   __HAL_RCC_GPIOC_CLK_ENABLE();
+  __HAL_RCC_GPIOH_CLK_ENABLE();
   __HAL_RCC_GPIOB_CLK_ENABLE();
   __HAL_RCC_GPIOA_CLK_ENABLE();
 
   /*Configure GPIO pin Output Level */
-  HAL_GPIO_WritePin(GPIOA, GPIO_PIN_2|GPIO_PIN_9, GPIO_PIN_RESET);
+  HAL_GPIO_WritePin(GPIOA, SX1262_DIO1_Pin|SX1262_BUSY_Pin|SX1262_DIO2_Pin|SX1262_RST_Pin
+                          |SX1262_RFSW_Pin, GPIO_PIN_RESET);
 
   /*Configure GPIO pin Output Level */
-  HAL_GPIO_WritePin(GPIOC, GPIO_PIN_6, GPIO_PIN_RESET);
+  HAL_GPIO_WritePin(GPIOC, BUTTON_1_Pin|GPIO_PIN_6, GPIO_PIN_RESET);
 
-  /*Configure GPIO pins : PA2 PA9 */
-  GPIO_InitStruct.Pin = GPIO_PIN_2|GPIO_PIN_9;
+  /*Configure GPIO pin Output Level */
+  HAL_GPIO_WritePin(GPIOB, GPIO_PIN_3|GPIO_PIN_4|GPIO_PIN_5, GPIO_PIN_RESET);
+
+  /*Configure GPIO pin : PH3 */
+  GPIO_InitStruct.Pin = GPIO_PIN_3;
+  GPIO_InitStruct.Mode = GPIO_MODE_AF_PP;
+  GPIO_InitStruct.Pull = GPIO_NOPULL;
+  GPIO_InitStruct.Speed = GPIO_SPEED_FREQ_LOW;
+  HAL_GPIO_Init(GPIOH, &GPIO_InitStruct);
+
+  /*Configure GPIO pins : SX1262_DIO1_Pin SX1262_BUSY_Pin SX1262_DIO2_Pin SX1262_RST_Pin
+                           SX1262_RFSW_Pin */
+  GPIO_InitStruct.Pin = SX1262_DIO1_Pin|SX1262_BUSY_Pin|SX1262_DIO2_Pin|SX1262_RST_Pin
+                          |SX1262_RFSW_Pin;
   GPIO_InitStruct.Mode = GPIO_MODE_OUTPUT_PP;
   GPIO_InitStruct.Pull = GPIO_NOPULL;
   GPIO_InitStruct.Speed = GPIO_SPEED_FREQ_LOW;
   HAL_GPIO_Init(GPIOA, &GPIO_InitStruct);
 
-  /*Configure GPIO pin : PA3 */
-  GPIO_InitStruct.Pin = GPIO_PIN_3;
-  GPIO_InitStruct.Mode = GPIO_MODE_AF_PP;
-  GPIO_InitStruct.Pull = GPIO_NOPULL;
-  GPIO_InitStruct.Speed = GPIO_SPEED_FREQ_VERY_HIGH;
-  GPIO_InitStruct.Alternate = GPIO_AF8_LPUART1;
-  HAL_GPIO_Init(GPIOA, &GPIO_InitStruct);
-
-  /*Configure GPIO pin : PA8 */
-  GPIO_InitStruct.Pin = GPIO_PIN_8;
+  /*Configure GPIO pins : SX1262_NSS_Pin SX1262_RFSW__Pin */
+  GPIO_InitStruct.Pin = SX1262_NSS_Pin|SX1262_RFSW__Pin;
   GPIO_InitStruct.Mode = GPIO_MODE_IT_RISING;
   GPIO_InitStruct.Pull = GPIO_NOPULL;
   HAL_GPIO_Init(GPIOA, &GPIO_InitStruct);
 
-  /*Configure GPIO pin : PC6 */
-  GPIO_InitStruct.Pin = GPIO_PIN_6;
+  /*Configure GPIO pins : BUTTON_1_Pin PC6 */
+  GPIO_InitStruct.Pin = BUTTON_1_Pin|GPIO_PIN_6;
   GPIO_InitStruct.Mode = GPIO_MODE_OUTPUT_PP;
   GPIO_InitStruct.Pull = GPIO_NOPULL;
   GPIO_InitStruct.Speed = GPIO_SPEED_FREQ_LOW;
   HAL_GPIO_Init(GPIOC, &GPIO_InitStruct);
+
+  /*Configure GPIO pins : PB3 PB4 PB5 */
+  GPIO_InitStruct.Pin = GPIO_PIN_3|GPIO_PIN_4|GPIO_PIN_5;
+  GPIO_InitStruct.Mode = GPIO_MODE_OUTPUT_PP;
+  GPIO_InitStruct.Pull = GPIO_NOPULL;
+  GPIO_InitStruct.Speed = GPIO_SPEED_FREQ_LOW;
+  HAL_GPIO_Init(GPIOB, &GPIO_InitStruct);
 
   /* USER CODE BEGIN MX_GPIO_Init_2 */
   /* USER CODE END MX_GPIO_Init_2 */
@@ -646,7 +686,7 @@ void Write_TO_OLED() {
 	 * T = -45 + 175 * (raw / 65535)
 	 */
 	temperature_c = -45.0f
-			+ (175.0f * ((float) tlm_data.temperature_raw / 65535.0f));
+			+ (175.0f * ((float) g_tlm_data.temperature_raw / 65535.0f));
 
 	/*
 	 * Convert raw SHT41 humidity to %RH
@@ -654,7 +694,7 @@ void Write_TO_OLED() {
 	 * RH = -6 + 125 * (raw / 65535)
 	 */
 	humidity_percent = -6.0f
-			+ (125.0f * ((float) tlm_data.battery_mv / 65535.0f));
+			+ (125.0f * ((float) g_tlm_data.battery_mv / 65535.0f));
 
 	/*
 	 * Limit humidity to the valid range
@@ -674,7 +714,7 @@ void Write_TO_OLED() {
 	 */
 	snprintf(oled_buffer, sizeof(oled_buffer), "TEMP: %.1f C", temperature_c);
 
-	SSD1306_Clear();
+//	SSD1306_Clear();
 
 	SSD1306_GotoXY(0, 0);
 	SSD1306_Puts("EDDYSTONE TLM", &Font_7x10, 1);
@@ -695,7 +735,7 @@ void Write_TO_OLED() {
 	 * Display raw temperature for debugging
 	 */
 	snprintf(oled_buffer, sizeof(oled_buffer), "TRAW: %u",
-			(unsigned int) tlm_data.temperature_raw);
+			(unsigned int) g_tlm_data.temperature_raw);
 
 	SSD1306_GotoXY(0, 40);
 	SSD1306_Puts(oled_buffer, &Font_7x10, 1);
@@ -704,7 +744,7 @@ void Write_TO_OLED() {
 	 * Display raw humidity for debugging
 	 */
 	snprintf(oled_buffer, sizeof(oled_buffer), "HRAW: %u",
-			(unsigned int) tlm_data.battery_mv);
+			(unsigned int) g_tlm_data.battery_mv);
 
 	SSD1306_GotoXY(0, 53);
 	SSD1306_Puts(oled_buffer, &Font_7x10, 1);
@@ -712,6 +752,71 @@ void Write_TO_OLED() {
 	SSD1306_UpdateScreen();
 
 }
+
+void BLE_RECIEVE()
+{
+   // update every 500ms
+	if (display_toggle)   // BUTTON_1 toggles this
+			{
+		UTIL_SEQ_SetTask(1 << CFG_TASK_START_SCAN_ID, CFG_SCH_PRIO_0);
+				if (g_tlm_data.valid) {
+					now = HAL_GetTick();
+
+					if (now - last_update >= update_interval) {
+						last_update = now;
+						Write_TO_OLED();
+						g_tlm_data.valid = 0;   // Clear flag until next TLM frame
+						BLE_R = 1;
+						BLE_M = 0;
+					}
+
+				}
+				else if (!g_tlm_data.valid && BLE_M == 0) {
+					now = HAL_GetTick();
+					if (now - last_update >= update_interval) {
+						last_update = now;
+						SSD1306_Clear();
+						SSD1306_GotoXY(0, 0);
+						SSD1306_Puts("BLE Missing...", &Font_7x10, 1);
+						SSD1306_UpdateScreen();
+						BLE_R = 0;
+						BLE_M = 1;
+					}
+				}
+				BLE_Dis = 0;
+			}
+	else if (!display_toggle && BLE_Dis == 0) {
+		aci_gap_terminate_gap_proc(GAP_GENERAL_DISCOVERY_PROC);
+		now = HAL_GetTick();
+		if (now - last_update >= update_interval) {
+			last_update = now;
+			SSD1306_Clear();
+			SSD1306_GotoXY(0, 0);
+			SSD1306_Puts("Scan Disabled", &Font_7x10, 1);
+			SSD1306_UpdateScreen();
+			BLE_Dis = 1;
+		}
+	}
+}
+
+void Button1_Poll(void)
+{
+    static uint8_t last_state = 0;
+    uint8_t current_state = HAL_GPIO_ReadPin(BUTTON_1_GPIO_Port, BUTTON_1_Pin);
+
+    // Detect rising edge (button press)
+    if (current_state == GPIO_PIN_SET && last_state == 0)
+    {
+        HAL_Delay(20); // debounce
+        if (HAL_GPIO_ReadPin(BUTTON_1_GPIO_Port, BUTTON_1_Pin) == GPIO_PIN_SET)
+        {
+            display_toggle ^= 1;   // Toggle display mode
+        }
+    }
+
+    last_state = current_state;
+}
+
 /* USER CODE END 4 */
 
 /**

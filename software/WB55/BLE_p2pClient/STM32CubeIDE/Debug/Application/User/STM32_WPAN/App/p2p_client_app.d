@@ -1,5 +1,5 @@
 Application/User/STM32_WPAN/App/p2p_client_app.o: \
- C:/Users/Nicho/STM32Cube/Example/BLE_p2pClient/STM32_WPAN/App/p2p_client_app.c \
+ C:/Users/Nicho/STM32Cube/Example/WB55/BLE_p2pClient/STM32_WPAN/App/p2p_client_app.c \
  ../../Core/Inc/main.h \
  ../../Drivers/STM32WBxx_HAL_Driver/Inc/stm32wbxx_hal.h \
  ../../Core/Inc/stm32wbxx_hal_conf.h \
@@ -27,6 +27,9 @@ Application/User/STM32_WPAN/App/p2p_client_app.o: \
  ../../Drivers/STM32WBxx_HAL_Driver/Inc/stm32wbxx_hal_i2c.h \
  ../../Drivers/STM32WBxx_HAL_Driver/Inc/stm32wbxx_hal_i2c_ex.h \
  ../../Drivers/STM32WBxx_HAL_Driver/Inc/stm32wbxx_hal_ipcc.h \
+ ../../Drivers/STM32WBxx_HAL_Driver/Inc/stm32wbxx_hal_pcd.h \
+ ../../Drivers/STM32WBxx_HAL_Driver/Inc/stm32wbxx_ll_usb.h \
+ ../../Drivers/STM32WBxx_HAL_Driver/Inc/stm32wbxx_hal_pcd_ex.h \
  ../../Drivers/STM32WBxx_HAL_Driver/Inc/stm32wbxx_hal_pwr.h \
  ../../Drivers/STM32WBxx_HAL_Driver/Inc/stm32wbxx_ll_pwr.h \
  ../../Drivers/STM32WBxx_HAL_Driver/Inc/stm32wbxx_ll_exti.h \
@@ -114,9 +117,9 @@ Application/User/STM32_WPAN/App/p2p_client_app.o: \
  ../../Middlewares/ST/STM32_WPAN/ble/svc/Inc/template_stm.h \
  ../../Middlewares/ST/STM32_WPAN/ble/svc/Inc/svc_ctl.h \
  ../../Middlewares/ST/STM32_WPAN/ble/svc/Inc/uuid.h \
- C:/Users/Nicho/STM32Cube/Example/BLE_p2pClient/STM32_WPAN/App/p2p_client_app.h \
+ C:/Users/Nicho/STM32Cube/Example/WB55/BLE_p2pClient/STM32_WPAN/App/p2p_client_app.h \
  ../../Utilities/sequencer/stm32_seq.h \
- C:/Users/Nicho/STM32Cube/Example/BLE_p2pClient/STM32_WPAN/App/app_ble.h \
+ C:/Users/Nicho/STM32Cube/Example/WB55/BLE_p2pClient/STM32_WPAN/App/app_ble.h \
  ../../Middlewares/ST/STM32_WPAN/interface/patterns/ble_thread/tl/hci_tl.h \
  ../../Middlewares/ST/STM32_WPAN/interface/patterns/ble_thread/tl/tl.h
 ../../Core/Inc/main.h:
@@ -146,6 +149,9 @@ Application/User/STM32_WPAN/App/p2p_client_app.o: \
 ../../Drivers/STM32WBxx_HAL_Driver/Inc/stm32wbxx_hal_i2c.h:
 ../../Drivers/STM32WBxx_HAL_Driver/Inc/stm32wbxx_hal_i2c_ex.h:
 ../../Drivers/STM32WBxx_HAL_Driver/Inc/stm32wbxx_hal_ipcc.h:
+../../Drivers/STM32WBxx_HAL_Driver/Inc/stm32wbxx_hal_pcd.h:
+../../Drivers/STM32WBxx_HAL_Driver/Inc/stm32wbxx_ll_usb.h:
+../../Drivers/STM32WBxx_HAL_Driver/Inc/stm32wbxx_hal_pcd_ex.h:
 ../../Drivers/STM32WBxx_HAL_Driver/Inc/stm32wbxx_hal_pwr.h:
 ../../Drivers/STM32WBxx_HAL_Driver/Inc/stm32wbxx_ll_pwr.h:
 ../../Drivers/STM32WBxx_HAL_Driver/Inc/stm32wbxx_ll_exti.h:
@@ -236,8 +242,8 @@ Application/User/STM32_WPAN/App/p2p_client_app.o: \
 ../../Middlewares/ST/STM32_WPAN/ble/svc/Inc/template_stm.h:
 ../../Middlewares/ST/STM32_WPAN/ble/svc/Inc/svc_ctl.h:
 ../../Middlewares/ST/STM32_WPAN/ble/svc/Inc/uuid.h:
-C:/Users/Nicho/STM32Cube/Example/BLE_p2pClient/STM32_WPAN/App/p2p_client_app.h:
+C:/Users/Nicho/STM32Cube/Example/WB55/BLE_p2pClient/STM32_WPAN/App/p2p_client_app.h:
 ../../Utilities/sequencer/stm32_seq.h:
-C:/Users/Nicho/STM32Cube/Example/BLE_p2pClient/STM32_WPAN/App/app_ble.h:
+C:/Users/Nicho/STM32Cube/Example/WB55/BLE_p2pClient/STM32_WPAN/App/app_ble.h:
 ../../Middlewares/ST/STM32_WPAN/interface/patterns/ble_thread/tl/hci_tl.h:
 ../../Middlewares/ST/STM32_WPAN/interface/patterns/ble_thread/tl/tl.h:

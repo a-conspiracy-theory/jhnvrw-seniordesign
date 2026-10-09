@@ -1,7 +1,7 @@
 Drivers/BSP/P-NUCLEO-WB55.Nucleo/stm32wbxx_nucleo.o: \
- C:/Users/Nicho/STM32Cube/Example/BLE_p2pClient/Drivers/BSP/P-NUCLEO-WB55.Nucleo/stm32wbxx_nucleo.c \
- C:/Users/Nicho/STM32Cube/Example/BLE_p2pClient/Drivers/BSP/P-NUCLEO-WB55.Nucleo/stm32wbxx_nucleo.h \
- C:/Users/Nicho/STM32Cube/Example/BLE_p2pClient/Drivers/BSP/P-NUCLEO-WB55.Nucleo/stm32wbxx_nucleo_errno.h \
+ C:/Users/Nicho/STM32Cube/Example/WB55/BLE_p2pClient/Drivers/BSP/P-NUCLEO-WB55.Nucleo/stm32wbxx_nucleo.c \
+ C:/Users/Nicho/STM32Cube/Example/WB55/BLE_p2pClient/Drivers/BSP/P-NUCLEO-WB55.Nucleo/stm32wbxx_nucleo.h \
+ C:/Users/Nicho/STM32Cube/Example/WB55/BLE_p2pClient/Drivers/BSP/P-NUCLEO-WB55.Nucleo/stm32wbxx_nucleo_errno.h \
  ../../Core/Inc/stm32wbxx_nucleo_conf.h \
  ../../Drivers/STM32WBxx_HAL_Driver/Inc/stm32wbxx_hal.h \
  ../../Core/Inc/stm32wbxx_hal_conf.h \
@@ -29,6 +29,9 @@ Drivers/BSP/P-NUCLEO-WB55.Nucleo/stm32wbxx_nucleo.o: \
  ../../Drivers/STM32WBxx_HAL_Driver/Inc/stm32wbxx_hal_i2c.h \
  ../../Drivers/STM32WBxx_HAL_Driver/Inc/stm32wbxx_hal_i2c_ex.h \
  ../../Drivers/STM32WBxx_HAL_Driver/Inc/stm32wbxx_hal_ipcc.h \
+ ../../Drivers/STM32WBxx_HAL_Driver/Inc/stm32wbxx_hal_pcd.h \
+ ../../Drivers/STM32WBxx_HAL_Driver/Inc/stm32wbxx_ll_usb.h \
+ ../../Drivers/STM32WBxx_HAL_Driver/Inc/stm32wbxx_hal_pcd_ex.h \
  ../../Drivers/STM32WBxx_HAL_Driver/Inc/stm32wbxx_hal_pwr.h \
  ../../Drivers/STM32WBxx_HAL_Driver/Inc/stm32wbxx_ll_pwr.h \
  ../../Drivers/STM32WBxx_HAL_Driver/Inc/stm32wbxx_ll_exti.h \
@@ -47,8 +50,8 @@ Drivers/BSP/P-NUCLEO-WB55.Nucleo/stm32wbxx_nucleo.o: \
  ../../Drivers/STM32WBxx_HAL_Driver/Inc/stm32wbxx_hal_uart.h \
  ../../Drivers/STM32WBxx_HAL_Driver/Inc/stm32wbxx_hal_uart_ex.h \
  ../../Drivers/STM32WBxx_HAL_Driver/Inc/stm32wbxx_ll_system.h
-C:/Users/Nicho/STM32Cube/Example/BLE_p2pClient/Drivers/BSP/P-NUCLEO-WB55.Nucleo/stm32wbxx_nucleo.h:
-C:/Users/Nicho/STM32Cube/Example/BLE_p2pClient/Drivers/BSP/P-NUCLEO-WB55.Nucleo/stm32wbxx_nucleo_errno.h:
+C:/Users/Nicho/STM32Cube/Example/WB55/BLE_p2pClient/Drivers/BSP/P-NUCLEO-WB55.Nucleo/stm32wbxx_nucleo.h:
+C:/Users/Nicho/STM32Cube/Example/WB55/BLE_p2pClient/Drivers/BSP/P-NUCLEO-WB55.Nucleo/stm32wbxx_nucleo_errno.h:
 ../../Core/Inc/stm32wbxx_nucleo_conf.h:
 ../../Drivers/STM32WBxx_HAL_Driver/Inc/stm32wbxx_hal.h:
 ../../Core/Inc/stm32wbxx_hal_conf.h:
@@ -76,6 +79,9 @@ C:/Users/Nicho/STM32Cube/Example/BLE_p2pClient/Drivers/BSP/P-NUCLEO-WB55.Nucleo/
 ../../Drivers/STM32WBxx_HAL_Driver/Inc/stm32wbxx_hal_i2c.h:
 ../../Drivers/STM32WBxx_HAL_Driver/Inc/stm32wbxx_hal_i2c_ex.h:
 ../../Drivers/STM32WBxx_HAL_Driver/Inc/stm32wbxx_hal_ipcc.h:
+../../Drivers/STM32WBxx_HAL_Driver/Inc/stm32wbxx_hal_pcd.h:
+../../Drivers/STM32WBxx_HAL_Driver/Inc/stm32wbxx_ll_usb.h:
+../../Drivers/STM32WBxx_HAL_Driver/Inc/stm32wbxx_hal_pcd_ex.h:
 ../../Drivers/STM32WBxx_HAL_Driver/Inc/stm32wbxx_hal_pwr.h:
 ../../Drivers/STM32WBxx_HAL_Driver/Inc/stm32wbxx_ll_pwr.h:
 ../../Drivers/STM32WBxx_HAL_Driver/Inc/stm32wbxx_ll_exti.h:

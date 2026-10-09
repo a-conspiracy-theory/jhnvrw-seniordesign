@@ -1,5 +1,5 @@
 Application/User/Core/main.o: \
- C:/Users/Nicho/STM32Cube/Example/BLE_p2pClient/Core/Src/main.c \
+ C:/Users/Nicho/STM32Cube/Example/WB55/BLE_p2pClient/Core/Src/main.c \
  ../../Core/Inc/main.h \
  ../../Drivers/STM32WBxx_HAL_Driver/Inc/stm32wbxx_hal.h \
  ../../Core/Inc/stm32wbxx_hal_conf.h \
@@ -27,6 +27,9 @@ Application/User/Core/main.o: \
  ../../Drivers/STM32WBxx_HAL_Driver/Inc/stm32wbxx_hal_i2c.h \
  ../../Drivers/STM32WBxx_HAL_Driver/Inc/stm32wbxx_hal_i2c_ex.h \
  ../../Drivers/STM32WBxx_HAL_Driver/Inc/stm32wbxx_hal_ipcc.h \
+ ../../Drivers/STM32WBxx_HAL_Driver/Inc/stm32wbxx_hal_pcd.h \
+ ../../Drivers/STM32WBxx_HAL_Driver/Inc/stm32wbxx_ll_usb.h \
+ ../../Drivers/STM32WBxx_HAL_Driver/Inc/stm32wbxx_hal_pcd_ex.h \
  ../../Drivers/STM32WBxx_HAL_Driver/Inc/stm32wbxx_hal_pwr.h \
  ../../Drivers/STM32WBxx_HAL_Driver/Inc/stm32wbxx_ll_pwr.h \
  ../../Drivers/STM32WBxx_HAL_Driver/Inc/stm32wbxx_ll_exti.h \
@@ -70,7 +73,15 @@ Application/User/Core/main.o: \
  ../../Middlewares/ST/STM32_WPAN/interface/patterns/ble_thread/tl/hci_tl.h \
  ../../Middlewares/ST/STM32_WPAN/stm32_wpan_common.h \
  ../../Drivers/CMSIS/Include/cmsis_compiler.h \
- ../../Middlewares/ST/STM32_WPAN/interface/patterns/ble_thread/tl/tl.h
+ ../../Middlewares/ST/STM32_WPAN/interface/patterns/ble_thread/tl/tl.h \
+ ../../Middlewares/ST/STM32_WPAN/ble/core/auto/ble_gap_aci.h \
+ ../../Middlewares/ST/STM32_WPAN/ble/core/auto/ble_types.h \
+ ../../Middlewares/ST/STM32_WPAN/ble/core/template/ble_const.h \
+ ../../Middlewares/ST/STM32_WPAN/ble/core/ble_std.h \
+ ../../Middlewares/ST/STM32_WPAN/ble/core/ble_defs.h \
+ ../../Middlewares/ST/STM32_WPAN/ble/core/template/osal.h \
+ ../../Middlewares/ST/STM32_WPAN/ble/core/template/compiler.h \
+ ../../Utilities/sequencer/stm32_seq.h
 ../../Core/Inc/main.h:
 ../../Drivers/STM32WBxx_HAL_Driver/Inc/stm32wbxx_hal.h:
 ../../Core/Inc/stm32wbxx_hal_conf.h:
@@ -98,6 +109,9 @@ Application/User/Core/main.o: \
 ../../Drivers/STM32WBxx_HAL_Driver/Inc/stm32wbxx_hal_i2c.h:
 ../../Drivers/STM32WBxx_HAL_Driver/Inc/stm32wbxx_hal_i2c_ex.h:
 ../../Drivers/STM32WBxx_HAL_Driver/Inc/stm32wbxx_hal_ipcc.h:
+../../Drivers/STM32WBxx_HAL_Driver/Inc/stm32wbxx_hal_pcd.h:
+../../Drivers/STM32WBxx_HAL_Driver/Inc/stm32wbxx_ll_usb.h:
+../../Drivers/STM32WBxx_HAL_Driver/Inc/stm32wbxx_hal_pcd_ex.h:
 ../../Drivers/STM32WBxx_HAL_Driver/Inc/stm32wbxx_hal_pwr.h:
 ../../Drivers/STM32WBxx_HAL_Driver/Inc/stm32wbxx_ll_pwr.h:
 ../../Drivers/STM32WBxx_HAL_Driver/Inc/stm32wbxx_ll_exti.h:
@@ -147,3 +161,11 @@ Application/User/Core/main.o: \
 ../../Middlewares/ST/STM32_WPAN/stm32_wpan_common.h:
 ../../Drivers/CMSIS/Include/cmsis_compiler.h:
 ../../Middlewares/ST/STM32_WPAN/interface/patterns/ble_thread/tl/tl.h:
+../../Middlewares/ST/STM32_WPAN/ble/core/auto/ble_gap_aci.h:
+../../Middlewares/ST/STM32_WPAN/ble/core/auto/ble_types.h:
+../../Middlewares/ST/STM32_WPAN/ble/core/template/ble_const.h:
+../../Middlewares/ST/STM32_WPAN/ble/core/ble_std.h:
+../../Middlewares/ST/STM32_WPAN/ble/core/ble_defs.h:
+../../Middlewares/ST/STM32_WPAN/ble/core/template/osal.h:
+../../Middlewares/ST/STM32_WPAN/ble/core/template/compiler.h:
+../../Utilities/sequencer/stm32_seq.h:

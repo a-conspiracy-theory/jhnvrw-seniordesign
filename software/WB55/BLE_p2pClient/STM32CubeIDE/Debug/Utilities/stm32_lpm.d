@@ -1,6 +1,6 @@
 Utilities/stm32_lpm.o: \
- C:/Users/Nicho/STM32Cube/Example/BLE_p2pClient/Utilities/lpm/tiny_lpm/stm32_lpm.c \
- C:/Users/Nicho/STM32Cube/Example/BLE_p2pClient/Utilities/lpm/tiny_lpm/stm32_lpm.h \
+ C:/Users/Nicho/STM32Cube/Example/WB55/BLE_p2pClient/Utilities/lpm/tiny_lpm/stm32_lpm.c \
+ C:/Users/Nicho/STM32Cube/Example/WB55/BLE_p2pClient/Utilities/lpm/tiny_lpm/stm32_lpm.h \
  ../../Core/Inc/utilities_conf.h \
  ../../Drivers/CMSIS/Include/cmsis_compiler.h \
  ../../Drivers/CMSIS/Include/cmsis_gcc.h ../../Core/Inc/app_conf.h \
@@ -31,6 +31,9 @@ Utilities/stm32_lpm.o: \
  ../../Drivers/STM32WBxx_HAL_Driver/Inc/stm32wbxx_hal_i2c.h \
  ../../Drivers/STM32WBxx_HAL_Driver/Inc/stm32wbxx_hal_i2c_ex.h \
  ../../Drivers/STM32WBxx_HAL_Driver/Inc/stm32wbxx_hal_ipcc.h \
+ ../../Drivers/STM32WBxx_HAL_Driver/Inc/stm32wbxx_hal_pcd.h \
+ ../../Drivers/STM32WBxx_HAL_Driver/Inc/stm32wbxx_ll_usb.h \
+ ../../Drivers/STM32WBxx_HAL_Driver/Inc/stm32wbxx_hal_pcd_ex.h \
  ../../Drivers/STM32WBxx_HAL_Driver/Inc/stm32wbxx_hal_pwr.h \
  ../../Drivers/STM32WBxx_HAL_Driver/Inc/stm32wbxx_ll_pwr.h \
  ../../Drivers/STM32WBxx_HAL_Driver/Inc/stm32wbxx_ll_exti.h \
@@ -64,7 +67,7 @@ Utilities/stm32_lpm.o: \
  ../../Drivers/BSP/P-NUCLEO-WB55.Nucleo/stm32wbxx_nucleo_errno.h \
  ../../Core/Inc/stm32wbxx_nucleo_conf.h \
  ../../Middlewares/ST/STM32_WPAN/ble/core/ble_bufsize.h
-C:/Users/Nicho/STM32Cube/Example/BLE_p2pClient/Utilities/lpm/tiny_lpm/stm32_lpm.h:
+C:/Users/Nicho/STM32Cube/Example/WB55/BLE_p2pClient/Utilities/lpm/tiny_lpm/stm32_lpm.h:
 ../../Core/Inc/utilities_conf.h:
 ../../Drivers/CMSIS/Include/cmsis_compiler.h:
 ../../Drivers/CMSIS/Include/cmsis_gcc.h:
@@ -97,6 +100,9 @@ C:/Users/Nicho/STM32Cube/Example/BLE_p2pClient/Utilities/lpm/tiny_lpm/stm32_lpm.
 ../../Drivers/STM32WBxx_HAL_Driver/Inc/stm32wbxx_hal_i2c.h:
 ../../Drivers/STM32WBxx_HAL_Driver/Inc/stm32wbxx_hal_i2c_ex.h:
 ../../Drivers/STM32WBxx_HAL_Driver/Inc/stm32wbxx_hal_ipcc.h:
+../../Drivers/STM32WBxx_HAL_Driver/Inc/stm32wbxx_hal_pcd.h:
+../../Drivers/STM32WBxx_HAL_Driver/Inc/stm32wbxx_ll_usb.h:
+../../Drivers/STM32WBxx_HAL_Driver/Inc/stm32wbxx_hal_pcd_ex.h:
 ../../Drivers/STM32WBxx_HAL_Driver/Inc/stm32wbxx_hal_pwr.h:
 ../../Drivers/STM32WBxx_HAL_Driver/Inc/stm32wbxx_ll_pwr.h:
 ../../Drivers/STM32WBxx_HAL_Driver/Inc/stm32wbxx_ll_exti.h:
