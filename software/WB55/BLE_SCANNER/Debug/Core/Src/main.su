@@ -11,7 +11,7 @@
 ../Core/Src/main.c:415:13:MX_TIM1_Init	40	static
 ../Core/Src/main.c:463:13:MX_USART1_UART_Init	8	static
 ../Core/Src/main.c:511:13:MX_GPIO_Init	32	static
-../Core/Src/main.c:555:6:Write_TO_OLED	24	static
-../Core/Src/main.c:632:6:BLE_RECIEVE	8	static
-../Core/Src/main.c:678:6:Button1_Poll	16	static
-../Core/Src/main.c:702:6:Error_Handler	4	static,ignoring_inline_asm
+../Core/Src/main.c:558:6:Write_TO_OLED	24	static
+../Core/Src/main.c:635:6:BLE_RECIEVE	8	static
+../Core/Src/main.c:681:6:Button1_Poll	16	static
+../Core/Src/main.c:704:6:Error_Handler	4	static,ignoring_inline_asm

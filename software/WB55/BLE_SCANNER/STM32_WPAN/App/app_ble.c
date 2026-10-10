@@ -641,7 +641,7 @@ SVCCTL_UserEvtFlowStatus_t SVCCTL_App_Notification(void *pckt)
                   } /* end switch adtype */
                   k += adlength + 1;
                 } /* end while */
-              /* end if ADV_IND */
+               /* end if ADV_IND */
 
               /* USER CODE BEGIN EVT_LE_ADVERTISING_REPORT_2 */
 
@@ -940,7 +940,6 @@ static void Scan_Request(void)
     /* USER CODE END BLE_SCAN_FAILED */
       APP_DBG_MSG("-- BLE_App_Start_Limited_Disc_Req, Failed \r\n\r");
     }
-
   /* USER CODE BEGIN Scan_Request_2 */
 
   /* USER CODE END Scan_Request_2 */

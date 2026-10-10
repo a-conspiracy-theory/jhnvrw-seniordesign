@@ -476,7 +476,7 @@ static void MX_USART1_UART_Init(void)
   huart1.Init.StopBits = UART_STOPBITS_1;
   huart1.Init.Parity = UART_PARITY_NONE;
   huart1.Init.Mode = UART_MODE_TX_RX;
-  huart1.Init.HwFlowCtl = UART_HWCONTROL_RTS_CTS;
+  huart1.Init.HwFlowCtl = UART_HWCONTROL_NONE;
   huart1.Init.OverSampling = UART_OVERSAMPLING_8;
   huart1.Init.OneBitSampling = UART_ONE_BIT_SAMPLE_DISABLE;
   huart1.Init.ClockPrescaler = UART_PRESCALER_DIV1;
@@ -521,30 +521,33 @@ static void MX_GPIO_Init(void)
   __HAL_RCC_GPIOA_CLK_ENABLE();
 
   /*Configure GPIO pin Output Level */
-  HAL_GPIO_WritePin(GPIOA, SX1262_BUSY_Pin|SX1262_DIO2_Pin|SX1262_RST_Pin|SX1262_RFSW_Pin, GPIO_PIN_RESET);
+  HAL_GPIO_WritePin(GPIOA, SX1262_DIO1_Pin|SX1262_BUSY_Pin|SX1262_DIO2_Pin|SX1262_RST_Pin
+                          |SX1262_RFSW_Pin|BTN5_Pin, GPIO_PIN_RESET);
 
   /*Configure GPIO pin Output Level */
-  HAL_GPIO_WritePin(BUTTON_1_GPIO_Port, BUTTON_1_Pin, GPIO_PIN_RESET);
+  HAL_GPIO_WritePin(BTN3_GPIO_Port, BTN3_Pin, GPIO_PIN_RESET);
 
-  /*Configure GPIO pins : SX1262_BUSY_Pin SX1262_DIO2_Pin SX1262_RST_Pin SX1262_RFSW_Pin */
-  GPIO_InitStruct.Pin = SX1262_BUSY_Pin|SX1262_DIO2_Pin|SX1262_RST_Pin|SX1262_RFSW_Pin;
+  /*Configure GPIO pins : SX1262_DIO1_Pin SX1262_BUSY_Pin SX1262_DIO2_Pin SX1262_RST_Pin
+                           SX1262_RFSW_Pin BTN5_Pin */
+  GPIO_InitStruct.Pin = SX1262_DIO1_Pin|SX1262_BUSY_Pin|SX1262_DIO2_Pin|SX1262_RST_Pin
+                          |SX1262_RFSW_Pin|BTN5_Pin;
   GPIO_InitStruct.Mode = GPIO_MODE_OUTPUT_PP;
   GPIO_InitStruct.Pull = GPIO_NOPULL;
   GPIO_InitStruct.Speed = GPIO_SPEED_FREQ_LOW;
   HAL_GPIO_Init(GPIOA, &GPIO_InitStruct);
 
-  /*Configure GPIO pins : SX1262_NSS_Pin SX1262_RFSW__Pin */
-  GPIO_InitStruct.Pin = SX1262_NSS_Pin|SX1262_RFSW__Pin;
-  GPIO_InitStruct.Mode = GPIO_MODE_IT_RISING;
+  /*Configure GPIO pins : BTN2_Pin BTN1_Pin BTN4_Pin SX1262_RFSW__Pin */
+  GPIO_InitStruct.Pin = BTN2_Pin|BTN1_Pin|BTN4_Pin|SX1262_RFSW__Pin;
+  GPIO_InitStruct.Mode = GPIO_MODE_INPUT;
   GPIO_InitStruct.Pull = GPIO_NOPULL;
-  HAL_GPIO_Init(GPIOA, &GPIO_InitStruct);
+  HAL_GPIO_Init(GPIOB, &GPIO_InitStruct);
 
-  /*Configure GPIO pin : BUTTON_1_Pin */
-  GPIO_InitStruct.Pin = BUTTON_1_Pin;
+  /*Configure GPIO pin : BTN3_Pin */
+  GPIO_InitStruct.Pin = BTN3_Pin;
   GPIO_InitStruct.Mode = GPIO_MODE_OUTPUT_PP;
   GPIO_InitStruct.Pull = GPIO_NOPULL;
   GPIO_InitStruct.Speed = GPIO_SPEED_FREQ_LOW;
-  HAL_GPIO_Init(BUTTON_1_GPIO_Port, &GPIO_InitStruct);
+  HAL_GPIO_Init(BTN3_GPIO_Port, &GPIO_InitStruct);
 
   /* USER CODE BEGIN MX_GPIO_Init_2 */
 
@@ -675,16 +678,15 @@ void BLE_RECIEVE()
 	}
 }
 
-void Button1_Poll(void)
-{
+void Button1_Poll(void){
     static uint8_t last_state = 0;
-    uint8_t current_state = HAL_GPIO_ReadPin(BUTTON_1_GPIO_Port, BUTTON_1_Pin);
+    uint8_t current_state = HAL_GPIO_ReadPin(BTN1_GPIO_Port, BTN1_Pin);
 
     // Detect rising edge (button press)
     if (current_state == GPIO_PIN_SET && last_state == 0)
     {
         HAL_Delay(20); // debounce
-        if (HAL_GPIO_ReadPin(BUTTON_1_GPIO_Port, BUTTON_1_Pin) == GPIO_PIN_SET)
+        if (HAL_GPIO_ReadPin(BTN1_GPIO_Port, BTN1_Pin) == GPIO_PIN_SET)
         {
             display_toggle ^= 1;   // Toggle display mode
         }

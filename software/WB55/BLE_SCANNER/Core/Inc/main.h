@@ -60,6 +60,8 @@ void Error_Handler(void);
 /* USER CODE END EFP */
 
 /* Private defines -----------------------------------------------------------*/
+#define SX1262_DIO1_Pin GPIO_PIN_0
+#define SX1262_DIO1_GPIO_Port GPIOA
 #define SX1262_BUSY_Pin GPIO_PIN_2
 #define SX1262_BUSY_GPIO_Port GPIOA
 #define SX1262_DIO2_Pin GPIO_PIN_3
@@ -68,12 +70,18 @@ void Error_Handler(void);
 #define SX1262_RST_GPIO_Port GPIOA
 #define SX1262_RFSW_Pin GPIO_PIN_5
 #define SX1262_RFSW_GPIO_Port GPIOA
-#define SX1262_NSS_Pin GPIO_PIN_8
-#define SX1262_NSS_GPIO_Port GPIOA
-#define SX1262_RFSW__Pin GPIO_PIN_9
-#define SX1262_RFSW__GPIO_Port GPIOA
-#define BUTTON_1_Pin GPIO_PIN_5
-#define BUTTON_1_GPIO_Port GPIOB
+#define BTN5_Pin GPIO_PIN_15
+#define BTN5_GPIO_Port GPIOA
+#define BTN2_Pin GPIO_PIN_3
+#define BTN2_GPIO_Port GPIOB
+#define BTN1_Pin GPIO_PIN_4
+#define BTN1_GPIO_Port GPIOB
+#define BTN3_Pin GPIO_PIN_5
+#define BTN3_GPIO_Port GPIOB
+#define BTN4_Pin GPIO_PIN_6
+#define BTN4_GPIO_Port GPIOB
+#define SX1262_RFSW__Pin GPIO_PIN_7
+#define SX1262_RFSW__GPIO_Port GPIOB
 
 /* USER CODE BEGIN Private defines */
 

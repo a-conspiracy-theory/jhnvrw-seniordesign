@@ -70,8 +70,8 @@ all: main-build
 main-build: BLE_SCANNER.elf secondary-outputs
 
 # Tool invocations
-BLE_SCANNER.elf BLE_SCANNER.map: $(OBJS) $(USER_OBJS) C:\Users\Nicho\STM32Cube\Example\WB55\BLE_SCANNER\STM32WB55CEUX_FLASH.ld makefile objects.list $(OPTIONAL_TOOL_DEPS)
-	arm-none-eabi-gcc -o "BLE_SCANNER.elf" @"objects.list" $(USER_OBJS) $(LIBS) -mcpu=cortex-m4 -T"C:\Users\Nicho\STM32Cube\Example\WB55\BLE_SCANNER\STM32WB55CEUX_FLASH.ld" --specs=nosys.specs -Wl,-Map="BLE_SCANNER.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -u _printf_float -Wl,--start-group -lc -lm -Wl,--end-group
+BLE_SCANNER.elf BLE_SCANNER.map: $(OBJS) $(USER_OBJS) C:\Users\Nicho\Documents\Projects\jhnvrw-seniordesign\software\WB55\BLE_SCANNER\STM32WB55CEUX_FLASH.ld makefile objects.list $(OPTIONAL_TOOL_DEPS)
+	arm-none-eabi-gcc -o "BLE_SCANNER.elf" @"objects.list" $(USER_OBJS) $(LIBS) -mcpu=cortex-m4 -T"C:\Users\Nicho\Documents\Projects\jhnvrw-seniordesign\software\WB55\BLE_SCANNER\STM32WB55CEUX_FLASH.ld" --specs=nosys.specs -Wl,-Map="BLE_SCANNER.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -u _printf_float -Wl,--start-group -lc -lm -Wl,--end-group
 	@echo 'Finished building target: $@'
 	@echo ' '
 
