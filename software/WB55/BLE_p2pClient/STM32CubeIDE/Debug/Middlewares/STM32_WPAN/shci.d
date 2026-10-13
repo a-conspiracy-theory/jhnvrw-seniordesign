@@ -1,11 +1,11 @@
 Middlewares/STM32_WPAN/shci.o: \
- C:/Users/Nicho/STM32Cube/Example/WB55/BLE_p2pClient/Middlewares/ST/STM32_WPAN/interface/patterns/ble_thread/shci/shci.c \
+ C:/Users/Nicho/Documents/Projects/jhnvrw-seniordesign/software/WB55/BLE_p2pClient/Middlewares/ST/STM32_WPAN/interface/patterns/ble_thread/shci/shci.c \
  ../../Middlewares/ST/STM32_WPAN/stm32_wpan_common.h \
  ../../Drivers/CMSIS/Include/cmsis_compiler.h \
  ../../Drivers/CMSIS/Include/cmsis_gcc.h \
  ../../Middlewares/ST/STM32_WPAN/interface/patterns/ble_thread/tl/shci_tl.h \
  ../../Middlewares/ST/STM32_WPAN/interface/patterns/ble_thread/tl/tl.h \
- C:/Users/Nicho/STM32Cube/Example/WB55/BLE_p2pClient/Middlewares/ST/STM32_WPAN/interface/patterns/ble_thread/shci/shci.h \
+ C:/Users/Nicho/Documents/Projects/jhnvrw-seniordesign/software/WB55/BLE_p2pClient/Middlewares/ST/STM32_WPAN/interface/patterns/ble_thread/shci/shci.h \
  ../../Middlewares/ST/STM32_WPAN/interface/patterns/ble_thread/tl/mbox_def.h \
  ../../Drivers/CMSIS/Device/ST/STM32WBxx/Include/stm32wbxx.h \
  ../../Drivers/CMSIS/Device/ST/STM32WBxx/Include/stm32wb55xx.h \
@@ -58,7 +58,7 @@ Middlewares/STM32_WPAN/shci.o: \
 ../../Drivers/CMSIS/Include/cmsis_gcc.h:
 ../../Middlewares/ST/STM32_WPAN/interface/patterns/ble_thread/tl/shci_tl.h:
 ../../Middlewares/ST/STM32_WPAN/interface/patterns/ble_thread/tl/tl.h:
-C:/Users/Nicho/STM32Cube/Example/WB55/BLE_p2pClient/Middlewares/ST/STM32_WPAN/interface/patterns/ble_thread/shci/shci.h:
+C:/Users/Nicho/Documents/Projects/jhnvrw-seniordesign/software/WB55/BLE_p2pClient/Middlewares/ST/STM32_WPAN/interface/patterns/ble_thread/shci/shci.h:
 ../../Middlewares/ST/STM32_WPAN/interface/patterns/ble_thread/tl/mbox_def.h:
 ../../Drivers/CMSIS/Device/ST/STM32WBxx/Include/stm32wbxx.h:
 ../../Drivers/CMSIS/Device/ST/STM32WBxx/Include/stm32wb55xx.h:

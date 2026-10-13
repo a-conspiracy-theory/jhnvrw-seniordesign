@@ -1,6 +1,6 @@
 Middlewares/STM32_WPAN/stm_queue.o: \
- C:/Users/Nicho/STM32Cube/Example/WB55/BLE_p2pClient/Middlewares/ST/STM32_WPAN/utilities/stm_queue.c \
- C:/Users/Nicho/STM32Cube/Example/WB55/BLE_p2pClient/Middlewares/ST/STM32_WPAN/utilities/utilities_common.h \
+ C:/Users/Nicho/Documents/Projects/jhnvrw-seniordesign/software/WB55/BLE_p2pClient/Middlewares/ST/STM32_WPAN/utilities/stm_queue.c \
+ C:/Users/Nicho/Documents/Projects/jhnvrw-seniordesign/software/WB55/BLE_p2pClient/Middlewares/ST/STM32_WPAN/utilities/utilities_common.h \
  ../../Core/Inc/app_conf.h \
  ../../Middlewares/ST/STM32_WPAN/interface/patterns/ble_thread/hw.h \
  ../../Core/Inc/hw_conf.h ../../Core/Inc/hw_if.h \
@@ -66,8 +66,8 @@ Middlewares/STM32_WPAN/stm_queue.o: \
  ../../Drivers/BSP/P-NUCLEO-WB55.Nucleo/stm32wbxx_nucleo_errno.h \
  ../../Core/Inc/stm32wbxx_nucleo_conf.h \
  ../../Middlewares/ST/STM32_WPAN/ble/core/ble_bufsize.h \
- C:/Users/Nicho/STM32Cube/Example/WB55/BLE_p2pClient/Middlewares/ST/STM32_WPAN/utilities/stm_queue.h
-C:/Users/Nicho/STM32Cube/Example/WB55/BLE_p2pClient/Middlewares/ST/STM32_WPAN/utilities/utilities_common.h:
+ C:/Users/Nicho/Documents/Projects/jhnvrw-seniordesign/software/WB55/BLE_p2pClient/Middlewares/ST/STM32_WPAN/utilities/stm_queue.h
+C:/Users/Nicho/Documents/Projects/jhnvrw-seniordesign/software/WB55/BLE_p2pClient/Middlewares/ST/STM32_WPAN/utilities/utilities_common.h:
 ../../Core/Inc/app_conf.h:
 ../../Middlewares/ST/STM32_WPAN/interface/patterns/ble_thread/hw.h:
 ../../Core/Inc/hw_conf.h:
@@ -134,4 +134,4 @@ C:/Users/Nicho/STM32Cube/Example/WB55/BLE_p2pClient/Middlewares/ST/STM32_WPAN/ut
 ../../Drivers/BSP/P-NUCLEO-WB55.Nucleo/stm32wbxx_nucleo_errno.h:
 ../../Core/Inc/stm32wbxx_nucleo_conf.h:
 ../../Middlewares/ST/STM32_WPAN/ble/core/ble_bufsize.h:
-C:/Users/Nicho/STM32Cube/Example/WB55/BLE_p2pClient/Middlewares/ST/STM32_WPAN/utilities/stm_queue.h:
+C:/Users/Nicho/Documents/Projects/jhnvrw-seniordesign/software/WB55/BLE_p2pClient/Middlewares/ST/STM32_WPAN/utilities/stm_queue.h:

@@ -1,6 +1,6 @@
 Utilities/stm32_lpm.o: \
- C:/Users/Nicho/STM32Cube/Example/WB55/BLE_p2pClient/Utilities/lpm/tiny_lpm/stm32_lpm.c \
- C:/Users/Nicho/STM32Cube/Example/WB55/BLE_p2pClient/Utilities/lpm/tiny_lpm/stm32_lpm.h \
+ C:/Users/Nicho/Documents/Projects/jhnvrw-seniordesign/software/WB55/BLE_p2pClient/Utilities/lpm/tiny_lpm/stm32_lpm.c \
+ C:/Users/Nicho/Documents/Projects/jhnvrw-seniordesign/software/WB55/BLE_p2pClient/Utilities/lpm/tiny_lpm/stm32_lpm.h \
  ../../Core/Inc/utilities_conf.h \
  ../../Drivers/CMSIS/Include/cmsis_compiler.h \
  ../../Drivers/CMSIS/Include/cmsis_gcc.h ../../Core/Inc/app_conf.h \
@@ -67,7 +67,7 @@ Utilities/stm32_lpm.o: \
  ../../Drivers/BSP/P-NUCLEO-WB55.Nucleo/stm32wbxx_nucleo_errno.h \
  ../../Core/Inc/stm32wbxx_nucleo_conf.h \
  ../../Middlewares/ST/STM32_WPAN/ble/core/ble_bufsize.h
-C:/Users/Nicho/STM32Cube/Example/WB55/BLE_p2pClient/Utilities/lpm/tiny_lpm/stm32_lpm.h:
+C:/Users/Nicho/Documents/Projects/jhnvrw-seniordesign/software/WB55/BLE_p2pClient/Utilities/lpm/tiny_lpm/stm32_lpm.h:
 ../../Core/Inc/utilities_conf.h:
 ../../Drivers/CMSIS/Include/cmsis_compiler.h:
 ../../Drivers/CMSIS/Include/cmsis_gcc.h:

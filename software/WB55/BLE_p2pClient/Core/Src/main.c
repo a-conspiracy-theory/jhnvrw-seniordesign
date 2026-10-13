@@ -164,10 +164,10 @@ int main(void)
   MX_RF_Init();
   /* USER CODE BEGIN 2 */
 
-  SSD1306_Init();
+	SSD1306_Init();
 	SSD1306_Clear();
 	SSD1306_GotoXY(0, 0);
-	SSD1306_Puts("Command Wait", &Font_7x10, 1);
+	SSD1306_Puts("Waiting For BLE", &Font_7x10, 1);
 	SSD1306_UpdateScreen();
 
 //  setup_22dBm_Tx(NULL);		//as the name suggests
@@ -185,7 +185,7 @@ int main(void)
 		MX_APPE_Process();
 
 		/* USER CODE BEGIN 3 */
-		Button1_Poll();
+//		Button1_Poll();
 		BLE_RECIEVE();
 
 	}
@@ -685,8 +685,8 @@ void Write_TO_OLED() {
 	 *
 	 * T = -45 + 175 * (raw / 65535)
 	 */
-	temperature_c = -45.0f
-			+ (175.0f * ((float) g_tlm_data.temperature_raw / 65535.0f));
+	temperature_c = -49.0f
+			+ (315.0f * ((float) g_tlm_data.temperature_raw / 65535.0f));
 
 	/*
 	 * Convert raw SHT41 humidity to %RH
@@ -712,7 +712,7 @@ void Write_TO_OLED() {
 	 *
 	 * Using %.1f gives one decimal place.
 	 */
-	snprintf(oled_buffer, sizeof(oled_buffer), "TEMP: %.1f C", temperature_c);
+	snprintf(oled_buffer, sizeof(oled_buffer), "TEMP: %.1f f", temperature_c);
 
 //	SSD1306_Clear();
 
@@ -756,9 +756,9 @@ void Write_TO_OLED() {
 void BLE_RECIEVE()
 {
    // update every 500ms
-	if (display_toggle)   // BUTTON_1 toggles this
-			{
-		UTIL_SEQ_SetTask(1 << CFG_TASK_START_SCAN_ID, CFG_SCH_PRIO_0);
+//	if (display_toggle)   // BUTTON_1 toggles this
+//			{
+//		UTIL_SEQ_SetTask(1 << CFG_TASK_START_SCAN_ID, CFG_SCH_PRIO_0);
 				if (g_tlm_data.valid) {
 					now = HAL_GetTick();
 
@@ -773,7 +773,7 @@ void BLE_RECIEVE()
 				}
 				else if (!g_tlm_data.valid && BLE_M == 0) {
 					now = HAL_GetTick();
-					if (now - last_update >= update_interval) {
+					if (now - last_update >= update_interval + 2000) {
 						last_update = now;
 						SSD1306_Clear();
 						SSD1306_GotoXY(0, 0);
@@ -784,38 +784,38 @@ void BLE_RECIEVE()
 					}
 				}
 				BLE_Dis = 0;
-			}
-	else if (!display_toggle && BLE_Dis == 0) {
-		aci_gap_terminate_gap_proc(GAP_GENERAL_DISCOVERY_PROC);
-		now = HAL_GetTick();
-		if (now - last_update >= update_interval) {
-			last_update = now;
-			SSD1306_Clear();
-			SSD1306_GotoXY(0, 0);
-			SSD1306_Puts("Scan Disabled", &Font_7x10, 1);
-			SSD1306_UpdateScreen();
-			BLE_Dis = 1;
-		}
-	}
+//			}
+//	else if (!display_toggle && BLE_Dis == 0) {
+//		aci_gap_terminate_gap_proc(GAP_GENERAL_DISCOVERY_PROC);
+//		now = HAL_GetTick();
+//		if (now - last_update >= update_interval) {
+//			last_update = now;
+//			SSD1306_Clear();
+//			SSD1306_GotoXY(0, 0);
+//			SSD1306_Puts("Scan Disabled", &Font_7x10, 1);
+//			SSD1306_UpdateScreen();
+//			BLE_Dis = 1;
+//		}
+//	}
 }
 
-void Button1_Poll(void)
-{
-    static uint8_t last_state = 0;
-    uint8_t current_state = HAL_GPIO_ReadPin(BUTTON_1_GPIO_Port, BUTTON_1_Pin);
-
-    // Detect rising edge (button press)
-    if (current_state == GPIO_PIN_SET && last_state == 0)
-    {
-        HAL_Delay(20); // debounce
-        if (HAL_GPIO_ReadPin(BUTTON_1_GPIO_Port, BUTTON_1_Pin) == GPIO_PIN_SET)
-        {
-            display_toggle ^= 1;   // Toggle display mode
-        }
-    }
-
-    last_state = current_state;
-}
+//void Button1_Poll(void)
+//{
+//    static uint8_t last_state = 0;
+//    uint8_t current_state = HAL_GPIO_ReadPin(BUTTON_1_GPIO_Port, BUTTON_1_Pin);
+//
+//    // Detect rising edge (button press)
+//    if (current_state == GPIO_PIN_SET && last_state == 0)
+//    {
+//        HAL_Delay(20); // debounce
+//        if (HAL_GPIO_ReadPin(BUTTON_1_GPIO_Port, BUTTON_1_Pin) == GPIO_PIN_SET)
+//        {
+//            display_toggle ^= 1;   // Toggle display mode
+//        }
+//    }
+//
+//    last_state = current_state;
+//}
 
 /* USER CODE END 4 */
 

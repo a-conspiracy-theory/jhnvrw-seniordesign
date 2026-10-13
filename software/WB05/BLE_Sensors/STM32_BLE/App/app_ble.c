@@ -35,7 +35,7 @@
 #include "stm32_seq.h"
 /* Private includes ----------------------------------------------------------*/
 /* USER CODE BEGIN Includes */
-
+#include "eddystone_tlm_service.h"
 /* USER CODE END Includes */
 
 /* Private typedef -----------------------------------------------------------*/
@@ -300,6 +300,8 @@ void APP_BLE_Init(void)
   BLE_Init();
 
 /* USER CODE BEGIN APP_BLE_Init_2 */
+  EddystoneTLM_Process(raw_temperature,raw_humidity);
+
 
 /* USER CODE END APP_BLE_Init_2 */
   return;

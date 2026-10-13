@@ -44,12 +44,15 @@ STM32_BLE/App/eddystone_tlm_service.o: \
  ../Drivers/STM32WB0x_HAL_Driver/Inc/stm32wb0x_hal_tim_ex.h \
  ../Drivers/STM32WB0x_HAL_Driver/Inc/stm32wb0x_hal_uart.h \
  ../Drivers/STM32WB0x_HAL_Driver/Inc/stm32wb0x_hal_uart_ex.h \
- ../STM32_BLE/App/app_ble.h \
+ ../Core/Inc/main.h ../Core/Inc/app_entry.h ../Core/Inc/app_common.h \
+ ../System/Config/Debug_GPIO/app_debug.h \
+ ../Projects/Common/BLE/Modules/RTDebug/RTDebug.h \
+ ../System/Config/Debug_GPIO/debug_config.h ../Core/Inc/app_conf.h \
+ ../Projects/Common/BLE/Modules/RTDebug/debug_signals.h \
+ ../Projects/Common/BLE/Modules/compiler.h ../STM32_BLE/App/app_ble.h \
  ../Middlewares/ST/STM32_BLE/stack/include/ble_events.h \
- ../Projects/Common/BLE/Modules/compiler.h \
  ../Middlewares/ST/STM32_BLE/stack/include/ble_types.h \
  ../Middlewares/ST/STM32_BLE/ble.h ../STM32_BLE/App/ble_conf.h \
- ../Core/Inc/app_conf.h \
  ../Middlewares/ST/STM32_BLE/stack/include/ble_stack.h \
  ../Middlewares/ST/STM32_BLE/stack/include/ble_status.h \
  ../Middlewares/ST/STM32_BLE/stack/include/ble_stack_user_cfg.h \
@@ -108,13 +111,20 @@ STM32_BLE/App/eddystone_tlm_service.o: \
 ../Drivers/STM32WB0x_HAL_Driver/Inc/stm32wb0x_hal_tim_ex.h:
 ../Drivers/STM32WB0x_HAL_Driver/Inc/stm32wb0x_hal_uart.h:
 ../Drivers/STM32WB0x_HAL_Driver/Inc/stm32wb0x_hal_uart_ex.h:
+../Core/Inc/main.h:
+../Core/Inc/app_entry.h:
+../Core/Inc/app_common.h:
+../System/Config/Debug_GPIO/app_debug.h:
+../Projects/Common/BLE/Modules/RTDebug/RTDebug.h:
+../System/Config/Debug_GPIO/debug_config.h:
+../Core/Inc/app_conf.h:
+../Projects/Common/BLE/Modules/RTDebug/debug_signals.h:
+../Projects/Common/BLE/Modules/compiler.h:
 ../STM32_BLE/App/app_ble.h:
 ../Middlewares/ST/STM32_BLE/stack/include/ble_events.h:
-../Projects/Common/BLE/Modules/compiler.h:
 ../Middlewares/ST/STM32_BLE/stack/include/ble_types.h:
 ../Middlewares/ST/STM32_BLE/ble.h:
 ../STM32_BLE/App/ble_conf.h:
-../Core/Inc/app_conf.h:
 ../Middlewares/ST/STM32_BLE/stack/include/ble_stack.h:
 ../Middlewares/ST/STM32_BLE/stack/include/ble_status.h:
 ../Middlewares/ST/STM32_BLE/stack/include/ble_stack_user_cfg.h:

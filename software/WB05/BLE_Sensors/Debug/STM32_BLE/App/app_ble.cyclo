@@ -13,5 +13,5 @@
 ../STM32_BLE/App/app_ble.c:278:6:HAL_RADIO_RRMCallback	1
 ../STM32_BLE/App/app_ble.c:283:6:BLE_STACK_ProcessRequest	1
 ../STM32_BLE/App/app_ble.c:289:6:APP_BLE_Init	1
-../STM32_BLE/App/app_ble.c:308:6:BLEEVT_App_Notification	1
-../STM32_BLE/App/app_ble.c:315:6:hci_hardware_error_event	1
+../STM32_BLE/App/app_ble.c:310:6:BLEEVT_App_Notification	1
+../STM32_BLE/App/app_ble.c:317:6:hci_hardware_error_event	1

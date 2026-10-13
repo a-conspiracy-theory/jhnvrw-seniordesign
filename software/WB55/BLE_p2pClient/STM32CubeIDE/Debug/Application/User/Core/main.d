@@ -1,5 +1,5 @@
 Application/User/Core/main.o: \
- C:/Users/Nicho/STM32Cube/Example/WB55/BLE_p2pClient/Core/Src/main.c \
+ C:/Users/Nicho/Documents/Projects/jhnvrw-seniordesign/software/WB55/BLE_p2pClient/Core/Src/main.c \
  ../../Core/Inc/main.h \
  ../../Drivers/STM32WBxx_HAL_Driver/Inc/stm32wbxx_hal.h \
  ../../Core/Inc/stm32wbxx_hal_conf.h \

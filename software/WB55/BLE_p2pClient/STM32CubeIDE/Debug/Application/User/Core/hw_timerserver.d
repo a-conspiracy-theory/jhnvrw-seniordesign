@@ -1,5 +1,5 @@
 Application/User/Core/hw_timerserver.o: \
- C:/Users/Nicho/STM32Cube/Example/WB55/BLE_p2pClient/Core/Src/hw_timerserver.c \
+ C:/Users/Nicho/Documents/Projects/jhnvrw-seniordesign/software/WB55/BLE_p2pClient/Core/Src/hw_timerserver.c \
  ../../Core/Inc/app_common.h ../../Core/Inc/app_conf.h \
  ../../Middlewares/ST/STM32_WPAN/interface/patterns/ble_thread/hw.h \
  ../../Core/Inc/hw_conf.h ../../Core/Inc/hw_if.h \

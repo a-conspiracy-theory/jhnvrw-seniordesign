@@ -20,6 +20,7 @@
 
 /* Includes ------------------------------------------------------------------*/
 #include "app_common.h"
+#include "main.h"
 #include "app_ble.h"
 #include "ble.h"
 #include "eddystone_beacon.h"

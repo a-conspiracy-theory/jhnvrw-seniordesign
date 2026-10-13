@@ -1,6 +1,6 @@
 Middlewares/STM32_WPAN/svc_ctl.o: \
- C:/Users/Nicho/STM32Cube/Example/WB55/BLE_p2pClient/Middlewares/ST/STM32_WPAN/ble/svc/Src/svc_ctl.c \
- C:/Users/Nicho/STM32Cube/Example/WB55/BLE_p2pClient/Middlewares/ST/STM32_WPAN/ble/svc/Src/common_blesvc.h \
+ C:/Users/Nicho/Documents/Projects/jhnvrw-seniordesign/software/WB55/BLE_p2pClient/Middlewares/ST/STM32_WPAN/ble/svc/Src/svc_ctl.c \
+ C:/Users/Nicho/Documents/Projects/jhnvrw-seniordesign/software/WB55/BLE_p2pClient/Middlewares/ST/STM32_WPAN/ble/svc/Src/common_blesvc.h \
  ../../Middlewares/ST/STM32_WPAN/ble/ble_common.h \
  ../../STM32_WPAN/App/ble_conf.h ../../Core/Inc/app_conf.h \
  ../../Middlewares/ST/STM32_WPAN/interface/patterns/ble_thread/hw.h \
@@ -116,7 +116,7 @@ Middlewares/STM32_WPAN/svc_ctl.o: \
  ../../Middlewares/ST/STM32_WPAN/ble/svc/Inc/svc_ctl.h \
  ../../Middlewares/ST/STM32_WPAN/ble/svc/Inc/uuid.h \
  ../../Middlewares/ST/STM32_WPAN/utilities/dbg_trace.h
-C:/Users/Nicho/STM32Cube/Example/WB55/BLE_p2pClient/Middlewares/ST/STM32_WPAN/ble/svc/Src/common_blesvc.h:
+C:/Users/Nicho/Documents/Projects/jhnvrw-seniordesign/software/WB55/BLE_p2pClient/Middlewares/ST/STM32_WPAN/ble/svc/Src/common_blesvc.h:
 ../../Middlewares/ST/STM32_WPAN/ble/ble_common.h:
 ../../STM32_WPAN/App/ble_conf.h:
 ../../Core/Inc/app_conf.h:

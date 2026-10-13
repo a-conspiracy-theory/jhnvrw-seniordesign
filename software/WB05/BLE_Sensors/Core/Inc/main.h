@@ -40,7 +40,8 @@ extern "C" {
 
 /* Exported types ------------------------------------------------------------*/
 /* USER CODE BEGIN ET */
-
+extern uint16_t raw_temperature;
+extern uint16_t raw_humidity;
 /* USER CODE END ET */
 
 /* Exported constants --------------------------------------------------------*/

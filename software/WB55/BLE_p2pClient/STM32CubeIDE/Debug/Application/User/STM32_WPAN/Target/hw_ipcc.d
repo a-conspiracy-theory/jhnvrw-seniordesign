@@ -1,5 +1,5 @@
 Application/User/STM32_WPAN/Target/hw_ipcc.o: \
- C:/Users/Nicho/STM32Cube/Example/WB55/BLE_p2pClient/STM32_WPAN/Target/hw_ipcc.c \
+ C:/Users/Nicho/Documents/Projects/jhnvrw-seniordesign/software/WB55/BLE_p2pClient/STM32_WPAN/Target/hw_ipcc.c \
  ../../Core/Inc/app_common.h ../../Core/Inc/app_conf.h \
  ../../Middlewares/ST/STM32_WPAN/interface/patterns/ble_thread/hw.h \
  ../../Core/Inc/hw_conf.h ../../Core/Inc/hw_if.h \

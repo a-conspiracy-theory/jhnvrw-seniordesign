@@ -1,5 +1,5 @@
 Drivers/STM32WBxx_HAL_Driver/stm32wbxx_hal_flash.o: \
- C:/Users/Nicho/STM32Cube/Example/WB55/BLE_p2pClient/Drivers/STM32WBxx_HAL_Driver/Src/stm32wbxx_hal_flash.c \
+ C:/Users/Nicho/Documents/Projects/jhnvrw-seniordesign/software/WB55/BLE_p2pClient/Drivers/STM32WBxx_HAL_Driver/Src/stm32wbxx_hal_flash.c \
  ../../Drivers/STM32WBxx_HAL_Driver/Inc/stm32wbxx_hal.h \
  ../../Core/Inc/stm32wbxx_hal_conf.h \
  ../../Drivers/STM32WBxx_HAL_Driver/Inc/stm32wbxx_hal_dma.h \

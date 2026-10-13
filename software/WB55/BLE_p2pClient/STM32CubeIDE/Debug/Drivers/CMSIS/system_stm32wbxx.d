@@ -1,5 +1,5 @@
 Drivers/CMSIS/system_stm32wbxx.o: \
- C:/Users/Nicho/STM32Cube/Example/WB55/BLE_p2pClient/Core/Src/system_stm32wbxx.c \
+ C:/Users/Nicho/Documents/Projects/jhnvrw-seniordesign/software/WB55/BLE_p2pClient/Core/Src/system_stm32wbxx.c \
  ../../Drivers/CMSIS/Device/ST/STM32WBxx/Include/stm32wbxx.h \
  ../../Drivers/CMSIS/Device/ST/STM32WBxx/Include/stm32wb55xx.h \
  ../../Drivers/CMSIS/Include/core_cm4.h \

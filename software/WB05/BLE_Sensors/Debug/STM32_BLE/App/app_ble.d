@@ -70,7 +70,8 @@ STM32_BLE/App/app_ble.o: ../STM32_BLE/App/app_ble.c ../Core/Inc/main.h \
  ../Projects/Common/BLE/Modules/NVMDB/Inc/nvm_db.h \
  ../STM32_BLE/Target/blenvm.h \
  ../Projects/Common/BLE/Modules/PKAMGR/Inc/pka_manager.h \
- ../Utilities/sequencer/stm32_seq.h
+ ../Utilities/sequencer/stm32_seq.h \
+ ../STM32_BLE/App/eddystone_tlm_service.h
 ../Core/Inc/main.h:
 ../Drivers/STM32WB0x_HAL_Driver/Inc/stm32wb0x_hal.h:
 ../Core/Inc/stm32wb0x_hal_conf.h:
@@ -148,3 +149,4 @@ STM32_BLE/App/app_ble.o: ../STM32_BLE/App/app_ble.c ../Core/Inc/main.h \
 ../STM32_BLE/Target/blenvm.h:
 ../Projects/Common/BLE/Modules/PKAMGR/Inc/pka_manager.h:
 ../Utilities/sequencer/stm32_seq.h:
+../STM32_BLE/App/eddystone_tlm_service.h:
