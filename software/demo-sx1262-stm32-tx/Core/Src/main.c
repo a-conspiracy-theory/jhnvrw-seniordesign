@@ -102,7 +102,7 @@ int main(void)
   setup_22dBm_Tx(NULL);		//as the name suggests
   rfswitch_Tx(NULL);		//configure the RF switch for TX
   HAL_Delay(100);
-
+  sx126x_set_tx_cw(NULL);
   /* USER CODE END 2 */
 
 
@@ -135,8 +135,7 @@ int main(void)
     /* USER CODE END WHILE */
 
 	  //YIPPE I MADE IT BLINK!!!
-	  BSP_LED_Toggle(LED_BLUE);
-	  HAL_Delay(1000);
+
 
     /* USER CODE BEGIN 3 */
   }
