@@ -49,8 +49,8 @@ s
 #include "ble_gap_aci.h"
 #include "stm32_seq.h"
 #include <stdio.h>
+#include "board_sx126x_calls.h"
 
-//#include "sx126x.h"
 /* USER CODE END Includes */
 
 /* Private typedef -----------------------------------------------------------*/
@@ -69,6 +69,7 @@ s
 /* USER CODE END PM */
 
 /* Private variables ---------------------------------------------------------*/
+
 I2C_HandleTypeDef hi2c1;
 
 IPCC_HandleTypeDef hipcc;
@@ -164,35 +165,45 @@ int main(void)
   MX_RF_Init();
   /* USER CODE BEGIN 2 */
 
+    sx126x_status_t status;
+	status = setup_22dBm_Tx(NULL);		//as the name suggests
+    status = rfswitch_Tx(NULL);		//configure the RF switch for TX
+    HAL_Delay(100);
+
+    	status = sx126x_set_tx_cw(NULL);
+
 	SSD1306_Init();
 	SSD1306_Clear();
 	SSD1306_GotoXY(0, 0);
 	SSD1306_Puts("Waiting For BLE", &Font_7x10, 1);
 	SSD1306_UpdateScreen();
 
-//  setup_22dBm_Tx(NULL);		//as the name suggests
-//  rfswitch_Tx(NULL);		//configure the RF switch for TX
   /* USER CODE END 2 */
 
   /* Init code for STM32_WPAN */
   MX_APPE_Init();
 
+  /* Initialize leds */
+  BSP_LED_Init(LED_BLUE);
+
+  /* Initialize User push-button without interrupt mode. */
+  BSP_PB_Init(BUTTON_SW1, BUTTON_MODE_GPIO);
+
   /* Infinite loop */
   /* USER CODE BEGIN WHILE */
 	while (1) {
 
-		/* USER CODE END WHILE */
-		MX_APPE_Process();
+    /* USER CODE END WHILE */
+    MX_APPE_Process();
 
-		/* USER CODE BEGIN 3 */
-//		Button1_Poll();
+    /* USER CODE BEGIN 3 */
+    		Button1_Poll();
 		BLE_RECIEVE();
 
 	}
 	// Time Delay means BLE Delay not good, minimize
-	/* USER CODE END 3 */
+  /* USER CODE END 3 */
 }
-
 
 /**
   * @brief System Clock Configuration
@@ -441,7 +452,7 @@ static void MX_SPI1_Init(void)
   hspi1.Instance = SPI1;
   hspi1.Init.Mode = SPI_MODE_MASTER;
   hspi1.Init.Direction = SPI_DIRECTION_2LINES;
-  hspi1.Init.DataSize = SPI_DATASIZE_4BIT;
+  hspi1.Init.DataSize = SPI_DATASIZE_8BIT;
   hspi1.Init.CLKPolarity = SPI_POLARITY_LOW;
   hspi1.Init.CLKPhase = SPI_PHASE_1EDGE;
   hspi1.Init.NSS = SPI_NSS_SOFT;
@@ -626,14 +637,16 @@ static void MX_GPIO_Init(void)
   __HAL_RCC_GPIOA_CLK_ENABLE();
 
   /*Configure GPIO pin Output Level */
-  HAL_GPIO_WritePin(GPIOA, SX1262_DIO1_Pin|SX1262_BUSY_Pin|SX1262_DIO2_Pin|SX1262_RST_Pin
-                          |SX1262_RFSW_Pin, GPIO_PIN_RESET);
+  HAL_GPIO_WritePin(GPIOA, SX1262_TXEN_Pin|SX1262_RST_Pin, GPIO_PIN_RESET);
 
   /*Configure GPIO pin Output Level */
-  HAL_GPIO_WritePin(GPIOC, BUTTON_1_Pin|GPIO_PIN_6, GPIO_PIN_RESET);
+  HAL_GPIO_WritePin(SX1262_NSS_GPIO_Port, SX1262_NSS_Pin, GPIO_PIN_SET);
 
   /*Configure GPIO pin Output Level */
-  HAL_GPIO_WritePin(GPIOB, GPIO_PIN_3|GPIO_PIN_4|GPIO_PIN_5, GPIO_PIN_RESET);
+  HAL_GPIO_WritePin(SX1262_RXEN_GPIO_Port, SX1262_RXEN_Pin, GPIO_PIN_RESET);
+
+  /*Configure GPIO pin Output Level */
+  HAL_GPIO_WritePin(GPIOB, GPIO_PIN_3|GPIO_PIN_4, GPIO_PIN_RESET);
 
   /*Configure GPIO pin : PH3 */
   GPIO_InitStruct.Pin = GPIO_PIN_3;
@@ -642,30 +655,34 @@ static void MX_GPIO_Init(void)
   GPIO_InitStruct.Speed = GPIO_SPEED_FREQ_LOW;
   HAL_GPIO_Init(GPIOH, &GPIO_InitStruct);
 
-  /*Configure GPIO pins : SX1262_DIO1_Pin SX1262_BUSY_Pin SX1262_DIO2_Pin SX1262_RST_Pin
-                           SX1262_RFSW_Pin */
-  GPIO_InitStruct.Pin = SX1262_DIO1_Pin|SX1262_BUSY_Pin|SX1262_DIO2_Pin|SX1262_RST_Pin
-                          |SX1262_RFSW_Pin;
+  /*Configure GPIO pins : SX1262_TXEN_Pin SX1262_NSS_Pin SX1262_RST_Pin */
+  GPIO_InitStruct.Pin = SX1262_TXEN_Pin|SX1262_NSS_Pin|SX1262_RST_Pin;
   GPIO_InitStruct.Mode = GPIO_MODE_OUTPUT_PP;
   GPIO_InitStruct.Pull = GPIO_NOPULL;
   GPIO_InitStruct.Speed = GPIO_SPEED_FREQ_LOW;
   HAL_GPIO_Init(GPIOA, &GPIO_InitStruct);
 
-  /*Configure GPIO pins : SX1262_NSS_Pin SX1262_RFSW__Pin */
-  GPIO_InitStruct.Pin = SX1262_NSS_Pin|SX1262_RFSW__Pin;
+  /*Configure GPIO pin : SX1262_BUSY_Pin */
+  GPIO_InitStruct.Pin = SX1262_BUSY_Pin;
+  GPIO_InitStruct.Mode = GPIO_MODE_INPUT;
+  GPIO_InitStruct.Pull = GPIO_NOPULL;
+  HAL_GPIO_Init(SX1262_BUSY_GPIO_Port, &GPIO_InitStruct);
+
+  /*Configure GPIO pin : SX1262_DIO1_Pin */
+  GPIO_InitStruct.Pin = SX1262_DIO1_Pin;
   GPIO_InitStruct.Mode = GPIO_MODE_IT_RISING;
   GPIO_InitStruct.Pull = GPIO_NOPULL;
-  HAL_GPIO_Init(GPIOA, &GPIO_InitStruct);
+  HAL_GPIO_Init(SX1262_DIO1_GPIO_Port, &GPIO_InitStruct);
 
-  /*Configure GPIO pins : BUTTON_1_Pin PC6 */
-  GPIO_InitStruct.Pin = BUTTON_1_Pin|GPIO_PIN_6;
+  /*Configure GPIO pin : SX1262_RXEN_Pin */
+  GPIO_InitStruct.Pin = SX1262_RXEN_Pin;
   GPIO_InitStruct.Mode = GPIO_MODE_OUTPUT_PP;
   GPIO_InitStruct.Pull = GPIO_NOPULL;
   GPIO_InitStruct.Speed = GPIO_SPEED_FREQ_LOW;
-  HAL_GPIO_Init(GPIOC, &GPIO_InitStruct);
+  HAL_GPIO_Init(SX1262_RXEN_GPIO_Port, &GPIO_InitStruct);
 
-  /*Configure GPIO pins : PB3 PB4 PB5 */
-  GPIO_InitStruct.Pin = GPIO_PIN_3|GPIO_PIN_4|GPIO_PIN_5;
+  /*Configure GPIO pins : PB3 PB4 */
+  GPIO_InitStruct.Pin = GPIO_PIN_3|GPIO_PIN_4;
   GPIO_InitStruct.Mode = GPIO_MODE_OUTPUT_PP;
   GPIO_InitStruct.Pull = GPIO_NOPULL;
   GPIO_InitStruct.Speed = GPIO_SPEED_FREQ_LOW;
@@ -799,23 +816,45 @@ void BLE_RECIEVE()
 //	}
 }
 
-//void Button1_Poll(void)
-//{
-//    static uint8_t last_state = 0;
-//    uint8_t current_state = HAL_GPIO_ReadPin(BUTTON_1_GPIO_Port, BUTTON_1_Pin);
-//
-//    // Detect rising edge (button press)
-//    if (current_state == GPIO_PIN_SET && last_state == 0)
-//    {
-//        HAL_Delay(20); // debounce
-//        if (HAL_GPIO_ReadPin(BUTTON_1_GPIO_Port, BUTTON_1_Pin) == GPIO_PIN_SET)
-//        {
-//            display_toggle ^= 1;   // Toggle display mode
-//        }
-//    }
-//
-//    last_state = current_state;
-//}
+void Button1_Poll(void)
+{
+    static uint8_t last_state = GPIO_PIN_RESET;
+    static uint8_t led_on = 0;
+
+    sx126x_status_t status;
+
+    uint8_t current_state =
+        HAL_GPIO_ReadPin(GPIOC, GPIO_PIN_4);
+
+    // Detect button press (rising edge)
+    if (current_state == GPIO_PIN_SET &&
+        last_state == GPIO_PIN_RESET)
+    {
+        HAL_Delay(20); // Debounce
+
+        if (HAL_GPIO_ReadPin(GPIOC, GPIO_PIN_4) == GPIO_PIN_SET)
+        {
+            // Toggle LED state
+            led_on = !led_on;
+
+            if (led_on)
+            {
+                status = sx126x_set_tx_cw(NULL);
+                HAL_GPIO_WritePin(
+                    GPIOB, GPIO_PIN_5, GPIO_PIN_SET);
+            }
+            else
+            {
+                status = sx126x_set_standby(
+                    NULL, SX126X_STANDBY_CFG_RC);
+                HAL_GPIO_WritePin(
+                    GPIOB, GPIO_PIN_5, GPIO_PIN_RESET);
+            }
+        }
+    }
+
+    last_state = current_state;
+}
 
 /* USER CODE END 4 */
 

@@ -318,7 +318,7 @@ void APP_BLE_Init(void)
    * From here, all initialization are BLE application specific
    */
   UTIL_SEQ_RegTask(1<<CFG_TASK_START_SCAN_ID, UTIL_SEQ_RFU, Scan_Request);
-  //UTIL_SEQ_RegTask(1<<CFG_TASK_CONN_DEV_1_ID, UTIL_SEQ_RFU, Connect_Request);
+  UTIL_SEQ_RegTask(1<<CFG_TASK_CONN_DEV_1_ID, UTIL_SEQ_RFU, Connect_Request);
 
   /**
    * Initialization of the BLE App Context
@@ -641,7 +641,7 @@ SVCCTL_UserEvtFlowStatus_t SVCCTL_App_Notification(void *pckt)
                   } /* end switch adtype */
                   k += adlength + 1;
                 } /* end while */
-               /* end if ADV_IND */
+              /* end if ADV_IND */
 
               /* USER CODE BEGIN EVT_LE_ADVERTISING_REPORT_2 */
 
@@ -921,8 +921,8 @@ static void Scan_Request(void)
 
   /* USER CODE END Scan_Request_1 */
   tBleStatus result;
-//  if (BleApplicationContext.Device_Connection_Status != APP_BLE_CONNECTED_CLIENT)
-//  {
+  if (BleApplicationContext.Device_Connection_Status != APP_BLE_CONNECTED_CLIENT)
+  {
     /* USER CODE BEGIN APP_BLE_CONNECTED_CLIENT */
 
     /* USER CODE END APP_BLE_CONNECTED_CLIENT */
@@ -941,7 +941,7 @@ static void Scan_Request(void)
     /* USER CODE END BLE_SCAN_FAILED */
       APP_DBG_MSG("-- BLE_App_Start_Limited_Disc_Req, Failed \r\n\r");
     }
-//  }
+  }
   /* USER CODE BEGIN Scan_Request_2 */
 
   /* USER CODE END Scan_Request_2 */
