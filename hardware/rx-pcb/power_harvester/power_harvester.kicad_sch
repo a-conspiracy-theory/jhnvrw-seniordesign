@@ -4979,7 +4979,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "on"
+		(property "Value" "off"
 			(at 92.456 120.904 90)
 			(show_name no)
 			(do_not_autoplace no)
@@ -5377,8 +5377,8 @@
 				(justify left)
 			)
 		)
-		(property "Value" "x"
-			(at 36.576 142.748 90)
+		(property "Value" "1k"
+			(at 36.83 143.51 90)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -6424,7 +6424,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "on"
+		(property "Value" "off"
 			(at 89.916 120.904 90)
 			(show_name no)
 			(do_not_autoplace no)

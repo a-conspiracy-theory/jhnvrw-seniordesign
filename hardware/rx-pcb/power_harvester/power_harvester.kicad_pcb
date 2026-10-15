@@ -4660,7 +4660,7 @@
 				)
 			)
 		)
-		(property "Value" "on"
+		(property "Value" "off"
 			(at -1.725 -0.1 90)
 			(layer "F.Fab")
 			(uuid "b1bd123c-625f-4eee-b71c-45487c5f3cf7")
@@ -6324,7 +6324,7 @@
 				)
 			)
 		)
-		(property "Value" "x"
+		(property "Value" "1k"
 			(at 0 1.65 0)
 			(layer "F.Fab")
 			(uuid "f643a476-888d-40ab-aba0-1058f6d57a0c")
@@ -6797,7 +6797,7 @@
 				)
 			)
 		)
-		(property "Value" "on"
+		(property "Value" "off"
 			(at -1.725 -0.1 90)
 			(layer "F.Fab")
 			(uuid "f2cbb52d-8ce9-4b9f-8bda-9d96b464875d")
