@@ -1,0 +1,15 @@
+../Drivers/STM32WB0x_HAL_Driver/Src/stm32wb0x_hal_rtc_ex.c:117:19:HAL_RTCEx_SetWakeUpTimer	7
+../Drivers/STM32WB0x_HAL_Driver/Src/stm32wb0x_hal_rtc_ex.c:214:19:HAL_RTCEx_SetWakeUpTimer_IT	7
+../Drivers/STM32WB0x_HAL_Driver/Src/stm32wb0x_hal_rtc_ex.c:311:19:HAL_RTCEx_DeactivateWakeUpTimer	4
+../Drivers/STM32WB0x_HAL_Driver/Src/stm32wb0x_hal_rtc_ex.c:366:10:HAL_RTCEx_GetWakeUpTimer	1
+../Drivers/STM32WB0x_HAL_Driver/Src/stm32wb0x_hal_rtc_ex.c:378:6:HAL_RTCEx_WakeUpTimerIRQHandler	2
+../Drivers/STM32WB0x_HAL_Driver/Src/stm32wb0x_hal_rtc_ex.c:404:13:HAL_RTCEx_WakeUpTimerEventCallback	1
+../Drivers/STM32WB0x_HAL_Driver/Src/stm32wb0x_hal_rtc_ex.c:421:19:HAL_RTCEx_PollForWakeUpTimerEvent	5
+../Drivers/STM32WB0x_HAL_Driver/Src/stm32wb0x_hal_rtc_ex.c:487:6:HAL_RTCEx_BKUPWrite	1
+../Drivers/STM32WB0x_HAL_Driver/Src/stm32wb0x_hal_rtc_ex.c:510:10:HAL_RTCEx_BKUPRead	1
+../Drivers/STM32WB0x_HAL_Driver/Src/stm32wb0x_hal_rtc_ex.c:544:19:HAL_RTCEx_SetSmoothCalib	5
+../Drivers/STM32WB0x_HAL_Driver/Src/stm32wb0x_hal_rtc_ex.c:615:19:HAL_RTCEx_SetSynchroShift	6
+../Drivers/STM32WB0x_HAL_Driver/Src/stm32wb0x_hal_rtc_ex.c:693:19:HAL_RTCEx_SetCalibrationOutPut	2
+../Drivers/STM32WB0x_HAL_Driver/Src/stm32wb0x_hal_rtc_ex.c:732:19:HAL_RTCEx_DeactivateCalibrationOutPut	2
+../Drivers/STM32WB0x_HAL_Driver/Src/stm32wb0x_hal_rtc_ex.c:764:19:HAL_RTCEx_EnableBypassShadow	2
+../Drivers/STM32WB0x_HAL_Driver/Src/stm32wb0x_hal_rtc_ex.c:797:19:HAL_RTCEx_DisableBypassShadow	2

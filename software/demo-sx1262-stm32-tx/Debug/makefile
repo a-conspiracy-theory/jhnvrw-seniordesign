@@ -62,8 +62,8 @@ all: main-build
 main-build: Nucleo-WB55-Board.elf secondary-outputs
 
 # Tool invocations
-Nucleo-WB55-Board.elf Nucleo-WB55-Board.map: $(OBJS) $(USER_OBJS) C:\Users\jacob\Documents\STM32\Nucleo-WB55-Board\STM32WB55RGVX_FLASH.ld makefile objects.list $(OPTIONAL_TOOL_DEPS)
-	arm-none-eabi-gcc -o "Nucleo-WB55-Board.elf" @"objects.list" $(USER_OBJS) $(LIBS) -mcpu=cortex-m4 -T"C:\Users\jacob\Documents\STM32\Nucleo-WB55-Board\STM32WB55RGVX_FLASH.ld" --specs=nosys.specs -Wl,-Map="Nucleo-WB55-Board.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Nucleo-WB55-Board.elf Nucleo-WB55-Board.map: $(OBJS) $(USER_OBJS) C:\Users\HOME\Documents\KiCad\Projects\jhnvrw-seniordesign\software\demo-sx1262-stm32-tx\STM32WB55RGVX_FLASH.ld makefile objects.list $(OPTIONAL_TOOL_DEPS)
+	arm-none-eabi-gcc -o "Nucleo-WB55-Board.elf" @"objects.list" $(USER_OBJS) $(LIBS) -mcpu=cortex-m4 -T"C:\Users\HOME\Documents\KiCad\Projects\jhnvrw-seniordesign\software\demo-sx1262-stm32-tx\STM32WB55RGVX_FLASH.ld" --specs=nosys.specs -Wl,-Map="Nucleo-WB55-Board.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
 	@echo 'Finished building target: $@'
 	@echo ' '
 

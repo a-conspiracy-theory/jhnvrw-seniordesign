@@ -1,5 +1,5 @@
 Core/Src/board_sx126x_hal.o: ../Core/Src/board_sx126x_hal.c \
- C:/Users/jacob/Documents/STM32/Nucleo-WB55-Board/Drivers/sx126x_driver/inc/sx126x_hal.h \
+ C:/Users/HOME/Documents/KiCad/Projects/jhnvrw-seniordesign/software/demo-sx1262-stm32-tx/Drivers/sx126x_driver/inc/sx126x_hal.h \
  ../Core/Inc/main.h ../Drivers/STM32WBxx_HAL_Driver/Inc/stm32wbxx_hal.h \
  ../Core/Inc/stm32wbxx_hal_conf.h \
  ../Drivers/STM32WBxx_HAL_Driver/Inc/stm32wbxx_hal_dma.h \
@@ -39,7 +39,7 @@ Core/Src/board_sx126x_hal.o: ../Core/Src/board_sx126x_hal.c \
  ../Drivers/BSP/P-NUCLEO-WB55.Nucleo/stm32wbxx_nucleo.h \
  ../Drivers/BSP/P-NUCLEO-WB55.Nucleo/stm32wbxx_nucleo_errno.h \
  ../Core/Inc/stm32wbxx_nucleo_conf.h
-C:/Users/jacob/Documents/STM32/Nucleo-WB55-Board/Drivers/sx126x_driver/inc/sx126x_hal.h:
+C:/Users/HOME/Documents/KiCad/Projects/jhnvrw-seniordesign/software/demo-sx1262-stm32-tx/Drivers/sx126x_driver/inc/sx126x_hal.h:
 ../Core/Inc/main.h:
 ../Drivers/STM32WBxx_HAL_Driver/Inc/stm32wbxx_hal.h:
 ../Core/Inc/stm32wbxx_hal_conf.h:

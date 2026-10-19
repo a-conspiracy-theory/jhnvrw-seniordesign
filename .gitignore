@@ -22,3 +22,6 @@ hardware/rx-pcb/bluetooth_test/~rx-pcb.kicad_sch.lck
 /hardware/rx-pcb/bluetooth_test/production
 /hardware/rx-pcb/power_harvester/production
 /hardware/tx-pcb/production
+hardware/tx-pcb/~tx-pcb.kicad_pro.lck
+hardware/tx-pcb/~tx-pcb.kicad_sch.lck
+*.lck

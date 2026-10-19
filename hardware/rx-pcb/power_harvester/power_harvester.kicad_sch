@@ -2415,6 +2415,16 @@
 		)
 		(uuid "19e11112-8f20-45c4-82a7-94aed8d469bb")
 	)
+	(text "R4     R3     R2     R1"
+		(exclude_from_sim no)
+		(at 78.74 188.468 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+		(uuid "8e703393-beea-4571-a842-e92455091b36")
+	)
 	(text "config pins (except EN_SLP) read floating as high\n(internal pull-up)"
 		(exclude_from_sim no)
 		(at 121.666 120.396 0)
@@ -5688,8 +5698,8 @@
 				(justify left)
 			)
 		)
-		(property "Value" "x"
-			(at 75.438 185.166 90)
+		(property "Value" "19.5M"
+			(at 77.978 190.246 90)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -5851,8 +5861,8 @@
 				(justify left)
 			)
 		)
-		(property "Value" "x"
-			(at 90.678 185.166 90)
+		(property "Value" "5.6M"
+			(at 91.948 190.246 90)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -6578,8 +6588,8 @@
 				(justify left)
 			)
 		)
-		(property "Value" "x"
-			(at 83.058 185.166 90)
+		(property "Value" "100k"
+			(at 85.09 190.246 90)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -7036,7 +7046,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "on"
+		(property "Value" "off"
 			(at 77.216 120.904 90)
 			(show_name no)
 			(do_not_autoplace no)
@@ -7205,7 +7215,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "off"
+		(property "Value" "on"
 			(at 74.676 120.904 90)
 			(show_name no)
 			(do_not_autoplace no)
@@ -7686,7 +7696,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "on"
+		(property "Value" "off"
 			(at 63.246 120.904 90)
 			(show_name no)
 			(do_not_autoplace no)
@@ -8008,8 +8018,8 @@
 				(justify left)
 			)
 		)
-		(property "Value" "x"
-			(at 67.818 185.166 90)
+		(property "Value" "0"
+			(at 68.58 190.246 90)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -9054,7 +9064,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "on"
+		(property "Value" "off"
 			(at 65.786 120.904 90)
 			(show_name no)
 			(do_not_autoplace no)

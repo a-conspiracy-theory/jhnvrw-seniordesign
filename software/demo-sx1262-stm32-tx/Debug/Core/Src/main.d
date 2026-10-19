@@ -38,10 +38,10 @@ Core/Src/main.o: ../Core/Src/main.c ../Core/Inc/main.h \
  ../Drivers/BSP/P-NUCLEO-WB55.Nucleo/stm32wbxx_nucleo.h \
  ../Drivers/BSP/P-NUCLEO-WB55.Nucleo/stm32wbxx_nucleo_errno.h \
  ../Core/Inc/stm32wbxx_nucleo_conf.h ../Core/Inc/board_sx126x_calls.h \
- C:/Users/jacob/Documents/STM32/Nucleo-WB55-Board/Drivers/sx126x_driver/inc/sx126x.h \
- C:/Users/jacob/Documents/STM32/Nucleo-WB55-Board/Drivers/sx126x_driver/inc/sx126x_status.h \
- C:/Users/jacob/Documents/STM32/Nucleo-WB55-Board/Drivers/sx126x_driver/inc/sx126x_hal.h \
- C:/Users/jacob/Documents/STM32/Nucleo-WB55-Board/Drivers/sx126x_driver/inc/sx126x_driver_version.h
+ C:/Users/HOME/Documents/KiCad/Projects/jhnvrw-seniordesign/software/demo-sx1262-stm32-tx/Drivers/sx126x_driver/inc/sx126x.h \
+ C:/Users/HOME/Documents/KiCad/Projects/jhnvrw-seniordesign/software/demo-sx1262-stm32-tx/Drivers/sx126x_driver/inc/sx126x_status.h \
+ C:/Users/HOME/Documents/KiCad/Projects/jhnvrw-seniordesign/software/demo-sx1262-stm32-tx/Drivers/sx126x_driver/inc/sx126x_hal.h \
+ C:/Users/HOME/Documents/KiCad/Projects/jhnvrw-seniordesign/software/demo-sx1262-stm32-tx/Drivers/sx126x_driver/inc/sx126x_driver_version.h
 ../Core/Inc/main.h:
 ../Drivers/STM32WBxx_HAL_Driver/Inc/stm32wbxx_hal.h:
 ../Core/Inc/stm32wbxx_hal_conf.h:
@@ -83,7 +83,7 @@ Core/Src/main.o: ../Core/Src/main.c ../Core/Inc/main.h \
 ../Drivers/BSP/P-NUCLEO-WB55.Nucleo/stm32wbxx_nucleo_errno.h:
 ../Core/Inc/stm32wbxx_nucleo_conf.h:
 ../Core/Inc/board_sx126x_calls.h:
-C:/Users/jacob/Documents/STM32/Nucleo-WB55-Board/Drivers/sx126x_driver/inc/sx126x.h:
-C:/Users/jacob/Documents/STM32/Nucleo-WB55-Board/Drivers/sx126x_driver/inc/sx126x_status.h:
-C:/Users/jacob/Documents/STM32/Nucleo-WB55-Board/Drivers/sx126x_driver/inc/sx126x_hal.h:
-C:/Users/jacob/Documents/STM32/Nucleo-WB55-Board/Drivers/sx126x_driver/inc/sx126x_driver_version.h:
+C:/Users/HOME/Documents/KiCad/Projects/jhnvrw-seniordesign/software/demo-sx1262-stm32-tx/Drivers/sx126x_driver/inc/sx126x.h:
+C:/Users/HOME/Documents/KiCad/Projects/jhnvrw-seniordesign/software/demo-sx1262-stm32-tx/Drivers/sx126x_driver/inc/sx126x_status.h:
+C:/Users/HOME/Documents/KiCad/Projects/jhnvrw-seniordesign/software/demo-sx1262-stm32-tx/Drivers/sx126x_driver/inc/sx126x_hal.h:
+C:/Users/HOME/Documents/KiCad/Projects/jhnvrw-seniordesign/software/demo-sx1262-stm32-tx/Drivers/sx126x_driver/inc/sx126x_driver_version.h:
