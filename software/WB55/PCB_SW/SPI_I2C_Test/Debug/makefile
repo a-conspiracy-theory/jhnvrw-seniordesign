@@ -62,8 +62,8 @@ all: main-build
 main-build: SPI_I2C_Test.elf secondary-outputs
 
 # Tool invocations
-SPI_I2C_Test.elf SPI_I2C_Test.map: $(OBJS) $(USER_OBJS) C:\Users\HOME\Documents\KiCad\Projects\jhnvrw-seniordesign\software\WB55\PCB_SW\SPI_I2C_Test\STM32WB55CCUX_FLASH.ld makefile objects.list $(OPTIONAL_TOOL_DEPS)
-	arm-none-eabi-gcc -o "SPI_I2C_Test.elf" @"objects.list" $(USER_OBJS) $(LIBS) -mcpu=cortex-m4 -T"C:\Users\HOME\Documents\KiCad\Projects\jhnvrw-seniordesign\software\WB55\PCB_SW\SPI_I2C_Test\STM32WB55CCUX_FLASH.ld" --specs=nosys.specs -Wl,-Map="SPI_I2C_Test.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+SPI_I2C_Test.elf SPI_I2C_Test.map: $(OBJS) $(USER_OBJS) C:\Users\jacob\Documents\KiCad\Projects\jhnvrw-seniordesign\software\WB55\PCB_SW\SPI_I2C_Test\STM32WB55CCUX_FLASH.ld makefile objects.list $(OPTIONAL_TOOL_DEPS)
+	arm-none-eabi-gcc -o "SPI_I2C_Test.elf" @"objects.list" $(USER_OBJS) $(LIBS) -mcpu=cortex-m4 -T"C:\Users\jacob\Documents\KiCad\Projects\jhnvrw-seniordesign\software\WB55\PCB_SW\SPI_I2C_Test\STM32WB55CCUX_FLASH.ld" --specs=nosys.specs -Wl,-Map="SPI_I2C_Test.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
 	@echo 'Finished building target: $@'
 	@echo ' '
 

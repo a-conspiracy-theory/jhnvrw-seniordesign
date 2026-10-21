@@ -16,6 +16,10 @@ sx126x_status_t setup_22dBm_Tx(const void* context);
 sx126x_status_t rfswitch_Tx(const void* context);
 
 /**
+ * @brief configure RF switch for RX
+ */
+sx126x_status_t rfswitch_Rx(const void* context);
+
+/**
  * @brief send power to receiving board
  */
-sx126x_status_t transmit_pwr(const void* context);

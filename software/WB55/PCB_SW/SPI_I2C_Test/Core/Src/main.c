@@ -23,6 +23,7 @@
 /* USER CODE BEGIN Includes */
 #include "ssd1306.h"
 #include "board_sx126x_calls.h"
+#include <stdio.h>
 /* USER CODE END Includes */
 
 /* Private typedef -----------------------------------------------------------*/
@@ -56,7 +57,7 @@ static void MX_GPIO_Init(void);
 static void MX_I2C1_Init(void);
 static void MX_SPI1_Init(void);
 /* USER CODE BEGIN PFP */
-void Write_To_OLED();
+
 /* USER CODE END PFP */
 
 /* Private user code ---------------------------------------------------------*/
@@ -107,19 +108,41 @@ int main(void)
   MX_SPI1_Init();
   /* USER CODE BEGIN 2 */
 
-  	sx126x_status_t status;
-	status = setup_22dBm_Tx(NULL);		//as the name suggests
-	status = rfswitch_Tx(NULL);		//configure the RF switch for TX
-  	HAL_Delay(100);
-
-  	sx126x_set_tx_cw(NULL);
-
-
+  // setting up the OLED first so I can display error messages on it
 	SSD1306_Init();
 	SSD1306_Clear();
 	SSD1306_GotoXY(0, 0);
-	SSD1306_Puts("Waiting For BLE", &Font_7x10, 1);
+	SSD1306_Puts("SX1262 Debug:", &Font_7x10, 1);
 	SSD1306_UpdateScreen();
+
+	if(setup_22dBm_Tx(NULL) != SX126X_STATUS_OK){									// here we call the 22dBm setup and check it returns STATUS OK
+		SSD1306_Clear();
+		snprintf(oled_buffer, sizeof(oled_buffer), "Error: setup_22dBm_Tx()");		// print an error to the user if STATUS NOT OK
+		SSD1306_GotoXY(0,0);
+		SSD1306_Puts(oled_buffer, &Font_7x10, 1);
+		while(1){}																	// hold here indefinitely
+	}
+
+	if(rfswitch_Tx(NULL) != SX126X_STATUS_OK){										// here we call rfswitch_TX and check it returns STATUS OK
+		SSD1306_Clear();
+		snprintf(oled_buffer, sizeof(oled_buffer), "Error: rfswitch_Tx()");			// print an error to the user if STATUS NOT OK
+		SSD1306_GotoXY(0,0);
+		SSD1306_Puts(oled_buffer, &Font_7x10, 1);
+		while(1){}																	// hold here indefinitely
+	}
+
+  	HAL_Delay(100);																	// 100ms delay is here to allow the chip some time after config
+
+  	if(sx126x_set_tx_cw(NULL) != SX126X_STATUS_OK){
+		SSD1306_Clear();
+		snprintf(oled_buffer, sizeof(oled_buffer), "Error: sx126x_set_tx_cw");		// print an error to the user if STATUS NOT OK
+		SSD1306_GotoXY(0,0);
+		SSD1306_Puts(oled_buffer, &Font_7x10, 1);
+		while(1){}																	// hold here indefinitely
+  	}
+
+
+
   /* USER CODE END 2 */
 
   /* Infinite loop */
@@ -127,10 +150,30 @@ int main(void)
   while (1)
   {
     /* USER CODE END WHILE */
-	  //sx126x_set_tx(NULL, 100);
-	  //HAL_Delay(100);
-	  //sx126x_set_standby(NULL, SX126X_STANDBY_CFG_RC);
-	  //HAL_Delay(100);
+
+	// try this one first, comment it out when not using
+	rfswitch_Tx(NULL);																// toggle the internal RF switch state (PN: RTC6603SP)
+
+	SSD1306_Clear();
+	snprintf(oled_buffer, sizeof(oled_buffer), "TXEN: LO, RXEN: HI");				// display current RF switch state on the OLED
+	SSD1306_GotoXY(0,0);
+	SSD1306_Puts(oled_buffer, &Font_7x10, 1);
+	HAL_Delay(1000);																// 1 sec delay
+
+
+	rfswitch_Rx(NULL);																// toggle the internal RF switch to the other state (PN: RTC6603SP)
+
+	SSD1306_Clear();
+	snprintf(oled_buffer, sizeof(oled_buffer), "TXEN: HI, RXEN: LO");				// display current RF switch state on the OLED
+	SSD1306_GotoXY(0,0);
+	SSD1306_Puts(oled_buffer, &Font_7x10, 1);
+	HAL_Delay(1000);																// 1 sec delay
+
+	  	  // this should do something regardless if the RF switch toggling is the current issue we are having. Toggling the switch state will isolate the RF output from the sx1262 chip from out external RF port on the core1262HF package, so going back and forth
+	  	  // between states has to cause a change in the output. If the output power during one of the states is what we were seeing on 10/21 (i.e. the -10 dBm or so of power) and during the other state is the expected +22dBm, then booyah balright! o.w. if one of
+	  	  // the states is higher power but not +22dBm then the issue is elsewhere
+
+
     /* USER CODE BEGIN 3 */
   }
   /* USER CODE END 3 */
