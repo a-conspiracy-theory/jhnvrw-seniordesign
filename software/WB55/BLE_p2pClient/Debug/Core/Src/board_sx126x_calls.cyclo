@@ -1,0 +1,3 @@
+../Core/Src/board_sx126x_calls.c:10:17:setup_22dBm_Tx	2
+../Core/Src/board_sx126x_calls.c:69:17:rfswitch_Tx	2
+../Core/Src/board_sx126x_calls.c:79:17:transmit_pwr	2

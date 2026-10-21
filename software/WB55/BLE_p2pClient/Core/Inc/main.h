@@ -28,6 +28,9 @@ extern "C" {
 
 /* Includes ------------------------------------------------------------------*/
 #include "stm32wbxx_hal.h"
+
+#include "stm32wbxx_nucleo.h"
+
 #include "app_conf.h"
 #include "app_entry.h"
 #include "app_common.h"
@@ -61,6 +64,18 @@ void MX_USART1_UART_Init(void);
 /* USER CODE END EFP */
 
 /* Private defines -----------------------------------------------------------*/
+#define SX1262_TXEN_Pin GPIO_PIN_2
+#define SX1262_TXEN_GPIO_Port GPIOA
+#define SX1262_BUSY_Pin GPIO_PIN_3
+#define SX1262_BUSY_GPIO_Port GPIOA
+#define SX1262_NSS_Pin GPIO_PIN_4
+#define SX1262_NSS_GPIO_Port GPIOA
+#define SX1262_DIO1_Pin GPIO_PIN_8
+#define SX1262_DIO1_GPIO_Port GPIOA
+#define SX1262_RST_Pin GPIO_PIN_9
+#define SX1262_RST_GPIO_Port GPIOA
+#define SX1262_RXEN_Pin GPIO_PIN_6
+#define SX1262_RXEN_GPIO_Port GPIOC
 
 /* USER CODE BEGIN Private defines */
 

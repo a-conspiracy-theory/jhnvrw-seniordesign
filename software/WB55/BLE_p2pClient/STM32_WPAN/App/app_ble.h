@@ -65,6 +65,8 @@ typedef struct
     uint32_t time_since_boot;
 
 } Eddystone_TLM_Data_t;
+
+extern Eddystone_TLM_Data_t g_tlm_data;
 /* USER CODE END ET */
 
 /* Exported constants --------------------------------------------------------*/
@@ -87,9 +89,7 @@ void APP_BLE_Init(void);
 APP_BLE_ConnStatus_t APP_BLE_Get_Client_Connection_Status(uint16_t Connection_Handle);
 
 /* USER CODE BEGIN EF */
-void APP_BLE_Key_Button1_Action(void);
-void APP_BLE_Key_Button2_Action(void);
-void APP_BLE_Key_Button3_Action(void);
+
 void APP_BLE_Get_Eddystone_TLM(Eddystone_TLM_Data_t *data);
 /* USER CODE END EF */
 

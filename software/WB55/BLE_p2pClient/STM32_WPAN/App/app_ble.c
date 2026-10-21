@@ -1,13 +1,13 @@
 /* USER CODE BEGIN Header */
 /**
   ******************************************************************************
-  * @file    app_ble.c
+  * @file    App/app_ble.c
   * @author  MCD Application Team
   * @brief   BLE Application
   ******************************************************************************
   * @attention
   *
-  * Copyright (c) 2019-2021 STMicroelectronics.
+  * Copyright (c) 2026 STMicroelectronics.
   * All rights reserved.
   *
   * This software is licensed under terms that can be found in the LICENSE file
@@ -38,6 +38,7 @@
 
 /* Private includes ----------------------------------------------------------*/
 /* USER CODE BEGIN Includes */
+
 /* USER CODE END Includes */
 
 /* Private typedef -----------------------------------------------------------*/
@@ -62,7 +63,6 @@ typedef struct _tSecurityParams
    * bonding mode of the device
    */
   uint8_t bonding_mode;
-
 
   /**
    * minimum encryption key size requirement
@@ -159,17 +159,10 @@ typedef struct
 /* Private defines -----------------------------------------------------------*/
 #define APPBLE_GAP_DEVICE_NAME_LENGTH 7
 #define BD_ADDR_SIZE_LOCAL    6
-#define BLE_DEFAULT_PIN         (111111)
+#define BLE_DEFAULT_PIN                     (111111)
 
 /* USER CODE BEGIN PD */
 
-/* Eddystone UUID and TLM frame type */
-#define EDDYSTONE_UUID              0xFEAA
-#define EDDYSTONE_FRAME_TLM         0x20
-
-#if OOB_DEMO != 0
-#define LED_ON_TIMEOUT            (0.005*1000*1000/CFG_TS_TICK_VAL) /**< 5ms */
-#endif
 /* USER CODE END PD */
 
 /* Private macros ------------------------------------------------------------*/
@@ -214,10 +207,6 @@ APP_BLE_p2p_Conn_Update_req_t APP_BLE_p2p_Conn_Update_req;
 
 /* USER CODE BEGIN PV */
 
-static volatile Eddystone_TLM_Data_t g_eddystone_tlm;
-static volatile uint8_t g_scan_enabled = 0;
-static volatile Eddystone_TLM_Data_t g_eddystone_tlm;
-
 /* USER CODE END PV */
 
 /* Private function prototypes -----------------------------------------------*/
@@ -227,24 +216,26 @@ static void Ble_Tl_Init(void);
 static void Ble_Hci_Gap_Gatt_Init(void);
 static const uint8_t* BleGetBdAddress(void);
 static void Scan_Request(void);
+static void Connect_Request(void);
 static void Switch_OFF_GPIO(void);
 
 /* USER CODE BEGIN PFP */
 static void APP_BLE_Parse_Eddystone_TLM(uint8_t *service_data, uint8_t service_data_len);
-
 /* USER CODE END PFP */
 
 /* External variables --------------------------------------------------------*/
 
 /* USER CODE BEGIN EV */
-
+#define EDDYSTONE_UUID              0xFEAA
+#define EDDYSTONE_FRAME_TLM         0x20
+Eddystone_TLM_Data_t g_tlm_data = {0};
 /* USER CODE END EV */
 
 /* Functions Definition ------------------------------------------------------*/
 void APP_BLE_Init(void)
 {
   SHCI_CmdStatus_t status;
-  //tBleStatus ret = BLE_STATUS_INVALID_PARAMS;
+  tBleStatus ret = BLE_STATUS_INVALID_PARAMS;
   /* USER CODE BEGIN APP_BLE_Init_1 */
 
   /* USER CODE END APP_BLE_Init_1 */
@@ -279,7 +270,7 @@ void APP_BLE_Init(void)
      CFG_BLE_RX_PATH_COMPENS,
      CFG_BLE_CORE_VERSION,
      CFG_BLE_OPTIONS_EXT,
-     CFG_BLE_MAX_ADD_EATT_BEARERS
+	 CFG_BLE_MAX_ADD_EATT_BEARERS
     }
   };
 
@@ -327,7 +318,7 @@ void APP_BLE_Init(void)
    * From here, all initialization are BLE application specific
    */
   UTIL_SEQ_RegTask(1<<CFG_TASK_START_SCAN_ID, UTIL_SEQ_RFU, Scan_Request);
-  //UTIL_SEQ_RegTask(1<<CFG_TASK_CONN_DEV_1_ID, UTIL_SEQ_RFU, Connect_Request);
+  UTIL_SEQ_RegTask(1<<CFG_TASK_CONN_DEV_1_ID, UTIL_SEQ_RFU, Connect_Request);
 
   /**
    * Initialization of the BLE App Context
@@ -357,12 +348,14 @@ void APP_BLE_Init(void)
   /* USER CODE END APP_BLE_Init_3 */
 
 #if (OOB_DEMO != 0)
+  HW_TS_Create(CFG_TIM_PROC_ID_ISR, &(BleApplicationContext.SwitchOffGPIO_timer_Id), hw_ts_SingleShot, Switch_OFF_GPIO);
 #endif
 
 #if (OOB_DEMO == 0)
   /**
    * Start scanning
    */
+  UTIL_SEQ_SetTask(1 << CFG_TASK_START_SCAN_ID, CFG_SCH_PRIO_0);
 #endif
   /* USER CODE BEGIN APP_BLE_Init_2 */
 
@@ -390,7 +383,6 @@ SVCCTL_UserEvtFlowStatus_t SVCCTL_App_Notification(void *pckt)
   switch (event_pckt->evt)
   {
     /* USER CODE BEGIN evt */
-
     /* USER CODE END evt */
     case HCI_VENDOR_SPECIFIC_DEBUG_EVT_CODE:
       {
@@ -408,40 +400,23 @@ SVCCTL_UserEvtFlowStatus_t SVCCTL_App_Notification(void *pckt)
           case ACI_GAP_PROC_COMPLETE_VSEVT_CODE:
             {
               /* USER CODE BEGIN EVT_BLUE_GAP_PROCEDURE_COMPLETE */
-            	if (g_scan_enabled)
-            	{
-            	    APP_DBG_MSG("Scan complete — restarting continuous scan...\r\n");
-            	    UTIL_SEQ_SetTask(1 << CFG_TASK_START_SCAN_ID, CFG_SCH_PRIO_0);
-            	}
-            	else
-            	{
-            	    APP_DBG_MSG("Scan complete — scan disabled.\r\n");
-            	}
+            UTIL_SEQ_SetTask(1 << CFG_TASK_START_SCAN_ID, CFG_SCH_PRIO_0);
               /* USER CODE END EVT_BLUE_GAP_PROCEDURE_COMPLETE */
               aci_gap_proc_complete_event_rp0 *gap_evt_proc_complete = (void*) blecore_evt->data;
               /* CHECK GAP GENERAL DISCOVERY PROCEDURE COMPLETED & SUCCEED */
-//              if (gap_evt_proc_complete->Procedure_Code == GAP_GENERAL_DISCOVERY_PROC
-//                  && gap_evt_proc_complete->Status == 0x00)
-//              {
-//                /* USER CODE BEGIN GAP_GENERAL_DISCOVERY_PROC */
-//                BSP_LED_Off(LED_BLUE);
-//                APP_DBG_MSG("LED BLUE OFF\n");
-//
-//                /* Restart scanning when no P2P server connection is pending. */
-//                if ((BleApplicationContext.DeviceServerFound != 0x01) &&
-//                    (BleApplicationContext.Device_Connection_Status != APP_BLE_CONNECTED_CLIENT))
-//                {
-//                  APP_DBG_MSG("Restarting BLE scan for Eddystone-TLM...\r\n");
-//                  UTIL_SEQ_SetTask(1 << CFG_TASK_START_SCAN_ID, CFG_SCH_PRIO_0);
-//                }
-//                /* USER CODE END GAP_GENERAL_DISCOVERY_PROC */
-//                APP_DBG_MSG("-- GAP GENERAL DISCOVERY PROCEDURE_COMPLETED\n\r");
-//                /*if a device found, connect to it, device 1 being chosen first if both found*/
-//                if (BleApplicationContext.DeviceServerFound == 0x01 && BleApplicationContext.Device_Connection_Status != APP_BLE_CONNECTED_CLIENT)
-//                {
-//                  UTIL_SEQ_SetTask(1 << CFG_TASK_CONN_DEV_1_ID, CFG_SCH_PRIO_0);
-//                }
-//              }
+              if (gap_evt_proc_complete->Procedure_Code == GAP_GENERAL_DISCOVERY_PROC
+                  && gap_evt_proc_complete->Status == 0x00)
+              {
+                /* USER CODE BEGIN GAP_GENERAL_DISCOVERY_PROC */
+
+                /* USER CODE END GAP_GENERAL_DISCOVERY_PROC */
+                APP_DBG_MSG("-- GAP GENERAL DISCOVERY PROCEDURE_COMPLETED\n\r");
+                /*if a device found, connect to it, device 1 being chosen first if both found*/
+                if (BleApplicationContext.DeviceServerFound == 0x01 && BleApplicationContext.Device_Connection_Status != APP_BLE_CONNECTED_CLIENT)
+                {
+                  UTIL_SEQ_SetTask(1 << CFG_TASK_CONN_DEV_1_ID, CFG_SCH_PRIO_0);
+                }
+              }
             }
             break;
 
@@ -482,7 +457,7 @@ SVCCTL_UserEvtFlowStatus_t SVCCTL_App_Notification(void *pckt)
               {
                 APP_DBG_MSG("  Fail   : aci_l2cap_connection_parameter_update_resp command, result: 0x%x \n\r", ret);
                 /* USER CODE BEGIN BLE_STATUS_SUCCESS */
-                BSP_LED_On(LED_RED);
+
                 /* USER CODE END BLE_STATUS_SUCCESS */
               }
               else
@@ -505,8 +480,7 @@ SVCCTL_UserEvtFlowStatus_t SVCCTL_App_Notification(void *pckt)
           case ACI_HAL_END_OF_RADIO_ACTIVITY_VSEVT_CODE:
             {
               /* USER CODE BEGIN RADIO_ACTIVITY_EVENT */
-              BSP_LED_On(LED_GREEN);
-              HW_TS_Start(BleApplicationContext.SwitchOffGPIO_timer_Id, (uint32_t)LED_ON_TIMEOUT);
+
               /* USER CODE END RADIO_ACTIVITY_EVENT */
             }
             break; /* ACI_HAL_END_OF_RADIO_ACTIVITY_VSEVT_CODE */
@@ -562,6 +536,26 @@ SVCCTL_UserEvtFlowStatus_t SVCCTL_App_Notification(void *pckt)
             /**
              * The connection is done,
              */
+            connection_complete_event = (hci_le_connection_complete_event_rp0 *) meta_evt->data;
+            BleApplicationContext.BleApplicationContext_legacy.connectionHandle = connection_complete_event->Connection_Handle;
+            BleApplicationContext.Device_Connection_Status = APP_BLE_CONNECTED_CLIENT;
+
+            /* CONNECTION WITH CLIENT */
+            APP_DBG_MSG("\r\n\r**  CONNECTION COMPLETE EVENT WITH SERVER \n\r");
+            handleNotification.P2P_Evt_Opcode = PEER_CONN_HANDLE_EVT;
+            handleNotification.ConnectionHandle = BleApplicationContext.BleApplicationContext_legacy.connectionHandle;
+            P2PC_APP_Notification(&handleNotification);
+
+            result = aci_gatt_disc_all_primary_services(BleApplicationContext.BleApplicationContext_legacy.connectionHandle);
+            if (result == BLE_STATUS_SUCCESS)
+            {
+              APP_DBG_MSG("\r\n\r** GATT SERVICES & CHARACTERISTICS DISCOVERY  \n\r");
+              APP_DBG_MSG("* GATT :  Start Searching Primary Services \r\n\r");
+            }
+            else
+            {
+              APP_DBG_MSG("BLE_CTRL_App_Notification(), All services discovery Failed \r\n\r");
+            }
             break; /* HCI_LE_CONNECTION_COMPLETE_SUBEVT_CODE */
 
           case HCI_LE_ADVERTISING_REPORT_SUBEVT_CODE:
@@ -586,8 +580,6 @@ SVCCTL_UserEvtFlowStatus_t SVCCTL_App_Notification(void *pckt)
 
               /* search AD TYPE 0x09 (Complete Local Name) */
               /* search AD Type 0x02 (16 bits UUIDS) */
-              /* Process AD structures from all received advertising reports. */
-              {
                 /* ISOLATION OF BD ADDRESS AND LOCAL NAME */
 
                 while(k < event_data_size)
@@ -637,20 +629,7 @@ SVCCTL_UserEvtFlowStatus_t SVCCTL_App_Notification(void *pckt)
 
                     case AD_TYPE_SERVICE_DATA: /* service data 16 bits */
                       /* USER CODE BEGIN AD_TYPE_SERVICE_DATA */
-
-                      /*
-                       * AD structure:
-                       *   k+0 : AD length
-                       *   k+1 : AD type (0x16 = Service Data)
-                       *   k+2 : Service UUID LSB
-                       *   k+3 : Service UUID MSB
-                       *   k+4 : Eddystone frame type
-                       *
-                       * Pass the bytes after the AD type to the parser.
-                       */
-                      APP_BLE_Parse_Eddystone_TLM(&adv_report_data[k + 2],
-                                                  (uint8_t)(adlength - 1));
-
+                        APP_BLE_Parse_Eddystone_TLM(&adv_report_data[k + 2], (uint8_t)(adlength - 1));
                       /* USER CODE END AD_TYPE_SERVICE_DATA */
                       break;
 
@@ -662,7 +641,7 @@ SVCCTL_UserEvtFlowStatus_t SVCCTL_App_Notification(void *pckt)
                   } /* end switch adtype */
                   k += adlength + 1;
                 } /* end while */
-              } /* end if ADV_IND */
+              /* end if ADV_IND */
 
               /* USER CODE BEGIN EVT_LE_ADVERTISING_REPORT_2 */
 
@@ -706,31 +685,7 @@ APP_BLE_ConnStatus_t APP_BLE_Get_Client_Connection_Status(uint16_t Connection_Ha
   return APP_BLE_IDLE;
 }
 /* USER CODE BEGIN FD */
-void APP_BLE_Key_Button1_Action(void)
-{
-  g_scan_enabled ^= 1;   // toggle
 
-  if (g_scan_enabled)
-  {
-    APP_DBG_MSG("Button1: ENABLE scanning\r\n");
-    UTIL_SEQ_SetTask(1 << CFG_TASK_START_SCAN_ID, CFG_SCH_PRIO_0);
-    BSP_LED_On(LED_BLUE);
-  }
-  else
-  {
-    APP_DBG_MSG("Button1: DISABLE scanning\r\n");
-    aci_gap_terminate_gap_proc(GAP_GENERAL_DISCOVERY_PROC);
-    BSP_LED_Off(LED_BLUE);
-  }
-}
-
-void APP_BLE_Key_Button2_Action(void)
-{
-}
-
-void APP_BLE_Key_Button3_Action(void)
-{
-}
 /* USER CODE END FD */
 /*************************************************************
  *
@@ -964,36 +919,84 @@ static void Scan_Request(void)
 {
   /* USER CODE BEGIN Scan_Request_1 */
 
-  if (!g_scan_enabled)
-  {
-    APP_DBG_MSG("Scan_Request ignored (scan disabled)\r\n");
-    return;
-  }
-
-  APP_DBG_MSG("Starting BLE scan for Eddystone-TLM...\r\n");
-
   /* USER CODE END Scan_Request_1 */
-  tBleStatus result = aci_gap_start_general_discovery_proc(
-      SCAN_P, SCAN_L, CFG_BLE_ADDRESS_TYPE, 1);
-
-  if (result == BLE_STATUS_SUCCESS)
+  tBleStatus result;
+  if (BleApplicationContext.Device_Connection_Status != APP_BLE_CONNECTED_CLIENT)
   {
-    APP_DBG_MSG("BLE scanning started.\r\n");
-  }
-  else
-  {
-    APP_DBG_MSG("BLE scan start FAILED.\r\n");
-  }
+    /* USER CODE BEGIN APP_BLE_CONNECTED_CLIENT */
 
+    /* USER CODE END APP_BLE_CONNECTED_CLIENT */
+    result = aci_gap_start_general_discovery_proc(SCAN_P, SCAN_L, CFG_BLE_ADDRESS_TYPE, 1);
+    if (result == BLE_STATUS_SUCCESS)
+    {
+    /* USER CODE BEGIN BLE_SCAN_SUCCESS */
+
+    /* USER CODE END BLE_SCAN_SUCCESS */
+      APP_DBG_MSG(" \r\n\r** START GENERAL DISCOVERY (SCAN) **  \r\n\r");
+    }
+    else
+    {
+    /* USER CODE BEGIN BLE_SCAN_FAILED */
+
+    /* USER CODE END BLE_SCAN_FAILED */
+      APP_DBG_MSG("-- BLE_App_Start_Limited_Disc_Req, Failed \r\n\r");
+    }
+  }
   /* USER CODE BEGIN Scan_Request_2 */
+
   /* USER CODE END Scan_Request_2 */
+  return;
 }
 
+static void Connect_Request(void)
+{
+  /* USER CODE BEGIN Connect_Request_1 */
+
+  /* USER CODE END Connect_Request_1 */
+  tBleStatus result;
+
+  APP_DBG_MSG("\r\n\r** CREATE CONNECTION TO SERVER **  \r\n\r");
+
+  if (BleApplicationContext.Device_Connection_Status != APP_BLE_CONNECTED_CLIENT)
+  {
+    result = aci_gap_create_connection(SCAN_P,
+                                       SCAN_L,
+                                       SERVER_REMOTE_ADDR_TYPE, SERVER_REMOTE_BDADDR,
+                                       CFG_BLE_ADDRESS_TYPE,
+                                       CONN_P1,
+                                       CONN_P2,
+                                       0,
+                                       SUPERV_TIMEOUT,
+                                       CONN_L1,
+                                       CONN_L2);
+
+    if (result == BLE_STATUS_SUCCESS)
+    {
+      /* USER CODE BEGIN BLE_CONNECT_SUCCESS */
+
+      /* USER CODE END BLE_CONNECT_SUCCESS */
+      BleApplicationContext.Device_Connection_Status = APP_BLE_LP_CONNECTING;
+
+    }
+    else
+    {
+      /* USER CODE BEGIN BLE_CONNECT_FAILED */
+
+      /* USER CODE END BLE_CONNECT_FAILED */
+      BleApplicationContext.Device_Connection_Status = APP_BLE_IDLE;
+
+    }
+  }
+  /* USER CODE BEGIN Connect_Request_2 */
+
+  /* USER CODE END Connect_Request_2 */
+  return;
+}
 
 static void Switch_OFF_GPIO()
 {
   /* USER CODE BEGIN Switch_OFF_GPIO */
-  BSP_LED_Off(LED_GREEN);
+
   /* USER CODE END Switch_OFF_GPIO */
 }
 
@@ -1046,7 +1049,6 @@ const uint8_t* BleGetBdAddress(void)
 }
 
 /* USER CODE BEGIN FD_LOCAL_FUNCTIONS */
-
 /**
  * @brief Parse an Eddystone-TLM Service Data payload.
  *
@@ -1061,8 +1063,7 @@ const uint8_t* BleGetBdAddress(void)
  *   [8..11]  Advertisement count, big endian
  *   [12..15] Seconds since boot, 0.1 s units, big endian
  */
-static void APP_BLE_Parse_Eddystone_TLM(uint8_t *service_data,
-		uint8_t service_data_len) {
+static void APP_BLE_Parse_Eddystone_TLM(uint8_t *service_data, uint8_t service_data_len) {
 	uint16_t humidity_raw;
 	uint16_t temperature_raw;
 	uint32_t adv_count;
@@ -1138,25 +1139,15 @@ static void APP_BLE_Parse_Eddystone_TLM(uint8_t *service_data,
 			| ((uint32_t) service_data[13] << 16)
 			| ((uint32_t) service_data[14] << 8) | (uint32_t) service_data[15];
 
-	/*
-	 * Store newest complete packet
-	 */
-	g_eddystone_tlm.version = service_data[3];
+	g_tlm_data.version = service_data[3];
 
-	/*
-	 * These fields are being repurposed:
-	 *
-	 * battery_mv     -> RAW SHT41 humidity
-	 * temperature_raw -> RAW SHT41 temperature
-	 */
-	g_eddystone_tlm.battery_mv = humidity_raw;
-	g_eddystone_tlm.temperature_raw = temperature_raw;
+	g_tlm_data.battery_mv = humidity_raw;
+	g_tlm_data.temperature_raw = temperature_raw;
 
-	g_eddystone_tlm.adv_count = adv_count;
-	g_eddystone_tlm.time_since_boot = time_since_boot;
+	g_tlm_data.adv_count = adv_count;
+	g_tlm_data.time_since_boot = time_since_boot;
 
-	g_eddystone_tlm.valid = 1U;
-
+	g_tlm_data.valid = 1U;
 	/*
 	 * ---------------------------------------------------------
 	 * DEBUG OUTPUT
@@ -1180,24 +1171,6 @@ static void APP_BLE_Parse_Eddystone_TLM(uint8_t *service_data,
 
 	APP_DBG_MSG("===================================\r\n");
 }
-
-void APP_BLE_Get_Eddystone_TLM(Eddystone_TLM_Data_t *data)
-{
-  if (data == NULL || !g_scan_enabled)
-  {
-	data->valid = 0U;
-    return;
-  }
-
-  data->valid = g_eddystone_tlm.valid;
-  data->version = g_eddystone_tlm.version;
-  data->battery_mv = g_eddystone_tlm.battery_mv;
-  data->temperature_raw = g_eddystone_tlm.temperature_raw;
-  data->adv_count = g_eddystone_tlm.adv_count;
-  data->time_since_boot = g_eddystone_tlm.time_since_boot;
-}
-
-
 /* USER CODE END FD_LOCAL_FUNCTIONS */
 
 /*************************************************************
