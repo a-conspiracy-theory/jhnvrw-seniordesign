@@ -35,13 +35,13 @@ Core/Src/main.o: ../Core/Src/main.c ../Core/Inc/main.h \
  ../Drivers/STM32WBxx_HAL_Driver/Inc/stm32wbxx_hal_spi.h \
  ../Drivers/STM32WBxx_HAL_Driver/Inc/stm32wbxx_hal_spi_ex.h \
  ../Drivers/STM32WBxx_HAL_Driver/Inc/stm32wbxx_ll_system.h \
- C:/Users/jacob/Documents/KiCad/Projects/jhnvrw-seniordesign/software/WB55/PCB_SW/SPI_I2C_Test/Drivers/ssd1306/inc/ssd1306.h \
- C:/Users/jacob/Documents/KiCad/Projects/jhnvrw-seniordesign/software/WB55/PCB_SW/SPI_I2C_Test/Drivers/ssd1306/inc/fonts.h \
- C:/Users/jacob/Documents/KiCad/Projects/jhnvrw-seniordesign/software/WB55/PCB_SW/SPI_I2C_Test/Drivers/sx126x_driver/inc/board_sx126x_calls.h \
- C:/Users/jacob/Documents/KiCad/Projects/jhnvrw-seniordesign/software/WB55/PCB_SW/SPI_I2C_Test/Drivers/sx126x_driver/inc/sx126x.h \
- C:/Users/jacob/Documents/KiCad/Projects/jhnvrw-seniordesign/software/WB55/PCB_SW/SPI_I2C_Test/Drivers/sx126x_driver/inc/sx126x_status.h \
- C:/Users/jacob/Documents/KiCad/Projects/jhnvrw-seniordesign/software/WB55/PCB_SW/SPI_I2C_Test/Drivers/sx126x_driver/inc/sx126x_hal.h \
- C:/Users/jacob/Documents/KiCad/Projects/jhnvrw-seniordesign/software/WB55/PCB_SW/SPI_I2C_Test/Drivers/sx126x_driver/inc/sx126x_driver_version.h
+ C:/Users/ryanw/Documents/GitHub/jhnvrw-seniordesign/software/WB55/PCB_SW/SPI_I2C_Test/Drivers/ssd1306/inc/ssd1306.h \
+ C:/Users/ryanw/Documents/GitHub/jhnvrw-seniordesign/software/WB55/PCB_SW/SPI_I2C_Test/Drivers/ssd1306/inc/fonts.h \
+ C:/Users/ryanw/Documents/GitHub/jhnvrw-seniordesign/software/WB55/PCB_SW/SPI_I2C_Test/Drivers/sx126x_driver/inc/board_sx126x_calls.h \
+ C:/Users/ryanw/Documents/GitHub/jhnvrw-seniordesign/software/WB55/PCB_SW/SPI_I2C_Test/Drivers/sx126x_driver/inc/sx126x.h \
+ C:/Users/ryanw/Documents/GitHub/jhnvrw-seniordesign/software/WB55/PCB_SW/SPI_I2C_Test/Drivers/sx126x_driver/inc/sx126x_status.h \
+ C:/Users/ryanw/Documents/GitHub/jhnvrw-seniordesign/software/WB55/PCB_SW/SPI_I2C_Test/Drivers/sx126x_driver/inc/sx126x_hal.h \
+ C:/Users/ryanw/Documents/GitHub/jhnvrw-seniordesign/software/WB55/PCB_SW/SPI_I2C_Test/Drivers/sx126x_driver/inc/sx126x_driver_version.h
 ../Core/Inc/main.h:
 ../Drivers/STM32WBxx_HAL_Driver/Inc/stm32wbxx_hal.h:
 ../Core/Inc/stm32wbxx_hal_conf.h:
@@ -79,10 +79,10 @@ Core/Src/main.o: ../Core/Src/main.c ../Core/Inc/main.h \
 ../Drivers/STM32WBxx_HAL_Driver/Inc/stm32wbxx_hal_spi.h:
 ../Drivers/STM32WBxx_HAL_Driver/Inc/stm32wbxx_hal_spi_ex.h:
 ../Drivers/STM32WBxx_HAL_Driver/Inc/stm32wbxx_ll_system.h:
-C:/Users/jacob/Documents/KiCad/Projects/jhnvrw-seniordesign/software/WB55/PCB_SW/SPI_I2C_Test/Drivers/ssd1306/inc/ssd1306.h:
-C:/Users/jacob/Documents/KiCad/Projects/jhnvrw-seniordesign/software/WB55/PCB_SW/SPI_I2C_Test/Drivers/ssd1306/inc/fonts.h:
-C:/Users/jacob/Documents/KiCad/Projects/jhnvrw-seniordesign/software/WB55/PCB_SW/SPI_I2C_Test/Drivers/sx126x_driver/inc/board_sx126x_calls.h:
-C:/Users/jacob/Documents/KiCad/Projects/jhnvrw-seniordesign/software/WB55/PCB_SW/SPI_I2C_Test/Drivers/sx126x_driver/inc/sx126x.h:
-C:/Users/jacob/Documents/KiCad/Projects/jhnvrw-seniordesign/software/WB55/PCB_SW/SPI_I2C_Test/Drivers/sx126x_driver/inc/sx126x_status.h:
-C:/Users/jacob/Documents/KiCad/Projects/jhnvrw-seniordesign/software/WB55/PCB_SW/SPI_I2C_Test/Drivers/sx126x_driver/inc/sx126x_hal.h:
-C:/Users/jacob/Documents/KiCad/Projects/jhnvrw-seniordesign/software/WB55/PCB_SW/SPI_I2C_Test/Drivers/sx126x_driver/inc/sx126x_driver_version.h:
+C:/Users/ryanw/Documents/GitHub/jhnvrw-seniordesign/software/WB55/PCB_SW/SPI_I2C_Test/Drivers/ssd1306/inc/ssd1306.h:
+C:/Users/ryanw/Documents/GitHub/jhnvrw-seniordesign/software/WB55/PCB_SW/SPI_I2C_Test/Drivers/ssd1306/inc/fonts.h:
+C:/Users/ryanw/Documents/GitHub/jhnvrw-seniordesign/software/WB55/PCB_SW/SPI_I2C_Test/Drivers/sx126x_driver/inc/board_sx126x_calls.h:
+C:/Users/ryanw/Documents/GitHub/jhnvrw-seniordesign/software/WB55/PCB_SW/SPI_I2C_Test/Drivers/sx126x_driver/inc/sx126x.h:
+C:/Users/ryanw/Documents/GitHub/jhnvrw-seniordesign/software/WB55/PCB_SW/SPI_I2C_Test/Drivers/sx126x_driver/inc/sx126x_status.h:
+C:/Users/ryanw/Documents/GitHub/jhnvrw-seniordesign/software/WB55/PCB_SW/SPI_I2C_Test/Drivers/sx126x_driver/inc/sx126x_hal.h:
+C:/Users/ryanw/Documents/GitHub/jhnvrw-seniordesign/software/WB55/PCB_SW/SPI_I2C_Test/Drivers/sx126x_driver/inc/sx126x_driver_version.h:

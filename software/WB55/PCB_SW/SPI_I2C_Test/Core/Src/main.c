@@ -120,6 +120,7 @@ int main(void)
 		snprintf(oled_buffer, sizeof(oled_buffer), "Error: setup_22dBm_Tx()");		// print an error to the user if STATUS NOT OK
 		SSD1306_GotoXY(0,0);
 		SSD1306_Puts(oled_buffer, &Font_7x10, 1);
+		SSD1306_UpdateScreen();
 		while(1){}																	// hold here indefinitely
 	}
 
@@ -128,6 +129,7 @@ int main(void)
 		snprintf(oled_buffer, sizeof(oled_buffer), "Error: rfswitch_Tx()");			// print an error to the user if STATUS NOT OK
 		SSD1306_GotoXY(0,0);
 		SSD1306_Puts(oled_buffer, &Font_7x10, 1);
+		SSD1306_UpdateScreen();
 		while(1){}																	// hold here indefinitely
 	}
 
@@ -138,10 +140,17 @@ int main(void)
 		snprintf(oled_buffer, sizeof(oled_buffer), "Error: sx126x_set_tx_cw");		// print an error to the user if STATUS NOT OK
 		SSD1306_GotoXY(0,0);
 		SSD1306_Puts(oled_buffer, &Font_7x10, 1);
+		SSD1306_UpdateScreen();
 		while(1){}																	// hold here indefinitely
   	}
 
+	rfswitch_Rx(NULL); //turn on the working mode
 
+	SSD1306_Clear();
+	snprintf(oled_buffer, sizeof(oled_buffer), "Transmitting ASF");				// display current RF switch state on the OLED
+	SSD1306_GotoXY(0,0);
+	SSD1306_Puts(oled_buffer, &Font_7x10, 1);
+	SSD1306_UpdateScreen();
 
   /* USER CODE END 2 */
 
@@ -152,21 +161,27 @@ int main(void)
     /* USER CODE END WHILE */
 
 	// try this one first, comment it out when not using
+/*
 	rfswitch_Tx(NULL);																// toggle the internal RF switch state (PN: RTC6603SP)
 
 	SSD1306_Clear();
-	snprintf(oled_buffer, sizeof(oled_buffer), "TXEN: LO, RXEN: HI");				// display current RF switch state on the OLED
+	snprintf(oled_buffer, sizeof(oled_buffer), "rfswitch_Tx(NULL)");				// display current RF switch state on the OLED
 	SSD1306_GotoXY(0,0);
 	SSD1306_Puts(oled_buffer, &Font_7x10, 1);
+	SSD1306_UpdateScreen();
 	HAL_Delay(1000);																// 1 sec delay
+*/
 
-
-	rfswitch_Rx(NULL);																// toggle the internal RF switch to the other state (PN: RTC6603SP)
+																// toggle the internal RF switch to the other state (PN: RTC6603SP)
+/*
+  	rfswitch_Rx(NULL);
 
 	SSD1306_Clear();
-	snprintf(oled_buffer, sizeof(oled_buffer), "TXEN: HI, RXEN: LO");				// display current RF switch state on the OLED
+	snprintf(oled_buffer, sizeof(oled_buffer), "rfswitch_Rx(NULL)");				// display current RF switch state on the OLED
 	SSD1306_GotoXY(0,0);
 	SSD1306_Puts(oled_buffer, &Font_7x10, 1);
+	SSD1306_UpdateScreen();
+*/
 	HAL_Delay(1000);																// 1 sec delay
 
 	  	  // this should do something regardless if the RF switch toggling is the current issue we are having. Toggling the switch state will isolate the RF output from the sx1262 chip from out external RF port on the core1262HF package, so going back and forth

@@ -1,6 +1,6 @@
 Drivers/sx126x_driver/src/board_sx126x_hal.o: \
  ../Drivers/sx126x_driver/src/board_sx126x_hal.c \
- C:/Users/jacob/Documents/KiCad/Projects/jhnvrw-seniordesign/software/WB55/PCB_SW/SPI_I2C_Test/Drivers/sx126x_driver/inc/sx126x_hal.h \
+ C:/Users/ryanw/Documents/GitHub/jhnvrw-seniordesign/software/WB55/PCB_SW/SPI_I2C_Test/Drivers/sx126x_driver/inc/sx126x_hal.h \
  ../Core/Inc/main.h ../Drivers/STM32WBxx_HAL_Driver/Inc/stm32wbxx_hal.h \
  ../Core/Inc/stm32wbxx_hal_conf.h \
  ../Drivers/STM32WBxx_HAL_Driver/Inc/stm32wbxx_hal_dma.h \
@@ -37,7 +37,7 @@ Drivers/sx126x_driver/src/board_sx126x_hal.o: \
  ../Drivers/STM32WBxx_HAL_Driver/Inc/stm32wbxx_hal_spi.h \
  ../Drivers/STM32WBxx_HAL_Driver/Inc/stm32wbxx_hal_spi_ex.h \
  ../Drivers/STM32WBxx_HAL_Driver/Inc/stm32wbxx_ll_system.h
-C:/Users/jacob/Documents/KiCad/Projects/jhnvrw-seniordesign/software/WB55/PCB_SW/SPI_I2C_Test/Drivers/sx126x_driver/inc/sx126x_hal.h:
+C:/Users/ryanw/Documents/GitHub/jhnvrw-seniordesign/software/WB55/PCB_SW/SPI_I2C_Test/Drivers/sx126x_driver/inc/sx126x_hal.h:
 ../Core/Inc/main.h:
 ../Drivers/STM32WBxx_HAL_Driver/Inc/stm32wbxx_hal.h:
 ../Core/Inc/stm32wbxx_hal_conf.h:
