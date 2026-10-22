@@ -229,6 +229,12 @@ static void APP_BLE_Parse_Eddystone_TLM(uint8_t *service_data, uint8_t service_d
 #define EDDYSTONE_UUID              0xFEAA
 #define EDDYSTONE_FRAME_TLM         0x20
 Eddystone_TLM_Data_t g_tlm_data = {0};
+/* USER CODE END PFP */
+
+/* External variables --------------------------------------------------------*/
+
+/* USER CODE BEGIN EV */
+
 /* USER CODE END EV */
 
 /* Functions Definition ------------------------------------------------------*/
@@ -400,7 +406,7 @@ SVCCTL_UserEvtFlowStatus_t SVCCTL_App_Notification(void *pckt)
           case ACI_GAP_PROC_COMPLETE_VSEVT_CODE:
             {
               /* USER CODE BEGIN EVT_BLUE_GAP_PROCEDURE_COMPLETE */
-            UTIL_SEQ_SetTask(1 << CFG_TASK_START_SCAN_ID, CFG_SCH_PRIO_0);
+
               /* USER CODE END EVT_BLUE_GAP_PROCEDURE_COMPLETE */
               aci_gap_proc_complete_event_rp0 *gap_evt_proc_complete = (void*) blecore_evt->data;
               /* CHECK GAP GENERAL DISCOVERY PROCEDURE COMPLETED & SUCCEED */
@@ -580,6 +586,8 @@ SVCCTL_UserEvtFlowStatus_t SVCCTL_App_Notification(void *pckt)
 
               /* search AD TYPE 0x09 (Complete Local Name) */
               /* search AD Type 0x02 (16 bits UUIDS) */
+              if (event_type == ADV_IND)
+              {
                 /* ISOLATION OF BD ADDRESS AND LOCAL NAME */
 
                 while(k < event_data_size)
@@ -641,7 +649,7 @@ SVCCTL_UserEvtFlowStatus_t SVCCTL_App_Notification(void *pckt)
                   } /* end switch adtype */
                   k += adlength + 1;
                 } /* end while */
-               /* end if ADV_IND */
+              } /* end if ADV_IND */
 
               /* USER CODE BEGIN EVT_LE_ADVERTISING_REPORT_2 */
 
@@ -921,7 +929,8 @@ static void Scan_Request(void)
 
   /* USER CODE END Scan_Request_1 */
   tBleStatus result;
-
+  if (BleApplicationContext.Device_Connection_Status != APP_BLE_CONNECTED_CLIENT)
+  {
     /* USER CODE BEGIN APP_BLE_CONNECTED_CLIENT */
 
     /* USER CODE END APP_BLE_CONNECTED_CLIENT */
@@ -940,6 +949,7 @@ static void Scan_Request(void)
     /* USER CODE END BLE_SCAN_FAILED */
       APP_DBG_MSG("-- BLE_App_Start_Limited_Disc_Req, Failed \r\n\r");
     }
+  }
   /* USER CODE BEGIN Scan_Request_2 */
 
   /* USER CODE END Scan_Request_2 */
@@ -1047,20 +1057,6 @@ const uint8_t* BleGetBdAddress(void)
 }
 
 /* USER CODE BEGIN FD_LOCAL_FUNCTIONS */
-/**
- * @brief Parse an Eddystone-TLM Service Data payload.
- *
- * service_data points to the first byte after the AD type:
- *
- *   [0]      Eddystone UUID LSB (0xAA)
- *   [1]      Eddystone UUID MSB (0xFE)
- *   [2]      Frame Type (0x20 = TLM)
- *   [3]      TLM Version
- *   [4..5]   Battery voltage, big endian, mV
- *   [6..7]   Temperature, signed 8.8 fixed point, big endian
- *   [8..11]  Advertisement count, big endian
- *   [12..15] Seconds since boot, 0.1 s units, big endian
- */
 static void APP_BLE_Parse_Eddystone_TLM(uint8_t *service_data, uint8_t service_data_len) {
 	uint16_t humidity_raw;
 	uint16_t temperature_raw;

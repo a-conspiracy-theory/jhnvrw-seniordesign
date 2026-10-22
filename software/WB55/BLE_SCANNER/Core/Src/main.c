@@ -22,7 +22,6 @@
 /* Private includes ----------------------------------------------------------*/
 /* USER CODE BEGIN Includes */
 #include "ssd1306.h"
-#include "bitmap.h"
 #include "fonts.h"
 #include "app_ble.h"
 #include "ble_gap_aci.h"
@@ -56,8 +55,6 @@ SPI_HandleTypeDef hspi1;
 
 TIM_HandleTypeDef htim1;
 
-UART_HandleTypeDef huart1;
-
 /* USER CODE BEGIN PV */
 
 /* USER CODE END PV */
@@ -68,10 +65,9 @@ void PeriphCommonClock_Config(void);
 static void MX_GPIO_Init(void);
 static void MX_I2C1_Init(void);
 static void MX_IPCC_Init(void);
-static void MX_RTC_Init(void);
 static void MX_SPI1_Init(void);
 static void MX_TIM1_Init(void);
-static void MX_USART1_UART_Init(void);
+static void MX_RTC_Init(void);
 static void MX_RF_Init(void);
 /* USER CODE BEGIN PFP */
 void Button1_Poll(void);
@@ -129,16 +125,15 @@ int main(void)
   /* Initialize all configured peripherals */
   MX_GPIO_Init();
   MX_I2C1_Init();
-  MX_RTC_Init();
   MX_SPI1_Init();
   MX_TIM1_Init();
-  MX_USART1_UART_Init();
+  MX_RTC_Init();
   MX_RF_Init();
   /* USER CODE BEGIN 2 */
 	SSD1306_Init();
 	SSD1306_Clear();
 	SSD1306_GotoXY(0, 0);
-	SSD1306_Puts("Command Wait", &Font_7x10, 1);
+	SSD1306_Puts("Please Input Command", &Font_7x10, 1);
 	SSD1306_UpdateScreen();
 
   /* USER CODE END 2 */
@@ -386,7 +381,7 @@ static void MX_SPI1_Init(void)
   hspi1.Instance = SPI1;
   hspi1.Init.Mode = SPI_MODE_MASTER;
   hspi1.Init.Direction = SPI_DIRECTION_2LINES;
-  hspi1.Init.DataSize = SPI_DATASIZE_4BIT;
+  hspi1.Init.DataSize = SPI_DATASIZE_8BIT;
   hspi1.Init.CLKPolarity = SPI_POLARITY_LOW;
   hspi1.Init.CLKPhase = SPI_PHASE_1EDGE;
   hspi1.Init.NSS = SPI_NSS_SOFT;
@@ -456,54 +451,6 @@ static void MX_TIM1_Init(void)
 }
 
 /**
-  * @brief USART1 Initialization Function
-  * @param None
-  * @retval None
-  */
-static void MX_USART1_UART_Init(void)
-{
-
-  /* USER CODE BEGIN USART1_Init 0 */
-
-  /* USER CODE END USART1_Init 0 */
-
-  /* USER CODE BEGIN USART1_Init 1 */
-
-  /* USER CODE END USART1_Init 1 */
-  huart1.Instance = USART1;
-  huart1.Init.BaudRate = 115200;
-  huart1.Init.WordLength = UART_WORDLENGTH_8B;
-  huart1.Init.StopBits = UART_STOPBITS_1;
-  huart1.Init.Parity = UART_PARITY_NONE;
-  huart1.Init.Mode = UART_MODE_TX_RX;
-  huart1.Init.HwFlowCtl = UART_HWCONTROL_NONE;
-  huart1.Init.OverSampling = UART_OVERSAMPLING_8;
-  huart1.Init.OneBitSampling = UART_ONE_BIT_SAMPLE_DISABLE;
-  huart1.Init.ClockPrescaler = UART_PRESCALER_DIV1;
-  huart1.AdvancedInit.AdvFeatureInit = UART_ADVFEATURE_NO_INIT;
-  if (HAL_UART_Init(&huart1) != HAL_OK)
-  {
-    Error_Handler();
-  }
-  if (HAL_UARTEx_SetTxFifoThreshold(&huart1, UART_TXFIFO_THRESHOLD_1_8) != HAL_OK)
-  {
-    Error_Handler();
-  }
-  if (HAL_UARTEx_SetRxFifoThreshold(&huart1, UART_RXFIFO_THRESHOLD_1_8) != HAL_OK)
-  {
-    Error_Handler();
-  }
-  if (HAL_UARTEx_DisableFifoMode(&huart1) != HAL_OK)
-  {
-    Error_Handler();
-  }
-  /* USER CODE BEGIN USART1_Init 2 */
-
-  /* USER CODE END USART1_Init 2 */
-
-}
-
-/**
   * @brief GPIO Initialization Function
   * @param None
   * @retval None
@@ -521,33 +468,50 @@ static void MX_GPIO_Init(void)
   __HAL_RCC_GPIOA_CLK_ENABLE();
 
   /*Configure GPIO pin Output Level */
-  HAL_GPIO_WritePin(GPIOA, SX1262_DIO1_Pin|SX1262_BUSY_Pin|SX1262_DIO2_Pin|SX1262_RST_Pin
-                          |SX1262_RFSW_Pin|BTN5_Pin, GPIO_PIN_RESET);
+  HAL_GPIO_WritePin(GPIOA, SX1262_DIO2_CPS_Pin|SX1262_RST_Pin|SX1262_TXEN_Pin|BTN5_Pin, GPIO_PIN_RESET);
 
   /*Configure GPIO pin Output Level */
-  HAL_GPIO_WritePin(BTN3_GPIO_Port, BTN3_Pin, GPIO_PIN_RESET);
+  HAL_GPIO_WritePin(GPIOB, SX1262_NSS_Pin|BTN3_Pin|SX1262_RXEN_Pin, GPIO_PIN_RESET);
 
-  /*Configure GPIO pins : SX1262_DIO1_Pin SX1262_BUSY_Pin SX1262_DIO2_Pin SX1262_RST_Pin
-                           SX1262_RFSW_Pin BTN5_Pin */
-  GPIO_InitStruct.Pin = SX1262_DIO1_Pin|SX1262_BUSY_Pin|SX1262_DIO2_Pin|SX1262_RST_Pin
-                          |SX1262_RFSW_Pin|BTN5_Pin;
+  /*Configure GPIO pin : SX1262_DIO1_Pin */
+  GPIO_InitStruct.Pin = SX1262_DIO1_Pin;
+  GPIO_InitStruct.Mode = GPIO_MODE_IT_RISING;
+  GPIO_InitStruct.Pull = GPIO_NOPULL;
+  HAL_GPIO_Init(SX1262_DIO1_GPIO_Port, &GPIO_InitStruct);
+
+  /*Configure GPIO pin : SX1262_BUSY_Pin */
+  GPIO_InitStruct.Pin = SX1262_BUSY_Pin;
+  GPIO_InitStruct.Mode = GPIO_MODE_INPUT;
+  GPIO_InitStruct.Pull = GPIO_NOPULL;
+  HAL_GPIO_Init(SX1262_BUSY_GPIO_Port, &GPIO_InitStruct);
+
+  /*Configure GPIO pins : SX1262_DIO2_CPS_Pin SX1262_RST_Pin SX1262_TXEN_Pin BTN5_Pin */
+  GPIO_InitStruct.Pin = SX1262_DIO2_CPS_Pin|SX1262_RST_Pin|SX1262_TXEN_Pin|BTN5_Pin;
   GPIO_InitStruct.Mode = GPIO_MODE_OUTPUT_PP;
   GPIO_InitStruct.Pull = GPIO_NOPULL;
   GPIO_InitStruct.Speed = GPIO_SPEED_FREQ_LOW;
   HAL_GPIO_Init(GPIOA, &GPIO_InitStruct);
 
-  /*Configure GPIO pins : BTN2_Pin BTN1_Pin BTN4_Pin SX1262_RFSW__Pin */
-  GPIO_InitStruct.Pin = BTN2_Pin|BTN1_Pin|BTN4_Pin|SX1262_RFSW__Pin;
-  GPIO_InitStruct.Mode = GPIO_MODE_INPUT;
-  GPIO_InitStruct.Pull = GPIO_NOPULL;
-  HAL_GPIO_Init(GPIOB, &GPIO_InitStruct);
-
-  /*Configure GPIO pin : BTN3_Pin */
-  GPIO_InitStruct.Pin = BTN3_Pin;
+  /*Configure GPIO pins : SX1262_NSS_Pin BTN3_Pin SX1262_RXEN_Pin */
+  GPIO_InitStruct.Pin = SX1262_NSS_Pin|BTN3_Pin|SX1262_RXEN_Pin;
   GPIO_InitStruct.Mode = GPIO_MODE_OUTPUT_PP;
   GPIO_InitStruct.Pull = GPIO_NOPULL;
   GPIO_InitStruct.Speed = GPIO_SPEED_FREQ_LOW;
-  HAL_GPIO_Init(BTN3_GPIO_Port, &GPIO_InitStruct);
+  HAL_GPIO_Init(GPIOB, &GPIO_InitStruct);
+
+  /*Configure GPIO pin : PA10 */
+  GPIO_InitStruct.Pin = GPIO_PIN_10;
+  GPIO_InitStruct.Mode = GPIO_MODE_AF_PP;
+  GPIO_InitStruct.Pull = GPIO_NOPULL;
+  GPIO_InitStruct.Speed = GPIO_SPEED_FREQ_LOW;
+  GPIO_InitStruct.Alternate = GPIO_AF7_USART1;
+  HAL_GPIO_Init(GPIOA, &GPIO_InitStruct);
+
+  /*Configure GPIO pins : BTN2_Pin BTN1_Pin BTN4_Pin */
+  GPIO_InitStruct.Pin = BTN2_Pin|BTN1_Pin|BTN4_Pin;
+  GPIO_InitStruct.Mode = GPIO_MODE_INPUT;
+  GPIO_InitStruct.Pull = GPIO_NOPULL;
+  HAL_GPIO_Init(GPIOB, &GPIO_InitStruct);
 
   /* USER CODE BEGIN MX_GPIO_Init_2 */
 
@@ -565,7 +529,7 @@ void Write_TO_OLED() {
 	 * T = -45 + 175 * (raw / 65535)
 	 */
 	temperature_c = -45.0f
-			+ (175.0f * ((float) g_tlm_data.temperature_raw / 65535.0f));
+			+ (315.0f * ((float) g_tlm_data.temperature_raw / 65535.0f));
 
 	/*
 	 * Convert raw SHT41 humidity to %RH
@@ -591,7 +555,7 @@ void Write_TO_OLED() {
 	 *
 	 * Using %.1f gives one decimal place.
 	 */
-	snprintf(oled_buffer, sizeof(oled_buffer), "TEMP: %.1f C", temperature_c);
+	snprintf(oled_buffer, sizeof(oled_buffer), "TEMP: %.1f  F", temperature_c);
 
 //	SSD1306_Clear();
 
@@ -604,7 +568,7 @@ void Write_TO_OLED() {
 	/*
 	 * Display humidity
 	 */
-	snprintf(oled_buffer, sizeof(oled_buffer), "HUM: %.1f %%",
+	snprintf(oled_buffer, sizeof(oled_buffer), "HUM: %.1f  %%",
 			humidity_percent);
 
 	SSD1306_GotoXY(0, 27);
@@ -652,7 +616,7 @@ void BLE_RECIEVE()
 				}
 				else if (!g_tlm_data.valid && BLE_M == 0) {
 					now = HAL_GetTick();
-					if (now - last_update >= update_interval) {
+					if (now - last_update >= update_interval + 5000) {
 						last_update = now;
 						SSD1306_Clear();
 						SSD1306_GotoXY(0, 0);
@@ -671,7 +635,7 @@ void BLE_RECIEVE()
 			last_update = now;
 			SSD1306_Clear();
 			SSD1306_GotoXY(0, 0);
-			SSD1306_Puts("Scan Disabled", &Font_7x10, 1);
+			SSD1306_Puts("Scan Disabled...", &Font_7x10, 1);
 			SSD1306_UpdateScreen();
 			BLE_Dis = 1;
 		}

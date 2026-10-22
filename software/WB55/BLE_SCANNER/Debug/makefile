@@ -19,6 +19,8 @@ RM := rm -rf
 -include Middlewares/ST/STM32_WPAN/ble/svc/Src/subdir.mk
 -include Middlewares/ST/STM32_WPAN/ble/core/template/subdir.mk
 -include Middlewares/ST/STM32_WPAN/ble/core/auto/subdir.mk
+-include Drivers/sx126x_driver/src/subdir.mk
+-include Drivers/ssd1306/src/subdir.mk
 -include Drivers/STM32WBxx_HAL_Driver/Src/subdir.mk
 -include Core/Startup/subdir.mk
 -include Core/Src/subdir.mk

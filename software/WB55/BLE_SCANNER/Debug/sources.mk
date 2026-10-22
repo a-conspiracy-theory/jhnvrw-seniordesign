@@ -25,6 +25,8 @@ SUBDIRS := \
 Core/Src \
 Core/Startup \
 Drivers/STM32WBxx_HAL_Driver/Src \
+Drivers/ssd1306/src \
+Drivers/sx126x_driver/src \
 Middlewares/ST/STM32_WPAN/ble/core/auto \
 Middlewares/ST/STM32_WPAN/ble/core/template \
 Middlewares/ST/STM32_WPAN/ble/svc/Src \

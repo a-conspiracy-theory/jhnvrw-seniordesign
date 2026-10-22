@@ -408,7 +408,7 @@ SVCCTL_UserEvtFlowStatus_t SVCCTL_App_Notification(void *pckt)
                   && gap_evt_proc_complete->Status == 0x00)
               {
                 /* USER CODE BEGIN GAP_GENERAL_DISCOVERY_PROC */
-
+            	  UTIL_SEQ_SetTask(1 << CFG_TASK_START_SCAN_ID, CFG_SCH_PRIO_0);
                 /* USER CODE END GAP_GENERAL_DISCOVERY_PROC */
                 APP_DBG_MSG("-- GAP GENERAL DISCOVERY PROCEDURE_COMPLETED\n\r");
                 /*if a device found, connect to it, device 1 being chosen first if both found*/
@@ -921,8 +921,7 @@ static void Scan_Request(void)
 
   /* USER CODE END Scan_Request_1 */
   tBleStatus result;
-  if (BleApplicationContext.Device_Connection_Status != APP_BLE_CONNECTED_CLIENT)
-  {
+
     /* USER CODE BEGIN APP_BLE_CONNECTED_CLIENT */
 
     /* USER CODE END APP_BLE_CONNECTED_CLIENT */
@@ -941,7 +940,7 @@ static void Scan_Request(void)
     /* USER CODE END BLE_SCAN_FAILED */
       APP_DBG_MSG("-- BLE_App_Start_Limited_Disc_Req, Failed \r\n\r");
     }
-  }
+
   /* USER CODE BEGIN Scan_Request_2 */
 
   /* USER CODE END Scan_Request_2 */

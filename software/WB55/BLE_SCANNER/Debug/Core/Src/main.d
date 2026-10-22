@@ -40,8 +40,6 @@ Core/Src/main.o: ../Core/Src/main.c ../Core/Inc/main.h \
  ../Drivers/STM32WBxx_HAL_Driver/Inc/stm32wbxx_hal_spi_ex.h \
  ../Drivers/STM32WBxx_HAL_Driver/Inc/stm32wbxx_hal_tim.h \
  ../Drivers/STM32WBxx_HAL_Driver/Inc/stm32wbxx_hal_tim_ex.h \
- ../Drivers/STM32WBxx_HAL_Driver/Inc/stm32wbxx_hal_uart.h \
- ../Drivers/STM32WBxx_HAL_Driver/Inc/stm32wbxx_hal_uart_ex.h \
  ../Drivers/STM32WBxx_HAL_Driver/Inc/stm32wbxx_ll_system.h \
  ../Core/Inc/app_conf.h \
  ../Middlewares/ST/STM32_WPAN/interface/patterns/ble_thread/hw.h \
@@ -58,9 +56,11 @@ Core/Src/main.o: ../Core/Src/main.c ../Core/Inc/main.h \
  ../Drivers/STM32WBxx_HAL_Driver/Inc/stm32wbxx_ll_gpio.h \
  ../Drivers/STM32WBxx_HAL_Driver/Inc/stm32wbxx_ll_rtc.h \
  ../Middlewares/ST/STM32_WPAN/ble/core/ble_bufsize.h \
- ../Core/Inc/app_entry.h ../Core/Inc/app_common.h ../Core/Inc/ssd1306.h \
- ../Core/Inc/main.h ../Core/Inc/fonts.h ../Core/Inc/bitmap.h \
- ../Core/Inc/fonts.h ../STM32_WPAN/App/app_ble.h \
+ ../Core/Inc/app_entry.h ../Core/Inc/app_common.h \
+ C:/Users/Nicho/Documents/Projects/jhnvrw-seniordesign/software/WB55/BLE_SCANNER/Drivers/ssd1306/inc/ssd1306.h \
+ C:/Users/Nicho/Documents/Projects/jhnvrw-seniordesign/software/WB55/BLE_SCANNER/Drivers/ssd1306/inc/fonts.h \
+ C:/Users/Nicho/Documents/Projects/jhnvrw-seniordesign/software/WB55/BLE_SCANNER/Drivers/ssd1306/inc/fonts.h \
+ ../STM32_WPAN/App/app_ble.h \
  ../Middlewares/ST/STM32_WPAN/interface/patterns/ble_thread/tl/hci_tl.h \
  ../Middlewares/ST/STM32_WPAN/stm32_wpan_common.h \
  ../Drivers/CMSIS/Include/cmsis_compiler.h \
@@ -115,8 +115,6 @@ Core/Src/main.o: ../Core/Src/main.c ../Core/Inc/main.h \
 ../Drivers/STM32WBxx_HAL_Driver/Inc/stm32wbxx_hal_spi_ex.h:
 ../Drivers/STM32WBxx_HAL_Driver/Inc/stm32wbxx_hal_tim.h:
 ../Drivers/STM32WBxx_HAL_Driver/Inc/stm32wbxx_hal_tim_ex.h:
-../Drivers/STM32WBxx_HAL_Driver/Inc/stm32wbxx_hal_uart.h:
-../Drivers/STM32WBxx_HAL_Driver/Inc/stm32wbxx_hal_uart_ex.h:
 ../Drivers/STM32WBxx_HAL_Driver/Inc/stm32wbxx_ll_system.h:
 ../Core/Inc/app_conf.h:
 ../Middlewares/ST/STM32_WPAN/interface/patterns/ble_thread/hw.h:
@@ -136,11 +134,9 @@ Core/Src/main.o: ../Core/Src/main.c ../Core/Inc/main.h \
 ../Middlewares/ST/STM32_WPAN/ble/core/ble_bufsize.h:
 ../Core/Inc/app_entry.h:
 ../Core/Inc/app_common.h:
-../Core/Inc/ssd1306.h:
-../Core/Inc/main.h:
-../Core/Inc/fonts.h:
-../Core/Inc/bitmap.h:
-../Core/Inc/fonts.h:
+C:/Users/Nicho/Documents/Projects/jhnvrw-seniordesign/software/WB55/BLE_SCANNER/Drivers/ssd1306/inc/ssd1306.h:
+C:/Users/Nicho/Documents/Projects/jhnvrw-seniordesign/software/WB55/BLE_SCANNER/Drivers/ssd1306/inc/fonts.h:
+C:/Users/Nicho/Documents/Projects/jhnvrw-seniordesign/software/WB55/BLE_SCANNER/Drivers/ssd1306/inc/fonts.h:
 ../STM32_WPAN/App/app_ble.h:
 ../Middlewares/ST/STM32_WPAN/interface/patterns/ble_thread/tl/hci_tl.h:
 ../Middlewares/ST/STM32_WPAN/stm32_wpan_common.h:
