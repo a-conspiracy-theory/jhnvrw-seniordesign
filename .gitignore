@@ -27,3 +27,4 @@ hardware/tx-pcb/~tx-pcb.kicad_sch.lck
 *.lck
 hardware/tx-pcb/sx1262adapter/1262adapt/.history/
 hardware/reg-pcb/.history/
+hardware/tx-pcb/1262adapt/.history/
