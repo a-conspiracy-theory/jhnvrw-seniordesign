@@ -26,7 +26,7 @@
 #include "app_ble.h"
 #include "ble_gap_aci.h"
 #include "stm32_seq.h"
-//#include "board_sx126x_calls.h"
+#include "board_sx126x_calls.h"
 #include <stdio.h>
 /* USER CODE END Includes */
 
@@ -140,42 +140,24 @@ int main(void)
   /* Infinite loop */
   /* USER CODE BEGIN WHILE */
   	  SSD1306_Init();
-//  	if(setup_22dBm_Tx(NULL) != SX126X_STATUS_OK){									// here we call the 22dBm setup and check it returns STATUS OK
-//  		SSD1306_Clear();
-//  		snprintf(oled_buffer, sizeof(oled_buffer), "Error: setup_22dBm_Tx()");		// print an error to the user if STATUS NOT OK
-//  		SSD1306_GotoXY(0,0);
-//  		SSD1306_Puts(oled_buffer, &Font_7x10, 1);
-//  		SSD1306_UpdateScreen();
-//  		while(1){}																	// hold here indefinitely
-//  	}
-//
-//  	if(rfswitch_Tx(NULL) != SX126X_STATUS_OK){										// here we call rfswitch_TX and check it returns STATUS OK
-//  		SSD1306_Clear();
-//  		snprintf(oled_buffer, sizeof(oled_buffer), "Error: rfswitch_Tx()");			// print an error to the user if STATUS NOT OK
-//  		SSD1306_GotoXY(0,0);
-//  		SSD1306_Puts(oled_buffer, &Font_7x10, 1);
-//  		SSD1306_UpdateScreen();
-//  		while(1){}																	// hold here indefinitely
-//  	}
-//
-//  	HAL_Delay(100);																	// 100ms delay is here to allow the chip some time after config
-//
-//  	if(sx126x_set_tx_cw(NULL) != SX126X_STATUS_OK){
-//  		SSD1306_Clear();
-//  		snprintf(oled_buffer, sizeof(oled_buffer), "Error: sx126x_set_tx_cw");		// print an error to the user if STATUS NOT OK
-//  		SSD1306_GotoXY(0,0);
-//  		SSD1306_Puts(oled_buffer, &Font_7x10, 1);
-//  		SSD1306_UpdateScreen();
-//  		while(1){}																	// hold here indefinitely
-//  	}
-//
-//  	rfswitch_Rx(NULL); //turn on the working mode
-//
-//  	SSD1306_Clear();
-//  	snprintf(oled_buffer, sizeof(oled_buffer), "Transmitting ASF");				// display current RF switch state on the OLED
-//  	SSD1306_GotoXY(0,0);
-//  	SSD1306_Puts(oled_buffer, &Font_7x10, 1);
-//  	SSD1306_UpdateScreen();
+  	if(setup_22dBm_Tx(NULL) != SX126X_STATUS_OK){									// here we call the 22dBm setup and check it returns STATUS OK
+  		SSD1306_Clear();
+  		snprintf(oled_buffer, sizeof(oled_buffer), "Error: setup_22dBm_Tx()");		// print an error to the user if STATUS NOT OK
+  		SSD1306_GotoXY(0,0);
+  		SSD1306_Puts(oled_buffer, &Font_7x10, 1);
+  		SSD1306_UpdateScreen();
+  		while(1){}																	// hold here indefinitely
+  	}
+
+  	if(rfswitch_Rx(NULL) != SX126X_STATUS_OK){										// here we call rfswitch_TX and check it returns STATUS OK
+  		SSD1306_Clear();
+  		snprintf(oled_buffer, sizeof(oled_buffer), "Error: rfswitch_Tx()");			// print an error to the user if STATUS NOT OK
+  		SSD1306_GotoXY(0,0);
+  		SSD1306_Puts(oled_buffer, &Font_7x10, 1);
+  		SSD1306_UpdateScreen();
+  		while(1){}																	// hold here indefinitely
+  	}
+
 
   	HAL_Delay(100);
   	SSD1306_Clear();
@@ -705,38 +687,7 @@ void BLE_RECIEVE()
 	else if(BLE_Dis == 1){
 			aci_gap_terminate_gap_proc(GAP_GENERAL_DISCOVERY_PROC);
 	}
-//				BLE_Dis = 0;
-//			}
-//	else if (!display_toggle && BLE_Dis == 0) {
-//		//aci_gap_terminate_gap_proc(GAP_GENERAL_DISCOVERY_PROC);
-//		now = HAL_GetTick();
-//		if (now - last_update >= update_interval) {
-//			last_update = now;
-//			SSD1306_Clear();
-//			SSD1306_GotoXY(0, 0);
-//			SSD1306_Puts("Scan Disabled...", &Font_7x10, 1);
-//			SSD1306_UpdateScreen();
-//			BLE_Dis = 1;
-//		}
-//	}
 }
-
-//void Button1_Poll(void){
-//    static uint8_t last_state = 0;
-//    uint8_t current_state = HAL_GPIO_ReadPin(BTN1_GPIO_Port, BTN1_Pin);
-//
-//    // Detect rising edge (button press)
-//    if (current_state == GPIO_PIN_SET && last_state == 0)
-//    {
-//        HAL_Delay(20); // debounce
-//        if (HAL_GPIO_ReadPin(BTN1_GPIO_Port, BTN1_Pin) == GPIO_PIN_SET)
-//        {
-//            display_toggle ^= 1;   // Toggle display mode
-//        }
-//    }
-//
-//    last_state = current_state;
-//}
 
 void HAL_GPIO_EXTI_Callback(uint16_t GPIO_Pin)
 {
@@ -761,11 +712,11 @@ void HAL_GPIO_EXTI_Callback(uint16_t GPIO_Pin)
 	}
 
 	if(GPIO_Pin == BTN3_Pin){
-
+		sx126x_set_tx_cw(NULL);
 	}
 
 	if(GPIO_Pin == BTN4_Pin){
-
+		sx126x_set_standby(NULL, SX126X_STANDBY_CFG_RC);
 	}
 }
 

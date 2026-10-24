@@ -1,6 +1,6 @@
 Drivers/sx126x_driver/src/board_sx126x_hal.o: \
  ../Drivers/sx126x_driver/src/board_sx126x_hal.c \
- C:/Users/Nicho/Documents/Projects/jhnvrw-seniordesign/software/WB55/BLE_HANDHELD_TRIAL1/Drivers/sx126x_driver/inc/sx126x_hal.h \
+ C:/Users/Nicho/Documents/jhnvrw-seniordesign/software/WB55/BLE_HANDHELD_TRIAL1/Drivers/sx126x_driver/inc/sx126x_hal.h \
  ../Core/Inc/main.h ../Drivers/STM32WBxx_HAL_Driver/Inc/stm32wbxx_hal.h \
  ../Core/Inc/stm32wbxx_hal_conf.h \
  ../Drivers/STM32WBxx_HAL_Driver/Inc/stm32wbxx_hal_dma.h \
@@ -59,7 +59,7 @@ Drivers/sx126x_driver/src/board_sx126x_hal.o: \
  ../Drivers/STM32WBxx_HAL_Driver/Inc/stm32wbxx_ll_rtc.h \
  ../Middlewares/ST/STM32_WPAN/ble/core/ble_bufsize.h \
  ../Core/Inc/app_entry.h ../Core/Inc/app_common.h
-C:/Users/Nicho/Documents/Projects/jhnvrw-seniordesign/software/WB55/BLE_HANDHELD_TRIAL1/Drivers/sx126x_driver/inc/sx126x_hal.h:
+C:/Users/Nicho/Documents/jhnvrw-seniordesign/software/WB55/BLE_HANDHELD_TRIAL1/Drivers/sx126x_driver/inc/sx126x_hal.h:
 ../Core/Inc/main.h:
 ../Drivers/STM32WBxx_HAL_Driver/Inc/stm32wbxx_hal.h:
 ../Core/Inc/stm32wbxx_hal_conf.h:

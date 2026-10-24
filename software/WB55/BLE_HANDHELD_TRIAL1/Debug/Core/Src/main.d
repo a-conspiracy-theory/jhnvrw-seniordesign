@@ -57,9 +57,9 @@ Core/Src/main.o: ../Core/Src/main.c ../Core/Inc/main.h \
  ../Drivers/STM32WBxx_HAL_Driver/Inc/stm32wbxx_ll_rtc.h \
  ../Middlewares/ST/STM32_WPAN/ble/core/ble_bufsize.h \
  ../Core/Inc/app_entry.h ../Core/Inc/app_common.h \
- C:/Users/Nicho/Documents/Projects/jhnvrw-seniordesign/software/WB55/BLE_HANDHELD_TRIAL1/Drivers/ssd1306/inc/ssd1306.h \
- C:/Users/Nicho/Documents/Projects/jhnvrw-seniordesign/software/WB55/BLE_HANDHELD_TRIAL1/Drivers/ssd1306/inc/fonts.h \
- C:/Users/Nicho/Documents/Projects/jhnvrw-seniordesign/software/WB55/BLE_HANDHELD_TRIAL1/Drivers/ssd1306/inc/fonts.h \
+ C:/Users/Nicho/Documents/jhnvrw-seniordesign/software/WB55/BLE_HANDHELD_TRIAL1/Drivers/ssd1306/inc/ssd1306.h \
+ C:/Users/Nicho/Documents/jhnvrw-seniordesign/software/WB55/BLE_HANDHELD_TRIAL1/Drivers/ssd1306/inc/fonts.h \
+ C:/Users/Nicho/Documents/jhnvrw-seniordesign/software/WB55/BLE_HANDHELD_TRIAL1/Drivers/ssd1306/inc/fonts.h \
  ../STM32_WPAN/App/app_ble.h \
  ../Middlewares/ST/STM32_WPAN/interface/patterns/ble_thread/tl/hci_tl.h \
  ../Middlewares/ST/STM32_WPAN/stm32_wpan_common.h \
@@ -72,7 +72,12 @@ Core/Src/main.o: ../Core/Src/main.c ../Core/Inc/main.h \
  ../Middlewares/ST/STM32_WPAN/ble/core/ble_defs.h \
  ../Middlewares/ST/STM32_WPAN/ble/core/template/osal.h \
  ../Middlewares/ST/STM32_WPAN/ble/core/template/compiler.h \
- ../Utilities/sequencer/stm32_seq.h
+ ../Utilities/sequencer/stm32_seq.h \
+ C:/Users/Nicho/Documents/jhnvrw-seniordesign/software/WB55/BLE_HANDHELD_TRIAL1/Drivers/sx126x_driver/inc/board_sx126x_calls.h \
+ C:/Users/Nicho/Documents/jhnvrw-seniordesign/software/WB55/BLE_HANDHELD_TRIAL1/Drivers/sx126x_driver/inc/sx126x.h \
+ C:/Users/Nicho/Documents/jhnvrw-seniordesign/software/WB55/BLE_HANDHELD_TRIAL1/Drivers/sx126x_driver/inc/sx126x_status.h \
+ C:/Users/Nicho/Documents/jhnvrw-seniordesign/software/WB55/BLE_HANDHELD_TRIAL1/Drivers/sx126x_driver/inc/sx126x_hal.h \
+ C:/Users/Nicho/Documents/jhnvrw-seniordesign/software/WB55/BLE_HANDHELD_TRIAL1/Drivers/sx126x_driver/inc/sx126x_driver_version.h
 ../Core/Inc/main.h:
 ../Drivers/STM32WBxx_HAL_Driver/Inc/stm32wbxx_hal.h:
 ../Core/Inc/stm32wbxx_hal_conf.h:
@@ -134,9 +139,9 @@ Core/Src/main.o: ../Core/Src/main.c ../Core/Inc/main.h \
 ../Middlewares/ST/STM32_WPAN/ble/core/ble_bufsize.h:
 ../Core/Inc/app_entry.h:
 ../Core/Inc/app_common.h:
-C:/Users/Nicho/Documents/Projects/jhnvrw-seniordesign/software/WB55/BLE_HANDHELD_TRIAL1/Drivers/ssd1306/inc/ssd1306.h:
-C:/Users/Nicho/Documents/Projects/jhnvrw-seniordesign/software/WB55/BLE_HANDHELD_TRIAL1/Drivers/ssd1306/inc/fonts.h:
-C:/Users/Nicho/Documents/Projects/jhnvrw-seniordesign/software/WB55/BLE_HANDHELD_TRIAL1/Drivers/ssd1306/inc/fonts.h:
+C:/Users/Nicho/Documents/jhnvrw-seniordesign/software/WB55/BLE_HANDHELD_TRIAL1/Drivers/ssd1306/inc/ssd1306.h:
+C:/Users/Nicho/Documents/jhnvrw-seniordesign/software/WB55/BLE_HANDHELD_TRIAL1/Drivers/ssd1306/inc/fonts.h:
+C:/Users/Nicho/Documents/jhnvrw-seniordesign/software/WB55/BLE_HANDHELD_TRIAL1/Drivers/ssd1306/inc/fonts.h:
 ../STM32_WPAN/App/app_ble.h:
 ../Middlewares/ST/STM32_WPAN/interface/patterns/ble_thread/tl/hci_tl.h:
 ../Middlewares/ST/STM32_WPAN/stm32_wpan_common.h:
@@ -150,3 +155,8 @@ C:/Users/Nicho/Documents/Projects/jhnvrw-seniordesign/software/WB55/BLE_HANDHELD
 ../Middlewares/ST/STM32_WPAN/ble/core/template/osal.h:
 ../Middlewares/ST/STM32_WPAN/ble/core/template/compiler.h:
 ../Utilities/sequencer/stm32_seq.h:
+C:/Users/Nicho/Documents/jhnvrw-seniordesign/software/WB55/BLE_HANDHELD_TRIAL1/Drivers/sx126x_driver/inc/board_sx126x_calls.h:
+C:/Users/Nicho/Documents/jhnvrw-seniordesign/software/WB55/BLE_HANDHELD_TRIAL1/Drivers/sx126x_driver/inc/sx126x.h:
+C:/Users/Nicho/Documents/jhnvrw-seniordesign/software/WB55/BLE_HANDHELD_TRIAL1/Drivers/sx126x_driver/inc/sx126x_status.h:
+C:/Users/Nicho/Documents/jhnvrw-seniordesign/software/WB55/BLE_HANDHELD_TRIAL1/Drivers/sx126x_driver/inc/sx126x_hal.h:
+C:/Users/Nicho/Documents/jhnvrw-seniordesign/software/WB55/BLE_HANDHELD_TRIAL1/Drivers/sx126x_driver/inc/sx126x_driver_version.h:

@@ -318,7 +318,7 @@ void APP_BLE_Init(void)
    * From here, all initialization are BLE application specific
    */
   UTIL_SEQ_RegTask(1<<CFG_TASK_START_SCAN_ID, UTIL_SEQ_RFU, Scan_Request);
-  UTIL_SEQ_RegTask(1<<CFG_TASK_CONN_DEV_1_ID, UTIL_SEQ_RFU, Connect_Request);
+//  UTIL_SEQ_RegTask(1<<CFG_TASK_CONN_DEV_1_ID, UTIL_SEQ_RFU, Connect_Request);
 
   /**
    * Initialization of the BLE App Context
@@ -355,7 +355,7 @@ void APP_BLE_Init(void)
   /**
    * Start scanning
    */
-  UTIL_SEQ_SetTask(1 << CFG_TASK_START_SCAN_ID, CFG_SCH_PRIO_0);
+//  UTIL_SEQ_SetTask(1 << CFG_TASK_START_SCAN_ID, CFG_SCH_PRIO_0);
 #endif
   /* USER CODE BEGIN APP_BLE_Init_2 */
 
@@ -408,7 +408,7 @@ SVCCTL_UserEvtFlowStatus_t SVCCTL_App_Notification(void *pckt)
                   && gap_evt_proc_complete->Status == 0x00)
               {
                 /* USER CODE BEGIN GAP_GENERAL_DISCOVERY_PROC */
-
+            	  UTIL_SEQ_SetTask(1 << CFG_TASK_START_SCAN_ID, CFG_SCH_PRIO_0);
                 /* USER CODE END GAP_GENERAL_DISCOVERY_PROC */
                 APP_DBG_MSG("-- GAP GENERAL DISCOVERY PROCEDURE_COMPLETED\n\r");
                 /*if a device found, connect to it, device 1 being chosen first if both found*/

@@ -36,8 +36,6 @@ Core/Src/stm32wb0x_it.o: ../Core/Src/stm32wb0x_it.c ../Core/Inc/main.h \
  ../Drivers/STM32WB0x_HAL_Driver/Inc/stm32wb0x_ll_bus.h \
  ../Drivers/STM32WB0x_HAL_Driver/Inc/stm32wb0x_hal_rcc_ex.h \
  ../Drivers/STM32WB0x_HAL_Driver/Inc/stm32wb0x_hal_rng.h \
- ../Drivers/STM32WB0x_HAL_Driver/Inc/stm32wb0x_hal_rtc.h \
- ../Drivers/STM32WB0x_HAL_Driver/Inc/stm32wb0x_hal_rtc_ex.h \
  ../Drivers/STM32WB0x_HAL_Driver/Inc/stm32wb0x_hal_tim.h \
  ../Drivers/STM32WB0x_HAL_Driver/Inc/stm32wb0x_hal_tim_ex.h \
  ../Drivers/STM32WB0x_HAL_Driver/Inc/stm32wb0x_hal_uart.h \
@@ -99,8 +97,6 @@ Core/Src/stm32wb0x_it.o: ../Core/Src/stm32wb0x_it.c ../Core/Inc/main.h \
 ../Drivers/STM32WB0x_HAL_Driver/Inc/stm32wb0x_ll_bus.h:
 ../Drivers/STM32WB0x_HAL_Driver/Inc/stm32wb0x_hal_rcc_ex.h:
 ../Drivers/STM32WB0x_HAL_Driver/Inc/stm32wb0x_hal_rng.h:
-../Drivers/STM32WB0x_HAL_Driver/Inc/stm32wb0x_hal_rtc.h:
-../Drivers/STM32WB0x_HAL_Driver/Inc/stm32wb0x_hal_rtc_ex.h:
 ../Drivers/STM32WB0x_HAL_Driver/Inc/stm32wb0x_hal_tim.h:
 ../Drivers/STM32WB0x_HAL_Driver/Inc/stm32wb0x_hal_tim_ex.h:
 ../Drivers/STM32WB0x_HAL_Driver/Inc/stm32wb0x_hal_uart.h:
