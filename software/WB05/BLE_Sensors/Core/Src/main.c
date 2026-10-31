@@ -47,8 +47,6 @@ PKA_HandleTypeDef hpka;
 
 RNG_HandleTypeDef hrng;
 
-RTC_HandleTypeDef hrtc;
-
 TIM_HandleTypeDef htim2;
 
 UART_HandleTypeDef huart1;
@@ -66,7 +64,6 @@ static void MX_RNG_Init(void);
 static void MX_RADIO_Init(void);
 static void MX_RADIO_TIMER_Init(void);
 static void MX_PKA_Init(void);
-static void MX_RTC_Init(void);
 static void MX_TIM2_Init(void);
 /* USER CODE BEGIN PFP */
 void SHT41_Read_Data(void);
@@ -121,18 +118,10 @@ int main(void)
   MX_RADIO_Init();
   MX_RADIO_TIMER_Init();
   MX_PKA_Init();
-  MX_RTC_Init();
   MX_TIM2_Init();
   /* USER CODE BEGIN 2 */
-
+  SHT41_Read_Data();
   /* USER CODE END 2 */
-//  uint16_t i;
-//  for (i=0;i<10;i++){
-//
-//  }
-	 SHT41_Read_Data();
-	 STS41_Read_Data();
-
 
   /* Init code for STM32_BLE */
   MX_APPE_Init(NULL);
@@ -376,40 +365,6 @@ static void MX_RNG_Init(void)
 }
 
 /**
-  * @brief RTC Initialization Function
-  * @param None
-  * @retval None
-  */
-static void MX_RTC_Init(void)
-{
-
-  /* USER CODE BEGIN RTC_Init 0 */
-
-  /* USER CODE END RTC_Init 0 */
-
-  /* USER CODE BEGIN RTC_Init 1 */
-
-  /* USER CODE END RTC_Init 1 */
-
-  /** Initialize RTC Only
-  */
-  hrtc.Instance = RTC;
-  hrtc.Init.HourFormat = RTC_HOURFORMAT_24;
-  hrtc.Init.AsynchPrediv = 127;
-  hrtc.Init.SynchPrediv = 255;
-  hrtc.Init.OutPut = RTC_OUTPUT_DISABLE;
-  hrtc.Init.OutPutPolarity = RTC_OUTPUT_POLARITY_HIGH;
-  if (HAL_RTC_Init(&hrtc) != HAL_OK)
-  {
-    Error_Handler();
-  }
-  /* USER CODE BEGIN RTC_Init 2 */
-
-  /* USER CODE END RTC_Init 2 */
-
-}
-
-/**
   * @brief TIM2 Initialization Function
   * @param None
   * @retval None
@@ -546,7 +501,7 @@ void SHT41_Read_Data(void)
     }
 
     // 4. Convert raw data to physical values
-//    raw_temperature = (rx_buf[0] << 8) | rx_buf[1];
+    raw_temperature = (rx_buf[0] << 8) | rx_buf[1];
     raw_humidity  = (rx_buf[3] << 8) | rx_buf[4];
 
 //    // Sensirion SHT4x mathematical conversion formulas
@@ -558,27 +513,27 @@ void SHT41_Read_Data(void)
 //    if (humidity > 100.0f) humidity = 100.0f;
 }
 
-void STS41_Read_Data(){
-	uint8_t cmd = STS41_MEASURE_HIGH_PREC;
-	uint8_t rx_buf[3] = { 0 };
-
-	// 1. Send the measurement command to the STS41
-	if (HAL_I2C_Master_Transmit(&hi2c1, STS41_I2C_ADDRESS, &cmd, 1,
-			HAL_MAX_DELAY) != HAL_OK) {
-		return;
-	}
-	// 2. Wait for the measurement to complete (High-precision takes ~10ms max)
-	HAL_Delay(14);
-
-	// 3. Read 3 bytes back (MSB, LSB, Checksum)
-	if (HAL_I2C_Master_Receive(&hi2c1, STS41_I2C_ADDRESS, rx_buf, 3,
-			HAL_MAX_DELAY) != HAL_OK) {
-		return;
-	}
-	// 4. Combine MSB and LSB into a raw 16-bit integer
-	raw_temperature = (rx_buf[0] << 8) | rx_buf[1];
-//    HAL_Delay(1000);
-}
+//void STS41_Read_Data(){
+//	uint8_t cmd = STS41_MEASURE_HIGH_PREC;
+//	uint8_t rx_buf[3] = { 0 };
+//
+//	// 1. Send the measurement command to the STS41
+//	if (HAL_I2C_Master_Transmit(&hi2c1, STS41_I2C_ADDRESS, &cmd, 1,
+//			HAL_MAX_DELAY) != HAL_OK) {
+//		return;
+//	}
+//	// 2. Wait for the measurement to complete (High-precision takes ~10ms max)
+//	HAL_Delay(14);
+//
+//	// 3. Read 3 bytes back (MSB, LSB, Checksum)
+//	if (HAL_I2C_Master_Receive(&hi2c1, STS41_I2C_ADDRESS, rx_buf, 3,
+//			HAL_MAX_DELAY) != HAL_OK) {
+//		return;
+//	}
+//	// 4. Combine MSB and LSB into a raw 16-bit integer
+//	raw_temperature = (rx_buf[0] << 8) | rx_buf[1];
+////    HAL_Delay(1000);
+//}
 /* USER CODE END 4 */
 
 /**
