@@ -579,8 +579,7 @@ void Write_TO_OLED() {
 	float humidity_percent;
 
 	/*
-	 * Convert raw SHT41 temperature to Celsius
-	 *
+	 * Convert raw SHT41 temperature to Farenhgiht
 	 * T = -45 + 175 * (raw / 65535)
 	 */
 	temperature_c = -45.0f
@@ -588,15 +587,12 @@ void Write_TO_OLED() {
 
 	/*
 	 * Convert raw SHT41 humidity to %RH
-	 *
 	 * RH = -6 + 125 * (raw / 65535)
 	 */
 	humidity_percent = -6.0f
 			+ (125.0f * ((float) g_tlm_data.battery_mv / 65535.0f));
 
-	/*
-	 * Limit humidity to the valid range
-	 */
+//	Limit humidity to the valid range
 	if (humidity_percent < 0.0f) {
 		humidity_percent = 0.0f;
 	}
@@ -605,11 +601,7 @@ void Write_TO_OLED() {
 		humidity_percent = 100.0f;
 	}
 
-	/*
-	 * Display temperature
-	 *
-	 * Using %.1f gives one decimal place.
-	 */
+//  Display temperature
 	snprintf(oled_buffer, sizeof(oled_buffer), "TEMP: %.1f  F", temperature_c);
 
 //	SSD1306_Clear();
@@ -629,18 +621,14 @@ void Write_TO_OLED() {
 	SSD1306_GotoXY(0, 27);
 	SSD1306_Puts(oled_buffer, &Font_7x10, 1);
 
-	/*
-	 * Display raw temperature for debugging
-	 */
+//	Display raw temperature
 	snprintf(oled_buffer, sizeof(oled_buffer), "TRAW: %u",
 			(unsigned int) g_tlm_data.temperature_raw);
 
 	SSD1306_GotoXY(0, 40);
 	SSD1306_Puts(oled_buffer, &Font_7x10, 1);
 
-	/*
-	 * Display raw humidity for debugging
-	 */
+//	Display raw humidity
 	snprintf(oled_buffer, sizeof(oled_buffer), "HRAW: %u",
 			(unsigned int) g_tlm_data.battery_mv);
 
@@ -686,6 +674,7 @@ void BLE_RECIEVE()
 
 	else if(BLE_Dis == 1){
 			aci_gap_terminate_gap_proc(GAP_GENERAL_DISCOVERY_PROC);
+			BLE_Dis = -1;
 	}
 }
 
@@ -706,17 +695,25 @@ void HAL_GPIO_EXTI_Callback(uint16_t GPIO_Pin)
 //		aci_gap_terminate_gap_proc(GAP_GENERAL_DISCOVERY_PROC);
 		SSD1306_Clear();
 		SSD1306_GotoXY(0, 0);
-		SSD1306_Puts("BLE Disabled...", &Font_7x10, 1);
+		SSD1306_Puts("BLE DISABLED...", &Font_7x10, 1);
 		SSD1306_UpdateScreen();
 		BLE_Dis = 1;
 	}
 
 	if(GPIO_Pin == BTN3_Pin){
 		sx126x_set_tx_cw(NULL);
+		SSD1306_Clear();
+		SSD1306_GotoXY(0, 0);
+		SSD1306_Puts("PWR TRANSMIT ON...", &Font_7x10, 1);
+		SSD1306_UpdateScreen();
 	}
 
 	if(GPIO_Pin == BTN4_Pin){
 		sx126x_set_standby(NULL, SX126X_STANDBY_CFG_RC);
+		SSD1306_Clear();
+		SSD1306_GotoXY(0, 0);
+		SSD1306_Puts("PWR TRANSMIT OFF...", &Font_7x10, 1);
+		SSD1306_UpdateScreen();
 	}
 }
 

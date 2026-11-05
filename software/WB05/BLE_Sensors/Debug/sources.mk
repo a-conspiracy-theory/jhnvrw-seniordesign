@@ -25,6 +25,7 @@ C_DEPS :=
 SUBDIRS := \
 Core/Src \
 Core/Startup \
+Drivers/Environmental\ Sensors/Src \
 Drivers/STM32WB0x_HAL_Driver/Src \
 Middlewares/ST/STM32_BLE/evt_handler/src \
 Middlewares/ST/STM32_BLE/queued_writes/src \

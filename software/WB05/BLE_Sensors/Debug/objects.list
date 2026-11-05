@@ -6,6 +6,7 @@
 "./Core/Src/sysmem.o"
 "./Core/Src/system_stm32wb0x.o"
 "./Core/Startup/startup_stm32wb05kzvx.o"
+"./Drivers/Environmental Sensors/Src/READ_SENSORS.o"
 "./Drivers/STM32WB0x_HAL_Driver/Src/stm32wb0x_hal.o"
 "./Drivers/STM32WB0x_HAL_Driver/Src/stm32wb0x_hal_cortex.o"
 "./Drivers/STM32WB0x_HAL_Driver/Src/stm32wb0x_hal_dma.o"

@@ -30,6 +30,7 @@ RM := rm -rf
 -include Middlewares/ST/STM32_BLE/queued_writes/src/subdir.mk
 -include Middlewares/ST/STM32_BLE/evt_handler/src/subdir.mk
 -include Drivers/STM32WB0x_HAL_Driver/Src/subdir.mk
+-include Drivers/Environmental\ Sensors/Src/subdir.mk
 -include Core/Startup/subdir.mk
 -include Core/Src/subdir.mk
 -include objects.mk
@@ -83,8 +84,8 @@ all: main-build
 main-build: BLE_Sensors.elf secondary-outputs
 
 # Tool invocations
-BLE_Sensors.elf BLE_Sensors.map: $(OBJS) $(USER_OBJS) C:\Users\Nicho\Documents\jhnvrw-seniordesign\software\WB05\BLE_Sensors\STM32WB05KZVX_FLASH.ld makefile objects.list $(OPTIONAL_TOOL_DEPS)
-	arm-none-eabi-gcc -o "BLE_Sensors.elf" @"objects.list" $(USER_OBJS) -Wl,--start-group $(LIBS) -Wl,--end-group -mcpu=cortex-m0plus -T"C:\Users\Nicho\Documents\jhnvrw-seniordesign\software\WB05\BLE_Sensors\STM32WB05KZVX_FLASH.ld" --specs=nosys.specs -Wl,-Map="BLE_Sensors.map" -Wl,--gc-sections -static -L../Middlewares/ST/STM32_BLE/cryptolib -L../Middlewares/ST/STM32_BLE/stack/lib --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+BLE_Sensors.elf BLE_Sensors.map: $(OBJS) $(USER_OBJS) C:\Users\Nicho\Documents\Projects\jhnvrw-seniordesign\software\WB05\BLE_Sensors\STM32WB05KZVX_FLASH.ld makefile objects.list $(OPTIONAL_TOOL_DEPS)
+	arm-none-eabi-gcc -o "BLE_Sensors.elf" @"objects.list" $(USER_OBJS) -Wl,--start-group $(LIBS) -Wl,--end-group -mcpu=cortex-m0plus -T"C:\Users\Nicho\Documents\Projects\jhnvrw-seniordesign\software\WB05\BLE_Sensors\STM32WB05KZVX_FLASH.ld" --specs=nosys.specs -Wl,-Map="BLE_Sensors.map" -Wl,--gc-sections -static -L../Middlewares/ST/STM32_BLE/cryptolib -L../Middlewares/ST/STM32_BLE/stack/lib --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
 	@echo 'Finished building target: $@'
 	@echo ' '
 

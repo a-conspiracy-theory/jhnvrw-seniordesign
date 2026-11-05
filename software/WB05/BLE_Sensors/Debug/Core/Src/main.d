@@ -46,6 +46,7 @@ Core/Src/main.o: ../Core/Src/main.c ../Core/Inc/main.h \
  ../System/Config/Debug_GPIO/debug_config.h ../Core/Inc/app_conf.h \
  ../Projects/Common/BLE/Modules/RTDebug/debug_signals.h \
  ../Projects/Common/BLE/Modules/compiler.h \
+ C:/Users/Nicho/Documents/Projects/jhnvrw-seniordesign/software/WB05/BLE_Sensors/Drivers/Environmental\ Sensors/Inc/Sensors_File.h \
  ../STM32_BLE/App/eddystone_tlm_service.h
 ../Core/Inc/main.h:
 ../Drivers/STM32WB0x_HAL_Driver/Inc/stm32wb0x_hal.h:
@@ -98,4 +99,5 @@ Core/Src/main.o: ../Core/Src/main.c ../Core/Inc/main.h \
 ../Core/Inc/app_conf.h:
 ../Projects/Common/BLE/Modules/RTDebug/debug_signals.h:
 ../Projects/Common/BLE/Modules/compiler.h:
+C:/Users/Nicho/Documents/Projects/jhnvrw-seniordesign/software/WB05/BLE_Sensors/Drivers/Environmental\ Sensors/Inc/Sensors_File.h:
 ../STM32_BLE/App/eddystone_tlm_service.h:

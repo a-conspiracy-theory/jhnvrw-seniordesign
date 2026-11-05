@@ -21,6 +21,7 @@
 
 /* Private includes ----------------------------------------------------------*/
 /* USER CODE BEGIN Includes */
+#include "Sensors_File.h"
 #include "eddystone_tlm_service.h"
 /* USER CODE END Includes */
 
@@ -66,17 +67,12 @@ static void MX_RADIO_TIMER_Init(void);
 static void MX_PKA_Init(void);
 static void MX_TIM2_Init(void);
 /* USER CODE BEGIN PFP */
-void SHT41_Read_Data(void);
-void STS41_Read_Data(void);
+//void SHT41_Read_Data(void);
+//void STS41_Read_Data(void);
 /* USER CODE END PFP */
 
 /* Private user code ---------------------------------------------------------*/
 /* USER CODE BEGIN 0 */
-#define SENSOR_INTERVAL_MS 5000U
-#define SHT41_ADDRESS     (0x44 << 1) // 0x88 (8-bit shifted address)
-#define SHT41_MEASURE_CMD 0xFD        // High precision measurement command
-#define STS41_I2C_ADDRESS         (0x44 << 1) // 0x88
-#define STS41_MEASURE_HIGH_PREC   0xFD        // High precision measurement command
 uint16_t raw_temperature = 0;
 uint16_t raw_humidity = 0;
 /* USER CODE END 0 */
@@ -120,7 +116,7 @@ int main(void)
   MX_PKA_Init();
   MX_TIM2_Init();
   /* USER CODE BEGIN 2 */
-  SHT41_Read_Data();
+  SHT41_Read_Data(hi2c1);
   /* USER CODE END 2 */
 
   /* Init code for STM32_BLE */
@@ -478,40 +474,40 @@ static void MX_GPIO_Init(void)
 }
 
 /* USER CODE BEGIN 4 */
-void SHT41_Read_Data(void)
-{
-    uint8_t cmd = SHT41_MEASURE_CMD;
-    uint8_t rx_buf[6] = {0};
-
-    // 1. Send the measurement command to the sensor
-    if (HAL_I2C_Master_Transmit(&hi2c1, SHT41_ADDRESS, &cmd, 1, HAL_MAX_DELAY) != HAL_OK)
-    {
-        // Handle transmission error
-        return;
-    }
-
-    // 2. Wait for the measurement conversion to finish (Max 8.2ms for high precision)
-    HAL_Delay(12);
-
-    // 3. Read 6 bytes of data back from the sensor
-    if (HAL_I2C_Master_Receive(&hi2c1, SHT41_ADDRESS, rx_buf, 6, HAL_MAX_DELAY) != HAL_OK)
-    {
-        // Handle reception error
-        return;
-    }
-
-    // 4. Convert raw data to physical values
-    raw_temperature = (rx_buf[0] << 8) | rx_buf[1];
-    raw_humidity  = (rx_buf[3] << 8) | rx_buf[4];
-
-//    // Sensirion SHT4x mathematical conversion formulas
-//    temperature = -45.0f + 175.0f * ((float)raw_temp / 65535.0f);
-//    humidity = -6.0f + 125.0f * ((float)raw_hum / 65535.0f);
+//void SHT41_Read_Data(void)
+//{
+//    uint8_t cmd = SHT41_MEASURE_CMD;
+//    uint8_t rx_buf[6] = {0};
 //
-//    // Optional: Clamp humidity between 0% and 100%
-//    if (humidity < 0.0f) humidity = 0.0f;
-//    if (humidity > 100.0f) humidity = 100.0f;
-}
+//    // 1. Send the measurement command to the sensor
+//    if (HAL_I2C_Master_Transmit(&hi2c1, SHT41_ADDRESS, &cmd, 1, HAL_MAX_DELAY) != HAL_OK)
+//    {
+//        // Handle transmission error
+//        return;
+//    }
+//
+//    // 2. Wait for the measurement conversion to finish (Max 8.2ms for high precision)
+//    HAL_Delay(12);
+//
+//    // 3. Read 6 bytes of data back from the sensor
+//    if (HAL_I2C_Master_Receive(&hi2c1, SHT41_ADDRESS, rx_buf, 6, HAL_MAX_DELAY) != HAL_OK)
+//    {
+//        // Handle reception error
+//        return;
+//    }
+//
+//    // 4. Convert raw data to physical values
+//    raw_temperature = (rx_buf[0] << 8) | rx_buf[1];
+//    raw_humidity  = (rx_buf[3] << 8) | rx_buf[4];
+//
+////    // Sensirion SHT4x mathematical conversion formulas
+////    temperature = -45.0f + 175.0f * ((float)raw_temp / 65535.0f);
+////    humidity = -6.0f + 125.0f * ((float)raw_hum / 65535.0f);
+////
+////    // Optional: Clamp humidity between 0% and 100%
+////    if (humidity < 0.0f) humidity = 0.0f;
+////    if (humidity > 100.0f) humidity = 100.0f;
+//}
 
 //void STS41_Read_Data(){
 //	uint8_t cmd = STS41_MEASURE_HIGH_PREC;
