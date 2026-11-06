@@ -1,0 +1,11 @@
+C:/Users/HOME/Documents/KiCad/Projects/jhnvrw-seniordesign/software/WB55/PCB_SW/SPI_I2C_Test/Drivers/sx126x_driver/inc/sx126x_lr_fhss.h:243:28:sx126x_lr_fhss_get_hop_sequence_count	16	static
+../Drivers/sx126x_driver/src/board_sx126x_calls.c:19:17:setup_fhss_22dBm_Tx	64	static
+../Drivers/sx126x_driver/src/board_sx126x_calls.c:61:17:fhss_send	48	static
+../Drivers/sx126x_driver/src/board_sx126x_calls.c:77:6:fhss_process	16	static
+../Drivers/sx126x_driver/src/board_sx126x_calls.c:95:17:setup_22dBm_Tx	24	static
+../Drivers/sx126x_driver/src/board_sx126x_calls.c:121:17:rfswitch_Tx	16	static
+../Drivers/sx126x_driver/src/board_sx126x_calls.c:130:17:rfswitch_Rx	16	static
+../Drivers/sx126x_driver/src/board_sx126x_calls.c:142:13:prng_seed	32	static
+../Drivers/sx126x_driver/src/board_sx126x_calls.c:148:17:prng_next	16	static
+../Drivers/sx126x_driver/src/board_sx126x_calls.c:157:13:deck_shuffle	24	static
+../Drivers/sx126x_driver/src/board_sx126x_calls.c:168:17:next_seq_id	16	static
