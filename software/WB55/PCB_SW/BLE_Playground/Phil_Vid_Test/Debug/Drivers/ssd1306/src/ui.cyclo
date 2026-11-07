@@ -1,0 +1,7 @@
+../Drivers/ssd1306/src/ui.c:50:6:UI_Init	1
+../Drivers/ssd1306/src/ui.c:56:6:UI_Render	5
+../Drivers/ssd1306/src/ui.c:83:6:UI_RenderMainMenu	3
+../Drivers/ssd1306/src/ui.c:106:6:UI_RenderRF	3
+../Drivers/ssd1306/src/ui.c:126:6:UI_RenderBLE	3
+../Drivers/ssd1306/src/ui.c:145:6:UI_RenderHistory	3
+../Drivers/ssd1306/src/ui.c:164:6:UI_HandleInput	36

@@ -1,7 +1,7 @@
 Core/Src/app_entry.o: ../Core/Src/app_entry.c ../Core/Inc/app_common.h \
  ../Core/Inc/app_conf.h \
  ../Middlewares/ST/STM32_WPAN/interface/patterns/ble_thread/hw.h \
- ../Core/Inc/hw_conf.h ../Core/Inc/hw_if.h \
+ ../Core/Inc/hw_conf.h ../Core/Inc/FreeRTOSConfig.h ../Core/Inc/hw_if.h \
  ../Drivers/CMSIS/Device/ST/STM32WBxx/Include/stm32wbxx.h \
  ../Drivers/CMSIS/Device/ST/STM32WBxx/Include/stm32wb55xx.h \
  ../Drivers/CMSIS/Include/core_cm4.h \
@@ -25,6 +25,8 @@ Core/Src/app_entry.o: ../Core/Src/app_entry.c ../Core/Inc/app_common.h \
  ../Drivers/STM32WBxx_HAL_Driver/Inc/stm32wbxx_hal_gpio.h \
  ../Drivers/STM32WBxx_HAL_Driver/Inc/stm32wbxx_hal_gpio_ex.h \
  ../Drivers/STM32WBxx_HAL_Driver/Inc/stm32wbxx_hal_hsem.h \
+ ../Drivers/STM32WBxx_HAL_Driver/Inc/stm32wbxx_hal_i2c.h \
+ ../Drivers/STM32WBxx_HAL_Driver/Inc/stm32wbxx_hal_i2c_ex.h \
  ../Drivers/STM32WBxx_HAL_Driver/Inc/stm32wbxx_hal_ipcc.h \
  ../Drivers/STM32WBxx_HAL_Driver/Inc/stm32wbxx_hal_pwr.h \
  ../Drivers/STM32WBxx_HAL_Driver/Inc/stm32wbxx_ll_pwr.h \
@@ -37,6 +39,8 @@ Core/Src/app_entry.o: ../Core/Src/app_entry.c ../Core/Inc/app_common.h \
  ../Drivers/STM32WBxx_HAL_Driver/Inc/stm32wbxx_ll_crs.h \
  ../Drivers/STM32WBxx_HAL_Driver/Inc/stm32wbxx_hal_rtc.h \
  ../Drivers/STM32WBxx_HAL_Driver/Inc/stm32wbxx_hal_rtc_ex.h \
+ ../Drivers/STM32WBxx_HAL_Driver/Inc/stm32wbxx_hal_tim.h \
+ ../Drivers/STM32WBxx_HAL_Driver/Inc/stm32wbxx_hal_tim_ex.h \
  ../Drivers/STM32WBxx_HAL_Driver/Inc/stm32wbxx_ll_system.h \
  ../Drivers/STM32WBxx_HAL_Driver/Inc/stm32wbxx_ll_exti.h \
  ../Drivers/STM32WBxx_HAL_Driver/Inc/stm32wbxx_ll_system.h \
@@ -102,7 +106,8 @@ Core/Src/app_entry.o: ../Core/Src/app_entry.c ../Core/Inc/app_common.h \
  ../Middlewares/ST/STM32_WPAN/ble/svc/Inc/svc_ctl.h \
  ../Middlewares/ST/STM32_WPAN/ble/svc/Inc/uuid.h \
  ../Middlewares/ST/STM32_WPAN/interface/patterns/ble_thread/tl/tl.h \
- ../Utilities/sequencer/stm32_seq.h \
+ ../Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS_V2/cmsis_os.h \
+ ../Drivers/CMSIS/RTOS2/Include/cmsis_os2.h \
  ../Middlewares/ST/STM32_WPAN/interface/patterns/ble_thread/tl/shci_tl.h \
  ../Utilities/lpm/tiny_lpm/stm32_lpm.h ../Core/Inc/app_debug.h \
  ../Middlewares/ST/STM32_WPAN/utilities/dbg_trace.h \
@@ -114,6 +119,7 @@ Core/Src/app_entry.o: ../Core/Src/app_entry.c ../Core/Inc/app_common.h \
 ../Core/Inc/app_conf.h:
 ../Middlewares/ST/STM32_WPAN/interface/patterns/ble_thread/hw.h:
 ../Core/Inc/hw_conf.h:
+../Core/Inc/FreeRTOSConfig.h:
 ../Core/Inc/hw_if.h:
 ../Drivers/CMSIS/Device/ST/STM32WBxx/Include/stm32wbxx.h:
 ../Drivers/CMSIS/Device/ST/STM32WBxx/Include/stm32wb55xx.h:
@@ -138,6 +144,8 @@ Core/Src/app_entry.o: ../Core/Src/app_entry.c ../Core/Inc/app_common.h \
 ../Drivers/STM32WBxx_HAL_Driver/Inc/stm32wbxx_hal_gpio.h:
 ../Drivers/STM32WBxx_HAL_Driver/Inc/stm32wbxx_hal_gpio_ex.h:
 ../Drivers/STM32WBxx_HAL_Driver/Inc/stm32wbxx_hal_hsem.h:
+../Drivers/STM32WBxx_HAL_Driver/Inc/stm32wbxx_hal_i2c.h:
+../Drivers/STM32WBxx_HAL_Driver/Inc/stm32wbxx_hal_i2c_ex.h:
 ../Drivers/STM32WBxx_HAL_Driver/Inc/stm32wbxx_hal_ipcc.h:
 ../Drivers/STM32WBxx_HAL_Driver/Inc/stm32wbxx_hal_pwr.h:
 ../Drivers/STM32WBxx_HAL_Driver/Inc/stm32wbxx_ll_pwr.h:
@@ -150,6 +158,8 @@ Core/Src/app_entry.o: ../Core/Src/app_entry.c ../Core/Inc/app_common.h \
 ../Drivers/STM32WBxx_HAL_Driver/Inc/stm32wbxx_ll_crs.h:
 ../Drivers/STM32WBxx_HAL_Driver/Inc/stm32wbxx_hal_rtc.h:
 ../Drivers/STM32WBxx_HAL_Driver/Inc/stm32wbxx_hal_rtc_ex.h:
+../Drivers/STM32WBxx_HAL_Driver/Inc/stm32wbxx_hal_tim.h:
+../Drivers/STM32WBxx_HAL_Driver/Inc/stm32wbxx_hal_tim_ex.h:
 ../Drivers/STM32WBxx_HAL_Driver/Inc/stm32wbxx_ll_system.h:
 ../Drivers/STM32WBxx_HAL_Driver/Inc/stm32wbxx_ll_exti.h:
 ../Drivers/STM32WBxx_HAL_Driver/Inc/stm32wbxx_ll_system.h:
@@ -220,7 +230,8 @@ Core/Src/app_entry.o: ../Core/Src/app_entry.c ../Core/Inc/app_common.h \
 ../Middlewares/ST/STM32_WPAN/ble/svc/Inc/svc_ctl.h:
 ../Middlewares/ST/STM32_WPAN/ble/svc/Inc/uuid.h:
 ../Middlewares/ST/STM32_WPAN/interface/patterns/ble_thread/tl/tl.h:
-../Utilities/sequencer/stm32_seq.h:
+../Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS_V2/cmsis_os.h:
+../Drivers/CMSIS/RTOS2/Include/cmsis_os2.h:
 ../Middlewares/ST/STM32_WPAN/interface/patterns/ble_thread/tl/shci_tl.h:
 ../Utilities/lpm/tiny_lpm/stm32_lpm.h:
 ../Core/Inc/app_debug.h:

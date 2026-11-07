@@ -9,16 +9,20 @@ RM := rm -rf
 
 # All of the sources participating in the build are defined here
 -include sources.mk
--include Utilities/sequencer/subdir.mk
 -include Utilities/lpm/tiny_lpm/subdir.mk
 -include STM32_WPAN/Target/subdir.mk
 -include STM32_WPAN/App/subdir.mk
+-include Middlewares/Third_Party/FreeRTOS/Source/portable/MemMang/subdir.mk
+-include Middlewares/Third_Party/FreeRTOS/Source/portable/GCC/ARM_CM4F/subdir.mk
+-include Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS_V2/subdir.mk
+-include Middlewares/Third_Party/FreeRTOS/Source/subdir.mk
 -include Middlewares/ST/STM32_WPAN/utilities/subdir.mk
 -include Middlewares/ST/STM32_WPAN/interface/patterns/ble_thread/tl/subdir.mk
 -include Middlewares/ST/STM32_WPAN/interface/patterns/ble_thread/shci/subdir.mk
 -include Middlewares/ST/STM32_WPAN/ble/svc/Src/subdir.mk
 -include Middlewares/ST/STM32_WPAN/ble/core/template/subdir.mk
 -include Middlewares/ST/STM32_WPAN/ble/core/auto/subdir.mk
+-include Drivers/ssd1306/src/subdir.mk
 -include Drivers/STM32WBxx_HAL_Driver/Src/subdir.mk
 -include Core/Startup/subdir.mk
 -include Core/Src/subdir.mk
@@ -70,8 +74,8 @@ all: main-build
 main-build: Phil_Vid_Test.elf secondary-outputs
 
 # Tool invocations
-Phil_Vid_Test.elf Phil_Vid_Test.map: $(OBJS) $(USER_OBJS) C:\Users\HOME\Documents\KiCad\Projects\jhnvrw-seniordesign\software\WB55\PCB_SW\BLE_Playground\Phil_Vid_Test\STM32WB55CCUX_FLASH.ld makefile objects.list $(OPTIONAL_TOOL_DEPS)
-	arm-none-eabi-gcc -o "Phil_Vid_Test.elf" @"objects.list" $(USER_OBJS) $(LIBS) -mcpu=cortex-m4 -T"C:\Users\HOME\Documents\KiCad\Projects\jhnvrw-seniordesign\software\WB55\PCB_SW\BLE_Playground\Phil_Vid_Test\STM32WB55CCUX_FLASH.ld" --specs=nosys.specs -Wl,-Map="Phil_Vid_Test.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Phil_Vid_Test.elf Phil_Vid_Test.map: $(OBJS) $(USER_OBJS) C:\Users\jacob\Documents\KiCad\Projects\jhnvrw-seniordesign\software\WB55\PCB_SW\BLE_Playground\Phil_Vid_Test\STM32WB55CCUX_FLASH.ld makefile objects.list $(OPTIONAL_TOOL_DEPS)
+	arm-none-eabi-gcc -o "Phil_Vid_Test.elf" @"objects.list" $(USER_OBJS) $(LIBS) -mcpu=cortex-m4 -T"C:\Users\jacob\Documents\KiCad\Projects\jhnvrw-seniordesign\software\WB55\PCB_SW\BLE_Playground\Phil_Vid_Test\STM32WB55CCUX_FLASH.ld" --specs=nosys.specs -Wl,-Map="Phil_Vid_Test.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
 	@echo 'Finished building target: $@'
 	@echo ' '
 

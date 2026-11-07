@@ -28,6 +28,7 @@ extern "C" {
 
 /* Includes ------------------------------------------------------------------*/
 #include "stm32wbxx_hal.h"
+
 #include "app_conf.h"
 #include "app_entry.h"
 #include "app_common.h"
@@ -60,6 +61,21 @@ void Error_Handler(void);
 /* USER CODE END EFP */
 
 /* Private defines -----------------------------------------------------------*/
+#define BUTTON_LEFT_Pin GPIO_PIN_15
+#define BUTTON_LEFT_GPIO_Port GPIOA
+#define BUTTON_LEFT_EXTI_IRQn EXTI15_10_IRQn
+#define BUTTON_DOWN_Pin GPIO_PIN_3
+#define BUTTON_DOWN_GPIO_Port GPIOB
+#define BUTTON_DOWN_EXTI_IRQn EXTI3_IRQn
+#define BUTTON_MID_Pin GPIO_PIN_4
+#define BUTTON_MID_GPIO_Port GPIOB
+#define BUTTON_MID_EXTI_IRQn EXTI4_IRQn
+#define BUTTON_RIGHT_Pin GPIO_PIN_5
+#define BUTTON_RIGHT_GPIO_Port GPIOB
+#define BUTTON_RIGHT_EXTI_IRQn EXTI9_5_IRQn
+#define BUTTON_UP_Pin GPIO_PIN_6
+#define BUTTON_UP_GPIO_Port GPIOB
+#define BUTTON_UP_EXTI_IRQn EXTI9_5_IRQn
 
 /* USER CODE BEGIN Private defines */
 
