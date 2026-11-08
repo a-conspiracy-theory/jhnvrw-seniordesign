@@ -1,0 +1,2 @@
+../Core/Src/ui_bridge.c:8:6:UI_PostBLEText	7
+../Core/Src/ui_bridge.c:30:6:UI_PostTLMReading	3

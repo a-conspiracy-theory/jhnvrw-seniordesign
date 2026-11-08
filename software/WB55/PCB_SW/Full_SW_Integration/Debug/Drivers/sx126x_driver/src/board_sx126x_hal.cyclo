@@ -1,0 +1,5 @@
+../Drivers/sx126x_driver/src/board_sx126x_hal.c:14:13:wait_busy	3
+../Drivers/sx126x_driver/src/board_sx126x_hal.c:23:21:sx126x_hal_write	11
+../Drivers/sx126x_driver/src/board_sx126x_hal.c:42:21:sx126x_hal_read	12
+../Drivers/sx126x_driver/src/board_sx126x_hal.c:60:21:sx126x_hal_reset	2
+../Drivers/sx126x_driver/src/board_sx126x_hal.c:71:21:sx126x_hal_wakeup	2

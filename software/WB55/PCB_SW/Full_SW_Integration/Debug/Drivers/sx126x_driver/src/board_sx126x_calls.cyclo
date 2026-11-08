@@ -1,0 +1,13 @@
+../Drivers/sx126x_driver/inc/sx126x_lr_fhss.h:230:24:sx126x_lr_fhss_get_time_on_air_in_ms	1
+../Drivers/sx126x_driver/inc/sx126x_lr_fhss.h:243:28:sx126x_lr_fhss_get_hop_sequence_count	1
+../Drivers/sx126x_driver/src/board_sx126x_calls.c:22:17:random_next	1
+../Drivers/sx126x_driver/src/board_sx126x_calls.c:28:13:shuffle	3
+../Drivers/sx126x_driver/src/board_sx126x_calls.c:38:17:sequence_next	3
+../Drivers/sx126x_driver/src/board_sx126x_calls.c:44:6:fhss_radio_rf_path_off	1
+../Drivers/sx126x_driver/src/board_sx126x_calls.c:49:13:rf_path_tx	1
+../Drivers/sx126x_driver/src/board_sx126x_calls.c:55:6:fhss_radio_is_transmitting	1
+../Drivers/sx126x_driver/src/board_sx126x_calls.c:56:10:fhss_radio_airtime_ms	1
+../Drivers/sx126x_driver/src/board_sx126x_calls.c:61:17:fhss_radio_configure	19
+../Drivers/sx126x_driver/src/board_sx126x_calls.c:111:17:fhss_radio_send	9
+../Drivers/sx126x_driver/src/board_sx126x_calls.c:127:17:fhss_radio_handle_irq	9
+../Drivers/sx126x_driver/src/board_sx126x_calls.c:144:17:fhss_radio_sleep	2
