@@ -1,1 +1,1 @@
-../Drivers/Environmental Sensors/Src/READ_SENSORS.c:9:6:SHT41_Read_Data	32	static
+../Drivers/Environmental Sensors/Src/READ_SENSORS.c:9:6:SENSOR_Read_Data	48	static

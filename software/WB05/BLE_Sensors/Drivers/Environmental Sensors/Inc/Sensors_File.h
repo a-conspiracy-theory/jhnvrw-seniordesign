@@ -8,7 +8,7 @@
 #ifndef ENVIRONMENTAL_SENSORS_INC_SENSORS_FILE_H_
 #define ENVIRONMENTAL_SENSORS_INC_SENSORS_FILE_H_
 
-void SHT41_Read_Data(I2C_HandleTypeDef);
+void SENSOR_Read_Data(I2C_HandleTypeDef);
 void STS41_Read_Data(I2C_HandleTypeDef);
 
 #endif /* ENVIRONMENTAL_SENSORS_INC_SENSORS_FILE_H_ */

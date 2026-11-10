@@ -116,7 +116,7 @@ int main(void)
   MX_PKA_Init();
   MX_TIM2_Init();
   /* USER CODE BEGIN 2 */
-  SHT41_Read_Data(hi2c1);
+  SENSOR_Read_Data(hi2c1);
   /* USER CODE END 2 */
 
   /* Init code for STM32_BLE */
