@@ -23935,53 +23935,53 @@ LOAD C:/ST/STM32CubeIDE_2.1.1/STM32CubeIDE/plugins/com.st.stm32cube.ide.mcu.exte
  .debug_line    0x0002753c      0x91e ./System/Config/Debug_GPIO/app_debug.o
  .debug_line    0x00027e5a     0x1082 ./Utilities/sequencer/stm32_seq.o
 
-.debug_str      0x00000000    0xcf0ff
- .debug_str     0x00000000    0xcf0ff ./Core/Src/app_entry.o
+.debug_str      0x00000000    0xcf0fe
+ .debug_str     0x00000000    0xcf0fe ./Core/Src/app_entry.o
                               0xb6b62 (size before relaxing)
- .debug_str     0x000cf0ff    0xaed01 ./Core/Src/main.o
- .debug_str     0x000cf0ff    0xaeb93 ./Core/Src/stm32wb0x_hal_msp.o
- .debug_str     0x000cf0ff    0xb7540 ./Core/Src/stm32wb0x_it.o
- .debug_str     0x000cf0ff     0x9887 ./Core/Src/syscalls.o
- .debug_str     0x000cf0ff     0x7631 ./Core/Src/sysmem.o
- .debug_str     0x000cf0ff    0xa8c1e ./Core/Src/system_stm32wb0x.o
- .debug_str     0x000cf0ff       0x9a ./Core/Startup/startup_stm32wb05kzvx.o
- .debug_str     0x000cf0ff    0xadca4 ./Drivers/Environmental Sensors/Src/READ_SENSORS.o
- .debug_str     0x000cf0ff    0xa8daf ./Drivers/STM32WB0x_HAL_Driver/Src/stm32wb0x_hal.o
- .debug_str     0x000cf0ff    0xa8c5d ./Drivers/STM32WB0x_HAL_Driver/Src/stm32wb0x_hal_cortex.o
- .debug_str     0x000cf0ff    0xa8bd5 ./Drivers/STM32WB0x_HAL_Driver/Src/stm32wb0x_hal_dma.o
- .debug_str     0x000cf0ff    0xa89d5 ./Drivers/STM32WB0x_HAL_Driver/Src/stm32wb0x_hal_flash.o
- .debug_str     0x000cf0ff    0xa8ae3 ./Drivers/STM32WB0x_HAL_Driver/Src/stm32wb0x_hal_flash_ex.o
- .debug_str     0x000cf0ff    0xa89d7 ./Drivers/STM32WB0x_HAL_Driver/Src/stm32wb0x_hal_gpio.o
- .debug_str     0x000cf0ff    0xa9b86 ./Drivers/STM32WB0x_HAL_Driver/Src/stm32wb0x_hal_i2c.o
- .debug_str     0x000cf0ff    0xa8d8a ./Drivers/STM32WB0x_HAL_Driver/Src/stm32wb0x_hal_i2c_ex.o
- .debug_str     0x000cf0ff    0xa929b ./Drivers/STM32WB0x_HAL_Driver/Src/stm32wb0x_hal_pka.o
- .debug_str     0x000cf0ff    0xa8bd0 ./Drivers/STM32WB0x_HAL_Driver/Src/stm32wb0x_hal_pwr_ex.o
- .debug_str     0x000cf0ff    0xa9cb2 ./Drivers/STM32WB0x_HAL_Driver/Src/stm32wb0x_hal_radio.o
- .debug_str     0x000cf0ff    0xaa45d ./Drivers/STM32WB0x_HAL_Driver/Src/stm32wb0x_hal_radio_timer.o
- .debug_str     0x000cf0ff    0xa908a ./Drivers/STM32WB0x_HAL_Driver/Src/stm32wb0x_hal_rcc.o
- .debug_str     0x000cf0ff    0xa8cf4 ./Drivers/STM32WB0x_HAL_Driver/Src/stm32wb0x_hal_rcc_ex.o
- .debug_str     0x000cf0ff    0xa896e ./Drivers/STM32WB0x_HAL_Driver/Src/stm32wb0x_hal_rng.o
- .debug_str     0x000cf0ff    0xa9bc6 ./Drivers/STM32WB0x_HAL_Driver/Src/stm32wb0x_hal_tim.o
- .debug_str     0x000cf0ff    0xb6f7d ./Middlewares/ST/STM32_BLE/evt_handler/src/ble_evt.o
- .debug_str     0x000cf0ff    0xa8bd2 ./Projects/Common/BLE/Interfaces/hw_aes.o
- .debug_str     0x000cf0ff    0xa94d0 ./Projects/Common/BLE/Interfaces/hw_pka.o
- .debug_str     0x000cf0ff    0xa8a93 ./Projects/Common/BLE/Interfaces/hw_rng.o
- .debug_str     0x000cf0ff    0xace56 ./Projects/Common/BLE/Modules/NVMDB/Src/nvm_db.o
- .debug_str     0x000cf0ff    0xabd87 ./Projects/Common/BLE/Modules/NVMDB/Src/nvm_db_conf.o
- .debug_str     0x000cf0ff    0xa89a6 ./Projects/Common/BLE/Modules/PKAMGR/Src/pka_manager.o
- .debug_str     0x000cf0ff    0xb9f50 ./Projects/Common/BLE/Modules/Profiles/Src/gatt_profile.o
- .debug_str     0x000cf0ff    0xb84d2 ./Projects/Common/BLE/Modules/RADIO_utils/Src/RADIO_utils.o
- .debug_str     0x000cf0ff       0x9a ./Projects/Common/BLE/Modules/blue_unit_conversion.o
- .debug_str     0x000cf0ff    0xaf4fc ./Projects/Common/BLE/Modules/miscutil.o
- .debug_str     0x000cf0ff       0x91 ./Projects/Common/BLE/Modules/osal_memcpy.o
- .debug_str     0x000cf0ff       0x98 ./Projects/Common/BLE/Startup/cpu_context_switch.o
- .debug_str     0x000cf0ff    0xbb712 ./STM32_BLE/App/app_ble.o
- .debug_str     0x000cf0ff    0xbaeb9 ./STM32_BLE/App/eddystone_tlm_service.o
- .debug_str     0x000cf0ff    0xbab3c ./STM32_BLE/Target/blenvm.o
- .debug_str     0x000cf0ff    0xaf846 ./STM32_BLE/Target/bleplat.o
- .debug_str     0x000cf0ff    0xae36a ./STM32_BLE/Target/bleplat_cntr.o
- .debug_str     0x000cf0ff    0xa964e ./System/Config/Debug_GPIO/app_debug.o
- .debug_str     0x000cf0ff    0xadea0 ./Utilities/sequencer/stm32_seq.o
+ .debug_str     0x000cf0fe    0xaed01 ./Core/Src/main.o
+ .debug_str     0x000cf0fe    0xaeb93 ./Core/Src/stm32wb0x_hal_msp.o
+ .debug_str     0x000cf0fe    0xb7540 ./Core/Src/stm32wb0x_it.o
+ .debug_str     0x000cf0fe     0x9887 ./Core/Src/syscalls.o
+ .debug_str     0x000cf0fe     0x7631 ./Core/Src/sysmem.o
+ .debug_str     0x000cf0fe    0xa8c1e ./Core/Src/system_stm32wb0x.o
+ .debug_str     0x000cf0fe       0x9a ./Core/Startup/startup_stm32wb05kzvx.o
+ .debug_str     0x000cf0fe    0xadca4 ./Drivers/Environmental Sensors/Src/READ_SENSORS.o
+ .debug_str     0x000cf0fe    0xa8daf ./Drivers/STM32WB0x_HAL_Driver/Src/stm32wb0x_hal.o
+ .debug_str     0x000cf0fe    0xa8c5d ./Drivers/STM32WB0x_HAL_Driver/Src/stm32wb0x_hal_cortex.o
+ .debug_str     0x000cf0fe    0xa8bd5 ./Drivers/STM32WB0x_HAL_Driver/Src/stm32wb0x_hal_dma.o
+ .debug_str     0x000cf0fe    0xa89d5 ./Drivers/STM32WB0x_HAL_Driver/Src/stm32wb0x_hal_flash.o
+ .debug_str     0x000cf0fe    0xa8ae3 ./Drivers/STM32WB0x_HAL_Driver/Src/stm32wb0x_hal_flash_ex.o
+ .debug_str     0x000cf0fe    0xa89d7 ./Drivers/STM32WB0x_HAL_Driver/Src/stm32wb0x_hal_gpio.o
+ .debug_str     0x000cf0fe    0xa9b86 ./Drivers/STM32WB0x_HAL_Driver/Src/stm32wb0x_hal_i2c.o
+ .debug_str     0x000cf0fe    0xa8d8a ./Drivers/STM32WB0x_HAL_Driver/Src/stm32wb0x_hal_i2c_ex.o
+ .debug_str     0x000cf0fe    0xa929b ./Drivers/STM32WB0x_HAL_Driver/Src/stm32wb0x_hal_pka.o
+ .debug_str     0x000cf0fe    0xa8bd0 ./Drivers/STM32WB0x_HAL_Driver/Src/stm32wb0x_hal_pwr_ex.o
+ .debug_str     0x000cf0fe    0xa9cb2 ./Drivers/STM32WB0x_HAL_Driver/Src/stm32wb0x_hal_radio.o
+ .debug_str     0x000cf0fe    0xaa45d ./Drivers/STM32WB0x_HAL_Driver/Src/stm32wb0x_hal_radio_timer.o
+ .debug_str     0x000cf0fe    0xa908a ./Drivers/STM32WB0x_HAL_Driver/Src/stm32wb0x_hal_rcc.o
+ .debug_str     0x000cf0fe    0xa8cf4 ./Drivers/STM32WB0x_HAL_Driver/Src/stm32wb0x_hal_rcc_ex.o
+ .debug_str     0x000cf0fe    0xa896e ./Drivers/STM32WB0x_HAL_Driver/Src/stm32wb0x_hal_rng.o
+ .debug_str     0x000cf0fe    0xa9bc6 ./Drivers/STM32WB0x_HAL_Driver/Src/stm32wb0x_hal_tim.o
+ .debug_str     0x000cf0fe    0xb6f7d ./Middlewares/ST/STM32_BLE/evt_handler/src/ble_evt.o
+ .debug_str     0x000cf0fe    0xa8bd2 ./Projects/Common/BLE/Interfaces/hw_aes.o
+ .debug_str     0x000cf0fe    0xa94d0 ./Projects/Common/BLE/Interfaces/hw_pka.o
+ .debug_str     0x000cf0fe    0xa8a93 ./Projects/Common/BLE/Interfaces/hw_rng.o
+ .debug_str     0x000cf0fe    0xace56 ./Projects/Common/BLE/Modules/NVMDB/Src/nvm_db.o
+ .debug_str     0x000cf0fe    0xabd87 ./Projects/Common/BLE/Modules/NVMDB/Src/nvm_db_conf.o
+ .debug_str     0x000cf0fe    0xa89a6 ./Projects/Common/BLE/Modules/PKAMGR/Src/pka_manager.o
+ .debug_str     0x000cf0fe    0xb9f50 ./Projects/Common/BLE/Modules/Profiles/Src/gatt_profile.o
+ .debug_str     0x000cf0fe    0xb84d2 ./Projects/Common/BLE/Modules/RADIO_utils/Src/RADIO_utils.o
+ .debug_str     0x000cf0fe       0x9a ./Projects/Common/BLE/Modules/blue_unit_conversion.o
+ .debug_str     0x000cf0fe    0xaf4fc ./Projects/Common/BLE/Modules/miscutil.o
+ .debug_str     0x000cf0fe       0x91 ./Projects/Common/BLE/Modules/osal_memcpy.o
+ .debug_str     0x000cf0fe       0x98 ./Projects/Common/BLE/Startup/cpu_context_switch.o
+ .debug_str     0x000cf0fe    0xbb712 ./STM32_BLE/App/app_ble.o
+ .debug_str     0x000cf0fe    0xbaeb8 ./STM32_BLE/App/eddystone_tlm_service.o
+ .debug_str     0x000cf0fe    0xbab3c ./STM32_BLE/Target/blenvm.o
+ .debug_str     0x000cf0fe    0xaf846 ./STM32_BLE/Target/bleplat.o
+ .debug_str     0x000cf0fe    0xae36a ./STM32_BLE/Target/bleplat_cntr.o
+ .debug_str     0x000cf0fe    0xa964e ./System/Config/Debug_GPIO/app_debug.o
+ .debug_str     0x000cf0fe    0xadea0 ./Utilities/sequencer/stm32_seq.o
 
 .comment        0x00000000       0x87
  .comment       0x00000000       0x87 ./Core/Src/app_entry.o

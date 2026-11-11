@@ -2,9 +2,9 @@
 
 #define SENSOR_INTERVAL_MS 5000U
 #define SHT41_ADDRESS     (0x44 << 1) // 0x88 (8-bit shifted address)
-#define SHT41_MEASURE_CMD 0xFD        // High precision measurement command
+#define SHT41_MEASURE_CMD 0xE0        // High precision measurement command
 #define STS41_I2C_ADDRESS         (0x45 << 1) // 0x88
-#define STS41_MEASURE_HIGH_PREC   0xFD        // High precision measurement command
+#define STS41_MEASURE_HIGH_PREC   0xE0       // High precision measurement command
 
 void SENSOR_Read_Data(I2C_HandleTypeDef hi2c1)
 {
@@ -24,7 +24,7 @@ void SENSOR_Read_Data(I2C_HandleTypeDef hi2c1)
 	}
 
     // 2. Wait for the measurement conversion to finish (Max 8.2ms for high precision)
-    HAL_Delay(12);
+    HAL_Delay(4);
 
     // 3. Read 6 bytes of data back from the sensor
     if (HAL_I2C_Master_Receive(&hi2c1, SHT41_ADDRESS, rx_buf, 6, HAL_MAX_DELAY) != HAL_OK)

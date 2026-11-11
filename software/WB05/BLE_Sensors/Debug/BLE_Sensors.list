@@ -49,9 +49,9 @@ Idx Name          Size      VMA       LMA       File off  Algn
                   CONTENTS, READONLY, DEBUGGING, OCTETS
  22 .debug_line   00028edc  00000000  00000000  0005cf02  2**0
                   CONTENTS, READONLY, DEBUGGING, OCTETS
- 23 .debug_str    000cf0ff  00000000  00000000  00085dde  2**0
+ 23 .debug_str    000cf0fe  00000000  00000000  00085dde  2**0
                   CONTENTS, READONLY, DEBUGGING, OCTETS
- 24 .comment      00000087  00000000  00000000  00154edd  2**0
+ 24 .comment      00000087  00000000  00000000  00154edc  2**0
                   CONTENTS, READONLY
  25 .debug_frame  00009a2c  00000000  00000000  00154f64  2**2
                   CONTENTS, READONLY, DEBUGGING, OCTETS
@@ -3465,9 +3465,9 @@ Infinite_Loop:
 	...
 
 100410a0 <SENSOR_Read_Data>:
-#define SHT41_MEASURE_CMD 0xFD        // High precision measurement command
+#define SHT41_MEASURE_CMD 0xE0        // High precision measurement command
 #define STS41_I2C_ADDRESS         (0x45 << 1) // 0x88
-#define STS41_MEASURE_HIGH_PREC   0xFD        // High precision measurement command
+#define STS41_MEASURE_HIGH_PREC   0xE0       // High precision measurement command
 
 void SENSOR_Read_Data(I2C_HandleTypeDef hi2c1)
 {
@@ -3486,7 +3486,7 @@ void SENSOR_Read_Data(I2C_HandleTypeDef hi2c1)
     uint8_t cmd = SHT41_MEASURE_CMD;
 100410b8:	260f      	movs	r6, #15
 100410ba:	19bb      	adds	r3, r7, r6
-100410bc:	22fd      	movs	r2, #253	@ 0xfd
+100410bc:	22e0      	movs	r2, #224	@ 0xe0
 100410be:	701a      	strb	r2, [r3, #0]
     uint8_t rx_buf[6] = {0};
 100410c0:	2408      	movs	r4, #8
@@ -3540,8 +3540,8 @@ void SENSOR_Read_Data(I2C_HandleTypeDef hi2c1)
 	}
 
     // 2. Wait for the measurement conversion to finish (Max 8.2ms for high precision)
-    HAL_Delay(12);
-10041112:	200c      	movs	r0, #12
+    HAL_Delay(4);
+10041112:	2004      	movs	r0, #4
 10041114:	f000 f8ca 	bl	100412ac <HAL_Delay>
 
     // 3. Read 6 bytes of data back from the sensor
@@ -24796,7 +24796,7 @@ static tBleStatus EddystoneTLM_Init(void)
   uint16_t AdvertisingInterval = (ADVERTISING_INTERVAL_IN_MS * TLM_ADV_RATE * ADVERTISING_INTERVAL_INCREMENT/ 10);
 100485b6:	210c      	movs	r1, #12
 100485b8:	187b      	adds	r3, r7, r1
-100485ba:	2278      	movs	r2, #120	@ 0x78
+100485ba:	2228      	movs	r2, #40	@ 0x28
 100485bc:	801a      	strh	r2, [r3, #0]
   Advertising_Set_Parameters_t Advertising_Set_Parameters;
   
