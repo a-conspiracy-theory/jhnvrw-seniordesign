@@ -4653,7 +4653,7 @@
 		)
 		(uuid "380dfd02-c3ba-4611-802a-4f127d9973e8")
 	)
-	(text "SPI Header"
+	(text "I2C Header"
 		(exclude_from_sim no)
 		(at 92.71 134.366 0)
 		(effects
